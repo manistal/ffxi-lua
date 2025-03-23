@@ -45,6 +45,8 @@ sets.idle.Default = {
 -- Need -14 Perp >> Refresh >= DT
 -- Current: 16
 sets.idle.Perp = {
+    -- Refresh: +2
+    head="Beckoner's Horn +1",
     -- Perp: -5
     main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
     -- Perp: -3
@@ -114,7 +116,9 @@ sets.bp = {}
 
 -- Need 15 BP I, 15 BP II
 -- BPD Cap >> Summon Skill >> other
-sets.bp.Preacst = {
+sets.bp.Precast = {
+    -- Avatar's Favor
+    head="Beckoner's Horn +1",
     -- BP II: -2s
     main="Espiritus",
     -- BP I: -6s
