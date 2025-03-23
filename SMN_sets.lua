@@ -9,7 +9,8 @@ sets = {}
 -- 
 sets.weapons = {}
 sets.weapons.List = {
-    "Espiritus"
+    "Espiritus",
+    "Gridarvor"
 }
 
 sets.weapons["Espiritus"] = {
@@ -18,6 +19,10 @@ sets.weapons["Espiritus"] = {
 }
 
 
+sets.weapons["Gridarvor"] = {
+    main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
+    sub="Elan Strap",
+}
 
 -- Idle/DT Base Set
 sets.idle = {}
@@ -37,10 +42,15 @@ sets.idle.Default = {
     back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','"Fast Cast"+10',}},
 }
 
+-- Need -14 Perp >> Refresh >= DT
+-- Current: 16
 sets.idle.Perp = {
-
-    -- Need JSE Helm/Chest
-
+    -- Perp: -5
+    main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
+    -- Perp: -3
+    legs="Assid. Pants +1",
+    -- Perp: -8
+    feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
 }
 
 --
@@ -67,6 +77,10 @@ sets.ws.Default = {
 -- 
 sets.ja = {}
 
+sets.ja["Astral Flow"] = {
+    head="Smn. Horn +2",
+}
+
 
 -- 
 -- Spell Precast Sets
@@ -81,10 +95,6 @@ sets.precast.FastCast = {
     back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','"Fast Cast"+10',}},
 }
 
-sets.precast.BPRage = {
-
-    back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','"Fast Cast"+10',}},
-}
 
 
 
@@ -96,3 +106,50 @@ sets.midcast = {}
 sets.midcast.Default = {
 }
 
+
+-- 
+-- Blood Pact Sets
+-- 
+sets.bp = {}
+
+-- Need 15 BP I, 15 BP II
+-- BPD Cap >> Summon Skill >> other
+sets.bp.Preacst = {
+    -- BP II: -2s
+    main="Espiritus",
+    -- BP I: -6s
+    body="Con. Doublet +1",
+    -- BP I: -5s
+    hands="Con. Bracers",
+    -- BP 1: -4
+    feet="Smn. Pigaches +2",
+}
+
+-- BP Dmg > Magic Dmg > Pet Stats
+sets.bp.Rage = {
+    -- BPDmg: 3
+    main="Espiritus",
+    -- BPDmg: 3
+    sub="Elan Strap",
+    -- BPDmg: 12
+    body="Con. Doublet +1",
+    -- BPDmg: 8
+    feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
+    waist="Regal Belt",
+    -- BPDmg: 5
+    back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','"Fast Cast"+10',}},
+}
+
+sets.bp.Ward = {
+    -- BPDmg: 3
+    main="Espiritus",
+    -- BPDmg: 3
+    sub="Elan Strap",
+    -- BPDmg: 12
+    body="Con. Doublet +1",
+    -- BPDmg: 8
+    feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
+    waist="Regal Belt",
+
+    back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','"Fast Cast"+10',}},
+}
