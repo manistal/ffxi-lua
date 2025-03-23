@@ -137,23 +137,24 @@ sets.bp.Rage = {
     sub="Elan Strap",
     -- BPDmg: 12
     body="Con. Doublet +1",
+    -- BPDmg: 4
+    hands={ name="Merlinic Dastanas", augments={'Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+4','Pet: STR+9',}},
     -- BPDmg: 8
     feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
     waist="Regal Belt",
     -- BPDmg: 5
     back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','"Fast Cast"+10',}},
+    -- BPDmg: 3
+    left_ring="Varar Ring",
+    -- BPDmg: 3
+    right_ring="Varar Ring",
 }
 
 sets.bp.Ward = {
-    -- BPDmg: 3
-    main="Espiritus",
-    -- BPDmg: 3
-    sub="Elan Strap",
-    -- BPDmg: 12
-    body="Con. Doublet +1",
-    -- BPDmg: 8
-    feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
-    waist="Regal Belt",
-
-    back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','"Fast Cast"+10',}},
+    -- Skill +3
+    sub="Vox Grip",
+    -- Skill +13
+    head="Beckoner's Horn +1",
+    -- Skill +20
+    hands="Inyan. Dastanas +2",
 }
