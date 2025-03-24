@@ -63,9 +63,7 @@ sets.tp.List = {
 }
 
 sets.tp.Default = {
-    main={ name="Montante +1", augments={'Path: A',}},
-    sub="Utu Grip",
-    ammo="Seething Bomblet",
+    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Flam. Zucchetto +2",
     body="Sakpata's Plate",
     hands="Sakpata's Gauntlets",
@@ -104,7 +102,7 @@ sets.tp.FullDT = sets.idle.Default
 -- 
 sets.ws = {}
 sets.ws.Default = {
-    ammo="Seething Bomblet",
+    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head={ name="Odyssean Helm", augments={'Accuracy+11','Weapon skill damage +3%','AGI+3',}},
     body="Ignominy Cuirass +2",
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
