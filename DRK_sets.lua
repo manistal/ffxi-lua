@@ -103,7 +103,7 @@ sets.tp.FullDT = sets.idle.Default
 sets.ws = {}
 sets.ws.Default = {
     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-    head={ name="Odyssean Helm", augments={'Accuracy+11','Weapon skill damage +3%','AGI+3',}},
+    head={ name="Nyame Helm", augments={'Path: B',}},
     body="Ignominy Cuirass +2",
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
