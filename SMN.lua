@@ -29,7 +29,7 @@ function equip_base_set(status,pet)
     equip(sets.weapons.Current)
 
     -- Idle Perp
-    if pet.isvalid then
+    if pet ~= nil and pet.isvalid then
         equip(sets.idle.Perp)
     end
 end
