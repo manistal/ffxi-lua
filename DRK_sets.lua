@@ -138,6 +138,7 @@ sets.precast.FastCast = {
     head={ name="Fall. Burgeonet +1", augments={'Enhances "Dark Seal" effect',}},
     hands={ name="Leyline Gloves", augments={'Accuracy+6','Mag. Acc.+2','"Mag.Atk.Bns."+6',}},
     legs={ name="Eschite Cuisses", augments={'"Mag.Atk.Bns."+25','"Conserve MP"+6','"Fast Cast"+5',}},
+    right_ring="Kishar Ring",
     left_ear="Malignance Earring",
     right_ear="Loquac. Earring",
 }
@@ -161,7 +162,7 @@ sets.midcast.Default = {
     left_ear="Mani Earring",
     right_ear="Ethereal Earring",
     left_ring="Evanescence Ring",
-    right_ring="Archon Ring",
+    right_ring="Kishar Ring",
     back={ name="Niht Mantle", augments={'Attack+6','Dark magic skill +6','"Drain" and "Aspir" potency +25',}},
 }
 
