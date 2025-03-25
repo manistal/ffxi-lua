@@ -102,7 +102,7 @@ sets.tp.List = {
 sets.tp.Default = {
     -- Haste: +8
     head={ name="Herculean Helm", augments={'Accuracy+15','"Triple Atk."+3','STR+5','Attack+10',}},
-    neck="Sanctity Necklace",
+    neck="Iskur Gorget",
     -- Haste: +4, DW: +5
     body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
     -- Haste: +5
@@ -190,12 +190,12 @@ sets.midcast = {}
 -- Ranged Acc >= STP/TSHOT >= RangedATK
 sets.midcast.Ranged = {
     head="Meghanada Visor +2",
+    neck="Iskur Gorget",
     body="Chasseur's Frac +2",
     hands="Meg. Gloves +2",
     legs="Chas. Culottes +2",
     feet="Meg. Jam. +2",
     waist="Yemaya Belt",
-    neck={ name="Comm. Charm +1", augments={'Path: A',}},
     right_ring="Meghanada Ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
 }
