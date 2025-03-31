@@ -10,11 +10,23 @@ sets = {}
 sets.weapons = {}
 sets.weapons.List = {
     "Montante",
+    "Apoc", 
+    "FullBreak",
     "Savage Blade",
 }
 
 sets.weapons["Montante"] = {
     main={ name="Montante +1", augments={'Path: A',}},
+    sub="Utu Grip",
+}
+
+sets.weapons["Apoc"] = {
+    main="Apocalypse",
+    sub="Utu Grip",
+}
+
+sets.weapons["FullBreak"] = {
+    main="Hepatizon Axe",
     sub="Utu Grip",
 }
 
