@@ -59,6 +59,8 @@ function precast(spell)
     if spell.type == "JobAbility" then
 		if sets.ja[spell.english] then 
 			equip(sets.ja[spell.english])
+        else
+            equip(sets.ja.Default)
         end
     end
 

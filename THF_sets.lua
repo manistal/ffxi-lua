@@ -26,6 +26,10 @@ sets.weapons["Daggers Main"] = {
 
 sets.weapons.Current = sets.weapons["Daggers Main"]
 
+sets.TH = {
+    hands="Asn. Armlets +2",
+    ammo="Per. Lucky Egg",
+}
 
 -- Idle/DT Base Set
 -- DT == 50
@@ -75,7 +79,7 @@ sets.tp.List = {
 sets.tp.Default = {
     ammo="Yamarang",
     head={ name="Nyame Helm", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Iskur Gorget",
     body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
@@ -89,12 +93,10 @@ sets.tp.Default = {
 }
 sets.tp.Current = sets.tp.Default
 
-sets.tp.TreasureHunter = set_combine(sets.tp.Default, {
-    hands="Asn. Armlets +2",
-    ammo="Per. Lucky Egg",
-})
+sets.tp.TreasureHunter = set_combine(sets.tp.Default, sets.TH)
 
 sets.tp.Hybrid = set_combine(sets.tp.Default, {
+    neck={ name="Loricate Torque +1", augments={'Path: A',}},
     left_ring="Vocane Ring",
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
 }) 
@@ -107,8 +109,6 @@ sets.tp.FullDT = sets.idle.Default
 -- Precast Sets
 --
 sets.precast = {} 
-sets.precast.Default = {
-}
 
 sets.precast.FastCast = {
     hands={ name="Leyline Gloves", augments={'Accuracy+6','Mag. Acc.+2','"Mag.Atk.Bns."+6',}},
@@ -148,3 +148,5 @@ sets.ws.Default = {
 -- Job Ability Sets
 -- 
 sets.ja = {}
+
+sets.ja.Default = sets.TH
