@@ -27,7 +27,7 @@ sets.weapons["Gridarvor"] = {
 -- Idle/DT Base Set
 sets.idle = {}
 sets.idle.Default = {
-    ammo="Staunch Tathlum",
+    ammo="Eminent Sachet",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
