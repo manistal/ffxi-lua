@@ -17,6 +17,9 @@ function get_sets()
 	include('COR_sets.lua')
 	set_macro(COR_MACRO_BOOK, 1)
 	set_style(COR_STYLE_SET)
+
+    sets.weapons.Current = sets.weapons["Savage Blade"]
+    sets.tp.Current = sets.tp.FullDT
 end
 
 --
@@ -28,12 +31,9 @@ function equip_base_set(status)
 
     -- TP/Engaged Sets (Glass cannon TP vs Tanky TP)
     if status == 'Engaged' then 
-        if player.hpp <= 75 then 
-            equip(sets.tp.Hybrid)
-        elseif player.hpp <= 50 then 
+        equip(sets.tp.Current)
+        if player.hpp <= 50 then 
             equip(sets.tp.FullDT)
-        else
-            equip(sets.tp.Current)
         end
     end
 

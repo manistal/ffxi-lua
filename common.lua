@@ -80,6 +80,7 @@ function toggle_tp()
     tp_toggle_idx = ((tp_toggle_idx + 1) % (#sets.tp.List + 1))
     if tp_toggle_idx == 0 then tp_toggle_idx = 1 end 
     sets.tp.Current = sets.tp[sets.tp.List[tp_toggle_idx]]
+    equip(sets.tp.Current)
 	send_command("@input /echo <<<< TP Set changed to " .. sets.tp.List[tp_toggle_idx] .. " " .. tp_toggle_idx .. " >>>>")
 end
 

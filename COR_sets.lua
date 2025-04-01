@@ -52,7 +52,6 @@ sets.weapons["Tauret Lanun"] = {
     ammo="Chrono Bullet",
 }
 
-sets.weapons.Current = sets.weapons["Savage Blade"]
 
 
 -- Idle/DT Base Set
@@ -120,7 +119,6 @@ sets.tp.Default = {
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 
 }
-sets.tp.Current = sets.tp.Default
 
 sets.tp.Hybrid = set_combine(sets.tp.Default, {
     -- DT: -6
