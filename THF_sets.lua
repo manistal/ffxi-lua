@@ -27,7 +27,7 @@ sets.weapons["Daggers Main"] = {
 sets.weapons.Current = sets.weapons["Daggers Main"]
 
 sets.TH = {
-    hands="Asn. Armlets +2",
+    hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
     ammo="Per. Lucky Egg",
 }
 
@@ -116,6 +116,7 @@ sets.precast.FastCast = {
 }
 
 sets.precast.Ranged = {
+    ranged="Antitail",
 }
 
 
@@ -150,3 +151,7 @@ sets.ws.Default = {
 sets.ja = {}
 
 sets.ja.Default = sets.TH
+
+sets.ja["Perfect Dodge"] = {
+    hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
+}
