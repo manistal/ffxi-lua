@@ -24,7 +24,6 @@ sets.weapons["Daggers Main"] = {
     sub="Skinflayer"
 }
 
-sets.weapons.Current = sets.weapons["Daggers Main"]
 
 sets.TH = {
     hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
@@ -91,9 +90,8 @@ sets.tp.Default = {
     right_ear="Suppanomimi",
     back={ name="Toutatis's Cape", augments={'Accuracy+20 Attack+20','"Store TP"+10',}},
 }
-sets.tp.Current = sets.tp.Default
 
-sets.tp.TreasureHunter = set_combine(sets.tp.Default, sets.TH)
+sets.tp.TreasureHunter = set_combine(sets.idle.Default, sets.TH)
 
 sets.tp.Hybrid = set_combine(sets.tp.Default, {
     neck={ name="Loricate Torque +1", augments={'Path: A',}},

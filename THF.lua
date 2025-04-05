@@ -17,6 +17,9 @@ function get_sets()
 	include('THF_sets.lua')
 	set_macro(THF_MACRO_BOOK, 1)
 	set_style(THF_STYLE_SET)
+
+    sets.weapons.Current = sets.weapons["Daggers Main"]
+    sets.tp.Current = sets.tp.FullDT
 end
 
 --
