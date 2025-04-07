@@ -60,6 +60,10 @@ function midcast(spell)
             equip(sets.bp.Precast)
         end
     end
+    -- Need to differentiate
+    if spell.action_type == "Magic" then 
+        equip(sets.midcast.Default)
+    end
 end
 
 function aftercast(spell)
