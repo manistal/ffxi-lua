@@ -27,7 +27,7 @@ sets.weapons["Gridarvor"] = {
 -- Idle/DT Base Set
 sets.idle = {}
 sets.idle.Default = {
-    ammo="Eminent Sachet",
+    ammo={ name="Epitaph", augments={'Path: A',}},
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -49,6 +49,10 @@ sets.idle.Perp = {
     head="Beckoner's Horn +1",
     -- Perp: -5
     main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
+    -- Regain: +25
+    neck="Caller's Pendant",
+    -- Refresh +3
+    body={ name="Apogee Dalmatica", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
     -- Perp: -3
     legs="Assid. Pants +1",
     -- Perp: -8
@@ -106,6 +110,8 @@ sets.precast.FastCast = {
 sets.midcast = {}
 
 sets.midcast.Default = {
+    -- Cure
+    left_ear="Mendi. Earring",
 }
 
 
@@ -135,6 +141,10 @@ sets.bp.Rage = {
     main="Espiritus",
     -- BPDmg: 3
     sub="Elan Strap",
+    -- BPDmg: 7, MgATK 30
+    head={ name="Apogee Crown", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
+    -- BPDmg: 7, MgATK 30
+    body={ name="Apogee Dalmatica", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
     -- BPDmg: 12
     body="Con. Doublet +1",
     -- BPDmg: 4
@@ -155,6 +165,8 @@ sets.bp.Ward = {
     sub="Vox Grip",
     -- Skill +13
     head="Beckoner's Horn +1",
+    -- Skill +9
+    neck="Caller's Pendant",
     -- Skill +20
     hands="Inyan. Dastanas +2",
 }

@@ -5,7 +5,7 @@
 -- Gearswap Spec: https://docs.windower.net/addons/gearswap/reference/
 
 SMN_STYLE_SET = 81
-SMN_MACRO_BOOK = 5
+SMN_MACRO_BOOK = 4
 
 -- 
 -- Main Entry Point 
