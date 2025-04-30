@@ -59,7 +59,7 @@ sets.idle.Default = {
     right_ear="Odnowa Earring +1",
     -- DT: -7
     left_ring="Vocane Ring",
-    right_ring="Sulevia's Ring",
+    right_ring="Chirich Ring",
     back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
 }
 
@@ -86,7 +86,7 @@ sets.tp.Default = {
     left_ear="Brutal Earring",
     right_ear="Telos Earring",
     left_ring="Chirich Ring",
-    right_ring="Sulevia's Ring",
+    right_ring="Chirich Ring",
     back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
 }
 

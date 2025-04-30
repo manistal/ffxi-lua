@@ -88,9 +88,10 @@ sets.idle.Default = {
 sets.tp = {}
 
 sets.tp.List = {
-    "Default",
+    "DTMeva",
     "Hybrid",
     "FullDT",
+    "Default",
 }
 
 -- DW > 11 for /nin 
@@ -114,7 +115,7 @@ sets.tp.Default = {
     -- DW: +5 
     left_ear="Suppanomimi",
     right_ear="Telos Earring",
-    left_ring="Rajas Ring",
+    left_ring="Chirich Ring",
     right_ring="Chirich Ring",
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 
@@ -148,6 +149,13 @@ sets.tp.FullDT = set_combine(sets.tp.Default, {
     left_ring="Vocane Ring",
 }) 
 
+sets.tp.DTMeva = set_combine(sets.idle.Default, {
+    left_ear="Suppanomimi",
+    right_ear="Telos Earring",
+    right_ring="Chirich Ring",
+    left_ring="Chirich Ring",
+    waist="Sailfi Belt +1",
+})
 
 
 -- 
