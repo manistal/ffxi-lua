@@ -84,7 +84,7 @@ sets.tp.Default = {
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Herculean Boots", augments={'Attack+24','"Triple Atk."+3','Accuracy+12',}},
     waist="Sailfi Belt +1",
-    left_ring="Rajas Ring",
+    left_ring="Chirich Ring",
     right_ring="Chirich Ring",
     left_ear="Sherida Earring",
     right_ear="Suppanomimi",

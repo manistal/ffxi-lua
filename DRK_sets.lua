@@ -55,11 +55,11 @@ sets.idle.Default = {
     -- DT: -6
     feet="Sakpata's Leggings",
     waist="Sailfi Belt +1",
-    left_ear="Genmei Earring",
-    right_ear="Odnowa Earring +1",
-    -- DT: -7
-    left_ring="Vocane Ring",
-    right_ring="Sulevia's Ring",
+    left_ear="Odnowa Earring +1",
+    right_ear="Telos Earring",
+    -- DT: -4
+    left_ring="Moonbeam Ring",
+    right_ring="Chirich Ring",
     back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
 }
 
@@ -85,8 +85,8 @@ sets.tp.Default = {
     waist="Ioskeha Belt",
     left_ear="Brutal Earring",
     right_ear="Telos Earring",
-    left_ring="Chirich Ring",
-    right_ring="Sulevia's Ring",
+    left_ring="Moonbeam Ring",
+    right_ring="Chirich Ring",
     back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
 }
 
@@ -210,7 +210,7 @@ sets.midcast["Dread Spikes"] = {
     waist="Sailfi Belt +1",
     left_ear="Eabani Earring",
     right_ear="Ethereal Earring",
-    left_ring="Evanescence Ring",
+    left_ring="Moonbeam Ring",
     right_ring="Archon Ring",
     back={ name="Niht Mantle", augments={'Attack+6','Dark magic skill +6','"Drain" and "Aspir" potency +25',}},
 }

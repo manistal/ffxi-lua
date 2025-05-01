@@ -36,7 +36,7 @@ sets.idle.Default = {
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
     waist="Regal Belt",
     left_ear="Eabani Earring",
-    right_ear="Malignance Earring",
+    right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
     left_ring="Vocane Ring",
     right_ring="Warden's Ring",
     back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','"Fast Cast"+10',}},
@@ -57,6 +57,8 @@ sets.idle.Perp = {
     legs="Assid. Pants +1",
     -- Perp: -8
     feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
+    -- Refresh+1
+    right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
 }
 
 --
@@ -158,6 +160,8 @@ sets.bp.Rage = {
     left_ring="Varar Ring",
     -- BPDmg: 3
     right_ring="Varar Ring",
+    -- BPDmg: 3
+    right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
 }
 
 sets.bp.Ward = {
@@ -169,4 +173,6 @@ sets.bp.Ward = {
     neck="Caller's Pendant",
     -- Skill +20
     hands="Inyan. Dastanas +2",
+    -- Avatar Lv+1
+    right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
 }
