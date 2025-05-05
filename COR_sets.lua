@@ -9,20 +9,14 @@ sets = {}
 -- 
 sets.weapons = {}
 sets.weapons.List = {
-    "Savage Spam",
     "Savage Magic",
+    "Savage Spam",
     "DI Farming",
     "Tauret Savage",
     "Tauret Lanun",
 }
 
 
-sets.weapons["Savage Spam"] = {
-    main="Naegling",
-    sub="Demers. Degen +1",
-    range="Fomalhaut",
-    ammo="Chrono Bullet",
-}
 
 sets.weapons["Savage Magic"] = { 
     main="Naegling",
@@ -31,9 +25,16 @@ sets.weapons["Savage Magic"] = {
     ammo="Chrono Bullet",
 }
 
-sets.weapons["DI Farming"] = {
-    main="Voluspa Knife",
+sets.weapons["Savage Spam"] = {
+    main="Naegling",
     sub="Demers. Degen +1",
+    range="Fomalhaut",
+    ammo="Chrono Bullet",
+}
+
+sets.weapons["DI Farming"] = {
+    main="Tauret",
+    sub="Voluspa Knife",
     range="Fomalhaut",
     ammo="Chrono Bullet",
 }
