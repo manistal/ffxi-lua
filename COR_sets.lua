@@ -72,7 +72,7 @@ sets.idle.Default = {
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     -- DT: -7
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    waist="Sailfi Belt +1",
+    waist="Carrier's Sash",
     left_ear="Odnowa Earring +1",
     right_ear="Genmei Earring",
     -- DT: -7

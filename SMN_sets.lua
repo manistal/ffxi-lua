@@ -53,6 +53,8 @@ sets.idle.Perp = {
     neck="Caller's Pendant",
     -- Refresh +3
     body={ name="Apogee Dalmatica", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
+    -- Skill +22
+    hands="Lamassu Mitts +1",
     -- Perp: -3
     legs="Assid. Pants +1",
     -- Perp: -8
@@ -171,8 +173,8 @@ sets.bp.Ward = {
     head="Beckoner's Horn +1",
     -- Skill +9
     neck="Caller's Pendant",
-    -- Skill +20
-    hands="Inyan. Dastanas +2",
+    -- Skill +22
+    hands="Lamassu Mitts +1",
     -- Avatar Lv+1
     right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
 }
