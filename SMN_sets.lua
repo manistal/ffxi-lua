@@ -38,13 +38,13 @@ sets.idle.Default = {
     left_ear="Eabani Earring",
     right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
     left_ring="Vocane Ring",
-    right_ring="Warden's Ring",
+    right_ring="Inyanga Ring",
     back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','"Fast Cast"+10',}},
 }
 
 -- Need -14 Perp >> Refresh >= DT
 -- Current: 16
-sets.idle.Perp = {
+sets.idle.Perp = set_combine(sets.idle.Default, {
     -- Refresh: +2
     head="Beckoner's Horn +1",
     -- Perp: -5
@@ -61,7 +61,9 @@ sets.idle.Perp = {
     feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
     -- Refresh+1
     right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
-}
+    -- Refresh+1
+    right_ring="Inyanga Ring",
+})
 
 --
 -- TP Sets
