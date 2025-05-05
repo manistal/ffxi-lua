@@ -75,7 +75,7 @@ sets.idle.Default = {
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     waist="Carrier's Sash",
     left_ear="Odnowa Earring +1",
-    right_ear="Genmei Earring",
+    right_ear="Eabani Earring",
     -- DT: -7
     left_ring="Vocane Ring",
     right_ring="Chirich Ring",

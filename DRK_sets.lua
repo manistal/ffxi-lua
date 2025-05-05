@@ -56,7 +56,7 @@ sets.idle.Default = {
     feet="Sakpata's Leggings",
     waist="Sailfi Belt +1",
     left_ear="Odnowa Earring +1",
-    right_ear="Telos Earring",
+    right_ear="Tuisto Earring",
     -- DT: -4
     left_ring="Moonbeam Ring",
     right_ring="Chirich Ring",
@@ -209,7 +209,7 @@ sets.midcast["Dread Spikes"] = {
     neck="Deceiver's Torque",
     waist="Sailfi Belt +1",
     left_ear="Eabani Earring",
-    right_ear="Ethereal Earring",
+    right_ear="Tuisto Earring",
     left_ring="Moonbeam Ring",
     right_ring="Archon Ring",
     back={ name="Niht Mantle", augments={'Attack+6','Dark magic skill +6','"Drain" and "Aspir" potency +25',}},
