@@ -10,17 +10,23 @@ sets = {}
 sets.weapons = {}
 sets.weapons.List = {
     "Espiritus",
-    "Gridarvor"
+    "Gridarvor",
+    "Grioavolr"
 }
 
 sets.weapons["Espiritus"] = {
-    main="Espiritus",
-    sub="Elan Strap",
+    main={ name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}},
+    sub="Vox Grip",
 }
 
 
 sets.weapons["Gridarvor"] = {
     main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
+    sub="Elan Strap",
+}
+
+sets.weapons["Grioavolr"] = {
+    main={ name="Grioavolr", augments={'Blood Pact Dmg.+3','Pet: Mag. Acc.+15','Pet: "Mag.Atk.Bns."+15','DMG:+5',}},
     sub="Elan Strap",
 }
 
@@ -38,28 +44,32 @@ sets.idle.Default = {
     left_ear="Eabani Earring",
     right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
     left_ring="Vocane Ring",
-    right_ring="Warden's Ring",
+    right_ring="Inyanga Ring",
     back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','"Fast Cast"+10',}},
 }
 
 -- Need -14 Perp >> Refresh >= DT
 -- Current: 16
-sets.idle.Perp = {
-    -- Refresh: +2
-    head="Beckoner's Horn +1",
+sets.idle.Perp = set_combine(sets.idle.Default, {
     -- Perp: -5
     main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
+    -- Refresh: +2
+    head="Beckoner's Horn +1",
     -- Regain: +25
     neck="Caller's Pendant",
     -- Refresh +3
     body={ name="Apogee Dalmatica", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
+    -- Skill +22
+    hands="Lamassu Mitts +1",
     -- Perp: -3
     legs="Assid. Pants +1",
     -- Perp: -8
     feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
     -- Refresh+1
     right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
-}
+    -- Refresh+1
+    right_ring="Inyanga Ring",
+})
 
 --
 -- TP Sets
@@ -125,10 +135,14 @@ sets.bp = {}
 -- Need 15 BP I, 15 BP II
 -- BPD Cap >> Summon Skill >> other
 sets.bp.Precast = {
+    -- BP II -2s, Skill 15
+    main={ name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}},
+    -- Skill 3
+    sub="Vox Grip",
+    -- BP II: -5s
+    ammo={ name="Epitaph", augments={'Path: A',}},
     -- Avatar's Favor
     head="Beckoner's Horn +1",
-    -- BP II: -2s
-    main="Espiritus",
     -- BP I: -6s
     body="Con. Doublet +1",
     -- BP I: -5s
@@ -139,8 +153,8 @@ sets.bp.Precast = {
 
 -- BP Dmg > Magic Dmg > Pet Stats
 sets.bp.Rage = {
-    -- BPDmg: 3
-    main="Espiritus",
+    -- BPDmg: MGKATK
+    main={ name="Grioavolr", augments={'Blood Pact Dmg.+3','Pet: Mag. Acc.+15','Pet: "Mag.Atk.Bns."+15','DMG:+5',}},
     -- BPDmg: 3
     sub="Elan Strap",
     -- BPDmg: 7, MgATK 30
@@ -165,14 +179,16 @@ sets.bp.Rage = {
 }
 
 sets.bp.Ward = {
+    -- BP II -2s, Skill 15
+    main={ name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}},
     -- Skill +3
     sub="Vox Grip",
     -- Skill +13
     head="Beckoner's Horn +1",
     -- Skill +9
     neck="Caller's Pendant",
-    -- Skill +20
-    hands="Inyan. Dastanas +2",
+    -- Skill +22
+    hands="Lamassu Mitts +1",
     -- Avatar Lv+1
     right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
 }

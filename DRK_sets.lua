@@ -56,7 +56,7 @@ sets.idle.Default = {
     feet="Sakpata's Leggings",
     waist="Sailfi Belt +1",
     left_ear="Odnowa Earring +1",
-    right_ear="Telos Earring",
+    right_ear="Tuisto Earring",
     -- DT: -4
     left_ring="Moonbeam Ring",
     right_ring="Chirich Ring",
@@ -132,10 +132,10 @@ sets.ws.Default = {
 -- 
 sets.ja = {}
 sets.ja["Dark Seal"] = {
-    head={ name="Fall. Burgeonet +1", augments={'Enhances "Dark Seal" effect',}},
+    head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
 }
 sets.ja["Nether Void"] = {
-    head={ name="Fall. Burgeonet +1", augments={'Enhances "Dark Seal" effect',}},
+    head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
     legs="Heath. Flanchard +1",
 }
 
@@ -147,7 +147,7 @@ sets.precast = {}
 
 -- Fast Cast
 sets.precast.FastCast = {
-    head={ name="Fall. Burgeonet +1", augments={'Enhances "Dark Seal" effect',}},
+    head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
     hands={ name="Leyline Gloves", augments={'Accuracy+6','Mag. Acc.+2','"Mag.Atk.Bns."+6',}},
     legs={ name="Eschite Cuisses", augments={'"Mag.Atk.Bns."+25','"Conserve MP"+6','"Fast Cast"+5',}},
     right_ring="Kishar Ring",
@@ -165,9 +165,9 @@ sets.midcast = {}
 -- DRK Magic Skill > Magic ACC > Magic ATK Bonus
 sets.midcast.Default = {
     ammo="Staunch Tathlum",
-    head={ name="Fall. Burgeonet +1", augments={'Enhances "Dark Seal" effect',}},
+    head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
     body={ name="Carm. Scale Mail", augments={'Attack+15','"Mag.Atk.Bns."+10','"Dbl.Atk."+2',}},
-    hands={ name="Fall. Fin. Gaunt. +1", augments={'Enhances "Diabolic Eye" effect',}},
+    hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
     legs={ name="Eschite Cuisses", augments={'"Mag.Atk.Bns."+25','"Conserve MP"+6','"Fast Cast"+5',}},
     neck="Deceiver's Torque",
     feet="Ratri Sollerets",
@@ -184,9 +184,9 @@ sets.midcast["Endark II"] = sets.midcast.Default
 -- Maximize Drain Bonus / DRK Magic Acc
 sets.midcast["Drain II"] = {
     ammo="Staunch Tathlum",
-    head={ name="Fall. Burgeonet +1", augments={'Enhances "Dark Seal" effect',}},
+    head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
     body={ name="Carm. Scale Mail", augments={'Attack+15','"Mag.Atk.Bns."+10','"Dbl.Atk."+2',}},
-    hands={ name="Fall. Fin. Gaunt. +1", augments={'Enhances "Diabolic Eye" effect',}},
+    hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
     legs="Heath. Flanchard +1",
     neck="Deceiver's Torque",
     feet="Ratri Sollerets",
@@ -197,6 +197,16 @@ sets.midcast["Drain II"] = {
     back={ name="Niht Mantle", augments={'Attack+6','Dark magic skill +6','"Drain" and "Aspir" potency +25',}},
 }
 sets.midcast["Drain III"] = sets.precast["Drain II"]
+
+sets.midcast["Stun"] = set_combine(sets.midcast.Default, {
+    head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
+    hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet="Ratri Sollerets",
+    waist="Eschan Stone",
+    right_ring="Kishar Ring",
+    left_ear="Malignance Earring",
+})
 
 -- Try to maximize HP and DreadSpikes Bonus
 sets.midcast["Dread Spikes"] = {
@@ -209,7 +219,7 @@ sets.midcast["Dread Spikes"] = {
     neck="Deceiver's Torque",
     waist="Sailfi Belt +1",
     left_ear="Eabani Earring",
-    right_ear="Ethereal Earring",
+    right_ear="Tuisto Earring",
     left_ring="Moonbeam Ring",
     right_ring="Archon Ring",
     back={ name="Niht Mantle", augments={'Attack+6','Dark magic skill +6','"Drain" and "Aspir" potency +25',}},
