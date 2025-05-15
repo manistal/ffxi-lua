@@ -10,17 +10,23 @@ sets = {}
 sets.weapons = {}
 sets.weapons.List = {
     "Espiritus",
-    "Gridarvor"
+    "Gridarvor",
+    "Grioavolr"
 }
 
 sets.weapons["Espiritus"] = {
-    main="Espiritus",
-    sub="Elan Strap",
+    main={ name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}},
+    sub="Vox Grip",
 }
 
 
 sets.weapons["Gridarvor"] = {
     main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
+    sub="Elan Strap",
+}
+
+sets.weapons["Grioavolr"] = {
+    main={ name="Grioavolr", augments={'Blood Pact Dmg.+3','Pet: Mag. Acc.+15','Pet: "Mag.Atk.Bns."+15','DMG:+5',}},
     sub="Elan Strap",
 }
 
@@ -45,10 +51,10 @@ sets.idle.Default = {
 -- Need -14 Perp >> Refresh >= DT
 -- Current: 16
 sets.idle.Perp = set_combine(sets.idle.Default, {
-    -- Refresh: +2
-    head="Beckoner's Horn +1",
     -- Perp: -5
     main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
+    -- Refresh: +2
+    head="Beckoner's Horn +1",
     -- Regain: +25
     neck="Caller's Pendant",
     -- Refresh +3
@@ -129,10 +135,14 @@ sets.bp = {}
 -- Need 15 BP I, 15 BP II
 -- BPD Cap >> Summon Skill >> other
 sets.bp.Precast = {
+    -- BP II -2s, Skill 15
+    main={ name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}},
+    -- Skill 3
+    sub="Vox Grip",
+    -- BP II: -5s
+    ammo={ name="Epitaph", augments={'Path: A',}},
     -- Avatar's Favor
     head="Beckoner's Horn +1",
-    -- BP II: -2s
-    main="Espiritus",
     -- BP I: -6s
     body="Con. Doublet +1",
     -- BP I: -5s
@@ -143,8 +153,8 @@ sets.bp.Precast = {
 
 -- BP Dmg > Magic Dmg > Pet Stats
 sets.bp.Rage = {
-    -- BPDmg: 3
-    main="Espiritus",
+    -- BPDmg: MGKATK
+    main={ name="Grioavolr", augments={'Blood Pact Dmg.+3','Pet: Mag. Acc.+15','Pet: "Mag.Atk.Bns."+15','DMG:+5',}},
     -- BPDmg: 3
     sub="Elan Strap",
     -- BPDmg: 7, MgATK 30
@@ -169,6 +179,8 @@ sets.bp.Rage = {
 }
 
 sets.bp.Ward = {
+    -- BP II -2s, Skill 15
+    main={ name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}},
     -- Skill +3
     sub="Vox Grip",
     -- Skill +13
