@@ -253,7 +253,7 @@ sets.ws["Last Stand"]  = sets.ws.Default
 sets.ws["Wildfire"] = set_combine(sets.ws.Default, {
     head={ name="Nyame Helm", augments={'Path: B',}},
     neck={ name="Comm. Charm +1", augments={'Path: A',}},
-    body={ name="Lanun Frac +2", augments={'Enhances "Loaded Deck" effect',}},
+    body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Lanun Bottes +2", augments={'Enhances "Wild Card" effect',}},
@@ -266,7 +266,7 @@ sets.ws["Wildfire"] = set_combine(sets.ws.Default, {
 sets.ws["Leaden Salute"]  = set_combine(sets.ws.Default, {
     head="Pixie Hairpin +1",
     neck={ name="Comm. Charm +1", augments={'Path: A',}},
-    body={ name="Lanun Frac +2", augments={'Enhances "Loaded Deck" effect',}},
+    body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Lanun Bottes +2", augments={'Enhances "Wild Card" effect',}},
@@ -296,7 +296,7 @@ sets.ja.PhantomRoll = set_combine(sets.idle.Default, {
 })
 
 -- General JA Bonuses
-sets.ja["Random Deal"] = {body={ name="Lanun Frac +2", augments={'Enhances "Loaded Deck" effect',}},}
+sets.ja["Random Deal"] = {body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},}
 -- sets.ja["Fold"] = {hands="Lanun Gants +1"}
 -- sets.ja["Snake Eye"] = {legs="Lanun Trews +1"}
 sets.ja["Wild Card"] = {feet={ name="Lanun Bottes +2", augments={'Enhances "Wild Card" effect',}}}

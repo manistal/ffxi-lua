@@ -17,6 +17,10 @@ function get_sets()
 	include('SMN_sets.lua')
 	set_macro(SMN_MACRO_BOOK, 1)
 	set_style(SMN_STYLE_SET)
+    
+    -- Set defaults
+    toggle_tp()
+    toggle_weapons()
 end
 
 --

@@ -9,8 +9,8 @@ sets = {}
 -- 
 sets.weapons = {}
 sets.weapons.List = {
-    "Espiritus",
     "Gridarvor",
+    "Espiritus",
     "Grioavolr"
 }
 
@@ -67,6 +67,8 @@ sets.idle.Perp = set_combine(sets.idle.Default, {
     feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
     -- Refresh+1
     right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
+    -- Perp: -1, Skill 10
+    left_ring="Evoker's Ring",
     -- Refresh+1
     right_ring="Inyanga Ring",
 })
@@ -143,12 +145,16 @@ sets.bp.Precast = {
     ammo={ name="Epitaph", augments={'Path: A',}},
     -- Avatar's Favor
     head="Beckoner's Horn +1",
+    -- Skill +9
+    neck="Caller's Pendant",
     -- BP I: -6s
     body="Con. Doublet +1",
     -- BP I: -5s
     hands="Con. Bracers",
     -- BP 1: -4
     feet="Smn. Pigaches +2",
+    -- Skill 10
+    left_ring="Evoker's Ring",
 }
 
 -- BP Dmg > Magic Dmg > Pet Stats
@@ -178,6 +184,7 @@ sets.bp.Rage = {
     right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
 }
 
+-- +Skill total: 72
 sets.bp.Ward = {
     -- BP II -2s, Skill 15
     main={ name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}},
@@ -191,4 +198,6 @@ sets.bp.Ward = {
     hands="Lamassu Mitts +1",
     -- Avatar Lv+1
     right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
+    -- Skill 10
+    left_ring="Evoker's Ring",
 }
