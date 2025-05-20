@@ -252,6 +252,7 @@ sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
     neck="Iskur Gorget",
     hands="Meg. Gloves +2",
     waist="Yemaya Belt",
+    right_ring="Meghanada Ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
 })
 
