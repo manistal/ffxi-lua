@@ -247,7 +247,13 @@ sets.ws["Savage Blade"]  = sets.ws.Default
 sets.ws["Requiescat"]  = sets.ws.Default
 
 -- Ranged Physical 
-sets.ws["Last Stand"]  = sets.ws.Default 
+sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
+    head="Meghanada Visor +2",
+    neck="Iskur Gorget",
+    hands="Meg. Gloves +2",
+    waist="Yemaya Belt",
+    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
+})
 
 -- Magical ATK
 sets.ws["Wildfire"] = set_combine(sets.ws.Default, {
