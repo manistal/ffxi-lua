@@ -54,17 +54,17 @@ sets.idle.Perp = set_combine(sets.idle.Default, {
     -- Perp: -5
     main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
     -- Refresh: +2
-    head="Beckoner's Horn +1",
+    head="Beckoner's Horn +2",
     -- Regain: +25
     neck="Caller's Pendant",
     -- Refresh +3
-    body={ name="Apogee Dalmatica", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
+    body="Beck. Doublet +2",
     -- Skill +22
     hands="Lamassu Mitts +1",
     -- Perp: -3
-    legs="Assid. Pants +1",
+    legs="Beck. Spats +2",
     -- Perp: -8
-    feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
+    feet="Baayami Sabots",
     -- Refresh+1
     right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
     -- Perp: -1, Skill 10

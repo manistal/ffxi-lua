@@ -138,6 +138,15 @@ sets.ja["Nether Void"] = {
     head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
     legs="Heath. Flanchard +1",
 }
+sets.ja["Blood Weapon"] = {
+    body={ name="Fall. Cuirass +3", augments={'Enhances "Blood Weapon" effect',}},
+}
+sets.ja["Diabolic Eye"] = {
+    hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
+}
+sets.ja["Souleater"] = {
+    legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
+}
 
 
 -- 
@@ -148,6 +157,7 @@ sets.precast = {}
 -- Fast Cast
 sets.precast.FastCast = {
     head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
+    body={ name="Fall. Cuirass +3", augments={'Enhances "Blood Weapon" effect',}},
     hands={ name="Leyline Gloves", augments={'Accuracy+6','Mag. Acc.+2','"Mag.Atk.Bns."+6',}},
     legs={ name="Eschite Cuisses", augments={'"Mag.Atk.Bns."+25','"Conserve MP"+6','"Fast Cast"+5',}},
     right_ring="Kishar Ring",
@@ -166,7 +176,7 @@ sets.midcast = {}
 sets.midcast.Default = {
     ammo="Staunch Tathlum",
     head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
-    body={ name="Carm. Scale Mail", augments={'Attack+15','"Mag.Atk.Bns."+10','"Dbl.Atk."+2',}},
+    body={ name="Fall. Cuirass +3", augments={'Enhances "Blood Weapon" effect',}},
     hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
     legs={ name="Eschite Cuisses", augments={'"Mag.Atk.Bns."+25','"Conserve MP"+6','"Fast Cast"+5',}},
     neck="Deceiver's Torque",
@@ -179,7 +189,9 @@ sets.midcast.Default = {
 }
 
 -- DRK Magic Skill >> All 
-sets.midcast["Endark II"] = sets.midcast.Default
+sets.midcast["Endark II"] = set_combine(sets.midcast.Default, {
+    body={ name="Carm. Scale Mail", augments={'Attack+15','"Mag.Atk.Bns."+10','"Dbl.Atk."+2',}},
+})
 
 -- Maximize Drain Bonus / DRK Magic Acc
 sets.midcast["Drain II"] = {
@@ -200,6 +212,7 @@ sets.midcast["Drain III"] = sets.precast["Drain II"]
 
 sets.midcast["Stun"] = set_combine(sets.midcast.Default, {
     head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
+    body={ name="Fall. Cuirass +3", augments={'Enhances "Blood Weapon" effect',}},
     hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet="Ratri Sollerets",
