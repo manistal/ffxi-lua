@@ -69,9 +69,9 @@ sets.idle.Default = {
 sets.tp = {}
 
 sets.tp.List = {
-    "Default", 
     "Hybrid",
-    "FullDT"
+    "FullDT",
+    "Default" 
 }
 
 sets.tp.Default = {

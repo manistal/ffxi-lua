@@ -19,8 +19,9 @@ function get_sets()
 	set_style(SMN_STYLE_SET)
     
     -- Set defaults
-    toggle_tp()
-    toggle_weapons()
+    bind_toggles("~f1", "weapons")
+    bind_toggles("~f2", "idle")
+    bind_toggles("~f3", "perp")
 end
 
 --
@@ -28,13 +29,13 @@ end
 -- 
 function equip_base_set(status,pet) 
     -- Idle Sets (Regen/DT)
-    equip(sets.idle.Default)
+    equip(sets.idle.Current)
     -- Weapon Sets
     equip(sets.weapons.Current)
 
     -- Idle Perp
     if pet ~= nil and pet.isvalid then
-        equip(sets.idle.Perp)
+        equip(sets.perp.Current)
     end
 end
 
@@ -43,6 +44,11 @@ end
 -- Callback Bindings 
 -- 
 function precast(spell) 
+    -- Dont swap midaction
+    if (pet.isvalid and pet_midaction()) then
+        return
+    end
+
     -- For Magic use Fast Cast
     if spell.action_type == "Magic" then 
         equip(sets.precast.FastCast)
@@ -56,14 +62,11 @@ function midcast(spell)
         return
     end
 
+    -- For BloodPacts Use DELAY
     if string.find(spell.type,'BloodPact') then
-        if buffactive['Astral Conduit'] then
-            -- Dont need precast for astral conduit
-            pet_midcast(spell)
-        else
-            equip(sets.bp.Precast)
-        end
+        equip(sets.bp.Precast)
     end
+
     -- Need to differentiate
     if spell.action_type == "Magic" then 
         equip(sets.midcast.Default)
@@ -76,17 +79,19 @@ function aftercast(spell)
     if pet_midaction() then
         return
     elseif spell and string.find(spell.type,'BloodPact') and not spell.interrupted then
-        pet_midcast(spell)
+        return
     else
         status_change(player.status)
     end
 end
 
 function pet_midcast(spell)
-    if (spell.type=="BloodPactWard") then 
-        equip(sets.bp.Ward) 
-    elseif (spell.type=="BloodPactRage") then
-        equip(sets.bp.Rage)
+    if string.find(spell.type,'BloodPact') then
+        if (spell.type=="BloodPactWard") then 
+            equip(sets.bp.Ward) 
+        elseif (spell.type=="BloodPactRage") then
+            equip(sets.bp.Rage)
+        end
     end
 end
 
@@ -101,4 +106,8 @@ end
 
 function pet_status_change(a,b)
     equip_base_set(new,pet)
+end
+
+function pet_change(pet, gain)
+    equip_base_set(player.status,pet)
 end

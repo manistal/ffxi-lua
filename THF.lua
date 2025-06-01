@@ -18,8 +18,9 @@ function get_sets()
 	set_macro(THF_MACRO_BOOK, 1)
 	set_style(THF_STYLE_SET)
 
-    sets.weapons.Current = sets.weapons["Daggers Main"]
-    sets.tp.Current = sets.tp.FullDT
+    -- Set defaults
+    bind_toggles("~f1", "weapons")
+    bind_toggles("~f2", "tp")
 end
 
 --

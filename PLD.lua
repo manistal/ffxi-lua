@@ -17,6 +17,10 @@ function get_sets()
 	include('PLD_sets.lua')
 	set_macro(PLD_MACRO_BOOK, 1)
 	set_style(PLD_STYLE_SET)
+
+    -- Set defaults
+    bind_toggles("~f1", "weapons")
+    bind_toggles("~f2", "tp")
 end
 
 --
