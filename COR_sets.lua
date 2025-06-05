@@ -11,6 +11,7 @@ sets.weapons = {}
 sets.weapons.List = {
     "Savage Magic",
     "Savage Spam",
+    "Lanun Knife",
     "DI Farming",
     "Tauret Savage",
     "Tauret Lanun",
@@ -25,12 +26,20 @@ sets.weapons["Savage Magic"] = {
     ammo="Chrono Bullet",
 }
 
+sets.weapons["Lanun Knife"] = {
+    main="Lanun Knife",
+    sub="Demers. Degen +1",
+    range="Fomalhaut",
+    ammo="Chrono Bullet",
+}
+
 sets.weapons["Savage Spam"] = {
     main="Naegling",
     sub="Demers. Degen +1",
     range="Fomalhaut",
     ammo="Chrono Bullet",
 }
+
 
 sets.weapons["DI Farming"] = {
     main="Tauret",
