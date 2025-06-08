@@ -184,9 +184,16 @@ sets.precast = {}
 
 -- Fast Cast
 sets.precast.FastCast = {
+    -- 14 FC
     body="Inyanga Jubbah +2",
-    left_ear="Loquac. Earring",
-    right_ear="Malignance Earring",
+    -- 6 FC
+    legs="Aya. Cosciales +2",
+    -- 4 FC
+    right_ring="Kishar Ring",
+    -- 4 FC
+    left_ear="Malignance Earring",
+    -- 2 FC
+    right_ear="Loquac. Earring",
     back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','"Fast Cast"+10',}},
 }
 

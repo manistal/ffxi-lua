@@ -12,6 +12,25 @@ Orison Neck Abyssea
 Kaykaus Boots 
 ]]
 
+
+--[[
+JSE
+Artifact: (Enfeeble/MACC)
+    head="Theophany Cap +2", 
+    body="Theo. Bliaut +2", -- Curaga
+    hands="Theophany Mitts +2", -- Cure II
+    legs="Th. Pantaloons +2", -- Cursna / Regen
+    feet="Theo. Duckbills +2", -- Enh Duration
+
+Empyrean:
+    head="Ebers Cap +2", -- FC
+    body="Ebers Bliaut +2", -- Refresh, Solace
+    hands="Ebers Mitts +1", -- DT / Divine Caress
+    legs="Ebers Pant. +2", -- CURE
+    feet="Ebers Duckbills +1", -- DT / MEVA
+
+]]
+
 --
 -- Weapon Sets
 -- 
@@ -39,36 +58,38 @@ sets.idle.Default = {
     ammo="Staunch Tathlum",
     -- 7 DT
     head={ name="Nyame Helm", augments={'Path: B',}},
-    -- TODO Empy Body (Refresh, noDT)
-    -- 9 DT
-    body={ name="Nyame Mail", augments={'Path: B',}},
+    -- Refresh
+    body="Ebers Bliaut +2", 
     -- TODO Empty Hands (-10)
     -- 7 DT
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    -- TODO Empy Legs (-12)
-    -- 8 DT
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    -- 12 DT
+    legs="Ebers Pant. +2", 
     -- TODO Empty Feet (-10)
     -- 7 DT
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    feet="Inyan. Crackows +2",
     -- 6 DT
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    -- MEVA
     waist="Carrier's Sash",
+    -- HP
     left_ear="Eabani Earring",
+    -- TODO NEED BETTER EAR
     right_ear="Odnowa Earring +1",
     -- 7 DT
     left_ring="Vocane Ring",
+    -- Refresh
     right_ring="Inyanga Ring",
     -- 10 PDT
     back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
 }
 
--- Total:
+-- Total: ~25DT, 7 Refresh
 sets.idle.Refresh = set_combine(sets.idle.Default, {
     -- Refresh +1
     head="Inyanga Tiara +2",
     -- Refresh +3
-    --TODO Empy Body
+    body="Ebers Bliaut +2", 
     -- Refresh +1
     hands="Inyan. Dastanas +2",
     -- Refresh +1
@@ -79,11 +100,126 @@ sets.idle.Refresh = set_combine(sets.idle.Default, {
     neck="Warder's Charm +1",
     -- MEVA
     waist="Carrier's Sash",
-    -- Refresh +1
+    -- Refresh
     right_ring="Inyanga Ring",
     -- MEVA
     back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
 })
+
+-- 
+-- Job Abilities
+-- 
+sets.ja = {}
+
+sets.ja["Divine Caress"] = {
+    hands="Ebers Mitts +1", -- Divine Caress
+}
+
+-- TODO RELIC
+
+
+
+-- 
+-- Spell Precast Sets
+--
+sets.precast = {} 
+
+--[[
+Current = 50% Fast Cast (57% cast time)
+Options:
+Empy Neck = 5
+Regal Pumps (Valkrum UNM) = 5%
+Skirmish Gloves = 7 %
+
+Queller Rod = 7% (cast time, not FC)
+]]
+
+-- Fast Cast
+sets.precast.FastCast = {
+    -- 10 FC
+    head="Ebers Cap +2", 
+    -- 14 FC
+    body="Inyanga Jubbah +2",
+    -- 6 FC
+    legs="Aya. Cosciales +2",
+    -- 4 FC
+    right_ring="Kishar Ring",
+    -- 4 FC
+    left_ear="Malignance Earring",
+    -- 2 FC
+    right_ear="Loquac. Earring",
+    -- 10 FC
+    back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
+}
+
+-- 
+-- Spell Midcast Sets
+-- 
+sets.midcast = {}
+
+--[[
+Queller = 10% Cure
+EberCap = 19% cure
+Neck = 7% Cure 
+Earring = 5% cure
+Kaykaus Boost = 15% Cure
+Nourishing Earring = 3% Cure
+]]
+
+-- Cure/Healing/COnserveMP
+-- Total: Cure I: 49, Cure II: 4
+sets.midcast.Cure = {
+    -- Cure I: 10, Cure II: 2
+    main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
+    -- Conserve MP: 4
+    sub="Thuellaic Ecu +1",
+    -- Cure I: 19
+    head="Ebers Cap +2",
+    -- Solace
+    body="Ebers Bliaut +2",
+    -- Cure II: 2
+    hands="Theophany Mitts +2",
+    -- Cure -> MP
+    legs="Ebers Pant. +2",
+    -- Cure I: 15, Conserve MP: 6
+    feet={ name="Kaykaus Boots", augments={'Mag. Acc.+15','"Cure" potency +5%','"Fast Cast"+3',}},
+    -- Cure I: 5, Conserve MP: 2
+    right_ear="Mendi. Earring",
+    -- Solace
+    back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
+}
+
+
+sets.midcast.Curaga = set_combine(sets.midcast.Cure, {
+    -- Cure II: 3
+    body="Theo. Bliaut +2", -- Curaga
+})
+
+-- Healing/Status Removal
+sets.midcast.StatusRemoval = {
+}
+
+sets.midcast.Cursna = {
+}
+
+-- Enhancing
+sets.midcast.Enhancing = {
+}
+
+sets.midcast.BarSpell = {
+}
+
+sets.midcast.Regen = {
+}
+
+-- Enfeebling
+sets.midcast.Enfeebling = {
+    head="Theophany Cap +2", -- Enfeeble/MACC
+    body="Theo. Bliaut +2", -- Enfeeble/MACC
+    hands="Theophany Mitts +2", -- Enfeeble/MACC
+    legs="Th. Pantaloons +2", -- Enfeeble/MACC
+    feet="Theo. Duckbills +2", -- Enfeeble/MACC
+}
 
 --
 -- TP Sets
@@ -111,67 +247,4 @@ sets.ws.Default = {
     right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     -- WSD: +2
     left_ear="Ishvara Earring",
-}
-
--- 
--- Job Abilities
--- 
-sets.ja = {}
-
-
-
--- 
--- Spell Precast Sets
---
-sets.precast = {} 
-
---[[
-Ebers Hat = 10
-Empy Neck = 5
-Regal Pumps (Valkrum UNM) = 5%
-Total = 60% Fast Cast
-
-options: 
-Skirmish Gloves = 7 %
-Queller Rod = 7% (cast time, not FC)
-]]
-
--- Fast Cast
-sets.precast.FastCast = {
-    -- 14 FC
-    body="Inyanga Jubbah +2",
-    -- 6 FC
-    legs="Aya. Cosciales +2",
-
-    -- 4 FC
-    right_ring="Kishar Ring",
-    -- 4 FC
-    left_ear="Malignance Earring",
-    -- 2 FC
-    right_ear="Loquac. Earring",
-    -- 10 FC
-    back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
-}
-
--- 
--- Spell Midcast Sets
--- 
-sets.midcast = {}
-
---[[
-Queller = 10% Cure
-EberCap = 19% cure
-Neck = 7% Cure 
-Earring = 5% cure
-Kaykaus Boost = 15% Cure
-Nourishing Earring = 3% Cure
-]]
-
-sets.midcast.Cure = {
-    left_ear="Mendi. Earring",
-}
-
-
-sets.midcast.Curaga = {
-    left_ear="Mendi. Earring",
 }

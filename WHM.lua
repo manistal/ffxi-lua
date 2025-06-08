@@ -38,17 +38,67 @@ function equip_base_set()
     equip(sets.weapons.Current)
 end
 
+function is_enhancing_spell(spell)
+    -- Check if the spell is an enhancing spell
+    return spell.skill == 'Enhancing Magic' or 
+           spell.english:startswith("Protect") or 
+           spell.english:startswith("Shell") or 
+           spell.english:startswith("Boost") or 
+           spell.english:startswith("Aquaveil") or 
+           spell.english:startswith("Auspice")
+end
+
+function is_enfeebling_spell(spell)
+    -- Check if the spell is an enfeebling spell
+    return spell.skill == 'Enfeebling Magic' or 
+           spell.english:startswith("Dia") or 
+           spell.english:startswith("Slow") or 
+           spell.english:startswith("Paralyze") or 
+           spell.english:startswith("Addle") 
+end
+
 -- 
 -- Player Action Callbacks
 -- 
 function precast(spell)
-    -- Called before any action/spell is performed
-    -- Use for fast cast, pre-weaponskill gear, etc.
+    -- For Magic use Fast Cast
+    if spell.action_type == "Magic" then 
+        equip(sets.precast.FastCast)
+    end
+    -- For JAs
+    if spell.type == "JobAbility" then
+        if sets.ja[spell.english] then 
+            equip(sets.ja[spell.english])
+        end
+    end
 end
 
 function midcast(spell) 
-    -- Called during spell casting
-    -- Use for spell enhancements, magic accuracy, etc.
+    -- Friendly spells Cure / Status Removal / Enhancing 
+    --- Cure
+    if spell.english:startswith("Cure") 
+        equip(sets.midcast.Cure)
+    elseif spell.english:startswith("Curaga") then
+        equip(sets.midcast.Curaga)
+    -- Status Removal (Removal+ and Healing SKill)
+    elseif (spell.english == "Cursna") then 
+        equip(sets.midcast.Cursna) 
+    elseif spell.english:endswith("na") or (spell.english == "Erase") then
+        equip(sets.midcast.StatusRemoval)
+    -- Enhancing Spells
+    elseif spell.english:startswith("Bar") then 
+        equip(sets.midcast.BarSpell)
+    elseif spell.english:startswith("Regen") then
+        equip(sets.midcast.Regen)
+    elseif is_enhancing_spell(spell) then
+        equip(sets.midcast.Enhancing)
+    end 
+
+    -- Enfeebling Spells
+    if is_enfeebling_spell(spell) then
+        equip(sets.midcast.Enfeebling) 
+    end
+
 end
 
 function aftercast(spell)
