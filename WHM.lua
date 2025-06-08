@@ -107,31 +107,6 @@ function aftercast(spell)
     equip_base_set()
 end
 
--- 
--- Pet Action Callbacks
--- 
-function pet_midcast(spell)
-    -- Called when pet performs an action
-    -- Used for Blood Pacts, Ready moves, etc.
-end
-
-function pet_aftercast(spell)
-    -- Called after pet action completes
-    -- Use to return to idle/engaged sets
-end
-
-function pet_change(pet, gain)
-    -- Called when pet is summoned or released
-    -- gain = true when pet is summoned, false when released
-end
-
--- 
--- Status Change Callbacks
--- 
-function pet_status_change(new, old)
-    -- Called when pet's status changes (Engaged, Idle, etc)
-end
-
 function status_change(new, old)
     -- Called when player status changes
     -- Examples: Idle, Engaged, Resting

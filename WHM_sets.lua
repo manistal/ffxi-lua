@@ -125,21 +125,22 @@ sets.ja["Divine Caress"] = {
 sets.precast = {} 
 
 --[[
-Current = 50% Fast Cast (57% cast time)
+Current = 57% Fast Cast (68% cast time)
 Options:
 Empy Neck = 5
 Regal Pumps (Valkrum UNM) = 5%
-Skirmish Gloves = 7 %
-
-Queller Rod = 7% (cast time, not FC)
 ]]
 
 -- Fast Cast
 sets.precast.FastCast = {
+    -- 7 Cure Speed
+    main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
     -- 10 FC
     head="Ebers Cap +2", 
     -- 14 FC
     body="Inyanga Jubbah +2",
+    -- 7 FC, 4 Cure Speed
+    hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -4%','Magic dmg. taken -2%','"Cure" spellcasting time -4%',}},
     -- 6 FC
     legs="Aya. Cosciales +2",
     -- 4 FC
@@ -156,15 +157,6 @@ sets.precast.FastCast = {
 -- Spell Midcast Sets
 -- 
 sets.midcast = {}
-
---[[
-Queller = 10% Cure
-EberCap = 19% cure
-Neck = 7% Cure 
-Earring = 5% cure
-Kaykaus Boost = 15% Cure
-Nourishing Earring = 3% Cure
-]]
 
 -- Cure/Healing/COnserveMP
 -- Total: Cure I: 49, Cure II: 4
