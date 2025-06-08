@@ -11,6 +11,7 @@ sets.weapons = {}
 sets.weapons.List = {
     "Daggers Main",
     "Savage Spam",
+    "DI",
 }
 
 
@@ -21,6 +22,11 @@ sets.weapons["Savage Spam"] = {
 
 sets.weapons["Daggers Main"] = { 
     main="Tauret",
+    sub="Skinflayer"
+}
+
+sets.weapons["DI"] = { 
+    main="Voluspa Knife",
     sub="Skinflayer"
 }
 

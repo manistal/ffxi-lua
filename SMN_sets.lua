@@ -47,7 +47,7 @@ sets.idle.Default = {
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    waist="Regal Belt",
+    waist="Carrier's Sash",
     left_ear="Eabani Earring",
     right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
     left_ring="Vocane Ring",

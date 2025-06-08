@@ -131,6 +131,9 @@ Empy Neck = 5
 Regal Pumps (Valkrum UNM) = 5%
 Total = 60% Fast Cast
 
+options: 
+Skirmish Gloves = 7 %
+Queller Rod = 7% (cast time, not FC)
 ]]
 
 -- Fast Cast
