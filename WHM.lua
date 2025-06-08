@@ -5,8 +5,8 @@
 --- 
 
 -- Replace JOB with FFXI 3 Letter Job Name
-WHM_STYLE_SET = 1
-WHM_MACRO_BOOK = 1
+WHM_STYLE_SET = 83
+WHM_MACRO_BOOK = 6
 
 -- 
 -- Addon Entry Point
@@ -15,9 +15,9 @@ function get_sets()
     -- Called when job file is loaded
     -- Used for initial setup and defining gear sets
     include('common.lua')
-	include('SMN_sets.lua')
-	--set_macro(WHM_MACRO_BOOK, 1)
-	--set_style(WHM_STYLE_SET)
+	include('WHM_sets.lua')
+	set_macro(WHM_MACRO_BOOK, 1)
+	set_style(WHM_STYLE_SET)
     
     -- Set defaults
     bind_toggles("~f1", "weapons")
@@ -28,6 +28,14 @@ end
 function file_unload()
     -- Called when job file is unloaded
     -- Use for cleanup
+end
+
+-- 
+-- Custom Functions
+-- 
+function equip_base_set()
+    equip(sets.idle.Current)
+    equip(sets.weapons.Current)
 end
 
 -- 
@@ -46,6 +54,7 @@ end
 function aftercast(spell)
     -- Called after spell completes or is interrupted
     -- Use to return to idle/engaged gear sets
+    equip_base_set()
 end
 
 -- 
@@ -76,6 +85,7 @@ end
 function status_change(new, old)
     -- Called when player status changes
     -- Examples: Idle, Engaged, Resting
+    equip_base_set()
 end
 
 function buff_change(name, gain, table)
@@ -85,12 +95,4 @@ end
 
 function sub_job_change(new, old)  
     -- Called when switching subjob
-end
-
--- 
--- Custom Callbacks
--- 
-function self_command(command)
-    -- Called when using "/gs c <command>"
-    -- Used for custom commands and gear toggles
 end

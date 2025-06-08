@@ -22,7 +22,7 @@ sets.weapons.List = {
 
 sets.weapons["QuellerRod"] = {
     main="Queller Rod",
-    sub="Shield", -- Where?? Diamond Aspis?
+    --sub="Shield", -- Where?? Diamond Aspis?
 }
 
 -- Idle/DT Base Set
@@ -168,3 +168,7 @@ sets.midcast.Cure = {
     left_ear="Mendi. Earring",
 }
 
+
+sets.midcast.Curaga = {
+    left_ear="Mendi. Earring",
+}
