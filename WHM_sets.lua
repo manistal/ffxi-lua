@@ -125,10 +125,12 @@ sets.ja["Divine Caress"] = {
 sets.precast = {} 
 
 --[[
-Current = 57% Fast Cast (68% cast time)
+Current = 60% Fast Cast (71% cast time)
 Options:
 Empy Neck = 5
-Regal Pumps (Valkrum UNM) = 5%
+Regal Pumps (Valkrum UNM) = 5% (+2)
+Wistful Belt = 3
+JSE Neck+1 with RP = 8
 ]]
 
 -- Fast Cast
@@ -143,6 +145,8 @@ sets.precast.FastCast = {
     hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -4%','Magic dmg. taken -2%','"Cure" spellcasting time -4%',}},
     -- 6 FC
     legs="Aya. Cosciales +2",
+    -- 3 FC
+    feet={ name="Kaykaus Boots", augments={'Mag. Acc.+15','"Cure" potency +5%','"Fast Cast"+3',}},
     -- 4 FC
     right_ring="Kishar Ring",
     -- 4 FC
@@ -245,6 +249,7 @@ sets.midcast.Enfeebling = {
     hands="Theophany Mitts +2", -- Enfeeble/MACC
     legs="Th. Pantaloons +2", -- Enfeeble/MACC
     feet="Theo. Duckbills +2", -- Enfeeble/MACC
+    right_ring="Kishar Ring", -- Enfeeble Duration
 }
 
 --
