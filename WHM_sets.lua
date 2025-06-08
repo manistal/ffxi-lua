@@ -197,23 +197,57 @@ sets.midcast.Curaga = set_combine(sets.midcast.Cure, {
 
 -- Healing/Status Removal
 sets.midcast.StatusRemoval = {
+    -- TODO JSE NECK
+    head="Ebers Cap +2", -- Divine Veil
+    hands="Ebers Mitts +1", -- DT / Divine Caress
+    legs="Ebers Pant. +2", -- CURE
 }
 
+-- TODO: Vanya Head, Fanatics Gloves, Vanya Feet
 sets.midcast.Cursna = {
+    -- Healing Magiuc: 15
+    main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
+    -- Healing Magic: 29
+    body="Ebers Bliaut +2",
+    -- Cursna: 10
+    neck="Malison Medallion",
+    -- Cursna: 10, Healing Magic: 7
+    left_ring="Ephedra Ring",
+    -- Cursna: 10, Healing Magic: 7
+    right_ring="Ephedra Ring",
+    -- Cursna: 17
+    legs="Th. Pantaloons +2", -- Cursna / Regen
+    -- Cursna: 25
+    back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
 }
 
 -- Enhancing
+-- TODO Embla Sash, Enhancing Skill Earring, Telchine
 sets.midcast.Enhancing = {
+    -- Enhancing Skill: 19, Duration 5
+    feet="Theo. Duckbills +2", -- Enh Duration
 }
 
+-- TODO RELIC LEGS
 sets.midcast.BarSpell = {
+    head="Ebers Cap +2", -- FC
+    body="Ebers Bliaut +2", -- Refresh, Solace
+    hands="Ebers Mitts +1", -- DT / Divine Caress
+    legs="Ebers Pant. +2", -- CURE
+    feet="Ebers Duckbills +1", -- DT / MEVA
 }
 
 sets.midcast.Regen = {
+    head="Inyan. Tiara +2",
+    -- TODO RELIC BODY
+    hands="Ebers Mitts +1", -- DT / Divine Caress
+    legs="Th. Pantaloons +2", -- Cursna / Regen
+    -- TODO BUNZI
 }
 
 -- Enfeebling
 sets.midcast.Enfeebling = {
+    main="Kaja Rod",
     head="Theophany Cap +2", -- Enfeeble/MACC
     body="Theo. Bliaut +2", -- Enfeeble/MACC
     hands="Theophany Mitts +2", -- Enfeeble/MACC

@@ -76,7 +76,7 @@ end
 function midcast(spell) 
     -- Friendly spells Cure / Status Removal / Enhancing 
     --- Cure
-    if spell.english:startswith("Cure") 
+    if spell.english:startswith("Cure") then
         equip(sets.midcast.Cure)
     elseif spell.english:startswith("Curaga") then
         equip(sets.midcast.Curaga)
