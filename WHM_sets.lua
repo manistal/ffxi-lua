@@ -37,11 +37,17 @@ Empyrean:
 sets.weapons = {}
 sets.weapons.List = {
     "QuellerRod",
+    "KajaRod",
 }
 
 sets.weapons["QuellerRod"] = {
     main="Queller Rod",
-    --sub="Shield", -- Where?? Diamond Aspis?
+    sub="Diamond Aspis",
+}
+
+sets.weapons["KajaRod"] = {
+    main="Kaja Rod",
+    sub="Diamond Aspis",
 }
 
 -- Idle/DT Base Set

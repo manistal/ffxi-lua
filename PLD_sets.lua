@@ -66,7 +66,7 @@ sets.ws.Default = {
 -- Job Abilities
 -- 
 sets.ja = {}
-
+--sub="Diamond Aspis",
 
 -- 
 -- Spell Precast Sets
