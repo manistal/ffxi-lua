@@ -6,10 +6,9 @@ sets = {}
 
 --[[
 TODO List
-Empyrean +2 Legs > Body > Helm > Feet > Hands
+Empyrean +2 Feet > Hands
 Valkrum UNM Regal Pumps +5% Fast Cast
 Orison Neck Abyssea
-Kaykaus Boots 
 ]]
 
 
