@@ -197,7 +197,8 @@ sets.midcast.Curaga = set_combine(sets.midcast.Cure, {
     body="Theo. Bliaut +2", -- Curaga
 })
 
--- Healing/Status Removal
+-- Status Removal
+----------------------
 sets.midcast.StatusRemoval = {
     -- TODO JSE NECK
     head="Ebers Cap +2", -- Divine Veil
@@ -206,7 +207,7 @@ sets.midcast.StatusRemoval = {
 }
 
 -- TODO: Vanya Head, Fanatics Gloves, Vanya Feet
-sets.midcast.Cursna = {
+sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
     -- Healing Magiuc: 15
     main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
     -- Healing Magic: 29
@@ -221,33 +222,51 @@ sets.midcast.Cursna = {
     legs="Th. Pantaloons +2", -- Cursna / Regen
     -- Cursna: 25
     back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
-}
+})
 
 -- Enhancing
+---------------------------
 -- TODO Embla Sash, Enhancing Skill Earring, Telchine
 sets.midcast.Enhancing = {
+    -- Duration 5
+    head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +5',}},
+    -- Duration 10
+    body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}},
+    -- Duration 8
+    hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +8',}},
     -- Enhancing Skill: 19, Duration 5
     feet="Theo. Duckbills +2", -- Enh Duration
 }
 
 -- TODO RELIC LEGS
-sets.midcast.BarSpell = {
+sets.midcast.BarSpell = set_combine(sets.midcast.Enhancing, {
     head="Ebers Cap +2", -- FC
     body="Ebers Bliaut +2", -- Refresh, Solace
     hands="Ebers Mitts +1", -- DT / Divine Caress
     legs="Ebers Pant. +2", -- CURE
     feet="Ebers Duckbills +1", -- DT / MEVA
-}
+})
 
-sets.midcast.Regen = {
+sets.midcast.Regen = set_combine(sets.midcast.Enhancing, {
     head="Inyan. Tiara +2",
     -- TODO RELIC BODY
     hands="Ebers Mitts +1", -- DT / Divine Caress
     legs="Th. Pantaloons +2", -- Cursna / Regen
     -- TODO BUNZI
-}
+})
+
+sets.midcast.Aquaveil = set_combine(sets.midcast.Enhancing, {
+    -- Omen LUCK hands="Regal Cuffs",
+    legs="Shedir Seraweels",
+    -- AH Money waist="Emphatikos Rope",
+})
+
+sets.midcast.Stoneskin = set_combine(sets.midcast.Enhancing, {
+    legs="Shedir Seraweels",
+})
 
 -- Enfeebling
+--------------------------
 sets.midcast.Enfeebling = {
     main="Kaja Rod",
     head="Theophany Cap +2", -- Enfeeble/MACC
