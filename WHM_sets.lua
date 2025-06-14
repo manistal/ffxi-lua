@@ -235,6 +235,9 @@ sets.midcast.Enhancing = {
     hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +8',}},
     -- Enhancing Skill: 19, Duration 5
     feet="Theo. Duckbills +2", -- Enh Duration
+    -- Duration 10 
+    waist="Embla Sash",
+    
 }
 
 -- TODO RELIC LEGS
