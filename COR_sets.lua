@@ -242,7 +242,7 @@ sets.ws.Default = {
     -- WSD: +3
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     -- WSD: +5
-    feet={ name="Lanun Bottes +2", augments={'Enhances "Wild Card" effect',}},
+    feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
     -- TP+250
     right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     -- WSD: +2
@@ -272,7 +272,7 @@ sets.ws["Wildfire"] = set_combine(sets.ws.Default, {
     body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Lanun Bottes +2", augments={'Enhances "Wild Card" effect',}},
+    feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
     waist="Eschan Stone",
     left_ear="Hermetic Earring",
     right_ear="Friomisi Earring",
@@ -285,7 +285,7 @@ sets.ws["Leaden Salute"]  = set_combine(sets.ws.Default, {
     body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Lanun Bottes +2", augments={'Enhances "Wild Card" effect',}},
+    feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
     waist="Eschan Stone",
     right_ring="Archon Ring",
     left_ear="Hermetic Earring",
@@ -315,7 +315,7 @@ sets.ja.PhantomRoll = set_combine(sets.idle.Default, {
 sets.ja["Random Deal"] = {body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},}
 -- sets.ja["Fold"] = {hands="Lanun Gants +1"}
 -- sets.ja["Snake Eye"] = {legs="Lanun Trews +1"}
-sets.ja["Wild Card"] = {feet={ name="Lanun Bottes +2", augments={'Enhances "Wild Card" effect',}}}
+sets.ja["Wild Card"] = {feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}}}
 
 -- Roll bonuses
 sets.ja["Blitzer's Roll"] = {head="Chasseur's Tricorne +1"}
