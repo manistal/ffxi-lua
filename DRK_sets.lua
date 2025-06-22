@@ -262,10 +262,11 @@ sets.midcast.Enfeebling = {
     -- TODO Incanters Torque
 }
 
+-- ELemental magic: MACC = MAB
 sets.midcast.Nuking = {
     head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    body={ name="Fall. Cuirass +3", augments={'Enhances "Blood Weapon" effect',}},
+    hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     right_ring="Kishar Ring",
