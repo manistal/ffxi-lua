@@ -189,9 +189,18 @@ sets.midcast.Default = {
 }
 
 -- DRK Magic Skill >> All 
-sets.midcast["Endark II"] = set_combine(sets.midcast.Default, {
+sets.midcast["Endark II"] = {
+    ammo="Staunch Tathlum",
+    -- TODO: Artifact Head
     body={ name="Carm. Scale Mail", augments={'Attack+15','"Mag.Atk.Bns."+10','"Dbl.Atk."+2',}},
-})
+    hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
+    legs="Heath. Flanchard +1",
+    feet="Ratri Sollerets",
+    neck="Deceiver's Torque",
+    left_ear="Mani Earring",
+    left_ring="Evanescence Ring",
+    back={ name="Niht Mantle", augments={'Attack+6','Dark magic skill +6','"Drain" and "Aspir" potency +25',}},
+}
 
 -- Maximize Drain Bonus / DRK Magic Acc
 sets.midcast["Drain II"] = {
@@ -210,7 +219,7 @@ sets.midcast["Drain II"] = {
 }
 sets.midcast["Drain III"] = sets.precast["Drain II"]
 
-sets.midcast["Stun"] = set_combine(sets.midcast.Default, {
+sets.midcast["Stun"] = {
     head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
     body={ name="Fall. Cuirass +3", augments={'Enhances "Blood Weapon" effect',}},
     hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
@@ -219,7 +228,8 @@ sets.midcast["Stun"] = set_combine(sets.midcast.Default, {
     waist="Eschan Stone",
     right_ring="Kishar Ring",
     left_ear="Malignance Earring",
-})
+    -- TODO Ambu Magic Acc Cape
+}
 
 -- Try to maximize HP and DreadSpikes Bonus
 sets.midcast["Dread Spikes"] = {
@@ -236,4 +246,30 @@ sets.midcast["Dread Spikes"] = {
     left_ring="Moonbeam Ring",
     right_ring="Archon Ring",
     back={ name="Niht Mantle", augments={'Attack+6','Dark magic skill +6','"Drain" and "Aspir" potency +25',}},
+}
+
+-- Enfeebling Magic: MACC > Skill > Potency
+sets.midcast.Enfeebling = {
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Fall. Cuirass +3", augments={'Enhances "Blood Weapon" effect',}},
+    hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    right_ring="Kishar Ring",
+    left_ear="Malignance Earring",
+    waist="Eschan Stone",
+    -- TODO Ambu Magic Acc Cape
+    -- TODO Incanters Torque
+}
+
+sets.midcast.Nuking = {
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    right_ring="Kishar Ring",
+    left_ear="Malignance Earring",
+    waist="Eschan Stone",
+
 }

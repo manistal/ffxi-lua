@@ -74,7 +74,10 @@ end
 function midcast(spell)
     if sets.midcast[spell.english] then
         equip(sets.midcast[spell.english])
-    -- For Magic, use basic magic set (DRK Magic)
+    elseif spell.skill == "Enfeebling Magic" then
+        equip(sets.midcast.Enfeebling)
+    elseif spell.skill == "Elemental Magic" then
+        equip(sets.midcast.Nuking)
     elseif spell.action_type == "Magic" then 
         equip(sets.midcast.Default)
     end
