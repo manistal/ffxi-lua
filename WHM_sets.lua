@@ -72,7 +72,8 @@ sets.idle.Default = {
     legs="Ebers Pant. +2", 
     -- TODO Empty Feet (-10)
     -- 7 DT
-    feet="Inyan. Crackows +2",
+    --feet="Inyan. Crackows +2",
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
     -- 6 DT
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
     -- MEVA
@@ -144,6 +145,8 @@ sets.precast.FastCast = {
     main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
     -- 10 FC
     head="Ebers Cap +2", 
+    -- ~5-8 FC
+    neck={ name="Clr. Torque +1", augments={'Path: A',}},
     -- 14 FC
     body="Inyanga Jubbah +2",
     -- 7 FC, 4 Cure Speed
@@ -168,7 +171,7 @@ sets.precast.FastCast = {
 sets.midcast = {}
 
 -- Cure/Healing/COnserveMP
--- Total: Cure I: 49, Cure II: 4
+-- Total: Cure I: 56, Cure II: 4
 sets.midcast.Cure = {
     -- Cure I: 10, Cure II: 2
     main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
@@ -176,6 +179,8 @@ sets.midcast.Cure = {
     sub="Thuellaic Ecu +1",
     -- Cure I: 19
     head="Ebers Cap +2",
+    -- Cure I: 7
+    neck={ name="Clr. Torque +1", augments={'Path: A',}},
     -- Solace
     body="Ebers Bliaut +2",
     -- Cure II: 2
@@ -199,8 +204,9 @@ sets.midcast.Curaga = set_combine(sets.midcast.Cure, {
 -- Status Removal
 ----------------------
 sets.midcast.StatusRemoval = {
-    -- TODO JSE NECK
     head="Ebers Cap +2", -- Divine Veil
+    -- Erase+1
+    neck={ name="Clr. Torque +1", augments={'Path: A',}},
     hands="Ebers Mitts +1", -- DT / Divine Caress
     legs="Ebers Pant. +2", -- CURE
 }
