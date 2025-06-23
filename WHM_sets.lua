@@ -37,6 +37,7 @@ sets.weapons = {}
 sets.weapons.List = {
     "QuellerRod",
     "KajaRod",
+    "BunziRod"
 }
 
 sets.weapons["QuellerRod"] = {
@@ -49,6 +50,11 @@ sets.weapons["KajaRod"] = {
     sub="Diamond Aspis",
 }
 
+sets.weapons["BunziRod"] = {
+    main="Bunzi's Rod",
+    sub="Diamond Aspis",
+}
+
 -- Idle/DT Base Set
 sets.idle = {}
 sets.idle.List = {
@@ -58,30 +64,38 @@ sets.idle.List = {
 
 -- 38 Nyame, 39 Empy
 -- 15 Accessories
+--[[
+
+    main="Bunzi's Rod",
+    head={ name="Bunzi's Hat", augments={'Path: A',}},
+    body="Bunzi's Robe",
+    hands="Bunzi's Gloves",
+    legs="Bunzi's Pants",
+    feet={ name="Bunzi's Sabots", augments={'Path: A',}},
+]]
 sets.idle.Default = {
     -- 2% DT
     ammo="Staunch Tathlum",
     -- 7 DT
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    head={ name="Bunzi's Hat", augments={'Path: A',}},
     -- Refresh
     body="Ebers Bliaut +2", 
     -- TODO Empty Hands (-10)
-    -- 7 DT
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    -- 8 DT
+    hands="Bunzi's Gloves",
     -- 12 DT
     legs="Ebers Pant. +2", 
     -- TODO Empty Feet (-10)
-    -- 7 DT
-    --feet="Inyan. Crackows +2",
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
     -- 6 DT
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    feet={ name="Bunzi's Sabots", augments={'Path: A',}},
+    -- MEVA
+    neck="Warder's Charm +1",
     -- MEVA
     waist="Carrier's Sash",
     -- HP
     left_ear="Eabani Earring",
     -- TODO NEED BETTER EAR
-    right_ear="Odnowa Earring +1",
+    right_ear="Ethereal earring",
     -- 7 DT
     left_ring="Vocane Ring",
     -- Refresh
@@ -102,8 +116,8 @@ sets.idle.Refresh = set_combine(sets.idle.Default, {
     legs="Assid. Pants +1",
     -- Refresh +1
     feet="Inyan. Crackows +2",
-    -- MEVA
-    neck="Warder's Charm +1",
+    -- 6 DT
+    neck={ name="Loricate Torque +1", augments={'Path: A',}},
     -- MEVA
     waist="Carrier's Sash",
     -- Refresh
@@ -211,12 +225,14 @@ sets.midcast.StatusRemoval = {
     legs="Ebers Pant. +2", -- CURE
 }
 
--- TODO: Vanya Head, Fanatics Gloves, Vanya Feet
+-- TODO: Vanya Head, Vanya Feet
 sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
     -- Healing Magiuc: 15
     main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
     -- Healing Magic: 29
     body="Ebers Bliaut +2",
+    -- Cursna: 15
+    hands={ name="Fanatic Gloves", augments={'MP+35','"Conserve MP"+3','"Fast Cast"+3',}},
     -- Cursna: 10
     neck="Malison Medallion",
     -- Cursna: 10, Healing Magic: 7
@@ -231,7 +247,7 @@ sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
 
 -- Enhancing
 ---------------------------
--- TODO Embla Sash, Enhancing Skill Earring, Telchine
+-- TODO Enhancing Skill Earring, Telchine
 sets.midcast.Enhancing = {
     -- Duration 5
     head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +5',}},
@@ -256,11 +272,15 @@ sets.midcast.BarSpell = set_combine(sets.midcast.Enhancing, {
 })
 
 sets.midcast.Regen = set_combine(sets.midcast.Enhancing, {
+    -- 14 Potency
     head="Inyan. Tiara +2",
     -- TODO RELIC BODY
+    -- 22 Duration
     hands="Ebers Mitts +1", -- DT / Divine Caress
+    -- 21 Duration
     legs="Th. Pantaloons +2", -- Cursna / Regen
-    -- TODO BUNZI
+    -- 10 Potency
+    feet={ name="Bunzi's Sabots", augments={'Path: A',}},
 })
 
 sets.midcast.Aquaveil = set_combine(sets.midcast.Enhancing, {
@@ -276,7 +296,8 @@ sets.midcast.Stoneskin = set_combine(sets.midcast.Enhancing, {
 -- Enfeebling
 --------------------------
 sets.midcast.Enfeebling = {
-    main="Kaja Rod",
+    main="Bunzi's Rod",
+    sub="Diamond Aspis", 
     head="Theophany Cap +2", -- Enfeeble/MACC
     body="Theo. Bliaut +2", -- Enfeeble/MACC
     hands="Theophany Mitts +2", -- Enfeeble/MACC
@@ -295,6 +316,19 @@ sets.tp.List = {
 }
 
 sets.tp.Default = {
+    ammo="Staunch Tathlum",
+    head={ name="Bunzi's Hat", augments={'Path: A',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands="Bunzi's Gloves",
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Warder's Charm +1",
+    waist="Windbuffet Belt",
+    left_ear="Eabani Earring",
+    right_ear="Telos Earring",
+    left_ring="Chirich Ring",
+    right_ring="Chirich Ring",
+    -- TODO AMBU CAPE
 }
 
 --

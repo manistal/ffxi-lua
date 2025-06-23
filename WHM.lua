@@ -34,8 +34,21 @@ end
 -- Custom Functions
 -- 
 function equip_base_set()
-    equip(sets.idle.Current)
+    -- Weapon Sets
     equip(sets.weapons.Current)
+
+    -- TP/Engaged Sets (Glass cannon TP vs Tanky TP)
+    if player.status == 'Engaged' then 
+        equip(sets.tp.Default)
+        if player.hpp <= 50 then 
+            equip(sets.idle.Default)
+        end
+    end
+
+    -- Idle Sets (Regen/DT)
+    if player.status == 'Idle' then 
+        equip(sets.idle.Default)
+    end
 end
 
 function is_enhancing_spell(spell)
@@ -69,6 +82,13 @@ function precast(spell)
     if spell.type == "JobAbility" then
         if sets.ja[spell.english] then 
             equip(sets.ja[spell.english])
+        end
+    end
+    -- For WS
+    if spell.type == "WeaponSkill" then
+        equip(sets.ws.Default)
+		if sets.ws[spell.english] then 
+			equip(sets.ws[spell.english])
         end
     end
 end
