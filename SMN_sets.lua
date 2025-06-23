@@ -219,9 +219,6 @@ sets.precast.FastCast = {
     back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','"Fast Cast"+10',}},
 }
 
-    hands="Bunzi's Gloves",
-    legs="Bunzi's Pants",
-    feet={ name="Bunzi's Sabots", augments={'Path: A',}},
 -- 
 -- Spell Midcast Sets
 -- 
