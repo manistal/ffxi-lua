@@ -159,7 +159,3 @@ sets.ja.Default = sets.TH
 sets.ja["Perfect Dodge"] = {
     hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
 }
-
-sets.ja["Flee"] = {
-    sub="Diamond Aspis",
-}

@@ -66,6 +66,7 @@ function precast(spell)
         else
             equip(sets.ja.Default)
         end
+        equip({sub="Diamond Aspis",})
     end
 
     -- Equip Specific Sets Last
