@@ -41,18 +41,18 @@ sets.idle.List = {
     "Refresh",
 }
 sets.idle.Default = {
-    head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    head="Beckoner's Horn +2",
+    body="Bunzi's Robe",
+    hands="Bunzi's Gloves",
+    legs="Bunzi's Pants",
+    feet={ name="Bunzi's Sabots", augments={'Path: A',}},
+    neck="Warder's Charm +1",
     waist="Carrier's Sash",
     left_ear="Eabani Earring",
     right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
     left_ring="Vocane Ring",
     right_ring="Inyanga Ring",
-    back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','"Fast Cast"+10',}},
+    back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Phys. dmg. taken-10%',}},
 }
 
 -- Total: 12 Refresh
@@ -139,6 +139,25 @@ sets.perp.Refresh = set_combine(sets.idle.Default, {
     right_ring="Inyanga Ring",
 })
 
+sets.perp.MEVA = set_combine(sets.idle.Default, {
+    -- Perp: -5
+    main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
+    -- Skill +18, Refresh +3
+    head="Beckoner's Horn +2",
+    -- Skill +9
+    neck="Caller's Pendant",
+    -- Skill +19, Perp: -7
+    body="Beck. Doublet +2",
+    -- Skill +25
+    legs="Beck. Spats +2",
+    -- Refresh +1
+    right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
+    -- Skill +10, Perp: -1
+    left_ring="Evoker's Ring",
+    -- Refresh+1
+    right_ring="Inyanga Ring",
+})
+
 --
 -- TP Sets
 --
@@ -184,6 +203,8 @@ sets.precast = {}
 
 -- Fast Cast
 sets.precast.FastCast = {
+    -- 10 FC
+    head={ name="Bunzi's Hat", augments={'Path: A',}},
     -- 14 FC
     body="Inyanga Jubbah +2",
     -- 6 FC
@@ -194,16 +215,25 @@ sets.precast.FastCast = {
     left_ear="Malignance Earring",
     -- 2 FC
     right_ear="Loquac. Earring",
+    -- 10 FC
     back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','"Fast Cast"+10',}},
 }
 
+    hands="Bunzi's Gloves",
+    legs="Bunzi's Pants",
+    feet={ name="Bunzi's Sabots", augments={'Path: A',}},
 -- 
 -- Spell Midcast Sets
 -- 
 sets.midcast = {}
 
 sets.midcast.Cure = {
+    -- 30 Cure I
+    main="Bunzi's Rod",
+    -- 5 Cure I
     left_ear="Mendi. Earring",
+    -- 15 Cure I
+    body="Bunzi's Robe",
 }
 
 
