@@ -83,8 +83,8 @@ sets.tp.Default = {
     feet="Flam. Gambieras +2",
     neck={ name="Abyssal Beads +1", augments={'Path: A',}},
     waist="Ioskeha Belt",
-    left_ear="Brutal Earring",
-    right_ear="Telos Earring",
+    left_ear="Telos Earring",
+    right_ear="Brutal Earring",
     left_ring="Moonbeam Ring",
     right_ring="Chirich Ring",
     back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
@@ -96,7 +96,7 @@ sets.tp.Hybrid = set_combine(sets.tp.Default, {
     -- DT: -7 
     head="Sakpata's Helm",
     -- DT: -6
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    -- Maybe too much DT, Use Abyssal neck={ name="Loricate Torque +1", augments={'Path: A',}},
     -- DT: -10
     body="Sakpata's Plate",
     -- DT: -8 
@@ -113,19 +113,70 @@ sets.tp.FullDT = sets.idle.Default
 -- WS Sets 
 -- 
 sets.ws = {}
+
+-- WSD >>> ALL by default
 sets.ws.Default = {
+    -- ATK/DBLATK
     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    -- WSD 6+
     head={ name="Nyame Helm", augments={'Path: B',}},
+    -- WSD 5
     body="Ignominy Cuirass +2",
+    -- WSD 6+
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    -- WSD 10
     legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
-    feet="Sulev. Leggings +2",
+    -- WSD 5  TODO: Replace with EMPY
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    -- DBLATK/PDL
     neck={ name="Abyssal Beads +1", augments={'Path: A',}},
+    -- 2ATK/3ATK
     waist="Sailfi Belt +1",
+    -- TP+
     left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+    -- WSD 2
     right_ear="Thrud Earring",
+    -- WSD 10
     back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','STR+5','Weapon skill damage +10%','Phys. dmg. taken-10%',}},
 }
+
+sets.ws.MACC = set_combine(sets.ws.Default, {
+    -- MAAC 40, WSD
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    -- MAAC 40, WSD
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    -- MAAC 40, WSD
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    -- MAAC 40, WSD TODO: Replace with RELIC+4
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    -- MAAC 40, WSD
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    -- MAAC 6
+    right_ear="Heathen's Earring",
+    -- MAAC 7
+    waist="Eschan Stone",
+})
+sets.ws["Shockwave"] = sets.ws.MACC         -- AOE Sleep
+sets.ws["Herculean Slash"] = sets.ws.MACC   -- Paralyze
+sets.ws["Armor Break"] = sets.ws.MACC       -- Defense Down
+
+sets.ws.MultiHit = set_combine(sets.ws.Default, {
+    -- 3ATK: 5
+    head="Flam. Zucchetto +2",
+    --- 2ATK: 8, PDL
+    body="Sakpata's Plate",
+    -- 2ATK: 6
+    hands="Sakpata's Gauntlets",
+    -- 2ATK: 7 TODO: Replace with Artifact+4
+    legs="Sakpata's Cuisses",
+    -- 2ATK: 6
+    feet="Flam. Gambieras +2",
+    -- 2ATK/3ATK
+    waist="Sailfi Belt +1",
+    -- 2ATK
+    right_ear="Brutal Earring",
+})
+sets.ws["Resolution"] = sets.ws.MultiHit
 
 -- 
 -- Job Abilities
