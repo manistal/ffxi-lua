@@ -1,32 +1,21 @@
 --
--- WHM Lua by MigsDank
+-- BRD Lua by MigsDank
 -- 
 
 sets = {}
 
 --[[
 TODO List
-Empyrean +2 Feet > Hands
-Valkrum UNM Regal Pumps +5% Fast Cast
-Orison Neck Abyssea
 ]]
 
 
 --[[
 JSE
 Artifact: (Enfeeble/MACC)
-    head="Theophany Cap +2", 
-    body="Theo. Bliaut +2", -- Curaga
-    hands="Theophany Mitts +2", -- Cure II
-    legs="Th. Pantaloons +2", -- Cursna / Regen
-    feet="Theo. Duckbills +2", -- Enh Duration
 
-Empyrean:
-    head="Ebers Cap +2", -- FC
-    body="Ebers Bliaut +2", -- Refresh, Solace
-    hands="Ebers Mitts +1", -- DT / Divine Caress
-    legs="Ebers Pant. +2", -- CURE
-    feet="Ebers Duckbills +1", -- DT / MEVA
+Relic (Swaps)
+
+Empyrean (EVERYTHING)
 
 ]]
 
@@ -35,25 +24,40 @@ Empyrean:
 -- 
 sets.weapons = {}
 sets.weapons.List = {
-    "QuellerRod",
-    "KajaRod",
-    "BunziRod"
+    "Savage-Spam",
+    "Tauret-Kali",
+    "DI",
+    "MACC",
+    "Kali-Flayer",
 }
 
-sets.weapons["QuellerRod"] = {
-    main="Queller Rod",
-    sub="Diamond Aspis",
+
+sets.weapons["Savage-Spam"] = {
+    main="Naegling",
+    sub="Skinflayer",
 }
 
-sets.weapons["KajaRod"] = {
-    main="Kaja Rod",
-    sub="Diamond Aspis",
+sets.weapons["Tauret-Kali"] = { 
+    main="Tauret",
+    sub={ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}},
 }
 
-sets.weapons["BunziRod"] = {
-    main="Bunzi's Rod",
-    sub="Diamond Aspis",
+sets.weapons["DI"] = { 
+    main="Skinflayer",
+    sub="Voluspa Knife",
 }
+
+sets.weapons["MACC"] = { 
+    main="Naegling",
+    sub="Tauret",
+}
+
+sets.weapons["Kali-Flayer"] = { 
+    main={ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}},
+    sub="Skinflayer",
+}
+
+
 
 -- Idle/DT Base Set
 sets.idle = {}
@@ -74,17 +78,16 @@ sets.idle.List = {
     feet={ name="Bunzi's Sabots", augments={'Path: A',}},
 ]]
 sets.idle.Default = {
-    -- 2% DT
-    ammo="Staunch Tathlum",
+    -- TODO: Better idle instrument?
+    range={ name="Linos", augments={'All Songs+2',}},
     -- 7 DT
     head={ name="Bunzi's Hat", augments={'Path: A',}},
-    -- Refresh
-    body="Ebers Bliaut +2", 
+    -- ??
+    body="Bunzi's Robe",
     -- 8 DT
     hands="Bunzi's Gloves",
-    -- 12 DT
-    legs="Ebers Pant. +2", 
-    -- TODO Empty Feet (-10)
+    -- ???
+    legs="Bunzi's Pants",
     -- 6 DT
     feet={ name="Bunzi's Sabots", augments={'Path: A',}},
     -- MEVA
@@ -97,18 +100,17 @@ sets.idle.Default = {
     right_ear="Ethereal earring",
     -- 7 DT
     left_ring="Vocane Ring",
-    -- Refresh
-    right_ring="Inyanga Ring",
-    -- 10 PDT
-    back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
+    -- HP, DT: -4
+    right_ring="Moonbeam Ring",
+    -- TODO Finish AMBU CAPE
+    back={ name="Intarabus's Cape", augments={'CHR+1','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10',}},
 }
 
--- Total: ~25DT, 7 Refresh
 sets.idle.Refresh = set_combine(sets.idle.Default, {
     -- Refresh +1
     head="Inyanga Tiara +2",
-    -- Refresh +3
-    body="Ebers Bliaut +2", 
+    -- Refresh +1
+    body="Inyanga Jubbah +2",
     -- Refresh +1
     hands="Inyan. Dastanas +2",
     -- Refresh +1
@@ -117,22 +119,14 @@ sets.idle.Refresh = set_combine(sets.idle.Default, {
     feet="Inyan. Crackows +2",
     -- 6 DT
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    -- MEVA
-    waist="Carrier's Sash",
     -- Refresh
     right_ring="Inyanga Ring",
-    -- MEVA
-    back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
 })
 
 -- 
 -- Job Abilities
 -- 
 sets.ja = {}
-
-sets.ja["Divine Caress"] = {
-    hands="Ebers Mitts +1", -- Divine Caress
-}
 
 -- TODO RELIC
 
@@ -153,13 +147,10 @@ JSE Neck+1 with RP = 8
 ]]
 
 -- Fast Cast
-sets.precast.FastCast = {
-    -- 7 Cure Speed
-    main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
-    -- 10 FC
-    head="Ebers Cap +2", 
-    -- ~5-8 FC
-    neck={ name="Clr. Torque +1", augments={'Path: A',}},
+sets.precast.FastCast = set_combine(sets.idle.Default, {
+    -- KALI 7FC
+    -- TODO: How to swp in Kali
+    -- TODO Empy HEAD
     -- 14 FC
     body="Inyanga Jubbah +2",
     -- 7 FC, 4 Cure Speed
@@ -168,22 +159,77 @@ sets.precast.FastCast = {
     legs="Aya. Cosciales +2",
     -- 5 FC
     feet="Regal Pumps +1",
-    -- 5 FC
-    waist="Embla Sash",
     -- 4 FC
     right_ring="Kishar Ring",
     -- 4 FC
     left_ear="Malignance Earring",
     -- 2 FC
     right_ear="Loquac. Earring",
+    -- 5 FC
+    waist="Embla Sash",
     -- 10 FC
-    back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
+    back={ name="Intarabus's Cape", augments={'CHR+1','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10',}},
+})
+
+sets.precast.SongCast = set_combine(sets.precast.FastCast, {
+})
+
+-- Songs Midcast
+------------------------
+sets.songs = {}
+sets.songs.List = {
+    "MaxPotency",
+    "BonusSongs",
 }
+
+sets.songs.BonusSongs = {
+    -- TODO: Terpander
+}
+
+sets.songs.MaxPotency = {
+    -- Duration: 5
+    main={ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}},
+    -- All Songs: 3
+    range={ name="Linos", augments={'All Songs+2',}},
+    -- All Songs: 2
+    neck="Moonbow Whistle",
+    -- TODO EMPY HEAD Madrigal: 1
+    -- TODO EMPY HANDS Skill, March: 1
+    -- TODO EMPY Body Skill, Duration, Minuet: 1
+    legs="Inyanga Shalwar +2",
+
+}
+
+-- TODO Song Specific Swaps
+-- Ballad - Empy Legs for Bonus, but dont
+-- Minne - Su3+1 Legs Or Bust
+-- March - No Swap
+-- Honor March - Maysaras
+-- Scherzo - Empy Feet for Bonus
+-- Carol - Su3 Hands
+-- Mambo - Su3 Feet
+-- Etude - Su3 Head
+-- Paeon - Artifact Head
+
+-- Madrigal - 
+sets.songs.Madrigal = set_combine(sets.songs.MaxPotency, {
+    back={ name="Intarabus's Cape", augments={'CHR+1','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10',}},
+})
+
+sets.songs.Prelude = set_combine(sets.songs.MaxPotency, {
+    -- TODO Empy Feet
+    back={ name="Intarabus's Cape", augments={'CHR+1','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10',}},
+})
+
+
+-- TODO LULLABY
+-- TODO DEBUFF
 
 -- 
 -- Spell Midcast Sets
 -- 
 sets.midcast = {}
+
 
 -- Cure/Healing/COnserveMP
 -- Total: Cure I: 56, Cure II: 4
@@ -192,46 +238,22 @@ sets.midcast.Cure = {
     main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
     -- Conserve MP: 4
     sub="Thuellaic Ecu +1",
-    -- Cure I: 19
-    head="Ebers Cap +2",
-    -- Cure I: 7
-    neck={ name="Clr. Torque +1", augments={'Path: A',}},
-    -- Solace
-    body="Ebers Bliaut +2",
     -- Cure II: 2
     hands="Theophany Mitts +2",
-    -- Cure -> MP
-    legs="Ebers Pant. +2",
     -- Cure I: 15, Conserve MP: 6
     feet={ name="Kaykaus Boots", augments={'Mag. Acc.+15','"Cure" potency +5%','"Fast Cast"+3',}},
     -- Cure I: 5, Conserve MP: 2
     right_ear="Mendi. Earring",
-    -- Solace
-    back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
 }
 
-
-sets.midcast.Curaga = set_combine(sets.midcast.Cure, {
-    -- Cure II: 3
-    body="Theo. Bliaut +2", -- Curaga
-})
 
 -- Status Removal
 ----------------------
 sets.midcast.StatusRemoval = {
-    head="Ebers Cap +2", -- Divine Veil
-    -- Erase+1
-    neck={ name="Clr. Torque +1", augments={'Path: A',}},
-    hands="Ebers Mitts +1", -- DT / Divine Caress
-    legs="Ebers Pant. +2", -- CURE
 }
 
 -- TODO: Vanya Head, Vanya Feet
 sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
-    -- Healing Magiuc: 15
-    main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
-    -- Healing Magic: 29
-    body="Ebers Bliaut +2",
     -- Cursna: 15
     hands={ name="Fanatic Gloves", augments={'MP+35','"Conserve MP"+3','"Fast Cast"+3',}},
     -- Cursna: 10
@@ -240,10 +262,6 @@ sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
     left_ring="Ephedra Ring",
     -- Cursna: 10, Healing Magic: 7
     right_ring="Ephedra Ring",
-    -- Cursna: 17
-    legs="Th. Pantaloons +2", -- Cursna / Regen
-    -- Cursna: 25
-    back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
 })
 
 -- Enhancing
@@ -256,33 +274,11 @@ sets.midcast.Enhancing = {
     body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}},
     -- Duration 8
     hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +8',}},
-    -- Enhancing Skill: 19, Duration 5
-    feet="Theo. Duckbills +2", -- Enh Duration
     -- Duration 10 
     waist="Embla Sash",
     
 }
 
--- TODO RELIC LEGS
-sets.midcast.BarSpell = set_combine(sets.midcast.Enhancing, {
-    head="Ebers Cap +2", -- FC
-    body="Ebers Bliaut +2", -- Refresh, Solace
-    hands="Ebers Mitts +1", -- DT / Divine Caress
-    legs="Ebers Pant. +2", -- CURE
-    feet="Ebers Duckbills +1", -- DT / MEVA
-})
-
-sets.midcast.Regen = set_combine(sets.midcast.Enhancing, {
-    -- 14 Potency
-    head="Inyan. Tiara +2",
-    -- TODO RELIC BODY
-    -- 22 Duration
-    hands="Ebers Mitts +1", -- DT / Divine Caress
-    -- 21 Duration
-    legs="Th. Pantaloons +2", -- Cursna / Regen
-    -- 10 Potency
-    feet={ name="Bunzi's Sabots", augments={'Path: A',}},
-})
 
 sets.midcast.Aquaveil = set_combine(sets.midcast.Enhancing, {
     -- Omen LUCK hands="Regal Cuffs",
@@ -294,18 +290,6 @@ sets.midcast.Stoneskin = set_combine(sets.midcast.Enhancing, {
     legs="Shedir Seraweels",
 })
 
--- Enfeebling
---------------------------
-sets.midcast.Enfeebling = {
-    main="Bunzi's Rod",
-    sub="Diamond Aspis", 
-    head="Theophany Cap +2", -- Enfeeble/MACC
-    body="Theo. Bliaut +2", -- Enfeeble/MACC
-    hands="Theophany Mitts +2", -- Enfeeble/MACC
-    legs="Th. Pantaloons +2", -- Enfeeble/MACC
-    feet="Theo. Duckbills +2", -- Enfeeble/MACC
-    right_ring="Kishar Ring", -- Enfeeble Duration
-}
 
 --
 -- TP Sets
@@ -323,11 +307,14 @@ sets.tp.Default = {
     hands="Bunzi's Gloves",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    -- TODO Dynamis Neck
     neck="Warder's Charm +1",
+    -- TODO REIKAI YOTAI
     waist="Windbuffet Belt",
     left_ear="Eabani Earring",
     right_ear="Telos Earring",
-    left_ring="Chirich Ring",
+    left_ring="Moonbeam Ring",
+    -- TODO Second moonbeam ring
     right_ring="Chirich Ring",
     -- TODO AMBU CAPE
 }
