@@ -148,9 +148,8 @@ JSE Neck+1 with RP = 8
 
 -- Fast Cast
 sets.precast.FastCast = set_combine(sets.idle.Default, {
-    -- KALI 7FC
-    -- TODO: How to swp in Kali
-    -- TODO Empy HEAD
+    -- 7FC
+    main={ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}},
     -- 14 FC
     body="Inyanga Jubbah +2",
     -- 7 FC, 4 Cure Speed
@@ -172,6 +171,10 @@ sets.precast.FastCast = set_combine(sets.idle.Default, {
 })
 
 sets.precast.SongCast = set_combine(sets.precast.FastCast, {
+    -- TODO Empy Head 
+
+    -- Song Cast: -13
+    feet={ name="Telchine Pigaches", augments={'Song spellcasting time -7%',}},
 })
 
 -- Songs Midcast
