@@ -304,7 +304,6 @@ sets.tp.List = {
 }
 
 sets.tp.Default = {
-    ammo="Staunch Tathlum",
     head={ name="Bunzi's Hat", augments={'Path: A',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands="Bunzi's Gloves",
