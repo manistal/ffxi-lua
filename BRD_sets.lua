@@ -29,6 +29,7 @@ sets.weapons.List = {
     "DI",
     "MACC",
     "Kali-Flayer",
+    "Tauret-flayer",
 }
 
 
@@ -54,6 +55,11 @@ sets.weapons["MACC"] = {
 
 sets.weapons["Kali-Flayer"] = { 
     main={ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}},
+    sub="Skinflayer",
+}
+
+sets.weapons["Tauret-flayer"] = { 
+    main="Tauret",
     sub="Skinflayer",
 }
 
@@ -186,7 +192,7 @@ sets.songs.List = {
 }
 
 sets.songs.BonusSongs = {
-    -- TODO: Terpander
+    range={ name="Terpander", augments={'HP+30','Mag. Acc.+10','Damage Taken -3%',}},
 }
 
 sets.songs.MaxPotency = {
@@ -315,9 +321,9 @@ sets.tp.Default = {
     waist="Windbuffet Belt",
     left_ear="Eabani Earring",
     right_ear="Telos Earring",
-    left_ring="Moonbeam Ring",
+    right_ring="Moonbeam Ring",
     -- TODO Second moonbeam ring
-    right_ring="Chirich Ring",
+    left_ring="Chirich Ring",
     -- TODO AMBU CAPE
 }
 
