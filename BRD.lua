@@ -71,20 +71,42 @@ function is_enfeebling_spell(spell)
            spell.english:startswith("Addle") 
 end
 
+
+function equip_song_gear(spell)
+    equip(sets.songs.Current)
+    if sets.songs.CurrentName == "BonusSongs" then 
+        return -- Dont buff bonus songs
+    end
+
+    -- Song Specific Buffs
+    -- if spell.english == 'Honor March'        then equip(sets.midcast['Honor March']) end
+    -- if string.find(spell.english,'Lullaby')  then equip(sets.midcast.Lullaby) end
+    -- if string.find(spell.english,'Ballad')   then equip(sets.midcast.Ballad) end
+    -- if string.find(spell.english,'Scherzo')  then equip(sets.midcast.Scherzo) end
+    -- if string.find(spell.english,'Paeon')    then equip(sets.midcast.Paeon) end
+    if string.find(spell.english,'Prelude')  then equip(sets.midcast.Prelude) end
+    if string.find(spell.english,'Madrigal') then equip(sets.midcast.Madrigal) end
+end
+
+
 -- 
 -- Player Action Callbacks
 -- 
 function precast(spell)
-    -- For Magic use Fast Cast
-    if spell.action_type == "Magic" then 
+    -- BARD SONG vs Other Magic
+    if spell.type == "BardSong" then 
+        equip(sets.precast.SongCast)
+    elseif spell.action_type == "Magic" then 
         equip(sets.precast.FastCast)
     end
+
     -- For JAs
     if spell.type == "JobAbility" then
         if sets.ja[spell.english] then 
             equip(sets.ja[spell.english])
         end
     end
+
     -- For WS
     if spell.type == "WeaponSkill" then
         equip(sets.ws.Default)
@@ -95,6 +117,11 @@ function precast(spell)
 end
 
 function midcast(spell) 
+    if spell.type == "BardSong" then 
+        equip_song_gear(spell)
+        return 
+    end
+
     -- Friendly spells Cure / Status Removal / Enhancing 
     --- Cure
     if spell.english:startswith("Cure") then

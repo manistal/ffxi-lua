@@ -57,11 +57,16 @@ function bind_toggles(key, set_category)
     toggle_binds[set_category].key = key
     -- CallbackFunc:
     toggle_binds[set_category].callbackfunc = function()
+        -- Rotate the Binds 
         toggle_binds[set_category].current_idx = ((toggle_binds[set_category].current_idx + 1) % (#sets[set_category].List + 1))
         if toggle_binds[set_category].current_idx == 0 then toggle_binds[set_category].current_idx = 1 end 
 
+        -- Update Pointers
         local toggle_idx = toggle_binds[set_category].current_idx
         sets[set_category].Current = sets[set_category][sets[set_category].List[toggle_idx]]
+        sets[set_category].CurrentName = sets[set_category].List[toggle_idx] 
+
+        -- Equip
         equip(sets[set_category].Current)
 	    send_command("@input /echo <<<< ".. set_category .. " Set changed to " .. sets[set_category].List[toggle_idx] .. " " .. toggle_idx .. " >>>>")
     end
