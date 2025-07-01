@@ -21,12 +21,19 @@ Artifact: (Enfeeble/MACC)
     legs="Th. Pantaloons +2", -- Cursna / Regen
     feet="Theo. Duckbills +2", -- Enh Duration
 
+Relic:
+    head={ name="Piety Cap", augments={'Enhances "Devotion" effect',}},
+    body={ name="Piety Bliaut", augments={'Enhances "Benediction" effect',}},
+    hands={ name="Piety Mitts", augments={'Enhances "Martyr" effect',}},
+    legs={ name="Piety Pantaln. +1", augments={'Enhances "Afflatus Misery" effect',}},
+    feet={ name="Piety Duckbills", augments={'Enhances "Afflatus Solace" effect',}},
+
 Empyrean:
     head="Ebers Cap +2", -- FC
     body="Ebers Bliaut +2", -- Refresh, Solace
     hands="Ebers Mitts +1", -- DT / Divine Caress
     legs="Ebers Pant. +2", -- CURE
-    feet="Ebers Duckbills +1", -- DT / MEVA
+    feet="Ebers Duckbills +2", -- DT / MEVA
 
 ]]
 
@@ -84,9 +91,8 @@ sets.idle.Default = {
     hands="Bunzi's Gloves",
     -- 12 DT
     legs="Ebers Pant. +2", 
-    -- TODO Empty Feet (-10)
-    -- 6 DT
-    feet={ name="Bunzi's Sabots", augments={'Path: A',}},
+    -- 10 DT
+    feet="Ebers Duckbills +2",
     -- MEVA
     neck="Warder's Charm +1",
     -- MEVA
@@ -134,6 +140,17 @@ sets.ja["Divine Caress"] = {
     hands="Ebers Mitts +1", -- Divine Caress
 }
 
+sets.ja["Devotion"] ={
+    head={ name="Piety Cap", augments={'Enhances "Devotion" effect',}},
+}
+
+sets.ja["Benediction"] = {
+    body={ name="Piety Bliaut", augments={'Enhances "Benediction" effect',}},
+}
+
+sets.ja["Martyr"] = {
+    hands={ name="Piety Mitts", augments={'Enhances "Martyr" effect',}},
+}
 -- TODO RELIC
 
 
@@ -268,14 +285,15 @@ sets.midcast.BarSpell = set_combine(sets.midcast.Enhancing, {
     head="Ebers Cap +2", -- FC
     body="Ebers Bliaut +2", -- Refresh, Solace
     hands="Ebers Mitts +1", -- DT / Divine Caress
-    legs="Ebers Pant. +2", -- CURE
-    feet="Ebers Duckbills +1", -- DT / MEVA
+    legs={ name="Piety Pantaln. +1", augments={'Enhances "Afflatus Misery" effect',}},
+    feet="Ebers Duckbills +2",
 })
 
 sets.midcast.Regen = set_combine(sets.midcast.Enhancing, {
     -- 14 Potency
     head="Inyan. Tiara +2",
-    -- TODO RELIC BODY
+    -- 28 potency
+    body={ name="Piety Bliaut", augments={'Enhances "Benediction" effect',}},
     -- 22 Duration
     hands="Ebers Mitts +1", -- DT / Divine Caress
     -- 21 Duration
