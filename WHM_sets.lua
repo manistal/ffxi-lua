@@ -291,7 +291,7 @@ sets.midcast.BarSpell = set_combine(sets.midcast.Enhancing, {
 
 sets.midcast.Regen = set_combine(sets.midcast.Enhancing, {
     -- 14 Potency
-    head="Inyan. Tiara +2",
+    head="Inyanga Tiara +2",
     -- 28 potency
     body={ name="Piety Bliaut", augments={'Enhances "Benediction" effect',}},
     -- 22 Duration
