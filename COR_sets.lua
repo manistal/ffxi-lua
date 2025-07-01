@@ -322,11 +322,16 @@ sets.ja["Blitzer's Roll"] = {head="Chasseur's Tricorne +1"}
 sets.ja["Tactician's Roll"] = {body="Chasseur's Frac +2",}
 sets.ja["Allies' Roll"] = {hands="Chasseur's Gants +1",}
 sets.ja["Caster's Roll"] = {legs="Chas. Culottes +2",}
---sets.ja["Courser's Roll"] = {feet="Chasseur's Bottes +1"}
+sets.ja["Courser's Roll"] = {feet="Chass. Bottes +1",}
 
 sets.ja["Quick Draw"] = {
-    head="Chasseur's Tricorne +1",
-    body="Chasseur's Frac +2",
-    hands="Chasseur's Gants +1",
-    legs="Chas. Culottes +2",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
+    hands="Carmine Fin. Ga. +1",
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet="Chass. Bottes +1",
+    neck={ name="Comm. Charm +1", augments={'Path: A',}},
+    waist="Eschan Stone",
+    right_ear="Friomisi Earring",
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
 }
