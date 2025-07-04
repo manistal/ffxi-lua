@@ -187,6 +187,8 @@ sets.precast.FastCast = {
     feet="Regal Pumps +1",
     -- 5 FC
     waist="Embla Sash",
+    -- 1 FC
+    left_ring="Naji's Loop",
     -- 4 FC
     right_ring="Kishar Ring",
     -- 4 FC
@@ -221,6 +223,8 @@ sets.midcast.Cure = {
     legs="Ebers Pant. +2",
     -- Cure I: 15, Conserve MP: 6
     feet={ name="Kaykaus Boots", augments={'Mag. Acc.+15','"Cure" potency +5%','"Fast Cast"+3',}},
+    -- Cure I: 1, Cure II: 1
+    left_ring="Naji's Loop",
     -- Cure I: 5, Conserve MP: 2
     right_ear="Mendi. Earring",
     -- Solace
@@ -285,7 +289,7 @@ sets.midcast.BarSpell = set_combine(sets.midcast.Enhancing, {
     head="Ebers Cap +2", -- FC
     body="Ebers Bliaut +2", -- Refresh, Solace
     hands="Ebers Mitts +1", -- DT / Divine Caress
-    legs={ name="Piety Pantaln. +1", augments={'Enhances "Afflatus Misery" effect',}},
+    legs={ name="Piety Pantaln. +2", augments={'Enhances "Afflatus Misery" effect',}},
     feet="Ebers Duckbills +2",
 })
 
