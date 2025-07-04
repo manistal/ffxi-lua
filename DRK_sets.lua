@@ -11,8 +11,10 @@ sets.weapons = {}
 sets.weapons.List = {
     "Montante",
     "Apoc", 
-    "FullBreak",
-    "Savage Blade",
+    "Lycurgos",
+    "Naegling",
+    "Loxotic Mace",
+    "Piercing",
 }
 
 sets.weapons["Montante"] = {
@@ -25,16 +27,25 @@ sets.weapons["Apoc"] = {
     sub="Utu Grip",
 }
 
-sets.weapons["FullBreak"] = {
-    main="Hepatizon Axe",
+sets.weapons["Lycurgos"] = {
+    main="Lycurgos",
     sub="Utu Grip",
 }
 
-sets.weapons["Savage Blade"] = {
+sets.weapons["Naegling"] = {
     main="Naegling",
-
+    sub="Blurred Shield +1",
 }
 
+sets.weapons["Loxotic Mace"] = {
+    main="Naegling",
+    sub="Blurred Shield +1",
+}
+
+sets.weapons["Piercing"] = {
+    main="Malevolence",
+    sub="Blurred Shield +1",
+}
 
 
 -- Idle/DT Base Set
@@ -83,7 +94,7 @@ sets.tp.Default = {
     head="Flam. Zucchetto +2",
     body="Sakpata's Plate",
     hands="Sakpata's Gauntlets",
-    legs="Sakpata's Cuisses",
+    legs="Ig. Flanchard +3",
     feet="Flam. Gambieras +2",
     neck={ name="Abyssal Beads +1", augments={'Path: A',}},
     waist="Ioskeha Belt",
@@ -105,8 +116,8 @@ sets.tp.Hybrid = set_combine(sets.tp.Default, {
     body="Sakpata's Plate",
     -- DT: -8 
     hands="Sakpata's Gauntlets",
-    -- DT: -9
-    legs="Sakpata's Cuisses",
+    -- DBLATK?
+    legs="Ig. Flanchard +3",
     -- DT: -6
     feet="Sakpata's Leggings",
 })
@@ -125,7 +136,7 @@ sets.ws.Default = {
     -- WSD 6+
     head={ name="Nyame Helm", augments={'Path: B',}},
     -- WSD 5
-    body="Ignominy Cuirass +2",
+    body="Ignominy Cuirass +3",
     -- WSD 6+
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     -- WSD 10
@@ -171,8 +182,8 @@ sets.ws.MultiHit = set_combine(sets.ws.Default, {
     body="Sakpata's Plate",
     -- 2ATK: 6
     hands="Sakpata's Gauntlets",
-    -- 2ATK: 7 TODO: Replace with Artifact+4
-    legs="Sakpata's Cuisses",
+    -- 2ATK: 10
+    legs="Ig. Flanchard +3",
     -- 2ATK: 6
     feet="Flam. Gambieras +2",
     -- 2ATK/3ATK
