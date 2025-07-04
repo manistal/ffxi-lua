@@ -38,7 +38,7 @@ sets.weapons["Naegling"] = {
 }
 
 sets.weapons["Loxotic Mace"] = {
-    main="Naegling",
+    main="Loxotic Mace +1",
     sub="Blurred Shield +1",
 }
 
