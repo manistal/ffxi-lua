@@ -181,6 +181,10 @@ sets.precast.FastCast = {
     right_ear="Loquac. Earring",
 }
 
+sets.precast.Utsusemi = set_combine(sets.precast.FastCast, {
+    neck="Magoraga Beads",
+})
+
 -- 40 snapshot with Flurry II
 -- 60 snapshot without 
 -- Current: Snapshot 41, Rapidshot 18

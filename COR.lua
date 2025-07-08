@@ -81,6 +81,14 @@ function precast(spell)
         equip(sets.ja["Quick Draw"])
     end
 
+    -- Spells
+    if spell.action_type == "Magic" then 
+        equip(sets.precast.FastCast)
+        if spell.english:startswith("Utsusemi") then 
+            equip(sets.precast.Utsusemi)
+        end
+    end
+
     -- Equip Specific Sets Last
     if sets.precast[spell.english] then
         equip(sets.precast[spell.english])

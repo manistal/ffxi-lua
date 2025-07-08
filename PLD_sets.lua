@@ -10,6 +10,9 @@ sets = {}
 sets.weapons = {}
 sets.weapons.List = {
     "Sakpata",
+    "Naegling",
+    "Loxotic Mace",
+    "Piercing",
 }
 
 sets.weapons["Sakpata"] = {
@@ -17,6 +20,20 @@ sets.weapons["Sakpata"] = {
     sub="Priwen",
 }
 
+sets.weapons["Naegling"] = {
+    main="Naegling",
+    sub="Blurred Shield +1",
+}
+
+sets.weapons["Loxotic Mace"] = {
+    main="Loxotic Mace +1",
+    sub="Blurred Shield +1",
+}
+
+sets.weapons["Piercing"] = {
+    main="Malevolence",
+    sub="Blurred Shield +1",
+}
 
 -- Idle/DT Base Set
 sets.idle = {}
