@@ -271,17 +271,18 @@ sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
 ---------------------------
 -- TODO Enhancing Skill Earring, Telchine
 sets.midcast.Enhancing = {
-    -- Duration 5
-    head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +5',}},
+    -- Duration 5 TODO
+    head={ name="Telchine Cap", augments={'Mag. Evasion+19','"Conserve MP"+4','Enh. Mag. eff. dur. +5',}},
     -- Duration 10
-    body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}},
+    body={ name="Telchine Chas.", augments={'Mag. Evasion+20','Spell interruption rate down -9%','Enh. Mag. eff. dur. +10',}},
     -- Duration 8
     hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +8',}},
+    -- Duration 7
+    legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +7',}},
     -- Enhancing Skill: 19, Duration 5
     feet="Theo. Duckbills +2", -- Enh Duration
     -- Duration 10 
     waist="Embla Sash",
-    
 }
 
 -- TODO RELIC LEGS
