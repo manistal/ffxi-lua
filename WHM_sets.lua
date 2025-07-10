@@ -161,12 +161,9 @@ sets.ja["Martyr"] = {
 sets.precast = {} 
 
 --[[
-Current = 60% Fast Cast (71% cast time)
+Current = 76% Fast Cast (87% cast time)
 Options:
-Empy Neck = 5
-Regal Pumps (Valkrum UNM) = 5% (+2)
 Wistful Belt = 3
-JSE Neck+1 with RP = 8
 ]]
 
 -- Fast Cast
