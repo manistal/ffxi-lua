@@ -253,8 +253,8 @@ sets.bp.Precast = {
     ammo={ name="Epitaph", augments={'Path: A',}},
     -- Skill +18
     head="Beckoner's Horn +2",
-    -- Skill +9
-    neck="Caller's Pendant",
+    -- Skill +10
+    neck="Incanter's Torque",
     -- BP I: -6s
     body="Con. Doublet +1",
     -- Skill +25
@@ -329,4 +329,6 @@ sets.bp.Ward = {
     right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
     -- Skill +10, Perp: -1
     left_ring="Evoker's Ring",
+    -- Skill +10
+    neck="Incanter's Torque",
 }

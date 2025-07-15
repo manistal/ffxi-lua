@@ -280,6 +280,8 @@ sets.midcast.Enhancing = {
     feet="Theo. Duckbills +2", -- Enh Duration
     -- Duration 10 
     waist="Embla Sash",
+    -- Conserve MP, Skill+10
+    neck="Incanter's Torque",
 }
 
 -- TODO RELIC LEGS
