@@ -73,6 +73,8 @@ sets.idle.Default = {
     left_ring="Moonbeam Ring",
     -- Regen
     right_ring="Chirich Ring",
+    -- TODO Finish Augmenting
+    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 }
 
 --
@@ -99,7 +101,8 @@ sets.tp.Default = {
     right_ear="Brutal Earring",
     left_ring="Moonbeam Ring",
     right_ring="Chirich Ring",
-    -- TODO AMBU CAPE
+    -- TODO Finish Augmenting
+    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 }
 
 sets.tp.Hybrid = set_combine(sets.tp.Default, {

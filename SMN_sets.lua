@@ -16,20 +16,20 @@ sets.weapons.List = {
 
 sets.weapons["Espiritus"] = {
     main={ name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}},
-    sub="Vox Grip",
+    sub="Kaja Grip",
     ammo={ name="Epitaph", augments={'Path: A',}},
 }
 
 
 sets.weapons["Gridarvor"] = {
     main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
-    sub="Elan Strap",
+    sub="Kaja Grip",
     ammo={ name="Epitaph", augments={'Path: A',}},
 }
 
 sets.weapons["Grioavolr"] = {
     main={ name="Grioavolr", augments={'Blood Pact Dmg.+3','Pet: Mag. Acc.+15','Pet: "Mag.Atk.Bns."+15','DMG:+5',}},
-    sub="Elan Strap",
+    sub="Kaja Grip",
     ammo={ name="Epitaph", augments={'Path: A',}},
 }
 

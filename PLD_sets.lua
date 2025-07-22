@@ -44,13 +44,13 @@ sets.idle.Default = {
     hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
     legs="Sakpata's Cuisses",
     feet="Sakpata's Leggings",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    waist="Sailfi Belt +1",
+    neck={ name="Unmoving Collar +1", augments={'Path: A',}},
+    waist="Carrier's Sash",
     left_ear="Ethereal Earring",
     right_ear="Odnowa Earring +1",
-    left_ring="Vocane Ring",
+    left_ring="Moonbeam Ring",
     right_ring="Chirich Ring",
-    back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20',}},
+    back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}},
 }
 
 --
@@ -109,12 +109,17 @@ sets.midcast = {}
 sets.midcast.SIRDEnmity = {
     -- SIRD 10
     ammo="Staunch Tathlum",
-    -- SIRD 15
+    -- Enmity 7, SIRD 15
     head={ name="Eschite Helm", augments={'Mag. Evasion+15','Spell interruption rate down +15%','Enmity+7',}},
+    -- Enmity 7, SIRD 15
+    body={ name="Eschite Breast.", augments={'Mag. Evasion+15','Spell interruption rate down +15%','Enmity+7',}},
+    -- TODO Founders Greaves - SIRD 30
+    -- TODO Odyssean Greaves - Enmity 5, SIRD 20
     -- SIRD 5
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    -- SIRD 15
-    body={ name="Eschite Breast.", augments={'Mag. Evasion+15','Spell interruption rate down +15%','Enmity+7',}},
+    -- TODO Knightly Earring - Enmity 10, SIRD 9
+    -- Enmity 10 
+    back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}},
 }
 
 
