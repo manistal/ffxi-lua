@@ -13,8 +13,8 @@ COR_MACRO_BOOK = 3
 function get_sets() 
 	-- Sets Include
 	-- Requires sets{WeaponSkill: {}, TP: {}, Idle: {}, Precast: {}, Midcast:{}}
-    include('common.lua')
 	include('COR_sets.lua')
+    include('common.lua')
 	set_macro(COR_MACRO_BOOK, 1)
 	set_style(COR_STYLE_SET)
 

@@ -324,8 +324,8 @@ sets.midcast.Enfeebling = {
     right_ring="Kishar Ring",
     left_ear="Malignance Earring",
     waist="Eschan Stone",
+    neck="Incanter's Torque",
     -- TODO Ambu Magic Acc Cape
-    -- TODO Incanters Torque
 }
 
 -- ELemental magic: MACC = MAB

@@ -5,7 +5,7 @@
 -- Gearswap Spec: https://docs.windower.net/addons/gearswap/reference/
 
 PLD_STYLE_SET = 80
-PLD_MACRO_BOOK = 6
+PLD_MACRO_BOOK = 7
 
 -- 
 -- Main Entry Point 
@@ -69,6 +69,13 @@ end
 
 function midcast(spell)
     -- ENMITY and SIRD
+    if spell.english:startswith("Cure") then
+        equip(sets.midcast.Cure)
+    elseif spell.english:startswith("Phalanx") then
+        equip(sets.midcast.Phalanx)
+    elseif spell.action_type == "Magic" then 
+        equip(sets.midcast.SIRDEnmity)
+    end
 end
 
 function aftercast(spell)

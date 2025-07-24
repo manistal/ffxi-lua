@@ -92,6 +92,8 @@ sets.precast = {}
 
 -- Fast Cast
 sets.precast.FastCast = {
+    -- Fast Cast 8
+    head="Sakpata's Helm",
     hands={ name="Leyline Gloves", augments={'Accuracy+6','Mag. Acc.+2','"Mag.Atk.Bns."+6',}},
     legs={ name="Eschite Cuisses", augments={'"Mag.Atk.Bns."+25','"Conserve MP"+6','"Fast Cast"+5',}},
     right_ring="Kishar Ring",
@@ -122,9 +124,24 @@ sets.midcast.SIRDEnmity = {
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}},
 }
 
+sets.midcast.Cure = set_combine(sets.midcast.SIRDEnmity, {
+    -- Cure I: 5, Conserve MP: 2
+    right_ear="Mendi. Earring",
+    -- Cure I: 1, Cure II: 1
+    left_ring="Naji's Loop",
+})
 
-
-sets.midcast.Default = {
+sets.midcast.Phalanx = {
+    main="Sakpata's Sword",
+    sub="Priwen",
+    head={ name="Yorium Barbuta", augments={'Spell interruption rate down -9%','Phalanx +2',}},
+    body={ name="Yorium Cuirass", augments={'Spell interruption rate down -6%','Phalanx +3',}},
+    -- TODO SOUV HANDS
+    legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
+    -- TODO SOUV FEET
+    neck="Incanter's Torque",
 }
+
+
 
 

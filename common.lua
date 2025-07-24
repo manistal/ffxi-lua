@@ -78,21 +78,6 @@ function bind_toggles(key, set_category)
     toggle_binds[set_category].callbackfunc()
 end
 
--- Cities and Zones
-windower.register_event('zone change', 
-	function()
-        -- Reset to base set
-        equip_base_set(player.status)
-
-        -- City Movespeed Sets
-		if string.find(world.zone, "Bastok") then
-            equip({body="Republic Aketon"})
-        elseif string.find(world.zone, "Adoulin") then
-            equip({body="Councilor's Garb"})
-        end
-    end
-)
-
 function self_command(command)
     cmdArgs = split_string(command)
     if #cmdArgs < 0 then 
@@ -117,3 +102,39 @@ function self_command(command)
         end
     end
 end
+
+--
+-- Speciality Sets
+--
+sets.crafting = {}
+sets.crafting.Fishing ={
+    main="Debahocho +1",
+    range="Lu Shang's F. Rod",
+    ammo="Minnow",
+    body="Fsh. Tunica",
+    hands="Fsh. Gloves",
+    legs="Fisherman's Hose",
+    feet="Fisherman's Boots",
+    left_ring="Warp Ring",
+    right_ring="Pelican Ring",
+}
+
+sets.crafting.Cooking = {
+    main="Debahocho +1",
+
+}
+
+-- Cities and Zones
+windower.register_event('zone change', 
+	function()
+        -- Reset to base set
+        equip_base_set(player.status)
+
+        -- City Movespeed Sets
+		if string.find(world.zone, "Bastok") then
+            equip({body="Republic Aketon"})
+        elseif string.find(world.zone, "Adoulin") then
+            equip({body="Councilor's Garb"})
+        end
+    end
+)
