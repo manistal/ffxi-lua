@@ -39,13 +39,16 @@ sets.weapons["Piercing"] = {
 sets.idle = {}
 sets.idle.Default = {
     ammo="Staunch Tathlum",
+    -- TODO EMPY HELM
     head="Sakpata's Helm",
     body={ name="Sakpata's Plate", augments={'Path: A',}},
     hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+    --TODO EMPY LEGS
     legs="Sakpata's Cuisses",
     feet="Sakpata's Leggings",
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist="Carrier's Sash",
+    -- TODO Accesories? 
     left_ear="Ethereal Earring",
     right_ear="Odnowa Earring +1",
     left_ring="Moonbeam Ring",
