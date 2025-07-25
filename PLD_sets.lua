@@ -22,17 +22,20 @@ sets.weapons["Sakpata"] = {
 
 sets.weapons["Naegling"] = {
     main="Naegling",
-    sub="Blurred Shield +1",
+    sub="Diamond Aspis",
+    --sub="Blurred Shield +1",
 }
 
 sets.weapons["Loxotic Mace"] = {
     main="Loxotic Mace +1",
-    sub="Blurred Shield +1",
+    sub="Diamond Aspis",
+    --sub="Blurred Shield +1",
 }
 
 sets.weapons["Piercing"] = {
     main="Malevolence",
-    sub="Blurred Shield +1",
+    sub="Diamond Aspis",
+    --sub="Blurred Shield +1",
 }
 
 -- Idle/DT Base Set
@@ -111,6 +114,7 @@ sets.precast.FastCast = {
 -- 
 sets.midcast = {}
 
+-- SIRD 80, Enmity 39
 sets.midcast.SIRDEnmity = {
     -- SIRD 10
     ammo="Staunch Tathlum",
@@ -119,22 +123,27 @@ sets.midcast.SIRDEnmity = {
     -- Enmity 7, SIRD 15
     body={ name="Eschite Breast.", augments={'Mag. Evasion+15','Spell interruption rate down +15%','Enmity+7',}},
     -- TODO Founders Greaves - SIRD 30
-    -- TODO Odyssean Greaves - Enmity 5, SIRD 20
-    -- SIRD 5
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    -- SIRD 20, Enmity 5
+    feet="Odyssean Greaves",
+    -- SIRD 10
+    waist="Audumbla Sash",
+    -- SIRD 10, Enmity 10 
+    neck="Moonbeam Necklace",
     -- TODO Knightly Earring - Enmity 10, SIRD 9
     -- Enmity 10 
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}},
 }
 
 sets.midcast.Cure = set_combine(sets.midcast.SIRDEnmity, {
+    -- Cure I: 7
+    feet="Odyssean Greaves",
     -- Cure I: 5, Conserve MP: 2
     right_ear="Mendi. Earring",
     -- Cure I: 1, Cure II: 1
     left_ring="Naji's Loop",
 })
 
-sets.midcast.Phalanx = {
+sets.midcast.Phalanx = set_combine(sets.midcast.SIRDEnmity, {
     main="Sakpata's Sword",
     sub="Priwen",
     head={ name="Yorium Barbuta", augments={'Spell interruption rate down -9%','Phalanx +2',}},
@@ -143,7 +152,7 @@ sets.midcast.Phalanx = {
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
     -- TODO SOUV FEET
     neck="Incanter's Torque",
-}
+})
 
 
 
