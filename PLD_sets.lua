@@ -114,7 +114,7 @@ sets.precast.FastCast = {
 -- 
 sets.midcast = {}
 
--- SIRD 80, Enmity 39
+-- SIRD 89, Enmity 58
 sets.midcast.SIRDEnmity = {
     -- SIRD 10
     ammo="Staunch Tathlum",
@@ -122,14 +122,18 @@ sets.midcast.SIRDEnmity = {
     head={ name="Eschite Helm", augments={'Mag. Evasion+15','Spell interruption rate down +15%','Enmity+7',}},
     -- Enmity 7, SIRD 15
     body={ name="Eschite Breast.", augments={'Mag. Evasion+15','Spell interruption rate down +15%','Enmity+7',}},
+    -- Enmity 9
+    hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     -- TODO Founders Greaves - SIRD 30
+    -- TODO Relic Legs - SIRD 10, Enmity 9
     -- SIRD 20, Enmity 5
     feet="Odyssean Greaves",
     -- SIRD 10
     waist="Audumbla Sash",
     -- SIRD 10, Enmity 10 
     neck="Moonbeam Necklace",
-    -- TODO Knightly Earring - Enmity 10, SIRD 9
+    -- Enmity 10, SIRD 9
+    left_ear="Knightly Earring",
     -- Enmity 10 
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}},
 }
