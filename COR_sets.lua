@@ -187,24 +187,25 @@ sets.precast.Utsusemi = set_combine(sets.precast.FastCast, {
 
 -- 40 snapshot with Flurry II
 -- 60 snapshot without 
--- Current: Snapshot 41, Rapidshot 18
+-- Current: Snapshot 54, Rapidshot 18
 sets.precast.Ranged = {
-    -- Snapshot: +3 
-    neck={ name="Comm. Charm +1", augments={'Path: A',}},
+    -- Snapshot: +6
+    head="Ikenga's Hat",
     -- Snapshot: +8, RapidShot: +11
     hands="Carmine Fin. Ga. +1",
-    -- Rapid Shot: +18
-    body="Laksa. Frac +2",
-    -- Rapid Shot: +19
-    --legs={ name="Pursuer's Pants", augments={'AGI+10','"Rapid Shot"+10','"Subtle Blow"+7',}},
-    -- Snapshot +10
+    -- Snapshot: +9
+    body="Ikenga's Vest",
+    -- Snapshot +8 -- TODO Adhemar Kecks +1 (10+ rapid shot)
     legs="Chas. Culottes +2",
     -- Snapshot: +10
     feet="Meg. Jam. +2", 
-    -- Rapid Shot: +5
+    -- Snapshot: +3 
+    neck={ name="Comm. Charm +1", augments={'Path: A',}},
+    -- Rapid Shot: +5, -- TODO Impulse Belt (3)
     waist="Yemaya Belt",
     -- Snapsht: +10
     back={ name="Camulus's Mantle", augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}},
+    -- TODO Crepuscular Ring (3)
 }
 
 
@@ -213,22 +214,36 @@ sets.precast.Ranged = {
 -- 
 sets.midcast = {}
 
--- Ranged Acc >= STP/TSHOT >= RangedATK
-sets.midcast.Ranged = {
-    head="Meghanada Visor +2",
-    neck="Iskur Gorget",
+--[[
+    main="Gleti's Knife",
+    head="Ikenga's Hat",
+    body="Ikenga's Vest",
+    hands="Ikenga's Gloves",
+    legs="Ikenga's Trousers",
+    feet="Ikenga's Clogs",
+
     body="Chasseur's Frac +2",
-    hands="Meg. Gloves +2",
+]]
+
+
+
+-- Ranged Acc >= STP >= RangedATK
+sets.midcast.Ranged = {
+    head="Ikenga's Hat",
+    body="Ikenga's Vest",
+    hands="Ikenga's Gloves",
     legs="Chas. Culottes +2",
-    feet="Meg. Jam. +2",
+    feet="Ikenga's Clogs",
+    neck="Iskur Gorget",
     waist="Yemaya Belt",
+    right_ear="Telos Earring",
     right_ring="Meghanada Ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
 }
 
-sets.midcast.TripleShot = {
+sets.midcast.TripleShot = set_combine(sets.midcast.Ranged, {
     body="Chasseur's Frac +2",
-}
+})
 
 --
 -- WS Sets 
@@ -261,11 +276,13 @@ sets.ws["Requiescat"]  = sets.ws.Default
 
 -- Ranged Physical 
 sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
-    head="Meghanada Visor +2",
-    neck="Iskur Gorget",
+    head="Ikenga's Hat",
+    body="Ikenga's Vest",
     hands="Meg. Gloves +2",
+    neck="Iskur Gorget",
     waist="Yemaya Belt",
     right_ring="Meghanada Ring",
+    -- TODO Ranged Attack WSD!
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
 })
 
