@@ -148,13 +148,21 @@ sets.midcast.Cure = set_combine(sets.midcast.SIRDEnmity, {
 })
 
 sets.midcast.Phalanx = set_combine(sets.midcast.SIRDEnmity, {
+    -- Phalanx 5
     main="Sakpata's Sword",
+    -- Phalanx 2 
     sub="Priwen",
+    -- Phalanx 3
     head={ name="Yorium Barbuta", augments={'Spell interruption rate down -9%','Phalanx +2',}},
+    -- Phalanx 2
     body={ name="Yorium Cuirass", augments={'Spell interruption rate down -6%','Phalanx +3',}},
-    -- TODO SOUV HANDS
+    -- Phalanx 5
+    hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    -- Phalanx 5 
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-    -- TODO SOUV FEET
+    -- Phalanx 5 
+    feet={ name="Souveran Schuhs +1", augments={'HP+65','Attack+25','Magic dmg. taken -4',}},
+    -- Skill 10
     neck="Incanter's Torque",
 })
 
