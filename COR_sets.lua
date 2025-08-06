@@ -28,22 +28,22 @@ sets.weapons["Savage Magic"] = {
 
 sets.weapons["Lanun Knife"] = {
     main="Lanun Knife",
-    sub="Demers. Degen +1",
+    sub="Gleti's Knife",
     range="Fomalhaut",
     ammo="Chrono Bullet",
 }
 
 sets.weapons["Savage Spam"] = {
     main="Naegling",
-    sub="Demers. Degen +1",
+    sub="Gleti's Knife",
     range="Fomalhaut",
     ammo="Chrono Bullet",
 }
 
 
 sets.weapons["DI Farming"] = {
-    main="Tauret",
-    sub="Voluspa Knife",
+    main="Voluspa Knife",
+    sub="Gleti's Knife",
     range="Fomalhaut",
     ammo="Chrono Bullet",
 }
@@ -215,7 +215,6 @@ sets.precast.Ranged = {
 sets.midcast = {}
 
 --[[
-    main="Gleti's Knife",
     head="Ikenga's Hat",
     body="Ikenga's Vest",
     hands="Ikenga's Gloves",
