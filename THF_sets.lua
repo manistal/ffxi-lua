@@ -137,6 +137,8 @@ sets.ws = {}
 
 -- TP Bonus > WSD > Attack = Accuracy
 sets.ws.Default = {
+    -- WSD
+    ammo="Oshasha's Treatise",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},

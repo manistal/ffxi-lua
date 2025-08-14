@@ -129,8 +129,8 @@ sets.ws = {}
 
 -- WSD >>> ALL by default
 sets.ws.Default = {
-    -- ATK/DBLATK
-    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    -- WSD
+    ammo="Oshasha's Treatise",
     -- WSD 6+
     head={ name="Nyame Helm", augments={'Path: B',}},
     -- WSD 6+
@@ -167,6 +167,8 @@ sets.ws["Herculean Slash"] = sets.ws.MACC   -- Paralyze
 sets.ws["Armor Break"] = sets.ws.MACC       -- Defense Down
 
 sets.ws.MultiHit = set_combine(sets.ws.Default, {
+    -- ATK/DBLATK
+    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     -- 3ATK: 5
     head="Flam. Zucchetto +2",
     --- 2ATK: 8, PDL

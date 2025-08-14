@@ -93,7 +93,7 @@ sets.ws = {}
 -- WSD >>> ALL by default
 sets.ws.Default = {
     -- ATK/DBLATK
-    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    ammo="Oshasha's Treatise",
     -- WSD 6+
     head={ name="Nyame Helm", augments={'Path: B',}},
     -- WSD 6+
