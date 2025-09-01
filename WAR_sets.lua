@@ -53,8 +53,6 @@ sets.idle.Default = {
     ammo="Staunch Tathlum",
     -- DT: -7 
     head="Sakpata's Helm",
-    -- DT: -6
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
     -- DT: -10
     body="Sakpata's Plate",
     -- DT: -8 
@@ -64,7 +62,9 @@ sets.idle.Default = {
     -- DT: -6
     feet="Sakpata's Leggings",
     -- MResist
-    waist="Carrier's Sash",
+    neck="Warder's Charm +1",
+    -- DT -3, HP+10%
+    waist="Plat. Mog. Belt",
     -- HP
     left_ear="Odnowa Earring +1",
     -- HP

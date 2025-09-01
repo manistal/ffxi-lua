@@ -95,8 +95,8 @@ sets.idle.Default = {
     feet="Ebers Duckbills +2",
     -- MEVA
     neck="Warder's Charm +1",
-    -- MEVA
-    waist="Carrier's Sash",
+    -- DT -3, HP+10%
+    waist="Plat. Mog. Belt",
     -- HP
     left_ear="Eabani Earring",
     -- TODO NEED BETTER EAR

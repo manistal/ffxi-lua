@@ -50,7 +50,8 @@ sets.idle.Default = {
     legs="Sakpata's Cuisses",
     feet="Sakpata's Leggings",
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
-    waist="Carrier's Sash",
+    -- DT -3, HP+10%
+    waist="Plat. Mog. Belt",
     -- TODO Accesories? 
     left_ear="Ethereal Earring",
     right_ear="Odnowa Earring +1",
