@@ -145,6 +145,8 @@ sets.ws.Default = {
     neck={ name="Abyssal Beads +1", augments={'Path: A',}},
     -- 2ATK/3ATK
     waist="Sailfi Belt +1",
+    -- WSD 10
+    right_ring="Cornelia's Ring",
     -- TP+
     left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     -- WSD 2

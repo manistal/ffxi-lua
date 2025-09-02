@@ -146,6 +146,8 @@ sets.ws.Default = {
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     -- TP+250
     right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+    -- WSD 10
+    left_ring="Cornelia's Ring",
     -- WSD: +2
     left_ear="Ishvara Earring",
 }

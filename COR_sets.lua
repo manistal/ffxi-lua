@@ -263,6 +263,8 @@ sets.ws.Default = {
     feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
     -- TP+250
     right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+    -- WSD 10
+    left_ring="Cornelia's Ring",
     -- WSD: +2
     left_ear="Ishvara Earring",
     -- WSD: +10
