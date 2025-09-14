@@ -101,6 +101,11 @@ function midcast(spell)
 	--if (spell.type == 'WhiteMagic' or spell.type == 'BlackMagic' or spell.type == 'BlueMagic' or spell.type == 'Ninjutsu') then
 	--	equip(sets.midcast.FastCast)
 	--end
+	--if spell.english == "Ranged" and buffactive['Triple Shot'] then
+	--	if buffactive['Triple Shot'] then
+	--		equip(set_combine(sets.ra.Default,sets.ra.TripleShot))
+    --  end
+    --end
 
     -- Equip Specific Sets Last
     if sets.midcast[spell.english] then
@@ -108,11 +113,6 @@ function midcast(spell)
     end
 
     -- Overrides for Tripleshot TODO
-	--if spell.english == "Ranged" and buffactive['Triple Shot'] then
-	--	if buffactive['Triple Shot'] then
-	--		equip(set_combine(sets.ra.Default,sets.ra.TripleShot))
-    --  end
-    --end
 
 end
 

@@ -9,12 +9,13 @@ sets = {}
 -- 
 sets.weapons = {}
 sets.weapons.List = {
-    "Savage Magic",
     "Savage Spam",
+    "Savage Magic",
     "Lanun Knife",
-    "DI Farming",
-    "Tauret Savage",
-    "Tauret Lanun",
+    "RACC",
+    --"DI Farming",
+    --"Tauret Savage",
+    --"Tauret Lanun",
 }
 
 
@@ -27,10 +28,15 @@ sets.weapons["Savage Magic"] = {
 }
 
 sets.weapons["Lanun Knife"] = {
-    main="Lanun Knife",
+    main={ name="Lanun Knife", augments={'Path: C',}},
     sub="Gleti's Knife",
     range="Fomalhaut",
     ammo="Chrono Bullet",
+}
+
+sets.weapons["RACC"] = {
+    main={ name="Lanun Knife", augments={'Path: C',}},
+    sub="Lanun Knife",
 }
 
 sets.weapons["Savage Spam"] = {
@@ -40,13 +46,13 @@ sets.weapons["Savage Spam"] = {
     ammo="Chrono Bullet",
 }
 
-
 sets.weapons["DI Farming"] = {
     main="Voluspa Knife",
     sub="Gleti's Knife",
     range="Fomalhaut",
     ammo="Chrono Bullet",
 }
+
 
 sets.weapons["Tauret Savage"] = { 
     main="Tauret",
@@ -227,7 +233,7 @@ sets.midcast = {}
 
 
 -- Ranged Acc >= STP >= RangedATK
-sets.midcast.Ranged = {
+sets.midcast.RangedDefault = {
     head="Ikenga's Hat",
     body="Ikenga's Vest",
     hands="Ikenga's Gloves",
@@ -239,6 +245,19 @@ sets.midcast.Ranged = {
     right_ring="Meghanada Ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
 }
+
+sets.midcast.Ranged = set_combine(sets.midcast.RangedDefault, {
+    -- 51 Acc
+    head="Chasseur's Tricorne +2"
+    -- 54 Acc
+    body="Chasseur's Frac +2",
+    -- 52 Acc
+    hands="Chasseur's Gants +2",
+    -- 53 Acc
+    legs="Chas. Culottes +2",
+    -- 50 Acc
+    --feet="Chass. Botte-s +1",
+})
 
 sets.midcast.TripleShot = set_combine(sets.midcast.Ranged, {
     body="Chasseur's Frac +2",
@@ -255,12 +274,12 @@ sets.ws.Default = {
     head={ name="Nyame Helm", augments={'Path: B',}},
     -- WSD: +5
     body="Laksa. Frac +2",
-    -- WSD: +7
-    hands="Meg. Gloves +2",
+    -- WSD: +8
+    hands="Chasseur's Gants +2",
     -- WSD: +3
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    -- WSD: +5
-    feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
+    -- WSD: +12
+    feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}},
     -- TP+250
     right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     -- WSD 10
@@ -279,7 +298,6 @@ sets.ws["Requiescat"]  = sets.ws.Default
 sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
     head="Ikenga's Hat",
     body="Ikenga's Vest",
-    hands="Meg. Gloves +2",
     neck="Iskur Gorget",
     waist="Yemaya Belt",
     right_ring="Meghanada Ring",
@@ -294,7 +312,7 @@ sets.ws["Wildfire"] = set_combine(sets.ws.Default, {
     body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
+    feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}},
     waist="Eschan Stone",
     left_ear="Hermetic Earring",
     right_ear="Friomisi Earring",
@@ -307,7 +325,7 @@ sets.ws["Leaden Salute"]  = set_combine(sets.ws.Default, {
     body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
+    feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}},
     waist="Eschan Stone",
     right_ring="Archon Ring",
     left_ear="Hermetic Earring",
@@ -324,11 +342,10 @@ sets.ja = {}
 
 -- Effect Bonus > Duration
 sets.ja.PhantomRoll = set_combine(sets.idle.Default, {
-    main="Lanun Knife",
+    main={ name="Lanun Knife", augments={'Path: C',}},
     range={ name="Compensator", augments={'DMG:+15','AGI+15','Rng.Acc.+15',}},
     head={ name="Lanun Tricorne", augments={'Enhances "Winning Streak" effect',}},
-    hands="Chasseur's Gants +1",
-    left_ring="Barataria Ring",
+    hands="Chasseur's Gants +2",
     right_ring="Luzaf's Ring",
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Damage taken-5%',}},
 })
@@ -337,12 +354,12 @@ sets.ja.PhantomRoll = set_combine(sets.idle.Default, {
 sets.ja["Random Deal"] = {body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},}
 -- sets.ja["Fold"] = {hands="Lanun Gants +1"}
 -- sets.ja["Snake Eye"] = {legs="Lanun Trews +1"}
-sets.ja["Wild Card"] = {feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}}}
+sets.ja["Wild Card"] = {feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}}}
 
 -- Roll bonuses
 sets.ja["Blitzer's Roll"] = {head="Chasseur's Tricorne +1"}
 sets.ja["Tactician's Roll"] = {body="Chasseur's Frac +2",}
-sets.ja["Allies' Roll"] = {hands="Chasseur's Gants +1",}
+sets.ja["Allies' Roll"] = {hands="Chasseur's Gants +2",}
 sets.ja["Caster's Roll"] = {legs="Chas. Culottes +2",}
 sets.ja["Courser's Roll"] = {feet="Chass. Bottes +1",}
 
