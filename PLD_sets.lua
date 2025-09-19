@@ -133,6 +133,8 @@ sets.midcast.SIRDEnmity = {
     waist="Audumbla Sash",
     -- SIRD 10, Enmity 10 
     neck="Moonbeam Necklace",
+    -- SIRD 3
+    left_ring="Murky Ring",
     -- Enmity 10, SIRD 9
     left_ear="Knightly Earring",
     -- Enmity 10 
