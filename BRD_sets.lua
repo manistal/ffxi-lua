@@ -105,7 +105,7 @@ sets.idle.Default = {
     -- TODO NEED BETTER EAR
     right_ear="Ethereal earring",
     -- 7 DT
-    left_ring="Vocane Ring",
+    left_ring="Murky Ring",
     -- HP, DT: -4
     right_ring="Moonbeam Ring",
     -- TODO Finish AMBU CAPE

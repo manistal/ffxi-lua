@@ -101,10 +101,10 @@ sets.idle.Default = {
     left_ear="Eabani Earring",
     -- TODO NEED BETTER EAR
     right_ear="Ethereal earring",
-    -- 7 DT
-    left_ring="Vocane Ring",
-    -- Refresh
-    right_ring="Inyanga Ring",
+    -- 10 DT
+    left_ring="Murky Ring",
+    -- Speed
+    right_ring="Shneddick Ring",
     -- 10 PDT
     back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
 }

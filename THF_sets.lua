@@ -56,9 +56,9 @@ sets.idle.Default = {
     -- DT: -7
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     waist="Sailfi Belt +1",
-    -- DT: -7
-    left_ring="Vocane Ring",
-    right_ring="Chirich Ring",
+    -- DT: -10
+    left_ring="Murky Ring",
+    right_ring="Shneddick Ring",
     left_ear="Sherida Earring",
     right_ear="Suppanomimi",
     back={ name="Toutatis's Cape", augments={'Accuracy+20 Attack+20','"Store TP"+10',}},

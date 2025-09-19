@@ -50,8 +50,8 @@ sets.idle.Default = {
     waist="Carrier's Sash",
     left_ear="Eabani Earring",
     right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
-    left_ring="Vocane Ring",
-    right_ring="Inyanga Ring",
+    left_ring="Murky Ring",
+    right_ring="Shneddick Ring",
     back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Phys. dmg. taken-10%',}},
 }
 

@@ -91,9 +91,9 @@ sets.idle.Default = {
     waist="Carrier's Sash",
     left_ear="Odnowa Earring +1",
     right_ear="Eabani Earring",
-    -- DT: -7
-    left_ring="Vocane Ring",
-    right_ring="Chirich Ring",
+    -- DT: -10
+    left_ring="Murky Ring",
+    right_ring="Shneddick Ring",
     back={ name="Camulus's Mantle", augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}},
 }
 
@@ -144,8 +144,8 @@ sets.tp.Hybrid = set_combine(sets.tp.Default, {
     legs="Chas. Culottes +2",
     -- DT: -7 
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    -- DT: -7
-    left_ring="Vocane Ring",
+    -- DT: -10
+    left_ring="Murky Ring",
 }) 
 
 sets.tp.FullDT = set_combine(sets.tp.Default, {
@@ -161,8 +161,8 @@ sets.tp.FullDT = set_combine(sets.tp.Default, {
     legs="Chas. Culottes +2",
     -- DT: -7 
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    -- DT: -7
-    left_ring="Vocane Ring",
+    -- DT: -10
+    left_ring="Murky Ring",
 }) 
 
 sets.tp.DTMeva = set_combine(sets.idle.Default, {
@@ -248,7 +248,7 @@ sets.midcast.RangedDefault = {
 
 sets.midcast.Ranged = set_combine(sets.midcast.RangedDefault, {
     -- 51 Acc
-    head="Chasseur's Tricorne +2"
+    head="Chasseur's Tricorne +2",
     -- 54 Acc
     body="Chasseur's Frac +2",
     -- 52 Acc

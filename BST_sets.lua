@@ -50,8 +50,8 @@ sets.idle.Default = {
     waist="Carrier's Sash",
     left_ear="Tuisto Earring",
     right_ear="Odnowa Earring +1",
-    left_ring="Chirich Ring",
-    right_ring="Moonbeam Ring",
+    left_ring="Murky Ring",
+    right_ring="Shneddick Ring",
     back="Artio's Mantle",
 }
 
