@@ -78,8 +78,6 @@ sets.idle = {}
 sets.idle.Default = {
     -- DT: -7
     head={ name="Nyame Helm", augments={'Path: B',}},
-    -- DT: -6
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
     -- DT: -9
     body={ name="Nyame Mail", augments={'Path: B',}},
     --DT: -7
@@ -88,11 +86,17 @@ sets.idle.Default = {
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     -- DT: -7
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    waist="Carrier's Sash",
+    -- MDEF
+    neck="Warder's Charm +1",
+    -- DT -3
+    waist="Plat. Mog. Belt",
+    -- HP
     left_ear="Odnowa Earring +1",
+    -- HP
     right_ear="Eabani Earring",
     -- DT: -10
     left_ring="Murky Ring",
+    -- SPEED
     right_ring="Shneddick Ring",
     back={ name="Camulus's Mantle", augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}},
 }

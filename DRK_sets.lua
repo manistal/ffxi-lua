@@ -97,7 +97,7 @@ sets.tp.Default = {
     legs="Ig. Flanchard +3",
     feet="Flam. Gambieras +2",
     neck={ name="Abyssal Beads +1", augments={'Path: A',}},
-    waist="Ioskeha Belt",
+    waist="Sailfi Belt +1",
     left_ear="Telos Earring",
     right_ear="Brutal Earring",
     left_ring="Moonbeam Ring",
