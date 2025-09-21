@@ -29,7 +29,7 @@ end
 function equip_base_set(status) 
     -- TP/Engaged Sets (Glass cannon TP vs Tanky TP)
     if status == 'Engaged' then 
-        if (player.hpp <= 60) or (player.hp <= 1800) then 
+        if (player.hpp <= 60) or (player.hp <= 1500) then 
             equip(sets.tp.FullDT)
         else
             equip(sets.tp.Current)
@@ -53,33 +53,38 @@ function precast(spell)
     -- If we have a specific spell set, use it
     if sets.precast[spell.english] then
         equip(sets.precast[spell.english])
+    end
+
     -- Default to +WSD Set and override for WS
-    elseif spell.type == "WeaponSkill" then
+    if spell.type == "WeaponSkill" then
         equip(sets.ws.Default)
 		if sets.ws[spell.english] then 
 			equip(sets.ws[spell.english])
         end
-    -- Job Abilities are either specific or none
-    elseif spell.type == "JobAbility" then
+    end
+
+    -- Job Abilities are either specific, diamond aspis when not engaged
+    if spell.type == "JobAbility" then
 		if sets.ja[spell.english] then 
 			equip(sets.ja[spell.english])
         end
-    -- For Magic use Fast Cast
-    elseif spell.action_type == "Magic" then 
-        equip(sets.precast.FastCast)
+
+        if player.status != 'Engaged' then 
+            equip(sets.ja.DiamondAspis)
+        end
     end
+
+    -- For Magic use Fast Cast
+    -- TODO: Disable for trust magic 
+    -- elseif spell.action_type == "Magic" then 
+    --     equip(sets.precast.FastCast)
+    -- end
 end
 
 
 function midcast(spell)
     if sets.midcast[spell.english] then
         equip(sets.midcast[spell.english])
-    elseif spell.skill == "Enfeebling Magic" then
-        equip(sets.midcast.Enfeebling)
-    elseif spell.skill == "Elemental Magic" then
-        equip(sets.midcast.Nuking)
-    elseif spell.action_type == "Magic" then 
-        equip(sets.midcast.Default)
     end
 end
 

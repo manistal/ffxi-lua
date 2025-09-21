@@ -10,10 +10,10 @@ sets = {}
 sets.weapons = {}
 sets.weapons.List = {
     "Lycurgos",
-    "Montante",
+    "ShiningOne",
     "Naegling",
     "Loxotic Mace",
-    "Piercing",
+    "Montante",
 }
 
 sets.weapons["Montante"] = {
@@ -24,6 +24,11 @@ sets.weapons["Montante"] = {
 
 sets.weapons["Lycurgos"] = {
     main="Lycurgos",
+    sub="Utu Grip",
+}
+
+sets.weapons["ShiningOne"] = {
+    main="Shining One" ,
     sub="Utu Grip",
 }
 
@@ -39,11 +44,6 @@ sets.weapons["Loxotic Mace"] = {
     --sub="Blurred Shield +1",
 }
 
-sets.weapons["Piercing"] = {
-    main="Malevolence",
-    sub="Diamond Aspis",
-    --sub="Blurred Shield +1",
-}
 
 
 -- Idle/DT Base Set
@@ -90,14 +90,20 @@ sets.tp.List = {
 
 sets.tp.Default = {
     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    -- TODO: Empy Helm 
     head="Flam. Zucchetto +2",
+    -- TODO Empy Body
     body="Sakpata's Plate",
     hands="Sakpata's Gauntlets",
+    -- TODO Artifact Legs
     legs="Sakpata's Cuisses",
+    -- TODO Artifact Feet
     feet="Flam. Gambieras +2",
-    -- TODO NECK
-    waist="Ioskeha Belt",
+    -- TODO JSE Neck
+    neck="Republican Platinum Medal",
+    waist="Sailfi Belt +1",
     left_ear="Telos Earring",
+    -- TODO Empy Ear
     right_ear="Brutal Earring",
     left_ring="Moonbeam Ring",
     right_ring="Chirich Ring",
@@ -106,16 +112,14 @@ sets.tp.Default = {
 }
 
 sets.tp.Hybrid = set_combine(sets.tp.Default, {
-    -- DT: -2 
-    ammo="Staunch Tathlum",
     -- DT: -7 
     head="Sakpata's Helm",
-    -- DT: -6
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
     -- DT: -10
     body="Sakpata's Plate",
     -- DT: -8 
     hands="Sakpata's Gauntlets",
+    -- DT: -9
+    legs="Sakpata's Cuisses",
     -- DT: -6
     feet="Sakpata's Leggings",
 })
@@ -186,11 +190,19 @@ sets.ws.MultiHit = set_combine(sets.ws.Default, {
 })
 sets.ws["Resolution"] = sets.ws.MultiHit
 
+-- TODO: Add specific GAXE WS SETS
+
 -- 
 -- Job Abilities
 -- 
 sets.ja = {}
--- TODO DIAMOND ASPIS
+
+sets.ja.DiamondAspis = {
+    main="Naegling",
+    sub="Diamond Aspis",
+}
+
+-- TODO JSE
 
 -- 
 -- Spell Precast Sets
