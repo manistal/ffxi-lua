@@ -74,7 +74,7 @@ sets.idle.Default = {
     -- Regen
     right_ring="Chirich Ring",
     -- TODO Finish Augmenting
-    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
+    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 }
 
 --
@@ -153,7 +153,8 @@ sets.ws.Default = {
     left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     -- WSD 2
     right_ear="Thrud Earring",
-    -- TODO AMBU CAPE
+    -- WSD 10
+    back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
 }
 
 sets.ws.MACC = set_combine(sets.ws.Default, {
