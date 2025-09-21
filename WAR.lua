@@ -69,7 +69,7 @@ function precast(spell)
 			equip(sets.ja[spell.english])
         end
 
-        if player.status != 'Engaged' then 
+        if player.status ~= 'Engaged' then 
             equip(sets.ja.DiamondAspis)
         end
     end
