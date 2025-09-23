@@ -71,8 +71,8 @@ sets.idle.Default = {
     right_ear="Tuisto Earring",
     -- HP, DT: -4
     left_ring="Moonbeam Ring",
-    -- Regen
-    right_ring="Chirich Ring",
+    -- Speed
+    right_ring="Shneddick Ring",
     -- TODO Finish Augmenting
     back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 }

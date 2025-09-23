@@ -119,22 +119,24 @@ sets.midcast = {}
 sets.midcast.SIRDEnmity = {
     -- SIRD 10
     ammo="Staunch Tathlum",
-    -- Enmity 7, SIRD 15
-    head={ name="Eschite Helm", augments={'Mag. Evasion+15','Spell interruption rate down +15%','Enmity+7',}},
+    -- Enmity ~20+
+    head={ name="Loess Barbuta +1", augments={'Path: A',}},
     -- Enmity 7, SIRD 15
     body={ name="Eschite Breast.", augments={'Mag. Evasion+15','Spell interruption rate down +15%','Enmity+7',}},
     -- Enmity 9
     hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-    -- TODO Founders Greaves - SIRD 30
-    -- TODO Relic Legs - SIRD 10, Enmity 9
+    -- TODO Founders Greaves - SIRD 30 / TODO Relic Legs - SIRD 10, Enmity 9
     -- SIRD 20, Enmity 5
     feet="Odyssean Greaves",
     -- SIRD 10
     waist="Audumbla Sash",
     -- SIRD 10, Enmity 10 
     neck="Moonbeam Necklace",
+    -- TODO APEILE RING Enmity 5
     -- SIRD 3
     left_ring="Murky Ring",
+    -- SIRD 5
+    right_ring="Evanescence Ring",
     -- Enmity 10, SIRD 9
     left_ear="Knightly Earring",
     -- Enmity 10 
