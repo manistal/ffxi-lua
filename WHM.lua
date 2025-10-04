@@ -137,8 +137,13 @@ function buff_change(name, gain, table)
     -- Called when gaining/losing buffs
     -- gain = true when buff applied, false when removed
     if gain and buff == 'Sleep' and player.hpp > 1 then
-        equip(sets.AntiSleep)
+        equip({main="Prime Maul"})
     else if not gain and buff == 'Sleep' then
+        equip_base_set()
+    end
+
+    if gain and ((buff == 'Silence') or (buff == 'Paralysis')) then
+		send_command('@input ;wait 1.0;input /item "Remedy" <me>')
         equip_base_set()
     end
 end
