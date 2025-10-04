@@ -10,38 +10,43 @@ sets = {}
 sets.weapons = {}
 sets.weapons.List = {
     "Savage Spam",
-    "Savage Magic",
-    "Lanun Knife",
+    -- "Savage Magic",
+    "Rostam",
     "RACC",
-    --"DI Farming",
-    --"Tauret Savage",
-    --"Tauret Lanun",
+    "LEADEN",
+    "DI Farming",
 }
 
 
-
-sets.weapons["Savage Magic"] = { 
+sets.weapons["Savage Spam"] = {
     main="Naegling",
-    sub="Tauret",
+    sub="Gleti's Knife",
     range="Fomalhaut",
     ammo="Chrono Bullet",
 }
 
-sets.weapons["Lanun Knife"] = {
-    main={ name="Lanun Knife", augments={'Path: C',}},
+--sets.weapons["Savage Magic"] = { 
+--    main="Tauret",
+--    sub="Naegling",
+--    range="Fomalhaut",
+--    ammo="Chrono Bullet",
+--}
+
+sets.weapons["Rostam"] = {
+    main={ name="Rostam", augments={'Path: C',}},
     sub="Gleti's Knife",
     range="Fomalhaut",
     ammo="Chrono Bullet",
 }
 
 sets.weapons["RACC"] = {
-    main={ name="Lanun Knife", augments={'Path: C',}},
+    main={ name="Rostam", augments={'Path: C',}},
     sub="Lanun Knife",
 }
 
-sets.weapons["Savage Spam"] = {
-    main="Naegling",
-    sub="Gleti's Knife",
+sets.weapons["LEADEN"] = {
+    main={ name="Rostam", augments={'Path: C',}},
+    sub="Tauret",
     range="Fomalhaut",
     ammo="Chrono Bullet",
 }
@@ -52,22 +57,6 @@ sets.weapons["DI Farming"] = {
     range="Fomalhaut",
     ammo="Chrono Bullet",
 }
-
-
-sets.weapons["Tauret Savage"] = { 
-    main="Tauret",
-    sub="Naegling",
-    range="Fomalhaut",
-    ammo="Chrono Bullet",
-}
-
-sets.weapons["Tauret Lanun"] = {
-    main="Tauret",
-    sub="Lanun Knife",
-    range="Fomalhaut",
-    ammo="Chrono Bullet",
-}
-
 
 
 -- Idle/DT Base Set
@@ -128,7 +117,7 @@ sets.tp.Default = {
     -- Haste: +5
     hands="Adhemar Wristbands",
     -- Haste: +6
-    legs="Chas. Culottes +2",
+    legs="Chas. Culottes +3",
     -- Haste: +4
     feet={ name="Herculean Boots", augments={'Attack+24','"Triple Atk."+3','Accuracy+12',}},
     waist="Windbuffet Belt",
@@ -145,7 +134,7 @@ sets.tp.Hybrid = set_combine(sets.tp.Default, {
     -- DT: -6
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
     -- DT: -12
-    legs="Chas. Culottes +2",
+    legs="Chas. Culottes +3",
     -- DT: -7 
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     -- DT: -10
@@ -162,7 +151,7 @@ sets.tp.FullDT = set_combine(sets.tp.Default, {
     -- DT: -6
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
     -- DT: -12
-    legs="Chas. Culottes +2",
+    legs="Chas. Culottes +3",
     -- DT: -7 
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     -- DT: -10
@@ -206,7 +195,7 @@ sets.precast.Ranged = {
     -- Snapshot: +9
     body="Ikenga's Vest",
     -- Snapshot +8 -- TODO Adhemar Kecks +1 (10+ rapid shot)
-    legs="Chas. Culottes +2",
+    legs="Chas. Culottes +3",
     -- Snapshot: +10
     feet="Meg. Jam. +2", 
     -- Snapshot: +3 
@@ -241,7 +230,7 @@ sets.midcast.RangedDefault = {
     head="Ikenga's Hat",
     body="Ikenga's Vest",
     hands="Ikenga's Gloves",
-    legs="Chas. Culottes +2",
+    legs="Chas. Culottes +3",
     feet="Ikenga's Clogs",
     neck="Iskur Gorget",
     waist="Yemaya Belt",
@@ -258,7 +247,7 @@ sets.midcast.Ranged = set_combine(sets.midcast.RangedDefault, {
     -- 52 Acc
     hands="Chasseur's Gants +2",
     -- 53 Acc
-    legs="Chas. Culottes +2",
+    legs="Chas. Culottes +3",
     -- 50 Acc
     --feet="Chass. Botte-s +1",
 })
@@ -331,7 +320,7 @@ sets.ws["Leaden Salute"]  = set_combine(sets.ws.Default, {
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}},
     waist="Eschan Stone",
-    right_ring="Archon Ring",
+    ring_ring="Archon Ring",
     left_ear="Hermetic Earring",
     right_ear="Friomisi Earring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
@@ -364,7 +353,7 @@ sets.ja["Wild Card"] = {feet={ name="Lanun Bottes +4", augments={'Enhances "Wild
 sets.ja["Blitzer's Roll"] = {head="Chasseur's Tricorne +1"}
 sets.ja["Tactician's Roll"] = {body="Chasseur's Frac +2",}
 sets.ja["Allies' Roll"] = {hands="Chasseur's Gants +2",}
-sets.ja["Caster's Roll"] = {legs="Chas. Culottes +2",}
+sets.ja["Caster's Roll"] = {legs="Chas. Culottes +3",}
 sets.ja["Courser's Roll"] = {feet="Chass. Bottes +1",}
 
 sets.ja["Quick Draw"] = {

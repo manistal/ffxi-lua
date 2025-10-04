@@ -131,10 +131,11 @@ windower.register_event('zone change',
         equip_base_set(player.status)
 
         -- City Movespeed Sets
-		if string.find(world.zone, "Bastok") then
-            equip({body="Republic Aketon"})
-        elseif string.find(world.zone, "Adoulin") then
-            equip({body="Councilor's Garb"})
-        end
+        -- We have SCHNEDDICK NOW
+		--if string.find(world.zone, "Bastok") then
+  --          equip({body="Republic Aketon"})
+  --      elseif string.find(world.zone, "Adoulin") then
+  --          equip({body="Councilor's Garb"})
+  --      end
     end
 )
