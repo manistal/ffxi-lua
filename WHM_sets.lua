@@ -37,6 +37,10 @@ Empyrean:
 
 ]]
 
+sets.AntiSleep = {
+    main="Prime Maul",
+}
+
 --
 -- Weapon Sets
 -- 
