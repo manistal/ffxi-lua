@@ -97,9 +97,8 @@ sets.idle.Default = {
 sets.tp = {}
 
 sets.tp.List = {
-    "DTMeva",
     "Hybrid",
-    "FullDT",
+    "DTMeva",
     "Default",
 }
 
@@ -131,32 +130,20 @@ sets.tp.Default = {
 }
 
 sets.tp.Hybrid = set_combine(sets.tp.Default, {
-    -- DT: -6
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    -- DT: -12
+    -- 7 DT
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    -- 9 DT
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    -- 12 DT
     legs="Chas. Culottes +3",
-    -- DT: -7 
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    -- DT: -10
+    -- DW
+    left_ear="Suppanomimi",
+    -- DW
+    right_ear="Eabani Earring",
+    -- 10 DT
     left_ring="Murky Ring",
 }) 
 
-sets.tp.FullDT = set_combine(sets.tp.Default, {
-    -- DT: -7
-    head={ name="Nyame Helm", augments={'Path: B',}},
-    -- DT: -6
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    --DT: -7
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    -- DT: -6
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    -- DT: -12
-    legs="Chas. Culottes +3",
-    -- DT: -7 
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    -- DT: -10
-    left_ring="Murky Ring",
-}) 
 
 sets.tp.DTMeva = set_combine(sets.idle.Default, {
     left_ear="Suppanomimi",
@@ -194,7 +181,7 @@ sets.precast.Ranged = {
     hands="Carmine Fin. Ga. +1",
     -- Snapshot: +9
     body="Ikenga's Vest",
-    -- Snapshot +8 -- TODO Adhemar Kecks +1 (10+ rapid shot)
+    -- Snapshot +9 
     legs="Chas. Culottes +3",
     -- Snapshot: +10
     feet="Meg. Jam. +2", 
@@ -246,7 +233,7 @@ sets.midcast.Ranged = set_combine(sets.midcast.RangedDefault, {
     body="Chasseur's Frac +2",
     -- 52 Acc
     hands="Chasseur's Gants +2",
-    -- 53 Acc
+    -- 63 Acc
     legs="Chas. Culottes +3",
     -- 50 Acc
     --feet="Chass. Botte-s +1",
@@ -263,36 +250,43 @@ sets.ws = {}
 
 -- TP Bonus > WSD > Attack = Accuracy
 sets.ws.Default = {
-    -- WSD: +1
+    -- WSD: +6
     head={ name="Nyame Helm", augments={'Path: B',}},
     -- WSD: +5
-    body="Laksa. Frac +2",
+    body={ name="Nyame Mail", augments={'Path: B',}},
     -- WSD: +8
     hands="Chasseur's Gants +2",
     -- WSD: +3
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     -- WSD: +12
     feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}},
-    -- TP+250
-    right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+    -- STR/ATK
+    waist="Sailfi Belt +1",
+    -- 30 ATK
+    neck="Republican Platinum Medal",
     -- WSD 10
     left_ring="Cornelia's Ring",
+    -- TP+250
+    right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     -- WSD: +2
     left_ear="Ishvara Earring",
     -- WSD: +10
     back={ name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Mag. Evasion+6',}},
 }
 
--- Melee Physical
-sets.ws["Savage Blade"]  = sets.ws.Default
-sets.ws["Requiescat"]  = sets.ws.Default
-
 -- Ranged Physical 
 sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
+    -- TODO FOTIA
+    -- TODO Lanun Hat
+    -- RACC/RATK
     head="Ikenga's Hat",
+    -- TP Bonus
     body="Ikenga's Vest",
+    -- RACC
     neck="Iskur Gorget",
+    -- RACC
     waist="Yemaya Belt",
+    -- RACC
     right_ring="Meghanada Ring",
     -- TODO Ranged Attack WSD!
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
@@ -301,14 +295,14 @@ sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
 -- Magical ATK
 sets.ws["Wildfire"] = set_combine(sets.ws.Default, {
     head={ name="Nyame Helm", augments={'Path: B',}},
-    neck={ name="Comm. Charm +1", augments={'Path: A',}},
     body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}},
+    neck={ name="Comm. Charm +1", augments={'Path: A',}},
     waist="Eschan Stone",
-    left_ear="Hermetic Earring",
-    right_ear="Friomisi Earring",
+    left_ear="Friomisi Earring",
+    right_ear="Hermetic Earring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
 })
 
@@ -321,11 +315,21 @@ sets.ws["Leaden Salute"]  = set_combine(sets.ws.Default, {
     feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}},
     waist="Eschan Stone",
     ring_ring="Archon Ring",
-    left_ear="Hermetic Earring",
-    right_ear="Friomisi Earring",
+    left_ear="Friomisi Earring",
+    right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
 })
 
+sets.ws["Hot Shot"] = set_combine(sets.ws.Default, { 
+    -- TODO FOTIA
+    left_ear="Friomisi Earring",
+})
+
+-- Melee Sword
+sets.ws["Savage Blade"]  = sets.ws.Default
+sets.ws["Requiescat"]  = sets.ws.Default
+
+-- Melee Dagger
 sets.ws["Aeolian Edge"] = sets.ws["Wildfire"]
 
 -- 
