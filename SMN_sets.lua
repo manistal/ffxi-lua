@@ -168,6 +168,21 @@ sets.tp.List = {
 }
 
 sets.tp.Default = {
+    head={ name="Bunzi's Hat", augments={'Path: A',}},
+    body="Beck. Doublet +2",
+    hands="Bunzi's Gloves",
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    -- TODO EMPY FEET?
+    feet={ name="Bunzi's Sabots", augments={'Path: A',}},
+    neck="Shulmanu Collar",
+    -- TODO NULL BELT
+    waist="Windbuffet Belt",
+    left_ear="Telos Earring",
+    right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
+    left_ring="Chirich Ring",
+    right_ring="Chirich Ring",
+    -- TODO NULL SHAWL
+    back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Phys. dmg. taken-10%',}},
 }
 
 --
