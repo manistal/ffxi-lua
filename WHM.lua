@@ -138,7 +138,7 @@ function buff_change(name, gain, table)
     -- gain = true when buff applied, false when removed
     if gain and buff == 'Sleep' and player.hpp > 1 then
         equip({main="Prime Maul"})
-    else if not gain and buff == 'Sleep' then
+    elseif not gain and buff == 'Sleep' then
         equip_base_set()
     end
 

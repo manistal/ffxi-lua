@@ -14,20 +14,19 @@ sets.weapons.List = {
     "DI",
 }
 
-
 sets.weapons["Savage Spam"] = {
     main="Naegling",
-    sub="Skinflayer"
+    sub={ name="Gleti's Knife", augments={'Path: A',}},
 }
 
 sets.weapons["Daggers Main"] = { 
     main="Tauret",
-    sub="Skinflayer"
+    sub={ name="Gleti's Knife", augments={'Path: A',}},
 }
 
 sets.weapons["DI"] = { 
     main="Voluspa Knife",
-    sub="Skinflayer"
+    sub={ name="Gleti's Knife", augments={'Path: A',}},
 }
 
 
@@ -45,8 +44,6 @@ sets.idle.Default = {
     ammo="Yamarang",
     -- DT: -7
     head={ name="Nyame Helm", augments={'Path: B',}},
-    -- DT: -6
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
     -- DT: -9
     body={ name="Nyame Mail", augments={'Path: B',}},
     --DT: -7
@@ -55,7 +52,10 @@ sets.idle.Default = {
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     -- DT: -7
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    waist="Sailfi Belt +1",
+    -- MDEF
+    neck="Warder's Charm +1",
+    -- DT -3
+    waist="Plat. Mog. Belt",
     -- DT: -10
     left_ring="Murky Ring",
     right_ring="Shneddick Ring",
@@ -97,12 +97,28 @@ sets.tp.Default = {
     back={ name="Toutatis's Cape", augments={'Accuracy+20 Attack+20','"Store TP"+10',}},
 }
 
-sets.tp.TreasureHunter = set_combine(sets.idle.Default, sets.TH)
+sets.tp.TreasureHunter = {
+    -- TH 1
+    ammo="Per. Lucky Egg",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    -- TH 3
+    hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Herculean Boots", augments={'Attack+24','"Triple Atk."+3','Accuracy+12',}},
+    neck="Iskur Gorget",
+    waist="Windbuffet Belt",
+    left_ear="Eabani Earring",
+    right_ear="Suppanomimi",
+    left_ring="Murky Ring",
+    right_ring="Moonbeam Ring",
+    back={ name="Toutatis's Cape", augments={'Accuracy+20 Attack+20','"Store TP"+10',}},
+}
 
 sets.tp.Hybrid = set_combine(sets.tp.Default, {
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    left_ring="Vocane Ring",
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    ammo="Staunch Tathlum",
+    left_ring="Murky Ring",
+    right_ring="Moonbeam Ring",
 }) 
 
 sets.tp.FullDT = sets.idle.Default

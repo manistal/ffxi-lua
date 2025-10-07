@@ -4,7 +4,7 @@
 
 -- Gearswap Spec: https://docs.windower.net/addons/gearswap/reference/
 
-THF_STYLE_SET = 60
+THF_STYLE_SET = 82
 THF_MACRO_BOOK = 8
 
 -- 
@@ -66,7 +66,9 @@ function precast(spell)
         else
             equip(sets.ja.Default)
         end
-        equip({sub="Diamond Aspis",})
+        if player.status ~= 'Engaged' then 
+            equip({sub="Diamond Aspis",})
+        end
     end
 
     -- Equip Specific Sets Last

@@ -37,9 +37,6 @@ Empyrean:
 
 ]]
 
-sets.AntiSleep = {
-    main="Prime Maul",
-}
 
 --
 -- Weapon Sets
@@ -103,8 +100,8 @@ sets.idle.Default = {
     waist="Plat. Mog. Belt",
     -- HP
     left_ear="Eabani Earring",
-    -- TODO NEED BETTER EAR
-    right_ear="Ethereal earring",
+    -- DT 5
+    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Damage taken-5%',}},
     -- 10 DT
     left_ring="Murky Ring",
     -- Speed
@@ -227,7 +224,9 @@ sets.midcast.Cure = {
     -- Cure I: 1, Cure II: 1
     left_ring="Naji's Loop",
     -- Cure I: 5, Conserve MP: 2
-    right_ear="Mendi. Earring",
+    left_ear="Mendi. Earring",
+    -- Healing Magic 11
+    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Damage taken-5%',}},
     -- Solace
     back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
 }
@@ -262,6 +261,8 @@ sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
     left_ring="Ephedra Ring",
     -- Cursna: 10, Healing Magic: 7
     right_ring="Ephedra Ring",
+    -- Healing Magic 11
+    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Damage taken-5%',}},
     -- Cursna: 17
     legs="Th. Pantaloons +2", -- Cursna / Regen
     -- Cursna: 25
@@ -331,7 +332,11 @@ sets.midcast.Enfeebling = {
     legs="Th. Pantaloons +2", -- Enfeeble/MACC
     feet="Theo. Duckbills +2", -- Enfeeble/MACC
     right_ring="Kishar Ring", -- Enfeeble Duration
+    -- MACC
+    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Damage taken-5%',}},
 }
+
+-- TODO NUKING
 
 --
 -- TP Sets

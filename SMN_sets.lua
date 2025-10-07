@@ -49,7 +49,8 @@ sets.idle.Default = {
     neck="Warder's Charm +1",
     waist="Carrier's Sash",
     left_ear="Eabani Earring",
-    right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
+    -- Refresh +2 / DT 4
+    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
     left_ring="Murky Ring",
     right_ring="Shneddick Ring",
     back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Phys. dmg. taken-10%',}},
@@ -71,8 +72,8 @@ sets.idle.Refresh = {
     neck="Warder's Charm +1",
     -- MEVA
     waist="Carrier's Sash",
-    -- Refresh +1
-    right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
+    -- Refresh +2
+    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
     -- Refresh +1
     right_ring="Inyanga Ring",
     -- MEVA
@@ -107,8 +108,8 @@ sets.perp.Skill = set_combine(sets.idle.Default, {
     legs="Beck. Spats +2",
     -- Skill +24, Refresh +2
     feet="Baayami Sabots",
-    -- Refresh +1
-    right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
+    -- Refresh +2
+    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
     -- Skill +10, Perp: -1
     left_ring="Evoker's Ring",
     -- Refresh+1
@@ -131,8 +132,8 @@ sets.perp.Refresh = set_combine(sets.idle.Default, {
     legs="Assid. Pants +1",
     -- Skill +24, Refresh +2
     feet="Baayami Sabots",
-    -- Refresh +1
-    right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
+    -- Refresh +2
+    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
     -- Skill +10, Perp: -1
     left_ring="Evoker's Ring",
     -- Refresh +1
@@ -150,8 +151,8 @@ sets.perp.MEVA = set_combine(sets.idle.Default, {
     body="Beck. Doublet +2",
     -- Skill +25
     legs="Beck. Spats +2",
-    -- Refresh +1
-    right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
+    -- Refresh +2
+    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
     -- Skill +10, Perp: -1
     left_ring="Evoker's Ring",
     -- Refresh+1
@@ -178,7 +179,7 @@ sets.tp.Default = {
     -- TODO NULL BELT
     waist="Windbuffet Belt",
     left_ear="Telos Earring",
-    right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
+    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
     left_ring="Chirich Ring",
     right_ring="Chirich Ring",
     -- TODO NULL SHAWL
@@ -287,10 +288,12 @@ sets.bp.Precast = {
 
     -- Skill 10
     left_ring="Evoker's Ring",
-    -- Refresh +1
-    right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
+    -- Refresh +2
+    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
     -- Skill +10
     left_ring="Evoker's Ring",
+    -- BP II: -3s
+    back={ name="Conveyance Cape", augments={'Summoning magic skill +1','Pet: Enmity+11','Blood Pact Dmg.+1','Blood Pact ab. del. II -3',}},
 }
 
 -- BP Dmg > Magic Dmg > Pet Stats
@@ -317,8 +320,8 @@ sets.bp.Rage = {
     left_ring="Varar Ring",
     -- BPDmg: 3
     right_ring="Varar Ring",
-    -- BPDmg: 3
-    right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
+    -- BPDmg: 8
+    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
 }
 
 -- Current Skill: 575
@@ -340,8 +343,8 @@ sets.bp.Ward = {
     legs="Beck. Spats +2",
     -- Skill +24, Refresh +2
     feet="Baayami Sabots",
-    -- Refresh +1
-    right_ear={ name="Beck. Earring", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Mag. Acc.+10',}},
+    -- Avatar level?
+    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
     -- Skill +10, Perp: -1
     left_ring="Evoker's Ring",
     -- Skill +10

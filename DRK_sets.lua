@@ -99,7 +99,7 @@ sets.tp.Default = {
     neck={ name="Abyssal Beads +1", augments={'Path: A',}},
     waist="Sailfi Belt +1",
     left_ear="Telos Earring",
-    right_ear="Brutal Earring",
+    right_ear={ name="Schere Earring", augments={'Path: A',}},
     left_ring="Moonbeam Ring",
     right_ring="Chirich Ring",
     back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},

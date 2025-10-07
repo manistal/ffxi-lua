@@ -64,6 +64,12 @@ sets.weapons["DI Farming"] = {
 -- MEva >= Eva = Regen
 -- Current DT: 51
 sets.idle = {}
+sets.idle.List = {
+    "Default",
+    "Regen",
+}
+
+
 sets.idle.Default = {
     -- DT: -7
     head={ name="Nyame Helm", augments={'Path: B',}},
@@ -89,6 +95,16 @@ sets.idle.Default = {
     right_ring="Shneddick Ring",
     back={ name="Camulus's Mantle", augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}},
 }
+
+sets.idle.Regen = set_combine(sets.idle.Default, {
+    head="Meghanada Visor +2",
+    body="Meg. Cuirie +2", -- Regen 
+    hands="Meg. Gloves +2", -- Regen
+    legs="Meg. Chausses +2", -- Regen
+    feet="Meg. Jam. +2", -- Regen
+    left_ring="Chirich Ring",
+    right_ring="Chirich Ring",
+})
 
 
 --

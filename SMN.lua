@@ -37,6 +37,10 @@ function equip_base_set(status,pet)
     if pet ~= nil and pet.isvalid then
         equip(sets.perp.Current)
     end
+
+    if status == 'Engaged' then 
+        equip(sets.tp.Default)
+    end
 end
 
 
