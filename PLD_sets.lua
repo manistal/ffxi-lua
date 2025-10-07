@@ -98,11 +98,13 @@ sets.ja = {}
 sets.precast = {} 
 
 -- Fast Cast
+-- TODO - Dont lose HP for this
 sets.precast.FastCast = {
     -- Fast Cast 8
     head="Sakpata's Helm",
     hands={ name="Leyline Gloves", augments={'Accuracy+6','Mag. Acc.+2','"Mag.Atk.Bns."+6',}},
     legs={ name="Eschite Cuisses", augments={'"Mag.Atk.Bns."+25','"Conserve MP"+6','"Fast Cast"+5',}},
+    -- TODO Empy FEET
     right_ring="Kishar Ring",
     left_ear="Malignance Earring",
     right_ear="Loquac. Earring",
@@ -125,7 +127,8 @@ sets.midcast.SIRDEnmity = {
     body={ name="Eschite Breast.", augments={'Mag. Evasion+15','Spell interruption rate down +15%','Enmity+7',}},
     -- Enmity 9
     hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-    -- TODO Founders Greaves - SIRD 30 / TODO Relic Legs - SIRD 10, Enmity 9
+    -- TODO Founders Greaves - SIRD 30 /
+    -- TODO Relic Legs - SIRD 10, Enmity 9
     -- SIRD 20, Enmity 5
     feet="Odyssean Greaves",
     -- SIRD 10
@@ -144,6 +147,10 @@ sets.midcast.SIRDEnmity = {
 }
 
 sets.midcast.Cure = set_combine(sets.midcast.SIRDEnmity, {
+    -- TODO Souv Chest Cure I 10
+    -- TODO Ambu Cloak Cure I 10 + SIRD
+    -- TODO Chev Earring Cure I 10
+    -- TODO Nourishing Earring Cure I 6
     -- Cure I: 7
     feet="Odyssean Greaves",
     -- Cure I: 5, Conserve MP: 2
