@@ -289,7 +289,8 @@ sets.bp.Precast = {
     back={ name="Conveyance Cape", augments={'Summoning magic skill +1','Pet: Enmity+11','Blood Pact Dmg.+1','Blood Pact ab. del. II -3',}},
 }
 
--- BP Dmg > Magic Dmg > Pet Stats
+-- BP Default 
+-- BPDMG => Pet ACC
 sets.bp.Rage = {
     -- BPDmg: 3, MGKATK 130
     main={ name="Grioavolr", augments={'Blood Pact Dmg.+3','Pet: Mag. Acc.+15','Pet: "Mag.Atk.Bns."+15','DMG:+5',}},
@@ -297,8 +298,6 @@ sets.bp.Rage = {
     sub="Elan Strap",
     -- BPDmg: 7, MgATK 30
     head={ name="Apogee Crown", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
-    -- BPDmg: 7, MgATK 30
-    body={ name="Apogee Dalmatica", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
     -- BPDmg: 16
     body="Con. Doublet +3",
     -- BPDmg: 4
@@ -316,6 +315,18 @@ sets.bp.Rage = {
     -- BPDmg: 8
     right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
 }
+
+--[[
+TODO:
+- Split into Phys / Flaming Crush / MAB
+- Convokers Bracers (PHYS)
+- Beckoners Pigaches (BOTH)
+- Enticers Pants (MAB)
+- Helios Helm / Pants (PHYS)
+    -- BPDmg: 7, MgATK 30
+    body={ name="Apogee Dalmatica", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
+]]--
+
 
 -- Current Skill: 575
 -- Next Benchmark: 670
