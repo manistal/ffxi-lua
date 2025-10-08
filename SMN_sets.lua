@@ -271,24 +271,17 @@ sets.bp.Precast = {
     head="Beckoner's Horn +2",
     -- Skill +10
     neck="Incanter's Torque",
-    -- BP I: -6s
-    body="Con. Doublet +1",
+    -- BP I: -15s
+    body="Con. Doublet +3",
     -- Skill +25
     legs="Beck. Spats +2",
-
-    -- BP I: -5s
-    hands="Con. Bracers",
-    -- X Skill +22
-    -- TODO UPGRADE CHEST: hands="Lamassu Mitts +1",
-
-    -- BP 1: -4
-    feet="Smn. Pigaches +2",
-    -- X Skill +24
-    -- TODO UPGRADE CHEST: feet="Baayami Sabots",
-
+    -- Skill +22
+    hands="Lamassu Mitts +1",
+    -- Skill +24
+    feet="Baayami Sabots",
     -- Skill 10
     left_ring="Evoker's Ring",
-    -- Refresh +2
+    -- TODO: Better earring for Skill?
     right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
     -- Skill +10
     left_ring="Evoker's Ring",
@@ -306,8 +299,8 @@ sets.bp.Rage = {
     head={ name="Apogee Crown", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
     -- BPDmg: 7, MgATK 30
     body={ name="Apogee Dalmatica", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
-    -- BPDmg: 12
-    body="Con. Doublet +1",
+    -- BPDmg: 16
+    body="Con. Doublet +3",
     -- BPDmg: 4
     hands={ name="Merlinic Dastanas", augments={'Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+4','Pet: STR+9',}},
     -- BPDmg: 8

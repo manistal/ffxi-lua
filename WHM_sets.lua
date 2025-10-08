@@ -25,13 +25,13 @@ Relic:
     head={ name="Piety Cap", augments={'Enhances "Devotion" effect',}},
     body={ name="Piety Bliaut", augments={'Enhances "Benediction" effect',}},
     hands={ name="Piety Mitts", augments={'Enhances "Martyr" effect',}},
-    legs={ name="Piety Pantaln. +1", augments={'Enhances "Afflatus Misery" effect',}},
+    legs={ name="Piety Pantaln. +2", augments={'Enhances "Afflatus Misery" effect',}},
     feet={ name="Piety Duckbills", augments={'Enhances "Afflatus Solace" effect',}},
 
 Empyrean:
     head="Ebers Cap +2", -- FC
     body="Ebers Bliaut +2", -- Refresh, Solace
-    hands="Ebers Mitts +1", -- DT / Divine Caress
+    hands="Ebers Mitts +2", -- DT / Divine Caress
     legs="Ebers Pant. +2", -- CURE
     feet="Ebers Duckbills +2", -- DT / MEVA
 
@@ -138,7 +138,7 @@ sets.idle.Refresh = set_combine(sets.idle.Default, {
 sets.ja = {}
 
 sets.ja["Divine Caress"] = {
-    hands="Ebers Mitts +1", -- Divine Caress
+    hands="Ebers Mitts +2", -- Divine Caress
 }
 
 sets.ja["Devotion"] ={
@@ -243,7 +243,7 @@ sets.midcast.StatusRemoval = {
     head="Ebers Cap +2", -- Divine Veil
     -- Erase+1
     neck={ name="Clr. Torque +1", augments={'Path: A',}},
-    hands="Ebers Mitts +1", -- DT / Divine Caress
+    hands="Ebers Mitts +2", -- DT / Divine Caress
     legs="Ebers Pant. +2", -- CURE
 }
 
@@ -293,7 +293,7 @@ sets.midcast.Enhancing = {
 sets.midcast.BarSpell = set_combine(sets.midcast.Enhancing, {
     head="Ebers Cap +2", -- FC
     body="Ebers Bliaut +2", -- Refresh, Solace
-    hands="Ebers Mitts +1", -- DT / Divine Caress
+    hands="Ebers Mitts +2", -- DT / Divine Caress
     legs={ name="Piety Pantaln. +2", augments={'Enhances "Afflatus Misery" effect',}},
     feet="Ebers Duckbills +2",
 })
@@ -304,9 +304,9 @@ sets.midcast.Regen = set_combine(sets.midcast.Enhancing, {
     -- 28 potency
     body={ name="Piety Bliaut", augments={'Enhances "Benediction" effect',}},
     -- 22 Duration
-    hands="Ebers Mitts +1", -- DT / Divine Caress
+    hands="Ebers Mitts +2",
     -- 21 Duration
-    legs="Th. Pantaloons +2", -- Cursna / Regen
+    legs="Th. Pantaloons +2",
     -- 10 Potency
     feet={ name="Bunzi's Sabots", augments={'Path: A',}},
 })
