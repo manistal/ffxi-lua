@@ -24,43 +24,37 @@ Empyrean (EVERYTHING)
 -- 
 sets.weapons = {}
 sets.weapons.List = {
-    "Savage-Spam",
-    "Tauret-Kali",
-    "DI",
+    "Savage Spam",
     "MACC",
-    "Kali-Flayer",
-    "Tauret-flayer",
+    "Kali",
+    "Kali Shield",
 }
 
 
-sets.weapons["Savage-Spam"] = {
+sets.weapons["Savage Spam"] = {
     main="Naegling",
-    sub="Skinflayer",
+    sub="Gleti's Knife",
+    range={ name="Linos", augments={'All Songs+2',}},
 }
 
-sets.weapons["Tauret-Kali"] = { 
-    main="Tauret",
-    sub={ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}},
-}
-
-sets.weapons["DI"] = { 
-    main="Skinflayer",
-    sub="Voluspa Knife",
-}
 
 sets.weapons["MACC"] = { 
     main="Naegling",
     sub="Tauret",
+    range={ name="Linos", augments={'All Songs+2',}},
 }
 
-sets.weapons["Kali-Flayer"] = { 
+sets.weapons["Kali"] = { 
     main={ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}},
-    sub="Skinflayer",
+    sub="Gleti's Knife",
+    range={ name="Linos", augments={'All Songs+2',}},
 }
 
-sets.weapons["Tauret-flayer"] = { 
-    main="Tauret",
-    sub="Skinflayer",
+
+sets.weapons["Kali Shield"] = { 
+    main={ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}},
+    sub="Ammurapi Shield",
+    range={ name="Linos", augments={'All Songs+2',}},
 }
 
 
@@ -84,31 +78,31 @@ sets.idle.List = {
     feet={ name="Bunzi's Sabots", augments={'Path: A',}},
 ]]
 sets.idle.Default = {
-    -- TODO: Better idle instrument?
-    range={ name="Linos", augments={'All Songs+2',}},
-    -- 7 DT
-    head={ name="Bunzi's Hat", augments={'Path: A',}},
-    -- ??
-    body="Bunzi's Robe",
-    -- 8 DT
-    hands="Bunzi's Gloves",
-    -- ???
-    legs="Bunzi's Pants",
-    -- 6 DT
-    feet={ name="Bunzi's Sabots", augments={'Path: A',}},
     -- MEVA
+    range={ name="Linos", augments={'Mag. Evasion+10','"Fast Cast"+3','INT+6 MND+6',}},
+    -- DT 10 
+    head="Fili Calot +2",
+    -- Regen
+    body="Fili Hongreline +2",
+    -- DT 10 
+    hands="Fili Manchettes +2",
+    -- DT 12
+    legs="Fili Rhingrave +2",
+    -- Movespeed
+    feet="Fili Cothurnes +2",
+    -- MDEF
     neck="Warder's Charm +1",
-    -- MEVA
-    waist="Carrier's Sash",
-    -- HP
-    left_ear="Eabani Earring",
-    -- TODO NEED BETTER EAR
-    right_ear="Ethereal earring",
-    -- 7 DT
+    -- DT 3
+    waist="Plat. Mog. Belt",
+    -- DT 5
+    left_ear="Alabaster Earring",
+    -- MEVA HP
+    right_ear="Eabani Earring",
+    -- DT 10
     left_ring="Murky Ring",
-    -- HP, DT: -4
-    right_ring="Moonbeam Ring",
-    -- TODO Finish AMBU CAPE
+    -- Death
+    right_ring="Warden's Ring",
+    -- MEVA
     back={ name="Intarabus's Cape", augments={'CHR+1','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10',}},
 }
 
@@ -134,8 +128,17 @@ sets.idle.Refresh = set_combine(sets.idle.Default, {
 -- 
 sets.ja = {}
 
--- TODO RELIC
+sets.ja["Troubadour"] = {
+    body={ name="Bihu Jstcorps +1", augments={'Enhances "Troubadour" effect',}},
+}
 
+sets.ja["Soul Voice"] = {
+    legs={ name="Bihu Cannions +1", augments={'Enhances "Soul Voice" effect',}},
+}
+
+sets.ja["Nightingale"] = {
+    feet={ name="Bihu Slippers +1", augments={'Enhances "Nightingale" effect',}},
+}
 
 
 -- 
@@ -153,6 +156,7 @@ JSE Neck+1 with RP = 8
 ]]
 
 -- Fast Cast
+-- ~69 FC
 sets.precast.FastCast = set_combine(sets.idle.Default, {
     -- 7FC
     main={ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}},
@@ -162,8 +166,8 @@ sets.precast.FastCast = set_combine(sets.idle.Default, {
     hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -4%','Magic dmg. taken -2%','"Cure" spellcasting time -4%',}},
     -- 6 FC
     legs="Aya. Cosciales +2",
-    -- 5 FC
-    feet="Regal Pumps +1",
+    -- 10 FC
+    feet="Fili Cothurnes +2",
     -- 4 FC
     right_ring="Kishar Ring",
     -- 4 FC
@@ -177,10 +181,8 @@ sets.precast.FastCast = set_combine(sets.idle.Default, {
 })
 
 sets.precast.SongCast = set_combine(sets.precast.FastCast, {
-    -- TODO Empy Head 
-
-    -- Song Cast: -13
-    feet={ name="Telchine Pigaches", augments={'Song spellcasting time -7%',}},
+    -- Song Casting Time: -15
+    head="Fili Calot +2",
 })
 
 -- Songs Midcast
@@ -191,23 +193,30 @@ sets.songs.List = {
     "BonusSongs",
 }
 
-sets.songs.BonusSongs = {
+sets.songs.BonusSongs = set_combine(sets.idle.Default, {
     range={ name="Terpander", augments={'HP+30','Mag. Acc.+10','Damage Taken -3%',}},
-}
+})
 
 sets.songs.MaxPotency = {
     -- Duration: 5
     main={ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}},
     -- All Songs: 3
     range={ name="Linos", augments={'All Songs+2',}},
-    -- All Songs: 2
-    neck="Moonbow Whistle",
-    -- TODO EMPY HEAD Madrigal: 1
-    -- TODO EMPY HANDS Skill, March: 1
-    -- TODO EMPY Body Skill, Duration, Minuet: 1
+    -- All Songs: 3
+    neck="Moonbow Whistle +1",
+    -- Madrigal: 1
+    head="Fili Calot +2",
+    -- Skill, March: 1
+    hands="Fili Manchettes +2",
+    -- Duration 13, Skill, Minuet: 1
+    body="Fili Hongreline +2",
+    -- Duration 17
     legs="Inyanga Shalwar +2",
-
+    -- Duration: 11
+    feet="Brioso Slippers +1",
 }
+
+
 
 -- TODO Song Specific Swaps
 -- Ballad - Empy Legs for Bonus, but dont
@@ -241,18 +250,18 @@ sets.midcast = {}
 
 
 -- Cure/Healing/COnserveMP
--- Total: Cure I: 56, Cure II: 4
+-- Total: Cure I: 36, Cure II: 1
 sets.midcast.Cure = {
     -- Cure I: 10, Cure II: 2
     main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
     -- Conserve MP: 4
     sub="Thuellaic Ecu +1",
-    -- Cure II: 2
-    hands="Theophany Mitts +2",
     -- Cure I: 15, Conserve MP: 6
     feet={ name="Kaykaus Boots", augments={'Mag. Acc.+15','"Cure" potency +5%','"Fast Cast"+3',}},
     -- Cure I: 5, Conserve MP: 2
     right_ear="Mendi. Earring",
+    -- Cure I: 1, Cure II: 1
+    left_ring="Naji's Loop",
 }
 
 
@@ -311,7 +320,7 @@ sets.tp.List = {
 
 sets.tp.Default = {
     head={ name="Bunzi's Hat", augments={'Path: A',}},
-    body={ name="Nyame Mail", augments={'Path: B',}},
+    body="Ayanmo Corazza +2",
     hands="Bunzi's Gloves",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},

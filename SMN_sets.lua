@@ -302,8 +302,12 @@ sets.bp.Rage = {
     body="Con. Doublet +3",
     -- BPDmg: 4
     hands={ name="Merlinic Dastanas", augments={'Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+4','Pet: STR+9',}},
+    -- TPBonus, Blood Boon, ACC/MACC
+    legs="Beck. Spats +2",
     -- BPDmg: 8
     feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
+    -- DBLATK
+    neck="Shulmanu Collar",
     -- MGATK: 9
     waist="Regal Belt",
     -- BPDmg: 5
@@ -322,6 +326,7 @@ TODO:
 - Convokers Bracers (PHYS)
 - Beckoners Pigaches (BOTH)
 - Enticers Pants (MAB)
+- SRODA Ring (PHYS/FC?)
 - Helios Helm / Pants (PHYS)
     -- BPDmg: 7, MgATK 30
     body={ name="Apogee Dalmatica", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
@@ -337,8 +342,6 @@ sets.bp.Ward = {
     sub="Vox Grip",
     -- Skill +18, Refresh +3
     head="Beckoner's Horn +2",
-    -- Skill +9
-    neck="Caller's Pendant",
     -- Skill +19, Perp: -7
     body="Beck. Doublet +2",
     -- Skill +22
@@ -347,10 +350,12 @@ sets.bp.Ward = {
     legs="Beck. Spats +2",
     -- Skill +24, Refresh +2
     feet="Baayami Sabots",
-    -- Avatar level?
-    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
-    -- Skill +10, Perp: -1
-    left_ring="Evoker's Ring",
     -- Skill +10
     neck="Incanter's Torque",
+    -- Skill +10, Perp: -1
+    left_ring="Evoker's Ring",
+    -- Avatar level?
+    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
+    -- Skill 1
+    back={ name="Conveyance Cape", augments={'Summoning magic skill +1','Pet: Enmity+11','Blood Pact Dmg.+1','Blood Pact ab. del. II -3',}},
 }
