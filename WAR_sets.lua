@@ -91,7 +91,7 @@ sets.tp.List = {
 sets.tp.Default = {
     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     -- TODO: Empy Helm 
-    head="Flam. Zucchetto +2",
+    head="Sakpata's Helm",
     -- TODO Empy Body
     body="Sakpata's Plate",
     hands="Sakpata's Gauntlets",
@@ -102,9 +102,8 @@ sets.tp.Default = {
     -- TODO JSE Neck
     neck="Republican Platinum Medal",
     waist="Sailfi Belt +1",
-    left_ear="Telos Earring",
-    -- TODO Empy Ear
-    right_ear="Brutal Earring",
+    left_ear={ name="Schere Earring", augments={'Path: A',}},
+    right_ear={ name="Boii Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','Crit.hit rate+3',}},
     left_ring="Moonbeam Ring",
     right_ring="Chirich Ring",
     -- TODO Finish Augmenting

@@ -256,6 +256,12 @@ sets.midcast.Cure = {
     main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
     -- Conserve MP: 4
     sub="Thuellaic Ecu +1",
+    -- 10 Cure I, 12 Conserve MP
+    head={ name="Vanya Hood", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
+    -- 15 Cure I
+    body="Bunzi's Robe",
+    -- 12 Conserve MP
+    legs={ name="Vanya Slops", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
     -- Cure I: 15, Conserve MP: 6
     feet={ name="Kaykaus Boots", augments={'Mag. Acc.+15','"Cure" potency +5%','"Fast Cast"+3',}},
     -- Cure I: 5, Conserve MP: 2
@@ -280,6 +286,8 @@ sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
     left_ring="Ephedra Ring",
     -- Cursna: 10, Healing Magic: 7
     right_ring="Ephedra Ring",
+    -- Cursna 5
+    feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
 })
 
 -- Enhancing

@@ -108,6 +108,8 @@ sets.perp.Skill = set_combine(sets.idle.Default, {
     legs="Beck. Spats +2",
     -- Skill +24, Refresh +2
     feet="Baayami Sabots",
+    -- Skill +7, Perp 2
+    waist="Lucidity Sash",
     -- Refresh +2
     right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
     -- Skill +10, Perp: -1
@@ -243,10 +245,18 @@ sets.midcast = {}
 sets.midcast.Cure = {
     -- 30 Cure I
     main="Bunzi's Rod",
-    -- 5 Cure I
-    left_ear="Mendi. Earring",
+    -- Maybe better shield
+    sub="Ammurapi Shield",
+    -- 10 Cure I, 12 Conserve MP
+    head={ name="Vanya Hood", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
     -- 15 Cure I
     body="Bunzi's Robe",
+    -- 12 Conserve MP
+    legs={ name="Vanya Slops", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
+    --  10 Cure I, 6 Conserve MP
+    feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
+    -- 5 Cure I
+    left_ear="Mendi. Earring",
 }
 
 
@@ -269,8 +279,6 @@ sets.bp.Precast = {
     ammo={ name="Epitaph", augments={'Path: A',}},
     -- Skill +18
     head="Beckoner's Horn +2",
-    -- Skill +10
-    neck="Incanter's Torque",
     -- BP I: -15s
     body="Con. Doublet +3",
     -- Skill +25
@@ -279,6 +287,10 @@ sets.bp.Precast = {
     hands="Lamassu Mitts +1",
     -- Skill +24
     feet="Baayami Sabots",
+    -- Skill +10
+    neck="Incanter's Torque",
+    -- Skill +7
+    waist="Lucidity Sash",
     -- Skill 10
     left_ring="Evoker's Ring",
     -- TODO: Better earring for Skill?
@@ -352,6 +364,8 @@ sets.bp.Ward = {
     feet="Baayami Sabots",
     -- Skill +10
     neck="Incanter's Torque",
+    -- Skill +7
+    waist="Lucidity Sash",
     -- Skill +10, Perp: -1
     left_ring="Evoker's Ring",
     -- Avatar level?

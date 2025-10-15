@@ -255,6 +255,10 @@ sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
     body="Ebers Bliaut +2",
     -- Cursna: 15
     hands={ name="Fanatic Gloves", augments={'MP+35','"Conserve MP"+3','"Fast Cast"+3',}},
+    -- Cursna: 17
+    legs="Th. Pantaloons +2", -- Cursna / Regen
+    -- Cursna 5
+    feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
     -- Cursna: 10
     neck="Malison Medallion",
     -- Cursna: 10, Healing Magic: 7
@@ -263,8 +267,6 @@ sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
     right_ring="Ephedra Ring",
     -- Healing Magic 11
     right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Damage taken-5%',}},
-    -- Cursna: 17
-    legs="Th. Pantaloons +2", -- Cursna / Regen
     -- Cursna: 25
     back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
 })
