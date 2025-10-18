@@ -350,7 +350,7 @@ sets.tp.Default = {
     right_ear="Telos Earring",
     left_ring="Chirich Ring",
     right_ring="Chirich Ring",
-    -- TODO AMBU CAPE
+    back="Null Shawl",
 }
 
 --

@@ -61,7 +61,7 @@ sets.idle.Default = {
     right_ring="Shneddick Ring",
     left_ear="Sherida Earring",
     right_ear="Suppanomimi",
-    back={ name="Toutatis's Cape", augments={'Accuracy+20 Attack+20','"Store TP"+10',}},
+    back="Null Shawl",
 }
 
 --
@@ -94,7 +94,7 @@ sets.tp.Default = {
     right_ring="Chirich Ring",
     left_ear="Sherida Earring",
     right_ear="Suppanomimi",
-    back={ name="Toutatis's Cape", augments={'Accuracy+20 Attack+20','"Store TP"+10',}},
+    back="Null Shawl",
 }
 
 sets.tp.TreasureHunter = {
@@ -112,7 +112,7 @@ sets.tp.TreasureHunter = {
     right_ear="Suppanomimi",
     left_ring="Murky Ring",
     right_ring="Moonbeam Ring",
-    back={ name="Toutatis's Cape", augments={'Accuracy+20 Attack+20','"Store TP"+10',}},
+    back="Null Shawl",
 }
 
 sets.tp.Hybrid = set_combine(sets.tp.Default, {

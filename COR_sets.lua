@@ -93,7 +93,9 @@ sets.idle.Default = {
     left_ring="Murky Ring",
     -- SPEED
     right_ring="Shneddick Ring",
-    back={ name="Camulus's Mantle", augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}},
+    -- MEVA
+    back="Null Shawl",
+    --back={ name="Camulus's Mantle", augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}},
 }
 
 sets.idle.Regen = set_combine(sets.idle.Default, {
@@ -141,7 +143,8 @@ sets.tp.Default = {
     right_ear="Telos Earring",
     left_ring="Chirich Ring",
     right_ring="Chirich Ring",
-    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+    back="Null Shawl",
+    --back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 
 }
 
@@ -253,6 +256,8 @@ sets.midcast.Ranged = set_combine(sets.midcast.RangedDefault, {
     legs="Chas. Culottes +3",
     -- 50 Acc
     --feet="Chass. Botte-s +1",
+    -- 50 ACC / 7 STP
+    back="Null Shawl",
 })
 
 sets.midcast.TripleShot = set_combine(sets.midcast.Ranged, {

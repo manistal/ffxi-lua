@@ -247,10 +247,11 @@ sets.midcast.StatusRemoval = {
     legs="Ebers Pant. +2", -- CURE
 }
 
--- TODO: Vanya Head, Vanya Feet
 sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
     -- Healing Magiuc: 15
     main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
+    -- Cursna / Conserve MP
+    head={ name="Vanya Hood", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
     -- Healing Magic: 29
     body="Ebers Bliaut +2",
     -- Cursna: 15
@@ -362,7 +363,7 @@ sets.tp.Default = {
     right_ear="Telos Earring",
     left_ring="Chirich Ring",
     right_ring="Chirich Ring",
-    -- TODO AMBU CAPE
+    back="Null Shawl",
 }
 
 --

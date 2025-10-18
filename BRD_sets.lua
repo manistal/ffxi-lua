@@ -103,7 +103,7 @@ sets.idle.Default = {
     -- Death
     right_ring="Warden's Ring",
     -- MEVA
-    back={ name="Intarabus's Cape", augments={'CHR+1','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10',}},
+    back="Null Shawl",
 }
 
 sets.idle.Refresh = set_combine(sets.idle.Default, {
@@ -333,7 +333,7 @@ sets.tp.Default = {
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     -- TODO Dynamis Neck
-    neck="Warder's Charm +1",
+    neck="Null Loop",
     -- TODO REIKAI YOTAI
     waist="Windbuffet Belt",
     left_ear="Eabani Earring",
@@ -341,7 +341,7 @@ sets.tp.Default = {
     right_ring="Moonbeam Ring",
     -- TODO Second moonbeam ring
     left_ring="Chirich Ring",
-    -- TODO AMBU CAPE
+    back="Null Shawl",
 }
 
 --

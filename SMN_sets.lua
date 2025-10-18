@@ -175,17 +175,15 @@ sets.tp.Default = {
     body="Beck. Doublet +2",
     hands="Bunzi's Gloves",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    -- TODO EMPY FEET?
-    feet={ name="Bunzi's Sabots", augments={'Path: A',}},
-    neck="Shulmanu Collar",
+    feet="Beck. Pigaches +2",
+    neck="Null Loop",
     -- TODO NULL BELT
     waist="Windbuffet Belt",
     left_ear="Telos Earring",
     right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
     left_ring="Chirich Ring",
     right_ring="Chirich Ring",
-    -- TODO NULL SHAWL
-    back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Phys. dmg. taken-10%',}},
+    back="Null Shawl",
 }
 
 --
@@ -211,6 +209,14 @@ sets.ja = {}
 
 sets.ja["Astral Flow"] = {
     head="Smn. Horn +2",
+}
+
+sets.ja["Mana Cede"] = {
+    hands="Beck. Bracers +2",
+}
+
+sets.ja["Elemental Siphon"] = {
+    feet="Beck. Pigaches +2",
 }
 
 
@@ -313,11 +319,15 @@ sets.bp.Rage = {
     -- BPDmg: 16
     body="Con. Doublet +3",
     -- BPDmg: 4
-    hands={ name="Merlinic Dastanas", augments={'Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+4','Pet: STR+9',}},
+    --hands={ name="Merlinic Dastanas", augments={'Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+4','Pet: STR+9',}},
+    -- BPDmg: 8, ACC
+    hands="Beck. Bracers +2",
     -- TPBonus, Blood Boon, ACC/MACC
     legs="Beck. Spats +2",
-    -- BPDmg: 8
-    feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
+    -- BPDmg: 8, MAB
+    --feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
+    -- BPDmg: 8, ACC
+    feet="Beck. Pigaches +2",
     -- DBLATK
     neck="Shulmanu Collar",
     -- MGATK: 9
@@ -330,6 +340,8 @@ sets.bp.Rage = {
     right_ring="Varar Ring",
     -- BPDmg: 8
     right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
+    -- DBLKATK
+    left_ear="Sroda Earring",
 }
 
 --[[

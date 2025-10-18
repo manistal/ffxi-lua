@@ -54,7 +54,7 @@ sets.idle.Default = {
     right_ear="Odnowa Earring +1",
     left_ring="Murky Ring",
     right_ring="Shneddick Ring",
-    back="Artio's Mantle",
+    back="Null Shawl",
 }
 
 --
@@ -76,13 +76,13 @@ sets.tp.Default = {
     hands="Gleti's Gauntlets",
     legs="Gleti's Breeches",
     feet="Gleti's Boots",
-    neck="Shulmanu Collar",
+    neck="Null Loop",
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Telos Earring",
     right_ear="Sherida Earring",
     left_ring="Chirich Ring",
     right_ring="Moonbeam Ring",
-    back="Artio's Mantle",
+    back="Null Shawl",
 }
 
 sets.tp.FullDT = sets.idle.Default
