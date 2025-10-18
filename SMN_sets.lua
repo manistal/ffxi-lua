@@ -227,12 +227,22 @@ sets.precast = {}
 
 -- Fast Cast
 sets.precast.FastCast = {
-    -- 10 FC
-    head={ name="Bunzi's Hat", augments={'Path: A',}},
+    -- 5 FC
+    main="Mpaca's Staff",
+    -- 2 FC
+    ammo="Incantor Stone",
+    -- 13 FC
+    head={ name="Merlinic Hood", augments={'"Fast Cast"+5','"Mag.Atk.Bns."+1',}},
     -- 14 FC
     body="Inyanga Jubbah +2",
     -- 6 FC
     legs="Aya. Cosciales +2",
+    -- 5 FC
+    feet="Regal Pumps +1",
+    -- 5 FC
+    waist="Embla Sash",
+    -- 1 FC
+    left_ring="Naji's Loop",
     -- 4 FC
     right_ring="Kishar Ring",
     -- 4 FC
@@ -249,10 +259,9 @@ sets.precast.FastCast = {
 sets.midcast = {}
 
 sets.midcast.Cure = {
-    -- 30 Cure I
-    main="Bunzi's Rod",
-    -- Maybe better shield
-    sub="Ammurapi Shield",
+    -- 10 Cure, +Weather
+    main="Chatoyant Staff",
+    sub="Kaja Grip",
     -- 10 Cure I, 12 Conserve MP
     head={ name="Vanya Hood", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
     -- 15 Cure I

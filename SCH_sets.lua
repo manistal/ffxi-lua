@@ -14,26 +14,14 @@ Orison Neck Abyssea
 
 --[[
 JSE
+    head="Arbatel Bonnet +2",
+    body="Arbatel Gown +2",
+    hands="Arbatel Bracers +2",
+    legs="Arbatel Pants +2",
 ]]
 
 
 --[[
-Idle
-    main="Mpaca's Staff",
-    sub="Kaja Grip",
-    ammo="Staunch Tathlum",
-    head="Nyame Helm",
-    body="Nyame Mail",
-    hands="Nyame Gauntlets",
-    legs="Agwu's Slops",
-    feet="Nyame Sollerets",
-    neck="Warder's Charm +1",
-    waist="Carrier's Sash",
-    left_ear="Alabaster Earring",
-    right_ear={ name="Arbatel Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+11','Enmity-1',}},
-    left_ring="Murky Ring",
-    right_ring="Shneddick Ring",
-    TODO AMBU CAPE
 ]]--
 -- Weapon Sets
 -- 
@@ -72,20 +60,26 @@ sets.idle.List = {
     feet={ name="Bunzi's Sabots", augments={'Path: A',}},
 ]]
 sets.idle.Default = {
+    -- 2 DT - TODO Refresh
+    ammo="Staunch Tathlum",
+    -- 7 DT
     head="Nyame Helm",
-    body="Nyame Mail",
+    -- Refresh, 10DT
+    body="Arbatel Gown +2",
+    -- 7 DT
     hands="Nyame Gauntlets",
+    -- 5 DT
     legs="Agwu's Slops",
+    -- 7 DT
     feet="Nyame Sollerets",
-    right_ear={ name="Arbatel Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+11','Enmity-1',}},
     -- MEVA
     neck="Warder's Charm +1",
-    -- DT -3, HP+10%
-    waist="Plat. Mog. Belt",
-    -- HP
+    -- Sublimation
+    waist="Embla Sash",
+    -- HP / 5 DT
     left_ear="Alabaster Earring",
-    -- DT 5
-    right_ear={ name="Arbatel Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+11','Enmity-1',}},
+    -- Regen
+    right_ear="Infused Earring",
     -- 10 DT
     left_ring="Murky Ring",
     -- Speed
@@ -105,7 +99,10 @@ sets.idle.Refresh = set_combine(sets.idle.Default, {
 -- 
 sets.ja = {}
 
-
+sets.ja["Perpetuance"] = {
+    -- Perpentuance
+    hands="Arbatel Bracers +2",
+}
 
 -- 
 -- Spell Precast Sets
@@ -113,15 +110,27 @@ sets.ja = {}
 sets.precast = {} 
 
 --[[
-Current = 76% Fast Cast (87% cast time)
+Current = ~65% Fast Cast
 Options:
-Wistful Belt = 3
+Voltsurge Torque (4%)
 ]]
 
 -- Fast Cast
 sets.precast.FastCast = {
+    -- 5 FC
+    main="Mpaca's Staff",
+    -- DT
+    sub="Kaja Grip",
+    -- 2 FC
+    ammo="Incantor Stone",
+    -- 13 FC
+    head={ name="Merlinic Hood", augments={'"Fast Cast"+5','"Mag.Atk.Bns."+1',}},
+    -- 10 FC
+    body={ name="Merlinic Jubbah", augments={'"Mag.Atk.Bns."+30','"Fast Cast"+4','MND+9',}},
     -- 7 FC, 4 Cure Speed
     hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -4%','Magic dmg. taken -2%','"Cure" spellcasting time -4%',}},
+    -- 7 FC
+    legs="Agwu's Slops",
     -- 5 FC
     feet="Regal Pumps +1",
     -- 5 FC
@@ -134,6 +143,8 @@ sets.precast.FastCast = {
     left_ear="Malignance Earring",
     -- 2 FC
     right_ear="Loquac. Earring",
+    -- 10 FC
+    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
 
 -- 
@@ -144,10 +155,9 @@ sets.midcast = {}
 -- Cure/Healing/COnserveMP
 -- Total: Cure I: 56, Cure II: 4
 sets.midcast.Cure = {
-    -- 30 Cure I
-    main="Bunzi's Rod",
-    -- Conserve MP: 4
-    sub="Thuellaic Ecu +1",
+    -- 10 Cure, +Weather
+    main="Chatoyant Staff",
+    sub="Kaja Grip",
     -- 10 Cure I, 12 Conserve MP
     head={ name="Vanya Hood", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
     -- 12 Conserve MP
@@ -174,7 +184,7 @@ sets.midcast.StatusRemoval = {
 -- TODO: Vanya Head, Vanya Feet
 sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
     -- Healing Magiuc: 15
-    main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
+    -- TODO main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
     -- Cursna: 15
     hands={ name="Fanatic Gloves", augments={'MP+35','"Conserve MP"+3','"Fast Cast"+3',}},
     -- Cursna: 10
@@ -208,6 +218,24 @@ sets.midcast.BarSpell = set_combine(sets.midcast.Enhancing, {
 })
 
 sets.midcast.Regen = set_combine(sets.midcast.Enhancing, {
+    -- TODO JSE SU4
+    main="Bunzi's Rod",
+    -- Duration 10
+    sub="Ammurapi Shield",
+    -- Potency 20
+    head="Arbatel Bonnet +2",
+    -- Duration 10
+    body={ name="Telchine Chas.", augments={'Mag. Evasion+20','Spell interruption rate down -9%','Enh. Mag. eff. dur. +10',}},
+    -- Perpentuance
+    hands="Arbatel Bracers +2",
+    -- Duration 8
+    hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +8',}},
+    -- Duration 7
+    legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +7',}},
+    -- Duration 10 
+    waist="Embla Sash",
+    -- Duration 15
+    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 })
 
 sets.midcast.Aquaveil = set_combine(sets.midcast.Enhancing, {
@@ -222,13 +250,28 @@ sets.midcast.Stoneskin = set_combine(sets.midcast.Enhancing, {
 -- Enfeebling
 --------------------------
 sets.midcast.Enfeebling = {
+    -- ACC
     main="Bunzi's Rod",
-    sub="Diamond Aspis", 
-    right_ring="Kishar Ring", -- Enfeeble Duration
+    -- ACC
+    sub="Ammurapi Shield",
+    -- Duration
+    right_ring="Kishar Ring", 
+    -- ACC
     right_ear={ name="Arbatel Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+11','Enmity-1',}},
 }
 
--- TODO NUKING
+-- Nuking
+--------------------------
+sets.midcast.Nuke = {
+    -- Magic ATK Bonus
+    main="Bunzi's Rod",
+    -- Magic ATK Bonus
+    sub="Ammurapi Shield",
+    -- Magic ATK Bonus
+    right_ring="Kishar Ring", 
+    -- Magic ATK Bonus
+    right_ear={ name="Arbatel Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+11','Enmity-1',}},
+}
 
 --
 -- TP Sets
