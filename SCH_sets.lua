@@ -18,6 +18,7 @@ JSE
     body="Arbatel Gown +2",
     hands="Arbatel Bracers +2",
     legs="Arbatel Pants +2",
+    feet="Arbatel Loafers +2",
 ]]
 
 
@@ -51,14 +52,7 @@ sets.idle.List = {
 -- 38 Nyame, 39 Empy
 -- 15 Accessories
 --[[
-
-    main="Bunzi's Rod",
-    head={ name="Bunzi's Hat", augments={'Path: A',}},
-    body="Bunzi's Robe",
-    hands="Bunzi's Gloves",
-    legs="Bunzi's Pants",
-    feet={ name="Bunzi's Sabots", augments={'Path: A',}},
-]]
+]]--
 sets.idle.Default = {
     -- 2 DT - TODO Refresh
     ammo="Staunch Tathlum",
@@ -100,8 +94,11 @@ sets.idle.Refresh = set_combine(sets.idle.Default, {
 sets.ja = {}
 
 sets.ja["Perpetuance"] = {
-    -- Perpentuance
     hands="Arbatel Bracers +2",
+}
+
+sets.ja["Ebullience"] = {
+    head="Arbatel Bonnet +2",
 }
 
 -- 
@@ -207,6 +204,7 @@ sets.midcast.Enhancing = {
     hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +8',}},
     -- Duration 7
     legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +7',}},
+    -- TODO FEET FROM TELCHINE
     -- Duration 10 
     waist="Embla Sash",
     -- Conserve MP, Skill+10
@@ -225,13 +223,11 @@ sets.midcast.Regen = set_combine(sets.midcast.Enhancing, {
     -- Potency 20
     head="Arbatel Bonnet +2",
     -- Duration 10
-    body={ name="Telchine Chas.", augments={'Mag. Evasion+20','Spell interruption rate down -9%','Enh. Mag. eff. dur. +10',}},
+    body={ name="Telchine Chas.", augments={'Mag. Evasion+20','"Conserve MP"+2','Enh. Mag. eff. dur. +10',}},
     -- Perpentuance
     hands="Arbatel Bracers +2",
-    -- Duration 8
-    hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +8',}},
     -- Duration 7
-    legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +7',}},
+    legs={ name="Telchine Braconi", augments={'"Conserve MP"+2','Enh. Mag. eff. dur. +7',}},
     -- Duration 10 
     waist="Embla Sash",
     -- Duration 15
@@ -267,11 +263,36 @@ sets.midcast.Nuke = {
     main="Bunzi's Rod",
     -- Magic ATK Bonus
     sub="Ammurapi Shield",
-    -- Magic ATK Bonus
-    right_ring="Kishar Ring", 
-    -- Magic ATK Bonus
+    -- MAB / 7 MB
+    head="Agwu's Cap",
+    -- MAB / MACC
+    body="Arbatel Gown +2",
+    -- MAB / MACC
+    hands="Arbatel Bracers +2",
+    -- MAB / MACC
+    legs="Arbatel Pants +2",
+    -- MAB / MACC / 5 MB2
+    feet="Arbatel Loafers +2",
+    -- MACC
+    neck="Null Loop",
+    -- MAB / MACC - TODO Hachirin no obi
+    waist="Eschan Stone",
+    -- MAB
+    left_ear="Malignance Earring",
+    -- MACC
     right_ear={ name="Arbatel Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+11','Enmity-1',}},
+    left_ring="Murky Ring",
+    right_ring="Shneddick Ring",
+    -- MAB
+    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
+
+sets.midcast.MBurst = set_combine(sets.midcast.Nuke, {
+    -- 8 MB
+    hands="Agwu's Gages",
+    -- 9 MB
+    legs="Agwu's Slops",
+})
 
 --
 -- TP Sets

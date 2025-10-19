@@ -70,6 +70,11 @@ function is_enfeebling_spell(spell)
            spell.english:startswith("Addle") 
 end
 
+function is_nuking_spell(spell)
+    -- Check if the spell is a nuking spell
+    return spell.skill == 'Elemental Magic'
+end
+
 -- 
 -- Player Action Callbacks
 -- 
@@ -117,6 +122,14 @@ function midcast(spell)
     -- Enfeebling Spells
     if is_enfeebling_spell(spell) then
         equip(sets.midcast.Enfeebling) 
+    end
+
+    -- NUKES! 
+    if is_nuking_spell(spell) then
+        equip(sets.midcast.Nuke)
+        -- CHECK FOR BURST
+        --    equip(sets.midcast.MBurst)
+        --
     end
 
 end
