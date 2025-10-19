@@ -147,6 +147,7 @@ function midcast(spell)
         equip(sets.midcast.Enfeebling) 
     end
 
+    obicheck(spell)
 end
 
 function aftercast(spell)

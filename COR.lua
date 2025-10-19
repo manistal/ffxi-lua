@@ -57,6 +57,7 @@ function precast(spell)
 		else
         	equip(sets.ws.Default)
 		end
+        obicheck(spell)
     end
 
     -- Corsair Rolls

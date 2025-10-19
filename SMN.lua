@@ -75,6 +75,8 @@ function midcast(spell)
         equip(sets.midcast.Cure)
     end
 
+    -- OBI CHECK
+    obicheck(spell)
 
 end
 

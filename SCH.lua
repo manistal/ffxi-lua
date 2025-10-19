@@ -132,6 +132,7 @@ function midcast(spell)
         --
     end
 
+    obicheck(spell)
 end
 
 function aftercast(spell)

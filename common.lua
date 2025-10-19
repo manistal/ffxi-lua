@@ -104,6 +104,15 @@ function self_command(command)
 end
 
 --
+-- Weather Check for OBIs
+--
+function obicheck(spell)
+    if spell.element == world.weather_element or spell.element == world.day_element then
+        equip({waist="Hachirin-no-Obi"})
+    end
+end
+
+--
 -- Speciality Sets
 --
 sets.crafting = {}
