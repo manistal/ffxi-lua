@@ -34,27 +34,27 @@ sets.weapons.List = {
 sets.weapons["Savage Spam"] = {
     main="Naegling",
     sub="Gleti's Knife",
-    range={ name="Linos", augments={'All Songs+2',}},
+    range={ name="Linos", augments={'Accuracy+12 Attack+12','"Store TP"+3','STR+6 AGI+6',}},
 }
 
 
 sets.weapons["MACC"] = { 
     main="Naegling",
     sub="Tauret",
-    range={ name="Linos", augments={'All Songs+2',}},
+    range={ name="Linos", augments={'Accuracy+12 Attack+12','"Store TP"+3','STR+6 AGI+6',}},
 }
 
 sets.weapons["Kali"] = { 
     main={ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}},
     sub="Gleti's Knife",
-    range={ name="Linos", augments={'All Songs+2',}},
+    range={ name="Linos", augments={'Accuracy+12 Attack+12','"Store TP"+3','STR+6 AGI+6',}},
 }
 
 
 sets.weapons["Kali Shield"] = { 
     main={ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}},
     sub="Ammurapi Shield",
-    range={ name="Linos", augments={'All Songs+2',}},
+    range={ name="Linos", augments={'Accuracy+12 Attack+12','"Store TP"+3','STR+6 AGI+6',}},
 }
 
 

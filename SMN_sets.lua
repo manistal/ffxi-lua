@@ -295,7 +295,7 @@ sets.bp.Precast = {
     -- Skill +18
     head="Beckoner's Horn +2",
     -- BP I: -15s
-    body="Con. Doublet +3",
+    body="Con. Doublet +4",
     -- Skill +25
     legs="Beck. Spats +2",
     -- Skill +22
@@ -326,7 +326,7 @@ sets.bp.Rage = {
     -- BPDmg: 7, MgATK 30
     head={ name="Apogee Crown", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
     -- BPDmg: 16
-    body="Con. Doublet +3",
+    body="Con. Doublet +4",
     -- BPDmg: 4
     --hands={ name="Merlinic Dastanas", augments={'Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+4','Pet: STR+9',}},
     -- BPDmg: 8, ACC

@@ -251,7 +251,7 @@ sets.midcast.Ranged = set_combine(sets.midcast.RangedDefault, {
     -- 54 Acc
     body="Chasseur's Frac +2",
     -- 52 Acc
-    hands="Chasseur's Gants +2",
+    hands="Chasseur's Gants +3",
     -- 63 Acc
     legs="Chas. Culottes +3",
     -- 50 Acc
@@ -276,7 +276,7 @@ sets.ws.Default = {
     -- WSD: +5
     body={ name="Nyame Mail", augments={'Path: B',}},
     -- WSD: +8
-    hands="Chasseur's Gants +2",
+    hands="Chasseur's Gants +3",
     -- WSD: +3
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     -- WSD: +12
@@ -363,7 +363,7 @@ sets.ja.PhantomRoll = set_combine(sets.idle.Default, {
     main={ name="Lanun Knife", augments={'Path: C',}},
     range={ name="Compensator", augments={'DMG:+15','AGI+15','Rng.Acc.+15',}},
     head={ name="Lanun Tricorne", augments={'Enhances "Winning Streak" effect',}},
-    hands="Chasseur's Gants +2",
+    hands="Chasseur's Gants +3",
     right_ring="Luzaf's Ring",
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Damage taken-5%',}},
 })
@@ -375,9 +375,9 @@ sets.ja["Random Deal"] = {body={ name="Lanun Frac +3", augments={'Enhances "Load
 sets.ja["Wild Card"] = {feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}}}
 
 -- Roll bonuses
-sets.ja["Blitzer's Roll"] = {head="Chasseur's Tricorne +1"}
+sets.ja["Blitzer's Roll"] = {head="Chasseur's Tricorne +2"}
 sets.ja["Tactician's Roll"] = {body="Chasseur's Frac +2",}
-sets.ja["Allies' Roll"] = {hands="Chasseur's Gants +2",}
+sets.ja["Allies' Roll"] = {hands="Chasseur's Gants +3",}
 sets.ja["Caster's Roll"] = {legs="Chas. Culottes +3",}
 sets.ja["Courser's Roll"] = {feet="Chass. Bottes +1",}
 
