@@ -30,7 +30,7 @@ Relic:
 
 Empyrean:
     head="Ebers Cap +2", -- FC
-    body="Ebers Bliaut +2", -- Refresh, Solace
+    body="Ebers Bliaut +3", -- Refresh, Solace
     hands="Ebers Mitts +2", -- DT / Divine Caress
     legs="Ebers Pant. +3", -- CURE
     feet="Ebers Duckbills +2", -- DT / MEVA
@@ -87,7 +87,7 @@ sets.idle.Default = {
     -- 7 DT
     head={ name="Bunzi's Hat", augments={'Path: A',}},
     -- Refresh
-    body="Ebers Bliaut +2", 
+    body="Ebers Bliaut +3", 
     -- 8 DT
     hands="Bunzi's Gloves",
     -- 12 DT
@@ -115,7 +115,7 @@ sets.idle.Refresh = set_combine(sets.idle.Default, {
     -- Refresh +1
     head="Inyanga Tiara +2",
     -- Refresh +3
-    body="Ebers Bliaut +2", 
+    body="Ebers Bliaut +3", 
     -- Refresh +1
     hands="Inyan. Dastanas +2",
     -- Refresh +1
@@ -214,7 +214,7 @@ sets.midcast.Cure = {
     -- Cure I: 7
     neck={ name="Clr. Torque +1", augments={'Path: A',}},
     -- Solace
-    body="Ebers Bliaut +2",
+    body="Ebers Bliaut +3",
     -- Cure II: 2
     hands="Theophany Mitts +2",
     -- Cure -> MP
@@ -253,7 +253,7 @@ sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
     -- Cursna / Conserve MP
     head={ name="Vanya Hood", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
     -- Healing Magic: 29
-    body="Ebers Bliaut +2",
+    body="Ebers Bliaut +3",
     -- Cursna: 15
     hands={ name="Fanatic Gloves", augments={'MP+35','"Conserve MP"+3','"Fast Cast"+3',}},
     -- Cursna: 17
@@ -295,7 +295,7 @@ sets.midcast.Enhancing = {
 -- TODO RELIC LEGS
 sets.midcast.BarSpell = set_combine(sets.midcast.Enhancing, {
     head="Ebers Cap +2", -- FC
-    body="Ebers Bliaut +2", -- Refresh, Solace
+    body="Ebers Bliaut +3", -- Refresh, Solace
     hands="Ebers Mitts +2", -- DT / Divine Caress
     legs={ name="Piety Pantaln. +2", augments={'Enhances "Afflatus Misery" effect',}},
     feet="Ebers Duckbills +2",
