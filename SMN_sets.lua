@@ -328,7 +328,7 @@ sets.bp.Rage = {
     -- BPDmg: 16
     body="Con. Doublet +4",
     -- BPDmg: 4
-    --hands={ name="Merlinic Dastanas", augments={'Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+4','Pet: STR+9',}},
+    -- hands={ name="Merlinic Dastanas", augments={'Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+4','Pet: STR+9',}},
     -- BPDmg: 8, ACC
     hands="Beck. Bracers +2",
     -- TPBonus, Blood Boon, ACC/MACC

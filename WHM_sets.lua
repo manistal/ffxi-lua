@@ -23,7 +23,7 @@ Artifact: (Enfeeble/MACC)
 
 Relic:
     head={ name="Piety Cap", augments={'Enhances "Devotion" effect',}},
-    body={ name="Piety Bliaut", augments={'Enhances "Benediction" effect',}},
+    body={ name="Piety Bliaut +1", augments={'Enhances "Benediction" effect',}},
     hands={ name="Piety Mitts", augments={'Enhances "Martyr" effect',}},
     legs={ name="Piety Pantaln. +2", augments={'Enhances "Afflatus Misery" effect',}},
     feet={ name="Piety Duckbills", augments={'Enhances "Afflatus Solace" effect',}},
@@ -32,7 +32,7 @@ Empyrean:
     head="Ebers Cap +2", -- FC
     body="Ebers Bliaut +2", -- Refresh, Solace
     hands="Ebers Mitts +2", -- DT / Divine Caress
-    legs="Ebers Pant. +2", -- CURE
+    legs="Ebers Pant. +3", -- CURE
     feet="Ebers Duckbills +2", -- DT / MEVA
 
 ]]
@@ -91,7 +91,7 @@ sets.idle.Default = {
     -- 8 DT
     hands="Bunzi's Gloves",
     -- 12 DT
-    legs="Ebers Pant. +2", 
+    legs="Ebers Pant. +3", 
     -- 10 DT
     feet="Ebers Duckbills +2",
     -- MEVA
@@ -146,7 +146,7 @@ sets.ja["Devotion"] ={
 }
 
 sets.ja["Benediction"] = {
-    body={ name="Piety Bliaut", augments={'Enhances "Benediction" effect',}},
+    body={ name="Piety Bliaut +1", augments={'Enhances "Benediction" effect',}},
 }
 
 sets.ja["Martyr"] = {
@@ -218,7 +218,7 @@ sets.midcast.Cure = {
     -- Cure II: 2
     hands="Theophany Mitts +2",
     -- Cure -> MP
-    legs="Ebers Pant. +2",
+    legs="Ebers Pant. +3",
     -- Cure I: 15, Conserve MP: 6
     feet={ name="Kaykaus Boots", augments={'Mag. Acc.+15','"Cure" potency +5%','"Fast Cast"+3',}},
     -- Cure I: 1, Cure II: 1
@@ -244,7 +244,7 @@ sets.midcast.StatusRemoval = {
     -- Erase+1
     neck={ name="Clr. Torque +1", augments={'Path: A',}},
     hands="Ebers Mitts +2", -- DT / Divine Caress
-    legs="Ebers Pant. +2", -- CURE
+    legs="Ebers Pant. +3", -- CURE
 }
 
 sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
@@ -305,7 +305,7 @@ sets.midcast.Regen = set_combine(sets.midcast.Enhancing, {
     -- 14 Potency
     head="Inyanga Tiara +2",
     -- 28 potency
-    body={ name="Piety Bliaut", augments={'Enhances "Benediction" effect',}},
+    body={ name="Piety Bliaut +1", augments={'Enhances "Benediction" effect',}},
     -- 22 Duration
     hands="Ebers Mitts +2",
     -- 21 Duration
