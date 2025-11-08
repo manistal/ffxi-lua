@@ -361,6 +361,7 @@ sets.ja = {}
 -- Effect Bonus > Duration
 sets.ja.PhantomRoll = set_combine(sets.idle.Default, {
     main={ name="Lanun Knife", augments={'Path: C',}},
+    neck="Regal Necklace",
     range={ name="Compensator", augments={'DMG:+15','AGI+15','Rng.Acc.+15',}},
     head={ name="Lanun Tricorne", augments={'Enhances "Winning Streak" effect',}},
     hands="Chasseur's Gants +3",
