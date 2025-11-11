@@ -82,8 +82,8 @@ sets.idle.List = {
     feet={ name="Bunzi's Sabots", augments={'Path: A',}},
 ]]
 sets.idle.Default = {
-    -- 2% DT
-    ammo="Staunch Tathlum",
+    -- Refresh
+    ammo="Homiliary",
     -- 7 DT
     head={ name="Bunzi's Hat", augments={'Path: A',}},
     -- Refresh
@@ -169,6 +169,8 @@ Wistful Belt = 3
 
 -- Fast Cast
 sets.precast.FastCast = {
+    -- SIRD
+    ammo="Staunch Tathlum",
     -- 7 Cure Speed
     main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
     -- 10 FC
