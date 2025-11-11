@@ -33,7 +33,7 @@ Empyrean:
     body="Ebers Bliaut +3", -- Refresh, Solace
     hands="Ebers Mitts +2", -- DT / Divine Caress
     legs="Ebers Pant. +3", -- CURE
-    feet="Ebers Duckbills +2", -- DT / MEVA
+    feet="Ebers Duckbills +3", -- DT / MEVA
 
 ]]
 
@@ -93,7 +93,7 @@ sets.idle.Default = {
     -- 12 DT
     legs="Ebers Pant. +3", 
     -- 10 DT
-    feet="Ebers Duckbills +2",
+    feet="Ebers Duckbills +3",
     -- MEVA
     neck="Warder's Charm +1",
     -- DT -3, HP+10%
@@ -298,7 +298,7 @@ sets.midcast.BarSpell = set_combine(sets.midcast.Enhancing, {
     body="Ebers Bliaut +3", -- Refresh, Solace
     hands="Ebers Mitts +2", -- DT / Divine Caress
     legs={ name="Piety Pantaln. +2", augments={'Enhances "Afflatus Misery" effect',}},
-    feet="Ebers Duckbills +2",
+    feet="Ebers Duckbills +3",
 })
 
 sets.midcast.Regen = set_combine(sets.midcast.Enhancing, {
@@ -322,6 +322,10 @@ sets.midcast.Aquaveil = set_combine(sets.midcast.Enhancing, {
 
 sets.midcast.Stoneskin = set_combine(sets.midcast.Enhancing, {
     legs="Shedir Seraweels",
+})
+
+sets.midcast.Auspice = set_combine(sets.midcast.Enhancing, {
+    feet="Ebers Duckbills +3",
 })
 
 -- Enfeebling
