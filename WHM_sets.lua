@@ -23,7 +23,7 @@ Artifact: (Enfeeble/MACC)
 
 Relic:
     head={ name="Piety Cap", augments={'Enhances "Devotion" effect',}},
-    body={ name="Piety Bliaut +1", augments={'Enhances "Benediction" effect',}},
+    body={ name="Piety Bliaut +3", augments={'Enhances "Benediction" effect',}},
     hands={ name="Piety Mitts", augments={'Enhances "Martyr" effect',}},
     legs={ name="Piety Pantaln. +2", augments={'Enhances "Afflatus Misery" effect',}},
     feet={ name="Piety Duckbills", augments={'Enhances "Afflatus Solace" effect',}},
@@ -146,7 +146,7 @@ sets.ja["Devotion"] ={
 }
 
 sets.ja["Benediction"] = {
-    body={ name="Piety Bliaut +1", augments={'Enhances "Benediction" effect',}},
+    body={ name="Piety Bliaut +3", augments={'Enhances "Benediction" effect',}},
 }
 
 sets.ja["Martyr"] = {
@@ -305,7 +305,7 @@ sets.midcast.Regen = set_combine(sets.midcast.Enhancing, {
     -- 14 Potency
     head="Inyanga Tiara +2",
     -- 28 potency
-    body={ name="Piety Bliaut +1", augments={'Enhances "Benediction" effect',}},
+    body={ name="Piety Bliaut +3", augments={'Enhances "Benediction" effect',}},
     -- 22 Duration
     hands="Ebers Mitts +2",
     -- 21 Duration
