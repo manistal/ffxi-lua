@@ -55,7 +55,9 @@ sets.idle.List = {
 ]]--
 sets.idle.Default = {
     -- 2 DT - TODO Refresh
-    ammo="Staunch Tathlum",
+    --ammo="Staunch Tathlum",
+    -- Refresh +1
+    ammo="Homiliary",
     -- 7 DT
     head="Nyame Helm",
     -- Refresh, 10DT
@@ -107,9 +109,11 @@ sets.ja["Ebullience"] = {
 sets.precast = {} 
 
 --[[
-Current = ~65% Fast Cast
+Current = ~72% Fast Cast
 Options:
 Voltsurge Torque (4%)
+Clerisy Strap +1 (3%)
+Prolox Ring (1%)
 ]]
 
 -- Fast Cast
@@ -159,6 +163,10 @@ sets.midcast.Cure = {
     head={ name="Vanya Hood", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
     -- 12 Conserve MP
     legs={ name="Vanya Slops", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
+    -- TODO Artifact Legs 
+    -- legs="Academic's Pants +3",
+    -- Enmity -24
+    body="Arbatel Gown +2",
     --  10 Cure I, 6 Conserve MP
     feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
     -- 5 Cure I
@@ -167,6 +175,7 @@ sets.midcast.Cure = {
     left_ring="Naji's Loop",
     -- Cure I: 5, Conserve MP: 2
     left_ear="Mendi. Earring",
+    -- TODO Mephitas Ring (Conserve MP ALOT)
 }
 
 
@@ -180,8 +189,6 @@ sets.midcast.StatusRemoval = {
 
 -- TODO: Vanya Head, Vanya Feet
 sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
-    -- Healing Magiuc: 15
-    -- TODO main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
     -- Cursna: 15
     hands={ name="Fanatic Gloves", augments={'MP+35','"Conserve MP"+3','"Fast Cast"+3',}},
     -- Cursna: 10
