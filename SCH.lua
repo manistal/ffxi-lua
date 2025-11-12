@@ -5,7 +5,7 @@
 --- 
 
 -- Replace JOB with FFXI 3 Letter Job Name
-SCH_STYLE_SET = 59
+SCH_STYLE_SET = 86
 SCH_MACRO_BOOK = 12
 
 -- 
@@ -36,6 +36,7 @@ end
 function equip_base_set()
     -- Weapon Sets
     equip(sets.weapons.Current)
+    equip(sets.idle.Current)
 
     -- TP/Engaged Sets (Glass cannon TP vs Tanky TP)
     if player.status == 'Engaged' then 
@@ -43,11 +44,6 @@ function equip_base_set()
         if player.hpp <= 50 then 
             equip(sets.idle.Default)
         end
-    end
-
-    -- Idle Sets (Regen/DT)
-    if player.status == 'Idle' then 
-        equip(sets.idle.Current)
     end
 end
 

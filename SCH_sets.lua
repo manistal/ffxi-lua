@@ -47,6 +47,7 @@ sets.idle = {}
 sets.idle.List = {
     "Default",
     "Refresh",
+    "Sublimation",
 }
 
 -- 38 Nyame, 39 Empy
@@ -68,21 +69,29 @@ sets.idle.Default = {
     legs="Agwu's Slops",
     -- 7 DT
     feet="Nyame Sollerets",
+    -- 6 DT
+    neck="Loricate Torque +1",
     -- MEVA
-    neck="Warder's Charm +1",
-    -- Sublimation
-    waist="Embla Sash",
+    waist="Carrier's Sash",
     -- HP / 5 DT
     left_ear="Alabaster Earring",
     -- Regen
     right_ear="Infused Earring",
     -- 10 DT
-    left_ring="Murky Ring",
+    -- left_ring="Murky Ring",
+    -- TODO: STINKINI+1 
+    -- Death Resistance
+    left_ring="Warden's Ring",
     -- Speed
     right_ring="Shneddick Ring",
     -- MEVA 
     back="Null Shawl",
 }
+
+sets.idle.Sublimation = set_combine(sets.idle.Default, {
+    -- Sublimation
+    waist="Embla Sash",
+})
 
 -- Total: 
 sets.idle.Refresh = set_combine(sets.idle.Default, {
@@ -161,12 +170,12 @@ sets.midcast.Cure = {
     sub="Kaja Grip",
     -- 10 Cure I, 12 Conserve MP
     head={ name="Vanya Hood", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
+    -- Enmity -24
+    body="Arbatel Gown +2",
     -- 12 Conserve MP
     legs={ name="Vanya Slops", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
     -- TODO Artifact Legs 
     -- legs="Academic's Pants +3",
-    -- Enmity -24
-    body="Arbatel Gown +2",
     --  10 Cure I, 6 Conserve MP
     feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
     -- 5 Cure I
@@ -187,10 +196,15 @@ sets.midcast.Curaga = set_combine(sets.midcast.Cure, {
 sets.midcast.StatusRemoval = {
 }
 
--- TODO: Vanya Head, Vanya Feet
 sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
+    -- TODO Fix Augment to Healing Skill
+    head={ name="Vanya Hood", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
+    -- TODO Relic Chest 
+    -- body="Pedagogy Gown +3",
     -- Cursna: 15
     hands={ name="Fanatic Gloves", augments={'MP+35','"Conserve MP"+3','"Fast Cast"+3',}},
+    -- 20 Healing magic, 5 Cursna
+    feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
     -- Cursna: 10
     neck="Malison Medallion",
     -- Cursna: 10, Healing Magic: 7
@@ -211,7 +225,8 @@ sets.midcast.Enhancing = {
     hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +8',}},
     -- Duration 7
     legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +7',}},
-    -- TODO FEET FROM TELCHINE
+    -- Duration 8
+    feet={ name="Telchine Pigaches", augments={'Song spellcasting time -7%','Enh. Mag. eff. dur. +8',}},
     -- Duration 10 
     waist="Embla Sash",
     -- Conserve MP, Skill+10
@@ -235,6 +250,8 @@ sets.midcast.Regen = set_combine(sets.midcast.Enhancing, {
     hands="Arbatel Bracers +2",
     -- Duration 7
     legs={ name="Telchine Braconi", augments={'"Conserve MP"+2','Enh. Mag. eff. dur. +7',}},
+    -- Duration 8
+    feet={ name="Telchine Pigaches", augments={'Song spellcasting time -7%','Enh. Mag. eff. dur. +8',}},
     -- Duration 10 
     waist="Embla Sash",
     -- Duration 15
