@@ -84,43 +84,66 @@ sets.idle.Default = {
 sets.tp = {}
 
 sets.tp.List = {
-    "Hybrid",
-    "FullDT",
-    "Default" 
+    "Sakpata",
+    "HybridACC",
+    "GlassCannon" 
 }
 
-sets.tp.Default = {
-    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-    head="Flam. Zucchetto +2",
-    body="Sakpata's Plate",
-    hands="Sakpata's Gauntlets",
-    legs="Ig. Flanchard +3",
-    feet="Flam. Gambieras +2",
-    neck={ name="Abyssal Beads +1", augments={'Path: A',}},
-    waist="Sailfi Belt +1",
-    left_ear="Telos Earring",
-    right_ear={ name="Schere Earring", augments={'Path: A',}},
-    left_ring="Moonbeam Ring",
-    right_ring="Chirich Ring",
-    back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
-}
-
-sets.tp.Hybrid = set_combine(sets.tp.Default, {
-    -- DT: -2 
-    ammo="Staunch Tathlum",
-    -- DT: -7 
+sets.tp.Sakpata = {
+    -- STP/DBLATK
+    ammo="Coiste Bodhar",
+    -- SAKPATA
     head="Sakpata's Helm",
-    -- DT: -10
     body="Sakpata's Plate",
-    -- DT: -8 
     hands="Sakpata's Gauntlets",
-    -- DBLATK?
-    legs="Ig. Flanchard +3",
-    -- DT: -6
+    legs="Sakpata's Cuisses",
     feet="Sakpata's Leggings",
+    -- ACC/STP
+    neck={ name="Abyssal Beads +1", augments={'Path: A',}},
+    -- ACC/2ATLK
+    waist="Ioskeha Belt",
+    -- ACC/STP
+    left_ear="Telos Earring",
+    -- ACC/2ATK
+    right_ear="Brutal Earring",
+    -- ACC/STP/DT
+    left_ring="Moonbeam Ring",
+    -- ACC/STP
+    right_ring="Chirich Ring",
+    -- ACC/STP/2ATK
+    back="Null Shawl",
+}
+
+sets.tp.HybridACC = set_combine(sets.tp.Sakpata, {
+    -- ACC/2ATK
+    legs="Ig. Flanchard +3",
+    -- ACC
+    neck="Null Loop",
+    -- TODO: Null Belt
+    -- ACC/2ATK
+    right_ear="Schere Earring",
 })
 
-sets.tp.FullDT = sets.idle.Default
+sets.tp.GlassCannon = set_combine(sets.tp.Sakpata, {
+    -- STP/3ATK
+    head="Flam. Zucchetto +2",
+    -- 2ATK
+    legs="Ig. Flanchard +3",
+    -- STP/3ATK
+    feet="Flam. Gambieras +2",
+    -- STP
+    neck={ name="Abyssal Beads +1", augments={'Path: A',}},
+    -- 3ATK/2ATK
+    waist="Sailfi Belt +1",
+    -- -MP / +ACC/2ATK
+    right_ear={ name="Schere Earring", augments={'Path: A',}},
+    -- STP
+    left_ring="Chirich Ring",
+    -- STP
+    right_ring="Chirich Ring",
+})
+
+
 
 --
 -- WS Sets 
@@ -133,7 +156,7 @@ sets.ws.Default = {
     ammo="Oshasha's Treatise",
     -- WSD 6+
     head={ name="Nyame Helm", augments={'Path: B',}},
-    -- WSD 5
+    -- WSD 10
     body="Ignominy Cuirass +3",
     -- WSD 6+
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -293,10 +316,11 @@ sets.midcast["Stun"] = {
     hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet="Ratri Sollerets",
+    neck="Null Loop",
     waist="Eschan Stone",
     right_ring="Kishar Ring",
     left_ear="Malignance Earring",
-    -- TODO Ambu Magic Acc Cape
+    back="Null Shawl",
 }
 
 -- Try to maximize HP and DreadSpikes Bonus
@@ -323,12 +347,11 @@ sets.midcast.Enfeebling = {
     hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck="Sibyl Scarf",
     right_ring="Kishar Ring",
     left_ear="Malignance Earring",
     waist="Eschan Stone",
-    neck="Incanter's Torque",
-    -- TODO Ambu Magic Acc Cape
+    neck="Null Loop",
+    back="Null Shawl",
 }
 
 -- ELemental magic: MACC = MAB
