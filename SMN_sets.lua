@@ -10,8 +10,9 @@ sets = {}
 sets.weapons = {}
 sets.weapons.List = {
     "Gridarvor",
-    "Espiritus",
-    "Grioavolr"
+    "Mpaca",
+--    "Espiritus",
+--    "Grioavolr"
 }
 
 sets.weapons["Espiritus"] = {
@@ -20,6 +21,11 @@ sets.weapons["Espiritus"] = {
     ammo={ name="Epitaph", augments={'Path: A',}},
 }
 
+sets.weapons["Mpaca"] = {
+    main="Mpaca's Staff",
+    sub="Kaja Grip",
+    ammo={ name="Epitaph", augments={'Path: A',}},
+}
 
 sets.weapons["Gridarvor"] = {
     main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
@@ -40,45 +46,51 @@ sets.idle.List = {
     "Default",
     "Refresh",
 }
-sets.idle.Default = {
-    head="Beckoner's Horn +2",
-    body="Bunzi's Robe",
-    hands="Bunzi's Gloves",
-    legs="Bunzi's Pants",
-    feet={ name="Bunzi's Sabots", augments={'Path: A',}},
-    neck="Warder's Charm +1",
-    waist="Carrier's Sash",
-    left_ear="Eabani Earring",
-    -- Refresh +2 / DT 4
-    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
-    left_ring="Murky Ring",
-    right_ring="Shneddick Ring",
-    back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Phys. dmg. taken-10%',}},
-}
 
--- Total: 12 Refresh
-sets.idle.Refresh = {
-    -- Refresh +3
+sets.idle.Default = {
+    -- Refresh 
     head="Beckoner's Horn +2",
-    -- Refresh +3
-    body={ name="Apogee Dalmatica", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
-    -- Refresh +1
-    hands="Inyan. Dastanas +2",
-    -- Refresh +1
-    legs="Assid. Pants +1",
-    -- Refresh +2
+    -- DT/MEVA
+    body="Beck. Doublet +2",
+    -- DT/MEVA
+    hands="Bunzi's Gloves",
+    -- DT/MEVA
+    legs="Beck. Spats +2",
+    -- Refresh
     feet="Baayami Sabots",
     -- MEVA
     neck="Warder's Charm +1",
     -- MEVA
     waist="Carrier's Sash",
-    -- Refresh +2
+    -- HP???
+    left_ear="Eabani Earring",
+    -- DT/Refresh
     right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
-    -- Refresh +1
-    right_ring="Inyanga Ring",
-    -- MEVA
+    -- TODO STIKINI+1
+    left_ring="Murky Ring",
+    -- SPEED
+    right_ring="Shneddick Ring",
+    -- DT/MEVA??
     back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Phys. dmg. taken-10%',}},
 }
+
+-- Total: 12 Refresh
+sets.idle.Refresh = set_combine(sets.idle.Default, {
+    -- Refresh +3
+    head="Beckoner's Horn +2",
+    -- Refresh +3
+    body={ name="Apogee Dalmatica", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
+    -- Refresh +1 // TODO CARBUNCLES MITTS
+    hands="Inyan. Dastanas +2",
+    -- Refresh +1
+    legs="Assid. Pants +1",
+    -- Refresh +2
+    feet="Baayami Sabots",
+    -- Refresh +2
+    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
+    -- Refresh +1 // TODO STIKINI RING
+    right_ring="Inyanga Ring",
+})
 
 -- Need -14 Perp >> Refresh || Skill >= DT
 -- Current: 16
