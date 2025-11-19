@@ -71,6 +71,20 @@ function is_nuking_spell(spell)
     return spell.skill == 'Elemental Magic'
 end
 
+function ebullience_check(spell)
+    -- Check for Ebullience buff and equip if present
+    if buffactive['Ebullience'] then
+        equip(sets.midcast.Ebullience)
+    end
+end
+
+function rapture_check(spell)
+    -- Check for Rapture buff and equip if present
+    if buffactive['Rapture'] then
+        equip(sets.midcast.Rapture)
+    end
+end
+
 -- 
 -- Player Action Callbacks
 -- 
@@ -128,6 +142,8 @@ function midcast(spell)
         --
     end
 
+    ebullience_check(spell)
+    rapture_check(spell)
     obicheck(spell)
 end
 

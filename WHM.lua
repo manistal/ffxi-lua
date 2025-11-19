@@ -98,8 +98,16 @@ function midcast(spell)
     --- Cure
     if spell.english:startswith("Cure") then
         equip(sets.midcast.Cure)
+        -- Aurorastorm
+        if spell.element == world.weather_element or spell.element == world.day_element then
+            equip(sets.midcast.CureWeather)
+        end
     elseif spell.english:startswith("Curaga") then
         equip(sets.midcast.Curaga)
+        -- Aurorastorm
+        if spell.element == world.weather_element or spell.element == world.day_element then
+            equip(sets.midcast.CureWeather)
+        end
     -- Status Removal (Removal+ and Healing SKill)
     elseif (spell.english == "Cursna") then 
         equip(sets.midcast.Cursna) 
@@ -119,7 +127,7 @@ function midcast(spell)
         equip(sets.midcast.Enfeebling) 
     end
 
-    obicheck(spell)
+    -- Aurorastorm
 end
 
 function aftercast(spell)

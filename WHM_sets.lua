@@ -29,9 +29,9 @@ Relic:
     feet={ name="Piety Duckbills", augments={'Enhances "Afflatus Solace" effect',}},
 
 Empyrean:
-    head="Ebers Cap +2", -- FC
+    head="Ebers Cap +3", -- FC
     body="Ebers Bliaut +3", -- Refresh, Solace
-    hands="Ebers Mitts +2", -- DT / Divine Caress
+    hands="Ebers Mitts +3", -- DT / Divine Caress
     legs="Ebers Pant. +3", -- CURE
     feet="Ebers Duckbills +3", -- DT / MEVA
 
@@ -138,7 +138,7 @@ sets.idle.Refresh = set_combine(sets.idle.Default, {
 sets.ja = {}
 
 sets.ja["Divine Caress"] = {
-    hands="Ebers Mitts +2", -- Divine Caress
+    hands="Ebers Mitts +3", -- Divine Caress
 }
 
 sets.ja["Devotion"] ={
@@ -174,7 +174,7 @@ sets.precast.FastCast = {
     -- 7 Cure Speed
     main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
     -- 10 FC
-    head="Ebers Cap +2", 
+    head="Ebers Cap +3", 
     -- ~5-8 FC
     neck={ name="Clr. Torque +1", augments={'Path: A',}},
     -- 14 FC
@@ -212,7 +212,7 @@ sets.midcast.Cure = {
     -- Conserve MP: 4
     sub="Thuellaic Ecu +1",
     -- Cure I: 19
-    head="Ebers Cap +2",
+    head="Ebers Cap +3",
     -- Cure I: 7
     neck={ name="Clr. Torque +1", augments={'Path: A',}},
     -- Solace
@@ -239,13 +239,19 @@ sets.midcast.Curaga = set_combine(sets.midcast.Cure, {
     body="Theo. Bliaut +2", -- Curaga
 })
 
+sets.midcast.CureWeather = set_combine(sets.midcast.Cure, {
+    --main="Chatoyant Staff",
+    --sub="Enki Strap",
+    waist="Hachirin-no-Obi",
+})
+
 -- Status Removal
 ----------------------
 sets.midcast.StatusRemoval = {
-    head="Ebers Cap +2", -- Divine Veil
+    head="Ebers Cap +3", -- Divine Veil
     -- Erase+1
     neck={ name="Clr. Torque +1", augments={'Path: A',}},
-    hands="Ebers Mitts +2", -- DT / Divine Caress
+    hands="Ebers Mitts +3", -- DT / Divine Caress
     legs="Ebers Pant. +3", -- CURE
 }
 
@@ -278,6 +284,7 @@ sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
 ---------------------------
 -- TODO Enhancing Skill Earring, Telchine
 sets.midcast.Enhancing = {
+    sub="Ammurapi Shield",
     -- Duration 5 TODO
     head={ name="Telchine Cap", augments={'Mag. Evasion+19','"Conserve MP"+4','Enh. Mag. eff. dur. +5',}},
     -- Duration 10
@@ -296,9 +303,9 @@ sets.midcast.Enhancing = {
 
 -- TODO RELIC LEGS
 sets.midcast.BarSpell = set_combine(sets.midcast.Enhancing, {
-    head="Ebers Cap +2", -- FC
+    head="Ebers Cap +3", -- FC
     body="Ebers Bliaut +3", -- Refresh, Solace
-    hands="Ebers Mitts +2", -- DT / Divine Caress
+    hands="Ebers Mitts +3", -- DT / Divine Caress
     legs={ name="Piety Pantaln. +2", augments={'Enhances "Afflatus Misery" effect',}},
     feet="Ebers Duckbills +3",
 })
@@ -309,7 +316,7 @@ sets.midcast.Regen = set_combine(sets.midcast.Enhancing, {
     -- 28 potency
     body={ name="Piety Bliaut +3", augments={'Enhances "Benediction" effect',}},
     -- 22 Duration
-    hands="Ebers Mitts +2",
+    hands="Ebers Mitts +3",
     -- 21 Duration
     legs="Th. Pantaloons +2",
     -- 10 Potency

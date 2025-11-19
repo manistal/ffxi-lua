@@ -112,6 +112,10 @@ sets.ja["Ebullience"] = {
     head="Arbatel Bonnet +2",
 }
 
+sets.ja["Rapture"] = {
+    head="Arbatel Bonnet +2",
+}
+
 -- 
 -- Spell Precast Sets
 --
@@ -283,12 +287,13 @@ sets.midcast.Enfeebling = {
 -- Nuking
 --------------------------
 sets.midcast.Nuke = {
+    -- TODO GHASTLY TALTHUM AMMO SLOT
     -- Magic ATK Bonus
     main="Bunzi's Rod",
     -- Magic ATK Bonus
     sub="Ammurapi Shield",
-    -- MAB / 7 MB
-    head="Agwu's Cap",
+    -- MAB / MACC
+    head="Arbatel Bonnet +2",
     -- MAB / MACC
     body="Arbatel Gown +2",
     -- MAB / MACC
@@ -297,7 +302,7 @@ sets.midcast.Nuke = {
     legs="Arbatel Pants +2",
     -- MAB / MACC / 5 MB2
     feet="Arbatel Loafers +2",
-    -- MACC
+    -- MACC -- TODO: JSE Neck
     neck="Null Loop",
     -- MAB / MACC - TODO Hachirin no obi
     waist="Eschan Stone",
@@ -305,13 +310,15 @@ sets.midcast.Nuke = {
     left_ear="Malignance Earring",
     -- MACC
     right_ear={ name="Arbatel Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+11','Enmity-1',}},
-    left_ring="Murky Ring",
-    right_ring="Shneddick Ring",
+    -- TODO RINGS
+    -- Metamorph and Freke??
     -- MAB
     back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
 
 sets.midcast.MBurst = set_combine(sets.midcast.Nuke, {
+    -- MAB / 7 MB
+    head="Agwu's Cap",
     -- 8 MB
     hands="Agwu's Gages",
     -- 9 MB
