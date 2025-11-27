@@ -144,7 +144,6 @@ sets.tp.GlassCannon = set_combine(sets.tp.Sakpata, {
 })
 
 
-
 --
 -- WS Sets 
 -- 
@@ -162,8 +161,8 @@ sets.ws.Default = {
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     -- WSD 10
     legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
-    -- WSD 5  TODO: Replace with EMPY
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    -- WSD 12
+    feet="Heath. Sollerets +3",
     -- DBLATK/PDL
     neck={ name="Abyssal Beads +1", augments={'Path: A',}},
     -- 2ATK/3ATK
@@ -227,7 +226,7 @@ sets.ja["Dark Seal"] = {
 }
 sets.ja["Nether Void"] = {
     head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
-    legs="Heath. Flanchard +1",
+    legs="Heath. Flanchard +2",
 }
 sets.ja["Blood Weapon"] = {
     body={ name="Fall. Cuirass +3", augments={'Enhances "Blood Weapon" effect',}},
@@ -285,7 +284,7 @@ sets.midcast["Endark II"] = {
     -- TODO: Artifact Head
     body={ name="Carm. Scale Mail", augments={'Attack+15','"Mag.Atk.Bns."+10','"Dbl.Atk."+2',}},
     hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
-    legs="Heath. Flanchard +1",
+    legs="Heath. Flanchard +2",
     feet="Ratri Sollerets",
     neck="Incanter's Torque",
     left_ear="Mani Earring",
@@ -299,7 +298,7 @@ sets.midcast["Drain II"] = {
     head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
     body={ name="Carm. Scale Mail", augments={'Attack+15','"Mag.Atk.Bns."+10','"Dbl.Atk."+2',}},
     hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
-    legs="Heath. Flanchard +1",
+    legs="Heath. Flanchard +2",
     neck="Incanter's Torque",
     feet="Ratri Sollerets",
     left_ear="Mani Earring",
@@ -327,7 +326,7 @@ sets.midcast["Stun"] = {
 sets.midcast["Dread Spikes"] = {
     ammo="Staunch Tathlum",
     head="Ratri Sallet",
-    body="Heath. Cuirass +1",
+    body="Heath. Cuirass +2",
     hands="Ratri Gadlings",
     legs="Ratri Cuisses",
     feet="Ratri Sollerets",
@@ -360,10 +359,9 @@ sets.midcast.Nuking = {
     body={ name="Fall. Cuirass +3", augments={'Enhances "Blood Weapon" effect',}},
     hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    feet="Heath. Sollerets +3",
     neck="Sibyl Scarf",
     right_ring="Kishar Ring",
     left_ear="Malignance Earring",
     waist="Eschan Stone",
-
 }

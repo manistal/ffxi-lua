@@ -299,18 +299,18 @@ sets.ws.Default = {
 sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
     -- TODO FOTIA
     -- TODO Lanun Hat
+    neck="Null Loop",
     -- RACC/RATK
     head="Ikenga's Hat",
     -- TP Bonus
     body="Ikenga's Vest",
     -- RACC
-    neck="Iskur Gorget",
-    -- RACC
     waist="Yemaya Belt",
     -- RACC
     right_ring="Meghanada Ring",
     -- TODO Ranged Attack WSD!
-    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
+    --back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
+    back="Null Shawl",
 })
 
 -- Magical ATK
@@ -342,6 +342,12 @@ sets.ws["Leaden Salute"]  = set_combine(sets.ws.Default, {
 })
 
 sets.ws["Hot Shot"] = set_combine(sets.ws.Default, { 
+    neck="Null Loop",
+    -- RACC/RATK
+    -- TODO Ranged Attack WSD!
+    hands="Chasseur's Gants +3",
+    --back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
+    back="Null Shawl",
     -- TODO FOTIA
     left_ear="Friomisi Earring",
 })
