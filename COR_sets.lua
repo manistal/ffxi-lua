@@ -21,7 +21,7 @@ sets.weapons.List = {
 sets.weapons["Savage Spam"] = {
     main="Naegling",
     sub="Gleti's Knife",
-    range="Fomalhaut",
+    range="Anarchy +2",
     ammo="Chrono Bullet",
 }
 
@@ -366,7 +366,7 @@ sets.ja = {}
 
 -- Effect Bonus > Duration
 sets.ja.PhantomRoll = set_combine(sets.idle.Default, {
-    main={ name="Lanun Knife", augments={'Path: C',}},
+    main={ name="Rostam", augments={'Path: C',}},
     neck="Regal Necklace",
     range={ name="Compensator", augments={'DMG:+15','AGI+15','Rng.Acc.+15',}},
     head={ name="Lanun Tricorne", augments={'Enhances "Winning Streak" effect',}},
