@@ -118,12 +118,41 @@ function aftercast(spell)
     end
 end
 
+function isPhysicalBP(spell)
+    -- Physical DBLATK BPs
+    -- Ramuh: Volt Strike, Siren: Hysteric Assault & Garuda: Predator Claws
+    physicalBPs = S{"Volt Strike", "Hysteric Assault", "Predator Claws", "Poison Nails"}
+    return physicalBPs:contains(spell.english)
+end
+
+function isMagicAtkBP(spell)
+    -- Merit/Magic BPs
+    -- Thunderstorm, Meteor Strike, Heavenly Strike, Geocrush, Grand Fall, Wind Blade & Thunderspark.
+    mabBPs = S{"Thunderstorm", "Meteor Strike", "Heavenly Strike", "Geocrush", "Grand Fall", "Wind Blade", "Thunderspark"}
+    return mabBPs:contains(spell.english)
+end
+
+function isMACCBP(spell)
+    -- BPs with Effects that Need to Land
+    -- Sleepga, Volt Strike, Shock Squall, Mewing Lullaby
+    maccBPs = S{"Sleepga", "Volt Strike", "Shock Squall", "Mewing Lullaby"}
+    return maccBPs:contains(spell.english)
+end
+
+
 function pet_midcast(spell)
     if string.find(spell.type,'BloodPact') then
         if (spell.type=="BloodPactWard") then 
             equip(sets.bp.Ward) 
         elseif (spell.type=="BloodPactRage") then
             equip(sets.bp.Rage)
+            if isPhysicalBP(spell) then
+                equip(sets.bp.Physical)
+            elseif isMagicAtkBP(spell) then 
+                equip(sets.bp.MAB)
+            elseif isMACCBP(spell) then 
+                equip(sets.bp.MACC)
+            end
         end
     end
 end
