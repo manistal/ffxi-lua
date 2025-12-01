@@ -9,16 +9,10 @@ sets = {}
 -- 
 sets.weapons = {}
 sets.weapons.List = {
-    "Gridarvor",
     "Mpaca",
+    "Gridarvor",
 --    "Espiritus",
 --    "Grioavolr"
-}
-
-sets.weapons["Espiritus"] = {
-    main={ name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}},
-    sub="Kaja Grip",
-    ammo={ name="Epitaph", augments={'Path: A',}},
 }
 
 sets.weapons["Mpaca"] = {
@@ -32,6 +26,13 @@ sets.weapons["Gridarvor"] = {
     sub="Kaja Grip",
     ammo={ name="Epitaph", augments={'Path: A',}},
 }
+
+sets.weapons["Espiritus"] = {
+    main={ name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}},
+    sub="Kaja Grip",
+    ammo={ name="Epitaph", augments={'Path: A',}},
+}
+
 
 sets.weapons["Grioavolr"] = {
     main={ name="Grioavolr", augments={'Blood Pact Dmg.+3','Pet: Mag. Acc.+15','Pet: "Mag.Atk.Bns."+15','DMG:+5',}},
@@ -49,15 +50,15 @@ sets.idle.List = {
 
 sets.idle.Default = {
     -- Refresh 
-    head="Beckoner's Horn +2",
+    head="Beckoner's Horn +3",
     -- DT/MEVA
     body="Beck. Doublet +2",
     -- DT/MEVA
-    hands="Bunzi's Gloves",
+    hands="Nyame Gauntlets",
     -- DT/MEVA
     legs="Beck. Spats +2",
-    -- Refresh
-    feet="Baayami Sabots",
+    -- MEVA/MP
+    feet="Beck. Pigaches +2",
     -- MEVA
     neck="Warder's Charm +1",
     -- MEVA
@@ -77,11 +78,8 @@ sets.idle.Default = {
 -- Total: 12 Refresh
 sets.idle.Refresh = set_combine(sets.idle.Default, {
     -- Refresh +3
-    head="Beckoner's Horn +2",
-    -- Refresh +3
     body={ name="Apogee Dalmatica", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
-    -- Refresh +1 // TODO CARBUNCLES MITTS
-    hands="Inyan. Dastanas +2",
+    -- TODO: Need Carby Unity Gloves for +Refresh
     -- Refresh +1
     legs="Assid. Pants +1",
     -- Refresh +2
@@ -89,23 +87,53 @@ sets.idle.Refresh = set_combine(sets.idle.Default, {
     -- Refresh +2
     right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
     -- Refresh +1 // TODO STIKINI RING
-    right_ring="Inyanga Ring",
 })
 
 -- Need -14 Perp >> Refresh || Skill >= DT
 -- Current: 16
 sets.perp = {}
 sets.perp.List = {
-    "Skill",
+    "Default",
     "Refresh",
-    "Healer",
 }
+
+-- Currently: 568
+-- Need 14 (ML=1Skill/lvl, +3 Empy=+5 Skill, C Palug Earring=+5 Skill)
+sets.perp.Default = set_combine(sets.idle.Default, {
+    -- TODO: Beckoner Body +3 (+5 Skill)
+    -- TODO: Beckoner Legs +3 (+5 Skill)
+    -- 22 Skill
+    hands="Lamassu Mitts +1",
+    -- 9 Skill
+    neck="Caller's Pendant",
+    -- Skill +7, Perp 2
+    waist="Lucidity Sash",
+    -- TODO Stikini Ring (-2 Skill)
+    -- Skill +10, Perp: -1
+    left_ring="Evoker's Ring",
+})
+
+sets.perp.Refresh = set_combine(sets.perp.Default, {
+    -- TODO: Need Carby Unity Gloves for +Refresh
+    -- Perp -3, Refresh +1
+    legs="Assid. Pants +1",
+    -- Skill +24, Refresh +2
+    feet="Baayami Sabots",
+    -- Skill +7, Perp -2
+    waist="Lucidity Sash",
+    -- Refresh +2
+    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
+    -- Skill +10, Perp: -1
+    left_ring="Evoker's Ring",
+})
+
+--[[ Default already has 575 skill 
+     Bring this back for 670 skill one day (ML50?)
 -- Total Skill: 127
 -- L99 Base Skill: 430
 -- Current Skill: 557
 -- +6 Bench: 575
 -- +7 Bench: 670
--- TODO: Need Evans Earring for -1Perp
 sets.perp.Skill = set_combine(sets.idle.Default, {
     -- Perp: -5
     main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
@@ -122,7 +150,7 @@ sets.perp.Skill = set_combine(sets.idle.Default, {
     -- Skill +24, Refresh +2
     feet="Baayami Sabots",
     -- Skill +7, Perp 2
-    waist="Lucidity Sash",
+    waist="Lucidity Sash"
     -- Refresh +2
     right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
     -- Skill +10, Perp: -1
@@ -130,70 +158,8 @@ sets.perp.Skill = set_combine(sets.idle.Default, {
     -- Refresh+1
     right_ring="Inyanga Ring",
 })
+]]
 
--- TODO: Need Carby Unity Gloves for +Refresh
-sets.perp.Refresh = set_combine(sets.idle.Default, {
-    -- Perp: -5
-    main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
-    -- Skill +18, Refresh +3
-    head="Beckoner's Horn +2",
-    -- Skill +9
-    neck="Caller's Pendant",
-    -- Skill +19, Perp: -7
-    body="Beck. Doublet +2",
-    -- Skill +22
-    hands="Lamassu Mitts +1",
-    -- Perp -3, Refresh +1
-    legs="Assid. Pants +1",
-    -- Skill +24, Refresh +2
-    feet="Baayami Sabots",
-    -- Refresh +2
-    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
-    -- Skill +10, Perp: -1
-    left_ring="Evoker's Ring",
-    -- Refresh +1
-    right_ring="Inyanga Ring",
-})
-
-sets.perp.MEVA = set_combine(sets.idle.Default, {
-    -- Perp: -5
-    main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
-    -- Skill +18, Refresh +3
-    head="Beckoner's Horn +2",
-    -- Skill +9
-    neck="Caller's Pendant",
-    -- Skill +19, Perp: -7
-    body="Beck. Doublet +2",
-    -- Skill +25
-    legs="Beck. Spats +2",
-    -- Refresh +2
-    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
-    -- Skill +10, Perp: -1
-    left_ring="Evoker's Ring",
-    -- Refresh+1
-    right_ring="Inyanga Ring",
-})
-
-sets.perp.Healer = set_combine(sets.idle.Default, {
-    -- Refresh +2
-    main="Mpaca's Staff",
-    -- Skill +18, Refresh +3
-    head="Beckoner's Horn +2",
-    -- Skill +9
-    neck="Caller's Pendant",
-    -- Skill +19, Perp: -7
-    body="Beck. Doublet +2",
-    -- DT/MEVA
-    hands="Nyame Gauntlets",
-    -- Skill +25
-    legs="Beck. Spats +2",
-    -- Skill +24, Refresh +2
-    feet="Beck. Pigaches +2",
-    -- Skill +7, Perp 2
-    waist="Lucidity Sash",
-    -- Refresh +2
-    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
-})
 --
 -- TP Sets
 --
@@ -292,9 +258,6 @@ sets.precast.FastCast = {
 sets.midcast = {}
 
 sets.midcast.Cure = {
-    -- 10 Cure, +Weather
-    main="Chatoyant Staff",
-    sub="Kaja Grip",
     -- 10 Cure I, 12 Conserve MP
     head={ name="Vanya Hood", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
     -- 15 Cure I
@@ -303,8 +266,11 @@ sets.midcast.Cure = {
     legs={ name="Vanya Slops", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
     --  10 Cure I, 6 Conserve MP
     feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
+    -- Conserve MP
+    neck="Incanter's Torque",
     -- 5 Cure I
     left_ear="Mendi. Earring",
+    -- TODO: Meriphatas Ring for Conserve MP
 }
 
 sets.midcast.CureWeather = set_combine(sets.midcast.Cure, {
@@ -320,18 +286,19 @@ sets.bp = {}
 
 -- Need 15 BP I, 15 BP II
 -- BPD Cap >> Summon Skill >> other
--- Current Skill: 510
+-- Current Skill: 
 -- With Chest Upgrade: +46
 -- Next Benchmark: 575
 sets.bp.Precast = {
+    -- DONT NEED TO SWAP THESE FOR SKILL 
     -- BP II -2s, Skill 15
-    main={ name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}},
+    -- main={ name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}},
     -- Skill 3
-    sub="Vox Grip",
+    -- sub="Vox Grip",
     -- BP II: -5s
     ammo={ name="Epitaph", augments={'Path: A',}},
     -- Skill +18
-    head="Beckoner's Horn +2",
+    head="Beckoner's Horn +3",
     -- BP I: -15s
     body="Con. Doublet +4",
     -- Skill +25
@@ -366,13 +333,9 @@ sets.bp.Rage = {
     -- BPDmg: 16
     body="Con. Doublet +4",
     -- BPDmg: 4
-    -- hands={ name="Merlinic Dastanas", augments={'Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+4','Pet: STR+9',}},
-    -- BPDmg: 8, ACC
-    hands="Beck. Bracers +2",
+    hands={ name="Merlinic Dastanas", augments={'Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+4','Pet: STR+9',}},
     -- TPBonus, Blood Boon, ACC/MACC
     legs="Beck. Spats +2",
-    -- BPDmg: 8, MAB
-    --feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
     -- BPDmg: 8, ACC
     feet="Beck. Pigaches +2",
     -- DBLATK
@@ -404,7 +367,51 @@ TODO:
 ]]--
 
 
--- Current Skill: 575
+-- Physical DBLATK BPs
+-- Ramuh: Volt Strike, Siren: Hysteric Assault & Garuda: Predator Claws
+sets.bp.Physical = set_combine(sets.bp.Rage, {
+    -- TODO Artifact Gloves
+    -- DBLATK
+    neck="Shulmanu Collar",
+    -- DBLKATK
+    left_ear="Sroda Earring",
+})
+
+-- Merit/Magic BPs
+-- Thunderstorm, Meteor Strike, Heavenly Strike, Geocrush, Grand Fall, Wind Blade & Thunderspark.
+sets.bp.MAB = set_combine(sets.bp.Rage, {
+    -- BPDmg: 8, MAB
+    feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
+    -- MACC 20
+    neck="Adad Amulet",
+})
+
+-- BPs with Effects that Need to Land
+-- Sleepga, Volt Strike, Shock Squall, Mewing Lullaby
+sets.bp.MACC = set_combine(sets.bp.Rage, {
+    -- MACC 61
+    head="Beckoner's Horn +3",
+    -- MACC 60
+    body="Con. Doublet +4",
+    -- MACC 52
+    hands="Beck. Bracers +2",
+    -- MACC 53
+    legs="Beck. Spats +2",
+    -- MACC 50 
+    feet="Beck. Pigaches +2",
+    -- MACC 15
+    left_ear="Alabaster Earring",
+    -- MACC 12
+    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
+    -- MACC 20
+    neck="Adad Amulet",
+    -- MACC 15 (Set Bonus)
+    waist="Regal Belt",
+    -- MACC 20
+    back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Phys. dmg. taken-10%',}},
+})
+
+-- Current Skill: 633
 -- Next Benchmark: 670
 sets.bp.Ward = {
     -- Skill 15
@@ -412,7 +419,7 @@ sets.bp.Ward = {
     -- Skill +3
     sub="Vox Grip",
     -- Skill +18, Refresh +3
-    head="Beckoner's Horn +2",
+    head="Beckoner's Horn +3",
     -- Skill +19, Perp: -7
     body="Beck. Doublet +2",
     -- Skill +22
@@ -427,8 +434,10 @@ sets.bp.Ward = {
     waist="Lucidity Sash",
     -- Skill +10, Perp: -1
     left_ring="Evoker's Ring",
-    -- Avatar level?
-    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
+    -- Skill +3
+    left_ear="Smn. Earring",
+    -- Skill +10
+    right_ear="Lodurr Earring",
     -- Skill 1
     back={ name="Conveyance Cape", augments={'Summoning magic skill +1','Pet: Enmity+11','Blood Pact Dmg.+1','Blood Pact ab. del. II -3',}},
 }

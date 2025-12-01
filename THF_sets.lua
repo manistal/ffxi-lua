@@ -40,6 +40,12 @@ sets.TH = {
 -- MEva >= Eva = Regen
 -- Current DT: 51
 sets.idle = {}
+
+sets.idle.List = {
+    "Default", 
+    "Regen"
+}
+
 sets.idle.Default = {
     ammo="Yamarang",
     -- DT: -7
@@ -63,6 +69,12 @@ sets.idle.Default = {
     right_ear="Suppanomimi",
     back="Null Shawl",
 }
+
+sets.idle.Regen = set_combine({
+    left_ring="Chirich Ring",
+    right_ring="Chirich Ring",
+    right_ear="Infused Earring",
+})
 
 --
 -- TP Sets

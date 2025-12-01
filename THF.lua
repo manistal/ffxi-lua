@@ -21,6 +21,7 @@ function get_sets()
     -- Set defaults
     bind_toggles("~f1", "weapons")
     bind_toggles("~f2", "tp")
+    bind_toggles("~f3", "idle")
 end
 
 --
