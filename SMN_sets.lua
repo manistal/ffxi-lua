@@ -98,6 +98,7 @@ sets.perp = {}
 sets.perp.List = {
     "Skill",
     "Refresh",
+    "Healer",
 }
 -- Total Skill: 127
 -- L99 Base Skill: 430
@@ -173,6 +174,26 @@ sets.perp.MEVA = set_combine(sets.idle.Default, {
     right_ring="Inyanga Ring",
 })
 
+sets.perp.Healer = set_combine(sets.idle.Default, {
+    -- Refresh +2
+    main="Mpaca's Staff",
+    -- Skill +18, Refresh +3
+    head="Beckoner's Horn +2",
+    -- Skill +9
+    neck="Caller's Pendant",
+    -- Skill +19, Perp: -7
+    body="Beck. Doublet +2",
+    -- DT/MEVA
+    hands="Nyame Gauntlets",
+    -- Skill +25
+    legs="Beck. Spats +2",
+    -- Skill +24, Refresh +2
+    feet="Beck. Pigaches +2",
+    -- Skill +7, Perp 2
+    waist="Lucidity Sash",
+    -- Refresh +2
+    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
+})
 --
 -- TP Sets
 --
@@ -285,6 +306,11 @@ sets.midcast.Cure = {
     -- 5 Cure I
     left_ear="Mendi. Earring",
 }
+
+sets.midcast.CureWeather = set_combine(sets.midcast.Cure, {
+    main="Chatoyant Staff",
+    waist="Hachirin-no-Obi",
+})
 
 
 -- 

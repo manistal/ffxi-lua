@@ -189,6 +189,7 @@ sets.midcast.Cure = {
     -- Cure I: 5, Conserve MP: 2
     left_ear="Mendi. Earring",
     -- TODO Mephitas Ring (Conserve MP ALOT)
+    waist="Hachirin-no-Obi",
 }
 
 

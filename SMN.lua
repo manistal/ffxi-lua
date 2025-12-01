@@ -95,6 +95,10 @@ function midcast(spell)
 
     if spell.english:startswith("Cur") then
         equip(sets.midcast.Cure)
+        -- Aurorastorm
+        if spell.element == world.weather_element or spell.element == world.day_element then
+            equip(sets.midcast.CureWeather)
+        end
     end
 
     -- OBI CHECK
