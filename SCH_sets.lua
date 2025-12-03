@@ -77,11 +77,8 @@ sets.idle.Default = {
     left_ear="Alabaster Earring",
     -- Regen
     right_ear="Infused Earring",
-    -- 10 DT
-    -- left_ring="Murky Ring",
-    -- TODO: STINKINI+1 
-    -- Death Resistance
-    left_ring="Warden's Ring",
+    -- Refresh 
+    left_ring="Stikini Ring +1",
     -- Speed
     right_ring="Shneddick Ring",
     -- MEVA 
@@ -236,6 +233,8 @@ sets.midcast.Enhancing = {
     waist="Embla Sash",
     -- Conserve MP, Skill+10
     neck="Incanter's Torque",
+    -- Skill 8
+    left_ring="Stikini Ring +1",
 }
 
 -- TODO RELIC LEGS

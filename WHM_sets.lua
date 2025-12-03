@@ -98,12 +98,12 @@ sets.idle.Default = {
     neck="Warder's Charm +1",
     -- DT -3, HP+10%
     waist="Plat. Mog. Belt",
-    -- HP
-    left_ear="Eabani Earring",
+    -- HP / DEF
+    left_ear="Alabaster Earring",
     -- DT 5
     right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Damage taken-5%',}},
-    -- 10 DT
-    left_ring="Murky Ring",
+    -- Refresh 
+    left_ring="Stikini Ring +1",
     -- Speed
     right_ring="Shneddick Ring",
     -- 10 PDT
@@ -126,10 +126,6 @@ sets.idle.Refresh = set_combine(sets.idle.Default, {
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
     -- MEVA
     waist="Carrier's Sash",
-    -- Refresh
-    right_ring="Inyanga Ring",
-    -- MEVA
-    back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
 })
 
 -- 
@@ -299,6 +295,8 @@ sets.midcast.Enhancing = {
     waist="Embla Sash",
     -- Conserve MP, Skill+10
     neck="Incanter's Torque",
+    -- Skill 8 
+    left_ring="Stikini Ring +1",
 }
 
 -- TODO RELIC LEGS
