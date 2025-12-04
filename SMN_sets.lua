@@ -275,8 +275,6 @@ sets.bp.Precast = {
 -- BP Default 
 -- BPDMG => Pet ACC
 sets.bp.Rage = {
-    -- BPDmg: 3, MGKATK 130
-    main={ name="Grioavolr", augments={'Blood Pact Dmg.+3','Pet: Mag. Acc.+15','Pet: "Mag.Atk.Bns."+15','DMG:+5',}},
     -- BPDmg: 3, MGATK 5
     sub="Elan Strap",
     -- BPDmg: 7, MgATK 30
@@ -289,8 +287,7 @@ sets.bp.Rage = {
     legs="Beck. Spats +3",
     -- BPDmg: 8, ACC
     feet="Beck. Pigaches +2",
-    -- DBLATK
-    neck="Shulmanu Collar",
+    -- TODO JSE Neck
     -- MGATK: 9
     waist="Regal Belt",
     -- BPDmg: 5
@@ -299,28 +296,24 @@ sets.bp.Rage = {
     left_ring="Varar Ring",
     -- BPDmg: 3
     right_ring="Varar Ring",
-    -- BPDmg: 8
-    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
+    -- TODO BP Earring
     -- DBLKATK
     left_ear="Sroda Earring",
+    -- BPDmg: 8
+    right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
 }
 
 --[[
 TODO:
-- Split into Phys / Flaming Crush / MAB
-- Convokers Bracers (PHYS)
-- Beckoners Pigaches (BOTH)
-- Enticers Pants (MAB)
-- SRODA Ring (PHYS/FC?)
-- Helios Helm / Pants (PHYS)
-    -- BPDmg: 7, MgATK 30
-    body={ name="Apogee Dalmatica", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
+- Flaming Crush Set??
 ]]--
 
 
 -- Physical DBLATK BPs
 -- Ramuh: Volt Strike, Siren: Hysteric Assault & Garuda: Predator Claws
 sets.bp.Physical = set_combine(sets.bp.Rage, {
+    main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
+    -- TODO Helios Helm
     -- TODO Artifact Gloves
     -- DBLATK
     neck="Shulmanu Collar",
@@ -331,6 +324,8 @@ sets.bp.Physical = set_combine(sets.bp.Rage, {
 -- Merit/Magic BPs
 -- Thunderstorm, Meteor Strike, Heavenly Strike, Geocrush, Grand Fall, Wind Blade & Thunderspark.
 sets.bp.MAB = set_combine(sets.bp.Rage, {
+    -- BPDmg: 3, MGKATK 130
+    main={ name="Grioavolr", augments={'Blood Pact Dmg.+3','Pet: Mag. Acc.+15','Pet: "Mag.Atk.Bns."+15','DMG:+5',}},
     -- BPDmg: 8, MAB
     feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
     -- MACC 20
