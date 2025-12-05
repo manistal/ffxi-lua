@@ -117,7 +117,7 @@ sets.tp = {}
 sets.tp.List = {
     "Hybrid",
     "DTMeva",
-    "Default",
+    --"Default",
 }
 
 -- DW > 11 for /nin 
@@ -125,43 +125,56 @@ sets.tp.List = {
 -- Haste = 25
 -- TA > STP = DA > 
 -- Currently 27 Haste, 10 DW
-sets.tp.Default = {
-    -- Haste: +8
-    head={ name="Herculean Helm", augments={'Accuracy+15','"Triple Atk."+3','STR+5','Attack+10',}},
-    neck="Iskur Gorget",
-    -- Haste: +4, DW: +5
-    body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
-    -- Haste: +5
-    hands="Adhemar Wristbands",
-    -- Haste: +6
-    legs="Chas. Culottes +3",
-    -- Haste: +4
-    feet={ name="Herculean Boots", augments={'Attack+24','"Triple Atk."+3','Accuracy+12',}},
-    waist="Windbuffet Belt",
-    -- DW: +5 
-    left_ear="Suppanomimi",
-    right_ear="Telos Earring",
-    left_ring="Chirich Ring",
-    right_ring="Chirich Ring",
-    back="Null Shawl",
-    --back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+--sets.tp.Default = {
+--    -- Haste: +8
+--    head={ name="Herculean Helm", augments={'Accuracy+15','"Triple Atk."+3','STR+5','Attack+10',}},
+--    neck="Iskur Gorget",
+--    -- Haste: +4, DW: +5
+--    body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
+--    -- Haste: +5
+--    hands="Adhemar Wristbands",
+--    -- Haste: +6
+--    legs="Chas. Culottes +3",
+--    -- Haste: +4
+--    feet={ name="Herculean Boots", augments={'Attack+24','"Triple Atk."+3','Accuracy+12',}},
+--    waist="Windbuffet Belt",
+--    -- DW: +5 
+--    left_ear="Suppanomimi",
+--    right_ear="Telos Earring",
+--    left_ring="Chirich Ring",
+--    right_ring="Chirich Ring",
+--    back="Null Shawl",
+--    --back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+--
+--}
 
-}
-
-sets.tp.Hybrid = set_combine(sets.tp.Default, {
+-- DT 50 > MEVA > ACC >= TP
+sets.tp.Hybrid = {
     -- 7 DT
     head={ name="Nyame Helm", augments={'Path: B',}},
     -- 9 DT
-    body={ name="Nyame Mail", augments={'Path: B',}},
+    body="Malignance Tabard",
+    -- 5 DT 
+    hands="Malignance Gloves",
     -- 12 DT
     legs="Chas. Culottes +3",
+    -- 7 DT
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    -- Triple ATK
+    waist="Sailfi Belt +1",
+    -- ACC / 5 DT
+    neck="Null Loop",
     -- DW
     left_ear="Suppanomimi",
-    -- DW
-    right_ear="Eabani Earring",
+    -- TP
+    right_ear="Telos Earring",
     -- 10 DT
     left_ring="Murky Ring",
-}) 
+    -- ACC / STP
+    right_ring="Chirich Ring",
+    -- MEVA
+    back="Null Shawl",
+} 
 
 
 sets.tp.DTMeva = set_combine(sets.idle.Default, {
@@ -234,7 +247,7 @@ sets.midcast = {}
 -- Ranged Acc >= STP >= RangedATK
 sets.midcast.RangedDefault = {
     head="Ikenga's Hat",
-    body="Ikenga's Vest",
+    body="Malignance Tabard",
     hands="Ikenga's Gloves",
     legs="Chas. Culottes +3",
     feet="Ikenga's Clogs",
@@ -249,7 +262,9 @@ sets.midcast.Ranged = set_combine(sets.midcast.RangedDefault, {
     -- 51 Acc
     head="Chasseur's Tricorne +2",
     -- 54 Acc
-    body="Chasseur's Frac +2",
+    -- body="Chasseur's Frac +2",
+    -- 50 ACC / 11 STP
+    body="Malignance Tabard",
     -- 52 Acc
     hands="Chasseur's Gants +3",
     -- 63 Acc
