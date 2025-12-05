@@ -10,11 +10,9 @@ sets = {}
 sets.weapons = {}
 sets.weapons.List = {
     "Savage Spam",
-    -- "Savage Magic",
     "Rostam",
     "RACC",
-    "LEADEN",
-    "DI Farming",
+    "MAB",
 }
 
 
@@ -24,13 +22,6 @@ sets.weapons["Savage Spam"] = {
     range="Anarchy +2",
     ammo="Chrono Bullet",
 }
-
---sets.weapons["Savage Magic"] = { 
---    main="Tauret",
---    sub="Naegling",
---    range="Fomalhaut",
---    ammo="Chrono Bullet",
---}
 
 sets.weapons["Rostam"] = {
     main={ name="Rostam", augments={'Path: C',}},
@@ -42,18 +33,13 @@ sets.weapons["Rostam"] = {
 sets.weapons["RACC"] = {
     main={ name="Rostam", augments={'Path: C',}},
     sub="Lanun Knife",
-}
-
-sets.weapons["LEADEN"] = {
-    main={ name="Rostam", augments={'Path: C',}},
-    sub="Tauret",
     range="Fomalhaut",
     ammo="Chrono Bullet",
 }
 
-sets.weapons["DI Farming"] = {
-    main="Voluspa Knife",
-    sub="Gleti's Knife",
+sets.weapons["MAB"] = {
+    main="Naegling",
+    sub="Tauret",
     range="Fomalhaut",
     ammo="Chrono Bullet",
 }
@@ -117,37 +103,13 @@ sets.tp = {}
 sets.tp.List = {
     "Hybrid",
     "DTMeva",
-    --"Default",
 }
+
 
 -- DW > 11 for /nin 
 -- DW > 21 for /nin, > 9 for haste samba
 -- Haste = 25
 -- TA > STP = DA > 
--- Currently 27 Haste, 10 DW
---sets.tp.Default = {
---    -- Haste: +8
---    head={ name="Herculean Helm", augments={'Accuracy+15','"Triple Atk."+3','STR+5','Attack+10',}},
---    neck="Iskur Gorget",
---    -- Haste: +4, DW: +5
---    body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
---    -- Haste: +5
---    hands="Adhemar Wristbands",
---    -- Haste: +6
---    legs="Chas. Culottes +3",
---    -- Haste: +4
---    feet={ name="Herculean Boots", augments={'Attack+24','"Triple Atk."+3','Accuracy+12',}},
---    waist="Windbuffet Belt",
---    -- DW: +5 
---    left_ear="Suppanomimi",
---    right_ear="Telos Earring",
---    left_ring="Chirich Ring",
---    right_ring="Chirich Ring",
---    back="Null Shawl",
---    --back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
---
---}
-
 -- DT 50 > MEVA > ACC >= TP
 sets.tp.Hybrid = {
     -- 7 DT
@@ -261,16 +223,22 @@ sets.midcast.RangedDefault = {
 sets.midcast.Ranged = set_combine(sets.midcast.RangedDefault, {
     -- 51 Acc
     head="Chasseur's Tricorne +2",
-    -- 54 Acc
-    -- body="Chasseur's Frac +2",
     -- 50 ACC / 11 STP
     body="Malignance Tabard",
-    -- 52 Acc
-    hands="Chasseur's Gants +3",
+    -- 50 ACC / STP
+    hands="Malignance Gloves",
     -- 63 Acc
     legs="Chas. Culottes +3",
-    -- 50 Acc
-    --feet="Chass. Botte-s +1",
+    -- 40 Acc
+    feet="Ikenga's Clogs",
+    -- RACC / STP
+    neck="Iskur Gorget",
+    -- RACC
+    left_ring="Ilabrat Ring",
+    -- STP
+    right_ring="Chirich Ring",
+    -- STP / DBLATK
+    right_ear="Telos Earring",
     -- 50 ACC / 7 STP
     back="Null Shawl",
 })
@@ -357,14 +325,13 @@ sets.ws["Leaden Salute"]  = set_combine(sets.ws.Default, {
 })
 
 sets.ws["Hot Shot"] = set_combine(sets.ws.Default, { 
-    neck="Null Loop",
-    -- RACC/RATK
-    -- TODO Ranged Attack WSD!
-    hands="Chasseur's Gants +3",
-    --back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
+    -- RACC 
     back="Null Shawl",
+    neck="Null Loop",
     -- TODO FOTIA
     left_ear="Friomisi Earring",
+    -- TODO Ranged Attack WSD!
+    --back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
 })
 
 -- Melee Sword
