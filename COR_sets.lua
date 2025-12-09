@@ -292,9 +292,8 @@ sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
     neck="Null Loop",
     -- RACC
     right_ring="Meghanada Ring",
-    -- TODO Ranged Attack WSD!
-    --back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
-    back="Null Shawl",
+    -- RACC / WSD
+    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}},
 })
 
 -- Magical ATK
