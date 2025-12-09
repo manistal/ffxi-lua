@@ -75,7 +75,8 @@ sets.idle.Default = {
     left_ring="Moonbeam Ring",
     -- Speed
     right_ring="Shneddick Ring",
-    back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+    -- MEVA
+    back="Null Shawl",
 }
 
 --
