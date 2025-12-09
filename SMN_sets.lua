@@ -319,6 +319,8 @@ sets.bp.Physical = set_combine(sets.bp.Rage, {
     neck="Shulmanu Collar",
     -- DBLKATK
     left_ear="Sroda Earring",
+    -- Phys Cape
+    back={ name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Pet: Attack+10 Pet: Rng.Atk.+10',}},
 })
 
 -- Merit/Magic BPs
@@ -330,6 +332,8 @@ sets.bp.MAB = set_combine(sets.bp.Rage, {
     feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
     -- MACC 20
     neck="Adad Amulet",
+    -- MAB Cape
+    back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','"Fast Cast"+10',}},
 })
 
 -- BPs with Effects that Need to Land
