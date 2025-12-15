@@ -360,7 +360,7 @@ sets.ja.PhantomRoll = set_combine(sets.idle.Default, {
     head="Lanun Tricorne +3",
     hands="Chasseur's Gants +3",
     right_ring="Luzaf's Ring",
-    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Damage taken-5%',}},
+    back={ name="Camulus's Mantle", augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}},
 })
 
 -- General JA Bonuses
