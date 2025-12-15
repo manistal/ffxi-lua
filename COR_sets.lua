@@ -284,7 +284,8 @@ sets.ws.Default = {
 -- Ranged Physical 
 sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
     -- TODO FOTIA
-    -- TODO Lanun Hat
+    -- RATK TODO: Enough RACC?
+    head="Lanun Tricorne +3",
     -- RACC/RATK
     -- head="Ikenga's Hat",
     -- TP Bonus
@@ -365,7 +366,7 @@ sets.ja.PhantomRoll = set_combine(sets.idle.Default, {
 
 -- General JA Bonuses
 sets.ja["Random Deal"] = {body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},}
--- sets.ja["Fold"] = {hands="Lanun Gants +1"}
+-- sets.ja["Fold"] = {hands="Lanun Gants +3"}
 -- sets.ja["Snake Eye"] = {legs="Lanun Trews +1"}
 sets.ja["Wild Card"] = {feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}}}
 
