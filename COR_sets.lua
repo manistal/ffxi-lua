@@ -351,7 +351,6 @@ sets.ws["Aeolian Edge"] = sets.ws["Wildfire"]
 -- Job Ability Sets
 -- 
 sets.ja = {}
-    body="Nyame Mail",
 
 -- Effect Bonus > Duration
 sets.ja.PhantomRoll = set_combine(sets.idle.Default, {
