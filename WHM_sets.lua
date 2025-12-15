@@ -322,6 +322,7 @@ sets.midcast.Regen = set_combine(sets.midcast.Enhancing, {
 })
 
 sets.midcast.Aquaveil = set_combine(sets.midcast.Enhancing, {
+    main="Vadose rod",
     -- Omen LUCK hands="Regal Cuffs",
     legs="Shedir Seraweels",
     -- AH Money waist="Emphatikos Rope",

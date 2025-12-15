@@ -168,6 +168,7 @@ sets.precast.Utsusemi = set_combine(sets.precast.FastCast, {
 -- 40 snapshot with Flurry II
 -- 60 snapshot without 
 -- Current: Snapshot 54, Rapidshot 18
+-- hands="Lanun Gants +3", // Snapshot 13
 sets.precast.Ranged = {
     -- Snapshot: +6
     head="Ikenga's Hat",
@@ -245,6 +246,7 @@ sets.midcast.Ranged = set_combine(sets.midcast.RangedDefault, {
 
 sets.midcast.TripleShot = set_combine(sets.midcast.Ranged, {
     body="Chasseur's Frac +2",
+    hands="Lanun Gants +3", 
 })
 
 --
@@ -347,13 +349,14 @@ sets.ws["Aeolian Edge"] = sets.ws["Wildfire"]
 -- Job Ability Sets
 -- 
 sets.ja = {}
+    body="Nyame Mail",
 
 -- Effect Bonus > Duration
 sets.ja.PhantomRoll = set_combine(sets.idle.Default, {
     main={ name="Rostam", augments={'Path: C',}},
     neck="Regal Necklace",
     range={ name="Compensator", augments={'DMG:+15','AGI+15','Rng.Acc.+15',}},
-    head={ name="Lanun Tricorne", augments={'Enhances "Winning Streak" effect',}},
+    head="Lanun Tricorne +3",
     hands="Chasseur's Gants +3",
     right_ring="Luzaf's Ring",
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Damage taken-5%',}},

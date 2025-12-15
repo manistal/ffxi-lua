@@ -99,23 +99,17 @@ end
 
 
 function midcast(spell)
-    -- TODO Need a Fastcast set
-	--if (spell.type == 'WhiteMagic' or spell.type == 'BlackMagic' or spell.type == 'BlueMagic' or spell.type == 'Ninjutsu') then
-	--	equip(sets.midcast.FastCast)
-	--end
-	--if spell.english == "Ranged" and buffactive['Triple Shot'] then
-	--	if buffactive['Triple Shot'] then
-	--		equip(set_combine(sets.ra.Default,sets.ra.TripleShot))
-    --  end
-    --end
-
     -- Equip Specific Sets Last
     if sets.midcast[spell.english] then
         equip(sets.midcast[spell.english])
     end
 
-    -- Overrides for Tripleshot TODO
-
+    if spell.english == "Ranged" then
+        equip(sets.midcast.Ranged)
+        if buffactive['Triple Shot'] then 
+            equip(sets.midcast.TripleShot)
+        end
+    end
 end
 
 function aftercast(spell)
