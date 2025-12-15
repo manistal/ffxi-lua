@@ -167,8 +167,7 @@ sets.precast.Utsusemi = set_combine(sets.precast.FastCast, {
 
 -- 40 snapshot with Flurry II
 -- 60 snapshot without 
--- Current: Snapshot 54, Rapidshot 18
--- hands="Lanun Gants +3", // Snapshot 13
+-- Current: Snapshot 59, Rapidshot 18
 sets.precast.Ranged = {
     -- Snapshot: +6
     head="Ikenga's Hat",
