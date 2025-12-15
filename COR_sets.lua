@@ -173,7 +173,9 @@ sets.precast.Ranged = {
     -- Snapshot: +6
     head="Ikenga's Hat",
     -- Snapshot: +8, RapidShot: +11
-    hands="Carmine Fin. Ga. +1",
+    -- hands="Carmine Fin. Ga. +1",
+    -- Snapshot 13 TODO: Swap back when we get another 6
+    hands="Lanun Gants +3", 
     -- Snapshot: +9
     body="Ikenga's Vest",
     -- Snapshot +9 
