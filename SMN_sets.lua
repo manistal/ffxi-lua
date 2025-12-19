@@ -216,10 +216,12 @@ sets.midcast.Cure = {
     legs={ name="Vanya Slops", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
     --  10 Cure I, 6 Conserve MP
     feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
-    -- Conserve MP
-    neck="Incanter's Torque",
+    -- SIRD
+    neck="Loricate Torque +1",
     -- 5 Cure I
     left_ear="Mendi. Earring",
+    -- Cure I: 1, Cure II: 1
+    left_ring="Naji's Loop",
     -- TODO: Meriphatas Ring for Conserve MP
 }
 
