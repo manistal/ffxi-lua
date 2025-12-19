@@ -56,7 +56,7 @@ sets.idle.List = {
 ]]--
 sets.idle.Default = {
     -- 2 DT - TODO Refresh
-    --ammo="Staunch Tathlum",
+    --ammo="Staunch Tathlum +1",
     -- Refresh +1
     ammo="Homiliary",
     -- 7 DT
@@ -335,7 +335,7 @@ sets.tp.List = {
 }
 
 sets.tp.Default = {
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head={ name="Bunzi's Hat", augments={'Path: A',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands="Bunzi's Gloves",

@@ -52,7 +52,7 @@ sets.weapons["Piercing"] = {
 sets.idle = {}
 sets.idle.Default = {
     -- DT: -2 
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     -- DT: -7 
     head="Sakpata's Helm",
     -- DT: -10
@@ -270,7 +270,7 @@ sets.midcast = {}
 
 -- DRK Magic Skill > Magic ACC > Magic ATK Bonus
 sets.midcast.Default = {
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
     body={ name="Fall. Cuirass +3", augments={'Enhances "Blood Weapon" effect',}},
     hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
@@ -286,7 +286,7 @@ sets.midcast.Default = {
 
 -- DRK Magic Skill >> All 
 sets.midcast["Endark II"] = {
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     -- TODO: Artifact Head
     body={ name="Carm. Scale Mail", augments={'Attack+15','"Mag.Atk.Bns."+10','"Dbl.Atk."+2',}},
     hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
@@ -300,7 +300,7 @@ sets.midcast["Endark II"] = {
 
 -- Maximize Drain Bonus / DRK Magic Acc
 sets.midcast["Drain II"] = {
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
     body={ name="Carm. Scale Mail", augments={'Attack+15','"Mag.Atk.Bns."+10','"Dbl.Atk."+2',}},
     hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
@@ -330,7 +330,7 @@ sets.midcast["Stun"] = {
 
 -- Try to maximize HP and DreadSpikes Bonus
 sets.midcast["Dread Spikes"] = {
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head="Ratri Sallet",
     body="Heath. Cuirass +2",
     hands="Ratri Gadlings",

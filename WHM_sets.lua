@@ -166,7 +166,7 @@ Wistful Belt = 3
 -- Fast Cast
 sets.precast.FastCast = {
     -- SIRD
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     -- 7 Cure Speed
     main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
     -- 10 FC
@@ -363,7 +363,7 @@ sets.tp.List = {
 }
 
 sets.tp.Default = {
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     head={ name="Bunzi's Hat", augments={'Path: A',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands="Bunzi's Gloves",

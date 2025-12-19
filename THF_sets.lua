@@ -128,7 +128,7 @@ sets.tp.TreasureHunter = {
 }
 
 sets.tp.Hybrid = set_combine(sets.tp.Default, {
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     left_ring="Murky Ring",
     right_ring="Moonbeam Ring",
 }) 

@@ -50,7 +50,7 @@ sets.weapons["Loxotic Mace"] = {
 sets.idle = {}
 sets.idle.Default = {
     -- DT: -2 
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     -- DT: -7 
     head="Sakpata's Helm",
     -- DT: -10
@@ -227,7 +227,7 @@ sets.midcast = {}
 
 -- DRK Magic Skill > Magic ACC > Magic ATK Bonus
 sets.midcast.Default = {
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     legs={ name="Eschite Cuisses", augments={'"Mag.Atk.Bns."+25','"Conserve MP"+6','"Fast Cast"+5',}},
     right_ear="Ethereal Earring",
     left_ring="Evanescence Ring",

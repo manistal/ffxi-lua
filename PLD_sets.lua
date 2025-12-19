@@ -41,7 +41,7 @@ sets.weapons["Piercing"] = {
 -- Idle/DT Base Set
 sets.idle = {}
 sets.idle.Default = {
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     -- TODO EMPY HELM
     head="Sakpata's Helm",
     body={ name="Sakpata's Plate", augments={'Path: A',}},
@@ -120,7 +120,7 @@ sets.midcast = {}
 -- SIRD 89, Enmity 58
 sets.midcast.SIRDEnmity = {
     -- SIRD 10
-    ammo="Staunch Tathlum",
+    ammo="Staunch Tathlum +1",
     -- Enmity ~20+
     head={ name="Loess Barbuta +1", augments={'Path: A',}},
     -- Enmity 7, SIRD 15
