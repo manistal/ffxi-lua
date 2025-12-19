@@ -243,6 +243,9 @@ sets.ja["Diabolic Eye"] = {
 sets.ja["Souleater"] = {
     legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
 }
+sets.ja["Weapon Bash"] = {
+    hands="Ig. Gauntlets +2",
+}
 
 
 -- 
