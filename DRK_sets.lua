@@ -75,7 +75,8 @@ sets.idle.Default = {
     left_ring="Moonbeam Ring",
     -- Speed
     right_ring="Shneddick Ring",
-    back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+    -- MEVA
+    back="Null Shawl",
 }
 
 --
@@ -174,8 +175,13 @@ sets.ws.Default = {
     -- WSD 2
     right_ear="Thrud Earring",
     -- WSD 10
-    back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','STR+5','Weapon skill damage +10%','Phys. dmg. taken-10%',}},
+    back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}},
 }
+
+sets.ws.Torcleaver = set_combine(sets.ws.Default, {
+    -- VIT Stats 
+    back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','STR+5','Weapon skill damage +10%','Phys. dmg. taken-10%',}},
+})
 
 sets.ws.MACC = set_combine(sets.ws.Default, {
     -- MAAC 40, WSD

@@ -167,12 +167,14 @@ sets.precast.Utsusemi = set_combine(sets.precast.FastCast, {
 
 -- 40 snapshot with Flurry II
 -- 60 snapshot without 
--- Current: Snapshot 54, Rapidshot 18
+-- Current: Snapshot 59, Rapidshot 18
 sets.precast.Ranged = {
     -- Snapshot: +6
     head="Ikenga's Hat",
     -- Snapshot: +8, RapidShot: +11
-    hands="Carmine Fin. Ga. +1",
+    -- hands="Carmine Fin. Ga. +1",
+    -- Snapshot 13 TODO: Swap back when we get another 6
+    hands="Lanun Gants +3", 
     -- Snapshot: +9
     body="Ikenga's Vest",
     -- Snapshot +9 
@@ -245,6 +247,7 @@ sets.midcast.Ranged = set_combine(sets.midcast.RangedDefault, {
 
 sets.midcast.TripleShot = set_combine(sets.midcast.Ranged, {
     body="Chasseur's Frac +2",
+    hands="Lanun Gants +3", 
 })
 
 --
@@ -281,7 +284,8 @@ sets.ws.Default = {
 -- Ranged Physical 
 sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
     -- TODO FOTIA
-    -- TODO Lanun Hat
+    -- RATK TODO: Enough RACC?
+    head="Lanun Tricorne +3",
     -- RACC/RATK
     -- head="Ikenga's Hat",
     -- TP Bonus
@@ -292,9 +296,8 @@ sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
     neck="Null Loop",
     -- RACC
     right_ring="Meghanada Ring",
-    -- TODO Ranged Attack WSD!
-    --back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
-    back="Null Shawl",
+    -- RACC / WSD
+    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}},
 })
 
 -- Magical ATK
@@ -354,15 +357,15 @@ sets.ja.PhantomRoll = set_combine(sets.idle.Default, {
     main={ name="Rostam", augments={'Path: C',}},
     neck="Regal Necklace",
     range={ name="Compensator", augments={'DMG:+15','AGI+15','Rng.Acc.+15',}},
-    head={ name="Lanun Tricorne", augments={'Enhances "Winning Streak" effect',}},
+    head="Lanun Tricorne +3",
     hands="Chasseur's Gants +3",
     right_ring="Luzaf's Ring",
-    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Damage taken-5%',}},
+    back={ name="Camulus's Mantle", augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}},
 })
 
 -- General JA Bonuses
 sets.ja["Random Deal"] = {body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},}
--- sets.ja["Fold"] = {hands="Lanun Gants +1"}
+-- sets.ja["Fold"] = {hands="Lanun Gants +3"}
 -- sets.ja["Snake Eye"] = {legs="Lanun Trews +1"}
 sets.ja["Wild Card"] = {feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}}}
 
