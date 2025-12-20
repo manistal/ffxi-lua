@@ -74,6 +74,8 @@ end
 function midcast(spell)
     if sets.midcast[spell.english] then
         equip(sets.midcast[spell.english])
+    elseif spell.english:startswith("Absorb") then
+        equip(sets.midcast.Absorb)
     elseif spell.skill == "Enfeebling Magic" then
         equip(sets.midcast.Enfeebling)
     elseif spell.skill == "Elemental Magic" then

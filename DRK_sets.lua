@@ -241,6 +241,7 @@ sets.ja["Diabolic Eye"] = {
     hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
 }
 sets.ja["Souleater"] = {
+    head="Ig. Burgeonet +3",
     legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
 }
 sets.ja["Weapon Bash"] = {
@@ -275,6 +276,8 @@ sets.midcast = {}
 sets.midcast.Default = {
     ammo="Staunch Tathlum +1",
     head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
+    -- Need +4 for MACC
+    -- head="Ig. Burgeonet +3",
     body={ name="Fall. Cuirass +3", augments={'Enhances "Blood Weapon" effect',}},
     hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
     legs={ name="Eschite Cuisses", augments={'"Mag.Atk.Bns."+25','"Conserve MP"+6','"Fast Cast"+5',}},
@@ -290,7 +293,7 @@ sets.midcast.Default = {
 -- DRK Magic Skill >> All 
 sets.midcast["Endark II"] = {
     ammo="Staunch Tathlum +1",
-    -- TODO: Artifact Head
+    head="Ig. Burgeonet +3",
     body={ name="Carm. Scale Mail", augments={'Attack+15','"Mag.Atk.Bns."+10','"Dbl.Atk."+2',}},
     hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
     legs="Heath. Flanchard +2",
@@ -330,6 +333,10 @@ sets.midcast["Stun"] = {
     left_ear="Malignance Earring",
     back="Null Shawl",
 }
+
+sets.midcast["Absorb"] = set_combine(sets.midcast.Stun, {
+    head="Ig. Burgeonet +3",
+})
 
 -- Try to maximize HP and DreadSpikes Bonus
 sets.midcast["Dread Spikes"] = {
