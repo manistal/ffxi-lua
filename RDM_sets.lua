@@ -10,6 +10,7 @@ sets = {}
 sets.weapons = {}
 sets.weapons.List = {
     "Swords",
+    "Savage",
     "MAB",
 }
 
@@ -17,6 +18,11 @@ sets.weapons.List = {
 sets.weapons["Swords"] = {
     main="Naegling",
     sub="Sakpata's Sword"
+}
+
+sets.weapons["Savage"] = {
+    main="Naegling",
+    sub="Gleti's Knife",
 }
 
 sets.weapons["MAB"] = {
