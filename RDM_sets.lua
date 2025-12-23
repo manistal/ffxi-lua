@@ -9,8 +9,8 @@ sets = {}
 -- 
 sets.weapons = {}
 sets.weapons.List = {
+    "Idle",
     "Swords",
-    "Savage",
     "MAB",
 }
 
@@ -30,6 +30,10 @@ sets.weapons["MAB"] = {
     sub="Bunzi's Rod"
 }
 
+sets.weapons["Idle"] = {
+    main="Colada",
+    sub="Diamond Aspis",
+}
 
 -- Idle/DT Base Set
 -- DT == 50
@@ -57,23 +61,22 @@ sets.idle.Default = {
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     -- MDEF
     neck="Warder's Charm +1",
-    -- DT -3
+    -- HP / DT 
     waist="Plat. Mog. Belt",
     -- HP
-    left_ear="Odnowa Earring +1",
+    left_ear="Alabaster Earring",
     -- HP
     right_ear="Eabani Earring",
-    -- DT: -10
-    left_ring="Murky Ring",
+    -- Refresh
+    left_ring="Stikini Ring +1",
     -- SPEED
     right_ring="Shneddick Ring",
     -- MEVA
     back="Null Shawl",
 }
 
-sets.idle.Regen = set_combine(sets.idle.Default, {
-    left_ring="Chirich Ring",
-    right_ring="Chirich Ring",
+sets.idle.Refresh = set_combine(sets.idle.Default, {
+    ammo="Homiliary",
 })
 
 
@@ -84,8 +87,6 @@ sets.tp = {}
 
 sets.tp.List = {
     "Hybrid",
-    "DTMeva",
-    "Learning"
 }
 
 
@@ -112,7 +113,7 @@ sets.tp.Hybrid = {
     -- DW
     left_ear="Suppanomimi",
     -- TP
-    right_ear="Telos Earring",
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','"Dbl.Atk."+3',}},
     -- 10 DT
     left_ring="Murky Ring",
     -- ACC / STP
@@ -120,15 +121,6 @@ sets.tp.Hybrid = {
     -- MEVA
     back="Null Shawl",
 } 
-
-
-sets.tp.DTMeva = set_combine(sets.idle.Default, {
-    left_ear="Suppanomimi",
-    right_ear="Telos Earring",
-    right_ring="Chirich Ring",
-    left_ring="Chirich Ring",
-    waist="Sailfi Belt +1",
-})
 
 
 -- 
@@ -230,6 +222,8 @@ sets.midcast.Enhancing = {
     waist="Embla Sash",
     -- Conserve MP, Skill+10
     neck="Incanter's Torque",
+    -- Enhancing Duration
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','"Dbl.Atk."+3',}},
     -- Skill 8 
     left_ring="Stikini Ring +1",
 }

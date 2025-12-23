@@ -18,7 +18,8 @@ sets.weapons.List = {
 }
 
 sets.weapons["Montante"] = {
-    main={ name="Montante +1", augments={'Path: A',}},
+    --main={ name="Montante +1", augments={'Path: A',}},
+    main="Agwu's Claymore",
     sub="Utu Grip",
 }
 
