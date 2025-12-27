@@ -337,6 +337,7 @@ sets.midcast["Stun"] = {
 
 sets.midcast["Absorb"] = set_combine(sets.midcast.Stun, {
     head="Ig. Burgeonet +3",
+    hands="Heath. Gauntlets +2",
 })
 
 -- Try to maximize HP and DreadSpikes Bonus
