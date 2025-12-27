@@ -49,35 +49,76 @@ end
 -- 
 -- Callback Bindings 
 -- 
-function precast(spell) 
-    -- If we have a specific spell set, use it
-    if sets.precast[spell.english] then
-        equip(sets.precast[spell.english])
-    -- Default to +WSD Set and override for WS
-    elseif spell.type == "WeaponSkill" then
+function is_enhancing_spell(spell)
+    -- Check if the spell is an enhancing spell
+    return spell.skill == 'Enhancing Magic' or 
+           spell.english:startswith("Protect") or 
+           spell.english:startswith("Shell") or 
+           spell.english:startswith("Boost") or 
+           spell.english:startswith("Aquaveil") or 
+           spell.english:startswith("Auspice")
+end
+
+function is_enfeebling_spell(spell)
+    -- Check if the spell is an enfeebling spell
+    return spell.skill == 'Enfeebling Magic' or 
+           spell.english:startswith("Dia") or 
+           spell.english:startswith("Slow") or 
+           spell.english:startswith("Paralyze") or 
+           spell.english:startswith("Addle") 
+end
+
+-- 
+-- Player Action Callbacks
+-- 
+function precast(spell)
+    -- For Magic use Fast Cast
+    if spell.action_type == "Magic" then 
+        equip(sets.precast.FastCast)
+    end
+    -- For JAs
+    if spell.type == "JobAbility" then
+        if sets.ja[spell.english] then 
+            equip(sets.ja[spell.english])
+        end
+    end
+    -- For WS
+    if spell.type == "WeaponSkill" then
         equip(sets.ws.Default)
 		if sets.ws[spell.english] then 
 			equip(sets.ws[spell.english])
         end
-    -- Job Abilities are either specific or none
-    elseif spell.type == "JobAbility" then
-		if sets.ja[spell.english] then 
-			equip(sets.ja[spell.english])
-        end
-    -- For Magic use Fast Cast
-    elseif spell.action_type == "Magic" then 
-        equip(sets.precast.FastCast)
     end
 end
 
+function midcast(spell) 
+    -- Friendly spells Cure / Status Removal / Enhancing 
+    --- Cure
+    if spell.english:startswith("Cur") then
+        equip(sets.midcast.Cure)
+        -- Aurorastorm
+        if spell.element == world.weather_element or spell.element == world.day_element then
+            equip(sets.midcast.CureWeather)
+        end
+    -- Status Removal (Removal+ and Healing SKill)
+    elseif (spell.english == "Cursna") then 
+        equip(sets.midcast.Cursna) 
+    elseif spell.english:endswith("na") or (spell.english == "Erase") then
+        equip(sets.midcast.StatusRemoval)
+    -- Enhancing Spells
+    elseif spell.english:startswith("Bar") then 
+        equip(sets.midcast.BarSpell)
+    elseif spell.english:startswith("Regen") then
+        equip(sets.midcast.Regen)
+    elseif is_enhancing_spell(spell) then
+        equip(sets.midcast.Enhancing)
+    end 
 
-function midcast(spell)
-    -- TODO ADD RDM MAGIC
-    if sets.midcast[spell.english] then
-        equip(sets.midcast[spell.english])
-    elseif spell.action_type == "Magic" then 
-        equip(sets.midcast.Default)
+    -- Enfeebling Spells
+    if is_enfeebling_spell(spell) then
+        equip(sets.midcast.Enfeebling) 
     end
+
 end
 
 function aftercast(spell)

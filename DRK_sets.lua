@@ -157,8 +157,8 @@ sets.ws.Default = {
     ammo="Oshasha's Treatise",
     -- WSD 6+
     head={ name="Nyame Helm", augments={'Path: B',}},
-    -- WSD 10
-    body="Ignominy Cuirass +3",
+    -- WSD 12
+    body="Ignominy Cuirass +4",
     -- WSD 6+
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     -- WSD 10

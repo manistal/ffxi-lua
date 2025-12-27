@@ -11,6 +11,7 @@ sets.weapons = {}
 sets.weapons.List = {
     "Idle",
     "Swords",
+    "Savage",
     "MAB",
 }
 
@@ -113,7 +114,7 @@ sets.tp.Hybrid = {
     -- DW
     left_ear="Suppanomimi",
     -- TP
-    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','"Dbl.Atk."+3',}},
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
     -- 10 DT
     left_ring="Murky Ring",
     -- ACC / STP
@@ -223,7 +224,7 @@ sets.midcast.Enhancing = {
     -- Conserve MP, Skill+10
     neck="Incanter's Torque",
     -- Enhancing Duration
-    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','"Dbl.Atk."+3',}},
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
     -- Skill 8 
     left_ring="Stikini Ring +1",
 }
