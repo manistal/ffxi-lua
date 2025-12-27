@@ -5,7 +5,7 @@
 -- Gearswap Spec: https://docs.windower.net/addons/gearswap/reference/
 
 BLU_STYLE_SET = 40
-BLU_MACRO_BOOK = 2
+BLU_MACRO_BOOK = 10
 
 -- 
 -- Main Entry Point 

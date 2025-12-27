@@ -5,7 +5,7 @@
 -- Gearswap Spec: https://docs.windower.net/addons/gearswap/reference/
 
 THF_STYLE_SET = 82
-THF_MACRO_BOOK = 8
+THF_MACRO_BOOK = 22
 
 -- 
 -- Main Entry Point 

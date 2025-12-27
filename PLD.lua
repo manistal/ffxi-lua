@@ -5,7 +5,7 @@
 -- Gearswap Spec: https://docs.windower.net/addons/gearswap/reference/
 
 PLD_STYLE_SET = 80
-PLD_MACRO_BOOK = 7
+PLD_MACRO_BOOK = 21
 
 -- 
 -- Main Entry Point 

@@ -5,7 +5,7 @@
 -- Gearswap Spec: https://docs.windower.net/addons/gearswap/reference/
 
 RDM_STYLE_SET = 40
-RDM_MACRO_BOOK = 2
+RDM_MACRO_BOOK = 8
 
 -- 
 -- Main Entry Point 

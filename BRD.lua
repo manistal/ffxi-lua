@@ -6,7 +6,7 @@
 
 -- Replace JOB with FFXI 3 Letter Job Name
 BRD_STYLE_SET = 84
-BRD_MACRO_BOOK = 10
+BRD_MACRO_BOOK = 23
 
 -- 
 -- Addon Entry Point

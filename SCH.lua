@@ -6,7 +6,7 @@
 
 -- Replace JOB with FFXI 3 Letter Job Name
 SCH_STYLE_SET = 86
-SCH_MACRO_BOOK = 12
+SCH_MACRO_BOOK = 7
 
 -- 
 -- Addon Entry Point
