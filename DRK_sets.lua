@@ -273,113 +273,168 @@ sets.precast.FastCast = {
 -- 
 sets.midcast = {}
 
--- DRK Magic Skill > Magic ACC > Magic ATK Bonus
-sets.midcast.Default = {
+-- 
+-- Base Casting Sets 
+-- 
+
+-- MEVA + SIRD
+sets.midcast.Default = set_combine(sets.idle.Default, {
+    -- 11 SIRD
     ammo="Staunch Tathlum +1",
-    head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
-    -- Need +4 for MACC
-    -- head="Ig. Burgeonet +3",
-    body={ name="Fall. Cuirass +3", augments={'Enhances "Blood Weapon" effect',}},
-    hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
-    legs={ name="Eschite Cuisses", augments={'"Mag.Atk.Bns."+25','"Conserve MP"+6','"Fast Cast"+5',}},
-    neck="Incanter's Torque",
-    feet="Ratri Sollerets",
-    left_ear="Mani Earring",
-    right_ear="Ethereal Earring",
+    -- 10 SIRD
     left_ring="Evanescence Ring",
-    right_ring="Kishar Ring",
-    back={ name="Niht Mantle", augments={'Attack+6','Dark magic skill +6','"Drain" and "Aspir" potency +25',}},
-}
-
--- DRK Magic Skill >> All 
-sets.midcast["Endark II"] = {
-    ammo="Staunch Tathlum +1",
-    head="Ig. Burgeonet +3",
-    body={ name="Carm. Scale Mail", augments={'Attack+15','"Mag.Atk.Bns."+10','"Dbl.Atk."+2',}},
-    hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
-    legs="Heath. Flanchard +2",
-    feet="Ratri Sollerets",
-    neck="Incanter's Torque",
-    left_ear="Mani Earring",
-    left_ring="Evanescence Ring",
-    back={ name="Niht Mantle", augments={'Attack+6','Dark magic skill +6','"Drain" and "Aspir" potency +25',}},
-}
-
--- Maximize Drain Bonus / DRK Magic Acc
-sets.midcast["Drain II"] = {
-    ammo="Staunch Tathlum +1",
-    head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
-    body={ name="Carm. Scale Mail", augments={'Attack+15','"Mag.Atk.Bns."+10','"Dbl.Atk."+2',}},
-    hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
-    legs="Heath. Flanchard +2",
-    neck="Incanter's Torque",
-    feet="Ratri Sollerets",
-    left_ear="Mani Earring",
-    right_ear="Ethereal Earring",
-    left_ring="Evanescence Ring",
-    right_ring="Archon Ring",
-    back={ name="Niht Mantle", augments={'Attack+6','Dark magic skill +6','"Drain" and "Aspir" potency +25',}},
-}
-sets.midcast["Drain III"] = sets.precast["Drain II"]
-
-sets.midcast["Stun"] = {
-    head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
-    body={ name="Fall. Cuirass +3", augments={'Enhances "Blood Weapon" effect',}},
-    hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet="Ratri Sollerets",
-    neck="Null Loop",
-    waist="Eschan Stone",
-    right_ring="Kishar Ring",
-    left_ear="Malignance Earring",
-    back="Null Shawl",
-}
-
-sets.midcast["Absorb"] = set_combine(sets.midcast.Stun, {
-    head="Ig. Burgeonet +3",
-    hands="Heath. Gauntlets +2",
 })
 
--- Try to maximize HP and DreadSpikes Bonus
-sets.midcast["Dread Spikes"] = {
-    ammo="Staunch Tathlum +1",
-    head="Ratri Sallet",
-    body="Heath. Cuirass +2",
-    hands="Ratri Gadlings",
-    legs="Ratri Cuisses",
+sets.midcast.DarkSkill = set_combine(sets.midcast.Default, {
+    -- 21 Skill
+    head="Ig. Burgeonet +3",
+    -- 15 Skill (TODO +1)
+    body={ name="Carm. Scale Mail", augments={'Attack+15','"Mag.Atk.Bns."+10','"Dbl.Atk."+2',}},
+    -- 18 Skill
+    hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
+    -- 25 Skill 
+    legs="Heath. Flanchard +2",
+    -- Duration
     feet="Ratri Sollerets",
+    -- 10 Skill
     neck="Incanter's Torque",
-    waist="Plat. Mog. Belt",
-    left_ear="Eabani Earring",
-    right_ear="Tuisto Earring",
-    left_ring="Moonbeam Ring",
-    right_ring="Archon Ring",
+    -- 10 Skill
+    left_ear="Mani Earring",
+    -- 10 Skill
+    left_ring="Evanescence Ring",
+    -- 6 Skill
     back={ name="Niht Mantle", augments={'Attack+6','Dark magic skill +6','"Drain" and "Aspir" potency +25',}},
-}
+})
 
--- Enfeebling Magic: MACC > Skill > Potency
-sets.midcast.Enfeebling = {
+sets.midcast.MAB = set_combine(sets.midcast.Default, {
+    -- 30 MAB
     head={ name="Nyame Helm", augments={'Path: B',}},
+    -- 60 MAB
     body={ name="Fall. Cuirass +3", augments={'Enhances "Blood Weapon" effect',}},
+    -- 62 MAB
     hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
+    -- 30 MAB
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    right_ring="Kishar Ring",
-    left_ear="Malignance Earring",
-    waist="Eschan Stone",
-    neck="Null Loop",
-    back="Null Shawl",
-}
-
--- ELemental magic: MACC = MAB
-sets.midcast.Nuking = {
-    head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Fall. Cuirass +3", augments={'Enhances "Blood Weapon" effect',}},
-    hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    -- 50 MAB
     feet="Heath. Sollerets +3",
+    -- 10 MAB
     neck="Sibyl Scarf",
-    right_ring="Kishar Ring",
+    -- 8 MAB
     left_ear="Malignance Earring",
+    -- 7 MAB
     waist="Eschan Stone",
-}
+})
+
+sets.midcast.MACC = set_combine(sets.midcast.Default, {
+    -- 51 MACC
+    head="Heath. Burgeon. +2",
+    -- 60 MACC
+    body="Ig. Cuirass +4",
+    -- 52 MACC
+    hands="Heath. Gauntlets +2",
+    -- 53 MACC (TODO +4 Artifact)
+    legs="Heath. Flanchard +2",
+    -- 60 MACC
+    feet="Heath. Sollerets +3",
+    -- 50 MACC
+    neck="Null Loop",
+    -- 7 MACC
+    waist="Eschan Stone",
+    -- 10 MACC
+    left_ear="Malignance Earring",
+    -- 5 MACC
+    right_ring="Kishar Ring",
+    -- TODO Metamorph Ring
+    -- 50 MACC
+    back="Null Shawl",
+})
+
+-- 
+-- Buffs
+-- 
+sets.midcast["Endark"] = sets.midcast.DarkSkill
+sets.midcast["Endark II"] = sets.midcast.DarkSkill
+
+-- 
+-- Debuffs
+-- 
+sets.midcast["Stun"] = set_combine(sets.midcast.DarkSkill, sets.midcast.MACC, {
+    -- 20 Duration
+    feet="Ratri Sollerets",
+})
+
+sets.midcast["Absorb"] = set_combine(sets.midcast.MACC, sets.midcast.DarkSkill, {
+    -- 20 Duration
+    head="Ig. Burgeonet +3",
+    -- AbsorbTP +25
+    hands="Heath. Gauntlets +2",
+    -- 20 Duration
+    feet="Ratri Sollerets",
+    -- 10 Duration
+    right_ring="Kishar Ring",
+})
+
+sets.midcast.Enfeebling = set_combine(sets.midcast.MACC, {
+    -- 10 Duration
+    right_ring="Kishar Ring",
+    -- 23 Skill
+    body="Ig. Cuirass +4",
+}) 
+
+
+-- 
+-- Drain 
+-- 
+sets.midcast.Drain = set_combine(sets.midcast.MAB, sets.midcast.DarkSkill, {
+    -- Dark Seal
+    head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
+    -- 16 Drain
+    hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
+    -- Nether Void
+    legs="Heath. Flanchard +2",
+    -- 20 Duration
+    feet="Ratri Sollerets",
+    -- 10 Drain
+    left_ring="Evanescence Ring",
+    -- Dark MAB
+    right_ring="Archon Ring",
+    -- 25 Drain
+    back={ name="Niht Mantle", augments={'Attack+6','Dark magic skill +6','"Drain" and "Aspir" potency +25',}},
+    -- TODO 5 Drain Austerity Belt +1 (AH)
+    -- TODO 3 Drain Hirudinera (Lamprey)
+    -- TODO Erra Pendant (Omen)
+})
+
+sets.midcast["Drain II"] = sets.midcast.Drain
+sets.midcast["Drain III"] = sets.midcast.Drain
+
+
+-- 
+-- Dread Spikes
+-- 
+sets.midcast["Dread Spikes"] = set_combine(sets.midcast.Default, {
+    -- HP
+    head="Ratri Sallet",
+    -- Spikes +45
+    body="Heath. Cuirass +2",
+    -- HP
+    hands="Ratri Gadlings",
+    -- HP
+    legs="Ratri Cuisses",
+    -- 20 Duration
+    feet="Ratri Sollerets",
+    -- % HP
+    waist="Plat. Mog. Belt",
+    -- HP
+    left_ear="Alabaster Earring",
+    -- HP
+    right_ear="Tuisto Earring",
+    -- HP
+    left_ring="Moonbeam Ring",
+})
+
+
+-- 
+-- Elemental Nukes
+-- 
+sets.midcast.Nuking = sets.midcast.MAB

@@ -72,16 +72,21 @@ end
 
 
 function midcast(spell)
-    if sets.midcast[spell.english] then
-        equip(sets.midcast[spell.english])
-    elseif spell.english:startswith("Absorb") then
+    if spell.english:startswith("Absorb") then
         equip(sets.midcast.Absorb)
+    elseif spell.english:startswith("Drain") then 
+        equip(sets.midcast.Drain)
     elseif spell.skill == "Enfeebling Magic" then
         equip(sets.midcast.Enfeebling)
     elseif spell.skill == "Elemental Magic" then
         equip(sets.midcast.Nuking)
     elseif spell.action_type == "Magic" then 
         equip(sets.midcast.Default)
+    end
+
+    -- Spell Specific Overrides
+    if sets.midcast[spell.english] then
+        equip(sets.midcast[spell.english])
     end
 end
 
