@@ -54,7 +54,7 @@ sets.weapons["QuellerRod"] = {
 }
 
 sets.weapons["KajaRod"] = {
-    main="Kaja Rod",
+    main="Maxentius",
     sub="Diamond Aspis",
 }
 

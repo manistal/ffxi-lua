@@ -20,7 +20,7 @@ sets.weapons["Swords"] = {
 }
 
 sets.weapons["MAB"] = {
-    main="Kaja Rod",
+    main="Maxentius",
     sub="Bunzi's Rod"
 }
 
@@ -54,9 +54,9 @@ sets.idle.Default = {
     -- DT -3
     waist="Plat. Mog. Belt",
     -- HP
-    left_ear="Odnowa Earring +1",
+    left_ear="Alabaster Earring",
     -- HP
-    right_ear="Eabani Earring",
+    right_ear="Tuisto Earring",
     -- DT: -10
     left_ring="Murky Ring",
     -- SPEED
@@ -137,14 +137,13 @@ sets.precast.Default = {
 }
 
 sets.precast.FastCast = {
-    -- 5 FC
-    hands={ name="Leyline Gloves", augments={'Accuracy+6','Mag. Acc.+2','"Mag.Atk.Bns."+6',}},
+    -- FC 6
+    hands={ name="Leyline Gloves", augments={'Accuracy+5','"Mag.Atk.Bns."+7','"Fast Cast"+1',}},
     -- 6 FC
     legs="Aya. Cosciales +2",
     -- 4 FC
     right_ring="Kishar Ring",
-    -- 
-    left_ear="Malignance Earring",
+    -- 2 FC
     right_ear="Loquac. Earring",
 }
 

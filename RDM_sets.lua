@@ -10,13 +10,17 @@ sets = {}
 sets.weapons = {}
 sets.weapons.List = {
     "Idle",
-    "Swords",
+    "DefSwords",
     "Savage",
     "MAB",
 }
 
+sets.weapons["Idle"] = {
+    main="Colada",
+    sub="Diamond Aspis",
+}
 
-sets.weapons["Swords"] = {
+sets.weapons["DefSwords"] = {
     main="Naegling",
     sub="Sakpata's Sword"
 }
@@ -27,14 +31,10 @@ sets.weapons["Savage"] = {
 }
 
 sets.weapons["MAB"] = {
-    main="Kaja Rod",
+    main="Maxentius",
     sub="Bunzi's Rod"
 }
 
-sets.weapons["Idle"] = {
-    main="Colada",
-    sub="Diamond Aspis",
-}
 
 -- Idle/DT Base Set
 -- DT == 50

@@ -211,7 +211,7 @@ sets.precast = {}
 
 -- Fast Cast
 sets.precast.FastCast = {
-    hands={ name="Leyline Gloves", augments={'Accuracy+6','Mag. Acc.+2','"Mag.Atk.Bns."+6',}},
+    hands={ name="Leyline Gloves", augments={'Accuracy+5','"Mag.Atk.Bns."+7','"Fast Cast"+1',}},
     legs={ name="Eschite Cuisses", augments={'"Mag.Atk.Bns."+25','"Conserve MP"+6','"Fast Cast"+5',}},
     right_ring="Kishar Ring",
     left_ear="Malignance Earring",

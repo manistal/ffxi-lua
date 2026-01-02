@@ -102,7 +102,7 @@ sets.precast = {}
 sets.precast.FastCast = {
     -- Fast Cast 8
     head="Sakpata's Helm",
-    hands={ name="Leyline Gloves", augments={'Accuracy+6','Mag. Acc.+2','"Mag.Atk.Bns."+6',}},
+    hands={ name="Leyline Gloves", augments={'Accuracy+5','"Mag.Atk.Bns."+7','"Fast Cast"+1',}},
     legs={ name="Eschite Cuisses", augments={'"Mag.Atk.Bns."+25','"Conserve MP"+6','"Fast Cast"+5',}},
     -- TODO Empy FEET
     right_ring="Kishar Ring",
