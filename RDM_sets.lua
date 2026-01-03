@@ -160,25 +160,35 @@ sets.midcast = {}
 -- Cure/Healing/COnserveMP
 -- Total: Cure I: 56, Cure II: 4
 sets.midcast.Cure = {
-    -- Cure I: 30
-    main="Bunzi's Rod",
-    -- Conserve MP: 4
-    sub="Thuellaic Ecu +1",
-    -- 10 Cure I, 12 Conserve MP
-    head={ name="Vanya Hood", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
+    -- SIRD / DT
+    ammo="Staunch Tathlum +1",
+    -- Cure I: 11, Cure II: 2
+    head={ name="Kaykaus Mitra +1", augments={'MP+80','Spell interruption rate down +12%','"Cure" spellcasting time -7%',}},
+    -- Cure I: 15, MEVA
+    body="Bunzi's Robe",
     -- 12 Conserve MP
-    -- TODO Artifact Legs 
     legs={ name="Vanya Slops", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
-    --  10 Cure I, 6 Conserve MP
-    feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
+    -- TODO Artifact Legs 
+    -- Cure I: 17, Conserve MP: 7, Cure II: 2
+    feet={ name="Kaykaus Boots +1", augments={'Mag. Acc.+20','"Cure" potency +6%','"Fast Cast"+4',}},
+    -- SIRD / DT
+    neck="Loricate Torque +1",
+    -- 5 Cure I
+    left_ear="Mendi. Earring",
     -- Cure I: 1, Cure II: 1
     left_ring="Naji's Loop",
+    -- SIRD / DT 
+    right_ring="Murky Ring",
+    -- HP / 5 DT
+    left_ear="Alabaster Earring",
     -- Cure I: 5, Conserve MP: 2
-    left_ear="Mendi. Earring",
+    right_ear="Mendi. Earring",
+    -- TODO Ambu FC Cape
 }
 
 sets.midcast.CureWeather = set_combine(sets.midcast.Cure, {
     main="Chatoyant Staff",
+    sub="Enki Strap",
     waist="Hachirin-no-Obi",
 })
 
