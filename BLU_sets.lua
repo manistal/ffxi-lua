@@ -90,7 +90,7 @@ sets.tp.List = {
 -- DT 50 > MEVA > ACC >= TP
 sets.tp.Hybrid = {
     -- 7 DT
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    head="Malignance Chapeau",
     -- 9 DT
     body="Malignance Tabard",
     -- 5 DT 
@@ -98,7 +98,7 @@ sets.tp.Hybrid = {
     -- 12 DT
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     -- 7 DT
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    feet="Malignance Boots",
     -- Triple ATK
     waist="Sailfi Belt +1",
     -- ACC / 5 DT

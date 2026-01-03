@@ -13,6 +13,7 @@ sets.weapons.List = {
     "Rostam",
     "RACC",
     "MAB",
+    "Dynamis",
 }
 
 
@@ -41,6 +42,13 @@ sets.weapons["MAB"] = {
     main="Naegling",
     sub="Tauret",
     range="Fomalhaut",
+    ammo="Chrono Bullet",
+}
+
+sets.weapons["Dynamis"] = {
+    main="Naegling",
+    sub={ name="Rostam", augments={'Path: C',}},
+    range="Anarchy +2",
     ammo="Chrono Bullet",
 }
 
@@ -113,7 +121,7 @@ sets.tp.List = {
 -- DT 50 > MEVA > ACC >= TP
 sets.tp.Hybrid = {
     -- 7 DT
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    head="Malignance Chapeau",
     -- 9 DT
     body="Malignance Tabard",
     -- 5 DT 
@@ -121,7 +129,7 @@ sets.tp.Hybrid = {
     -- 12 DT
     legs="Chas. Culottes +3",
     -- 7 DT
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    feet="Malignance Boots",
     -- Triple ATK
     waist="Sailfi Belt +1",
     -- ACC / 5 DT
@@ -223,16 +231,16 @@ sets.midcast.RangedDefault = {
 }
 
 sets.midcast.Ranged = set_combine(sets.midcast.RangedDefault, {
-    -- 51 Acc
-    head="Chasseur's Tricorne +2",
-    -- 50 ACC / 11 STP
+    -- 50 ACC / 8 STP
+    head="Malignance Chapeau",
+    -- 50 ACC
     body="Malignance Tabard",
-    -- 50 ACC / STP
+    -- 50 ACC
     hands="Malignance Gloves",
-    -- 63 Acc
+    -- 63 ACC
     legs="Chas. Culottes +3",
-    -- 40 Acc
-    feet="Ikenga's Clogs",
+    -- 50 ACC
+    feet="Malignance Boots",
     -- RACC / STP
     neck="Iskur Gorget",
     -- RACC
