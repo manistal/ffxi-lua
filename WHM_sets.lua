@@ -203,12 +203,14 @@ sets.midcast = {}
 -- Cure/Healing/COnserveMP
 -- Total: Cure I: 56, Cure II: 4
 sets.midcast.Cure = {
+    -- SIRD / DT 
+    ammo="Staunch Tathlum +1",
     -- Cure I: 10, Cure II: 2
     main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
     -- Conserve MP: 4
     sub="Thuellaic Ecu +1",
-    -- Cure I: 19
-    head="Ebers Cap +3",
+    -- Cure I: 11, Cure II: 2
+    head={ name="Kaykaus Mitra +1", augments={'MP+80','Spell interruption rate down +12%','"Cure" spellcasting time -7%',}},
     -- Cure I: 7
     neck={ name="Clr. Torque +1", augments={'Path: A',}},
     -- Solace
@@ -217,10 +219,12 @@ sets.midcast.Cure = {
     hands="Theophany Mitts +2",
     -- Cure -> MP
     legs="Ebers Pant. +3",
-    -- Cure I: 15, Conserve MP: 6
-    feet={ name="Kaykaus Boots", augments={'Mag. Acc.+15','"Cure" potency +5%','"Fast Cast"+3',}},
+    -- Cure I: 17, Conserve MP: 7, Cure II: 2
+    feet={ name="Kaykaus Boots +1", augments={'Mag. Acc.+20','"Cure" potency +6%','"Fast Cast"+4',}},
     -- Cure I: 1, Cure II: 1
     left_ring="Naji's Loop",
+    -- DT
+    right_ring="Murky Ring",
     -- Cure I: 5, Conserve MP: 2
     left_ear="Mendi. Earring",
     -- Healing Magic 11
@@ -236,8 +240,8 @@ sets.midcast.Curaga = set_combine(sets.midcast.Cure, {
 })
 
 sets.midcast.CureWeather = set_combine(sets.midcast.Cure, {
-    --main="Chatoyant Staff",
-    --sub="Enki Strap",
+    main="Chatoyant Staff",
+    sub="Enki Strap",
     waist="Hachirin-no-Obi",
 })
 
