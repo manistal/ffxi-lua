@@ -111,10 +111,11 @@ end
 function midcast(spell) 
     -- Friendly spells Cure / Status Removal / Enhancing 
     --- Cure
-    if spell.english:startswith("Cure") then
+    if spell.english:startswith("Cur") then
         equip(sets.midcast.Cure)
-    elseif spell.english:startswith("Curaga") then
-        equip(sets.midcast.Curaga)
+        if spell.element == world.weather_element or spell.element == world.day_element then
+            equip(sets.midcast.CureWeather)
+        end
     -- Status Removal (Removal+ and Healing SKill)
     elseif (spell.english == "Cursna") then 
         equip(sets.midcast.Cursna) 
