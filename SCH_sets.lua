@@ -188,6 +188,8 @@ sets.midcast.Cure = {
     right_ring="Murky Ring",
     -- Cure I: 5, Conserve MP: 2
     left_ear="Mendi. Earring",
+    -- FC / PDT
+    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
 
 sets.midcast.CureWeather = set_combine(sets.midcast.Cure, {
