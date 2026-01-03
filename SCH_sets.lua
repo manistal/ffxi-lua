@@ -186,8 +186,10 @@ sets.midcast.Cure = {
     left_ring="Naji's Loop",
     -- SIRD / DT 
     right_ring="Murky Ring",
+    -- HP / 5 DT
+    left_ear="Alabaster Earring",
     -- Cure I: 5, Conserve MP: 2
-    left_ear="Mendi. Earring",
+    right_ear="Mendi. Earring",
     -- FC / PDT
     back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
@@ -201,8 +203,6 @@ sets.midcast.CureWeather = set_combine(sets.midcast.Cure, {
     waist="Hachirin-no-Obi",
 })
 
-sets.midcast.Curaga = set_combine(sets.midcast.Cure, {
-})
 
 -- Status Removal
 ----------------------
@@ -289,6 +289,18 @@ sets.midcast.Enfeebling = {
     main="Bunzi's Rod",
     -- ACC
     sub="Ammurapi Shield",
+    -- MAB / MACC
+    head="Arbatel Bonnet +2",
+    -- MAB / MACC
+    body="Arbatel Gown +2",
+    -- MAB / MACC
+    hands="Arbatel Bracers +2",
+    -- MAB / MACC
+    legs="Arbatel Pants +2",
+    -- MAB / MACC / 5 MB2
+    feet="Arbatel Loafers +2",
+    -- MACC -- TODO: JSE Neck
+    neck="Null Loop",
     -- Duration
     right_ring="Kishar Ring", 
     -- ACC
