@@ -63,27 +63,38 @@ sets.idle.Default = {
 sets.tp = {}
 
 sets.tp.List = {
+    "Hybrid",
     "FullDT",
-    "Default" 
 }
 
-sets.tp.Default = {
-    main="Agwu's Axe",
-    sub="Diamond Aspis",
+sets.tp.Hybrid = {
     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-    head="Gleti's Mask",
-    body="Gleti's Cuirass",
-    hands="Gleti's Gauntlets",
-    legs="Gleti's Breeches",
-    feet="Gleti's Boots",
+    -- 7 DT
+    head="Malignance Chapeau",
+    -- 9 DT
+    body="Malignance Tabard",
+    -- 5 DT 
+    hands="Malignance Gloves",
+    -- 12 DT
+    legs="Malignance Tights",
+    -- 7 DT
+    feet="Malignance Boots",
+    -- Triple ATK
+    waist="Sailfi Belt +1",
+    -- ACC / 5 DT
     neck="Null Loop",
-    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-    left_ear="Telos Earring",
-    right_ear="Sherida Earring",
-    left_ring="Chirich Ring",
+    -- DW
+    left_ear="Suppanomimi",
+    -- TP
+    right_ear="Telos Earring",
+    -- 10 DT
+    left_ring="Murky Ring",
+    -- ACC / STP
     right_ring="Moonbeam Ring",
+    -- MEVA
     back="Null Shawl",
-}
+} 
+
 
 sets.tp.FullDT = sets.idle.Default
 

@@ -256,6 +256,7 @@ sets.midcast.Ranged = set_combine(sets.midcast.RangedDefault, {
 sets.midcast.TripleShot = set_combine(sets.midcast.Ranged, {
     body="Chasseur's Frac +2",
     hands="Lanun Gants +3", 
+    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
 })
 
 --
@@ -292,7 +293,7 @@ sets.ws.Default = {
 -- Ranged Physical 
 sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
     -- TODO FOTIA
-    -- RATK TODO: Enough RACC?
+    -- RATK TODO: Enough RACC4
     head="Lanun Tricorne +3",
     -- RACC/RATK
     -- head="Ikenga's Hat",
@@ -304,6 +305,8 @@ sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
     neck="Null Loop",
     -- RACC
     right_ring="Meghanada Ring",
+    -- RATK / AGI
+    left_ring="Dingir Ring",
     -- RACC / WSD
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}},
 })
@@ -311,7 +314,7 @@ sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
 -- Magical ATK
 sets.ws["Wildfire"] = set_combine(sets.ws.Default, {
     head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
+    body={ name="Lanun Frac +4", augments={'Enhances "Loaded Deck" effect',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}},
@@ -319,18 +322,20 @@ sets.ws["Wildfire"] = set_combine(sets.ws.Default, {
     waist="Eschan Stone",
     left_ear="Friomisi Earring",
     right_ear="Hermetic Earring",
+    left_ring="Dingir Ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
 })
 
 sets.ws["Leaden Salute"]  = set_combine(sets.ws.Default, {
     head="Pixie Hairpin +1",
     neck={ name="Comm. Charm +1", augments={'Path: A',}},
-    body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
+    body={ name="Lanun Frac +4", augments={'Enhances "Loaded Deck" effect',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}},
     waist="Eschan Stone",
-    ring_ring="Archon Ring",
+    right_ring="Archon Ring",
+    left_ring="Dingir Ring",
     left_ear="Friomisi Earring",
     right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
@@ -344,6 +349,7 @@ sets.ws["Hot Shot"] = set_combine(sets.ws.Default, {
     left_ear="Friomisi Earring",
     -- RACC
     -- back="Null Shawl",
+    left_ring="Dingir Ring",
     -- MAB / WSD 
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
 })
@@ -372,7 +378,7 @@ sets.ja.PhantomRoll = set_combine(sets.idle.Default, {
 })
 
 -- General JA Bonuses
-sets.ja["Random Deal"] = {body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},}
+sets.ja["Random Deal"] = {body={ name="Lanun Frac +4", augments={'Enhances "Loaded Deck" effect',}},}
 -- sets.ja["Fold"] = {hands="Lanun Gants +3"}
 -- sets.ja["Snake Eye"] = {legs="Lanun Trews +1"}
 sets.ja["Wild Card"] = {feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}}}
@@ -386,7 +392,7 @@ sets.ja["Courser's Roll"] = {feet="Chass. Bottes +1",}
 
 sets.ja["Quick Draw"] = {
     head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
+    body={ name="Lanun Frac +4", augments={'Enhances "Loaded Deck" effect',}},
     hands="Carmine Fin. Ga. +1",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet="Chass. Bottes +1",

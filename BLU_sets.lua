@@ -96,7 +96,7 @@ sets.tp.Hybrid = {
     -- 5 DT 
     hands="Malignance Gloves",
     -- 12 DT
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    legs="Malignance Tights",
     -- 7 DT
     feet="Malignance Boots",
     -- Triple ATK
