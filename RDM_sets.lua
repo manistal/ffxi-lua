@@ -13,6 +13,7 @@ sets.weapons.List = {
     "DefSwords",
     "Savage",
     "MAB",
+    "Dispel",
 }
 
 sets.weapons["Idle"] = {
@@ -33,6 +34,11 @@ sets.weapons["Savage"] = {
 sets.weapons["MAB"] = {
     main="Maxentius",
     sub="Bunzi's Rod"
+}
+
+sets.weapons["Dispel"] = {
+    main="Daybreak",
+    sub="Diamond Aspis",
 }
 
 

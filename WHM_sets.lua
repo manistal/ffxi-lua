@@ -49,7 +49,8 @@ sets.weapons.List = {
 }
 
 sets.weapons["QuellerRod"] = {
-    main="Queller Rod",
+    --main="Queller Rod",
+    main="Daybreak",
     sub="Diamond Aspis",
 }
 
