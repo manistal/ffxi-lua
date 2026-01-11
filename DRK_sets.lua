@@ -68,8 +68,8 @@ sets.idle.Default = {
     neck="Warder's Charm +1",
     -- DT -3, HP+10%
     waist="Plat. Mog. Belt",
-    -- HP
-    left_ear="Odnowa Earring +1",
+    -- DT / HP
+    left_ear="Alabaster Earring",
     -- HP
     right_ear="Tuisto Earring",
     -- HP, DT: -4
@@ -102,8 +102,8 @@ sets.tp.Sakpata = {
     feet="Sakpata's Leggings",
     -- ACC/STP
     neck={ name="Abyssal Beads +1", augments={'Path: A',}},
-    -- ACC/2ATLK
-    waist="Ioskeha Belt",
+    -- 2ATK/3ATK
+    waist="Sailfi Belt +1",
     -- ACC/STP
     left_ear="Telos Earring",
     -- ACC/2ATK
@@ -122,6 +122,8 @@ sets.tp.HybridACC = set_combine(sets.tp.Sakpata, {
     -- ACC
     neck="Null Loop",
     -- TODO: Null Belt
+    -- ACC/2ATLK
+    waist="Ioskeha Belt",
     -- ACC/2ATK
     right_ear="Schere Earring",
 })
