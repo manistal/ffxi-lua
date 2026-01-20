@@ -276,6 +276,7 @@ sets.midcast.Enfeebling = {
     main="Bunzi's Rod",
     sub="Diamond Aspis", 
     right_ring="Kishar Ring", -- Enfeeble Duration
+    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
 }
 
 -- TODO NUKING
@@ -316,6 +317,8 @@ sets.ws.Default = {
     right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     -- WSD: +2
     left_ear="Ishvara Earring",
+    -- WSD 10
+    back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
 }
 
 

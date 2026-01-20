@@ -12,9 +12,11 @@ sets.weapons.List = {
     "Apoc", 
     "Montante",
     "Lycurgos",
-    "Naegling",
-    "Loxotic Mace",
-    "Piercing",
+    "Foenaria",
+    -- Need manual clicks for these
+    --"Naegling",
+    --"Loxotic Mace",
+    --"Piercing",
 }
 
 sets.weapons["Montante"] = {
@@ -25,6 +27,11 @@ sets.weapons["Montante"] = {
 
 sets.weapons["Apoc"] = {
     main="Apocalypse",
+    sub="Utu Grip",
+}
+
+sets.weapons["Foenaria"] = {
+    main="Foenaria",
     sub="Utu Grip",
 }
 

@@ -65,7 +65,7 @@ sets.idle.Default = {
     -- DT: -10
     left_ring="Murky Ring",
     right_ring="Shneddick Ring",
-    left_ear="Sherida Earring",
+    left_ear="Alabaster Earring",
     right_ear="Suppanomimi",
     back="Null Shawl",
 }
@@ -82,9 +82,8 @@ sets.idle.Regen = set_combine({
 sets.tp = {}
 
 sets.tp.List = {
-    "Default",
-    "TreasureHunter",
     "Hybrid",
+    "TreasureHunter",
     "FullDT",
 }
 
@@ -93,45 +92,42 @@ sets.tp.List = {
 -- Haste = 25
 -- TA > STP = DA > 
 -- Currently 27 Haste, 10 DW
-sets.tp.Default = {
+sets.tp.Hybrid = {
     ammo="Yamarang",
-    head={ name="Nyame Helm", augments={'Path: B',}},
-    neck="Iskur Gorget",
-    body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Herculean Boots", augments={'Attack+24','"Triple Atk."+3','Accuracy+12',}},
+    -- 7 DT
+    head="Malignance Chapeau",
+    -- 9 DT
+    body="Malignance Tabard",
+    -- 5 DT 
+    hands="Malignance Gloves",
+    -- 12 DT
+    legs="Malignance Tights",
+    -- 7 DT
+    feet="Malignance Boots",
+    -- Triple ATK
     waist="Sailfi Belt +1",
-    left_ring="Chirich Ring",
+    -- ACC / 5 DT
+    neck="Null Loop",
+    -- DW
+    left_ear="Suppanomimi",
+    -- TP
+    right_ear="Sherida Earring",
+    -- 10 DT
+    left_ring="Murky Ring",
+    -- ACC / STP
     right_ring="Chirich Ring",
-    left_ear="Sherida Earring",
-    right_ear="Suppanomimi",
+    -- MEVA
     back="Null Shawl",
-}
+} 
 
-sets.tp.TreasureHunter = {
+sets.tp.TreasureHunter = set_combine(sets.tp.Hybrid, {
     -- TH 1
     ammo="Per. Lucky Egg",
-    head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Nyame Mail", augments={'Path: B',}},
     -- TH 3
     hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Herculean Boots", augments={'Attack+24','"Triple Atk."+3','Accuracy+12',}},
-    neck="Iskur Gorget",
-    waist="Windbuffet Belt",
-    left_ear="Eabani Earring",
-    right_ear="Suppanomimi",
-    left_ring="Murky Ring",
-    right_ring="Moonbeam Ring",
-    back="Null Shawl",
-}
-
-sets.tp.Hybrid = set_combine(sets.tp.Default, {
-    ammo="Staunch Tathlum +1",
-    left_ring="Murky Ring",
-    right_ring="Moonbeam Ring",
-}) 
+    -- More DT
+    left_ear="Alabaster Earring",
+})
 
 sets.tp.FullDT = sets.idle.Default
 

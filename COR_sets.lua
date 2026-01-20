@@ -191,8 +191,8 @@ sets.precast.Ranged = {
     feet="Meg. Jam. +2", 
     -- Snapshot: +3 
     neck={ name="Comm. Charm +1", augments={'Path: A',}},
-    -- Rapid Shot: +5, -- TODO Impulse Belt (3)
-    waist="Yemaya Belt",
+    -- Snapshot +3
+    waist="Impulse Belt",
     -- Snapsht: +10
     back={ name="Camulus's Mantle", augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}},
     -- TODO Crepuscular Ring (3)
