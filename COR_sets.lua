@@ -11,9 +11,9 @@ sets.weapons = {}
 sets.weapons.List = {
     "Savage Spam",
     "Rostam",
-    "RACC",
     "MAB",
-    "Dynamis",
+    "DaggerMAB",
+    "RACC",
 }
 
 
@@ -31,6 +31,21 @@ sets.weapons["Rostam"] = {
     ammo="Chrono Bullet",
 }
 
+sets.weapons["MAB"] = {
+    main="Tauret",
+    sub="Naegling",
+    range="Fomalhaut",
+    ammo="Chrono Bullet",
+}
+
+sets.weapons["DaggerMAB"] = {
+    main="Tauret",
+    sub="Gleti's Knife",
+    range="Fomalhaut",
+    ammo="Chrono Bullet",
+}
+
+
 sets.weapons["RACC"] = {
     main={ name="Rostam", augments={'Path: C',}},
     sub="Lanun Knife",
@@ -38,12 +53,6 @@ sets.weapons["RACC"] = {
     ammo="Chrono Bullet",
 }
 
-sets.weapons["MAB"] = {
-    main="Naegling",
-    sub="Tauret",
-    range="Fomalhaut",
-    ammo="Chrono Bullet",
-}
 
 sets.weapons["Dynamis"] = {
     main="Naegling",
