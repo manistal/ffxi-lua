@@ -12,12 +12,13 @@ sets.weapons.List = {
     "Idle",
     "DefSwords",
     "Savage",
+    "BlackHalo",
     "MAB",
     "Dispel",
 }
 
 sets.weapons["Idle"] = {
-    main="Colada",
+    main={ name="Colada", augments={'MND+4','Pet: "Store TP"+5','"Refresh"+2','DMG:+7',}},
     sub="Diamond Aspis",
 }
 
@@ -28,7 +29,12 @@ sets.weapons["DefSwords"] = {
 
 sets.weapons["Savage"] = {
     main="Naegling",
-    sub="Gleti's Knife",
+    sub="Machaera +2",
+}
+
+sets.weapons["BlackHalo"] = {
+    main="Maxentius",
+    sub="Machaera +2",
 }
 
 sets.weapons["MAB"] = {
