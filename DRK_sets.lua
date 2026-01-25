@@ -171,7 +171,7 @@ sets.ws.Default = {
     -- WSD 6+
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     -- WSD 10
-    legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
+    legs={ name="Fall. Flanchard +4", augments={'Enhances "Muted Soul" effect',}},
     -- WSD 12
     feet="Heath. Sollerets +3",
     -- DBLATK/PDL
@@ -182,8 +182,8 @@ sets.ws.Default = {
     left_ring="Ephramad's Ring",
     -- TP+
     left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-    -- WSD 2
-    right_ear="Thrud Earring",
+    -- WSD 2 // TODO need a better roll
+    right_ear={ name="Heath. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','Weapon skill damage +2%',}},
     -- WSD 10
     back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}},
 }
@@ -192,6 +192,18 @@ sets.ws.Torcleaver = set_combine(sets.ws.Default, {
     -- VIT Stats 
     back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','STR+5','Weapon skill damage +10%','Phys. dmg. taken-10%',}},
 })
+
+sets.ws.Scythe = set_combine(sets.ws.Default, {
+    head="Heath. Bur. +3",
+    -- TODO Rank up Nyame
+})
+
+sets.ws["Cross Reaper"] = sets.ws.Scythe
+sets.ws["Quietus"] = sets.ws.Scythe
+sets.ws["Insurgency"] = sets.ws.Scythe
+sets.ws["Entropy"] = sets.ws.Scythe
+sets.ws["Catastrophe"] = sets.ws.Scythe
+sets.ws["Origin"] = sets.ws.Scythe
 
 sets.ws.MACC = set_combine(sets.ws.Default, {
     -- MAAC 40, WSD
@@ -252,7 +264,7 @@ sets.ja["Diabolic Eye"] = {
 }
 sets.ja["Souleater"] = {
     head="Ig. Burgeonet +3",
-    legs={ name="Fall. Flanchard +3", augments={'Enhances "Muted Soul" effect',}},
+    legs={ name="Fall. Flanchard +4", augments={'Enhances "Muted Soul" effect',}},
 }
 sets.ja["Weapon Bash"] = {
     hands="Ig. Gauntlets +2",
@@ -336,7 +348,7 @@ sets.midcast.MAB = set_combine(sets.midcast.Default, {
 
 sets.midcast.MACC = set_combine(sets.midcast.Default, {
     -- 51 MACC
-    head="Heath. Burgeon. +2",
+    head="Heath. Burgeon. +3",
     -- 60 MACC
     body="Ig. Cuirass +4",
     -- 52 MACC
