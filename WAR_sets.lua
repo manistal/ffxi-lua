@@ -146,8 +146,8 @@ sets.ws.Default = {
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     -- 2ATK/3ATK
     waist="Sailfi Belt +1",
-    -- WSD 10
-    left_ring="Cornelia's Ring",
+    -- PDL/Stats
+    left_ring="Ephramad's Ring",
     -- TP+
     left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     -- WSD 2

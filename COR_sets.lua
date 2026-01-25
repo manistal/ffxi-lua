@@ -289,8 +289,8 @@ sets.ws.Default = {
     waist="Sailfi Belt +1",
     -- 30 ATK
     neck="Republican Platinum Medal",
-    -- WSD 10
-    left_ring="Cornelia's Ring",
+    -- PDL/Stats
+    left_ring="Ephramad's Ring",
     -- TP+250
     right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     -- WSD: +2
