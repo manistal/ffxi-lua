@@ -114,6 +114,8 @@ sets.idle.Default = {
 -- Total: ~25DT, 7 Refresh
 sets.idle.Refresh = set_combine(sets.idle.Default, {
     -- Refresh +1
+    sub="Archduke's Shield",
+    -- Refresh +1
     head="Inyanga Tiara +2",
     -- Refresh +3
     body="Ebers Bliaut +3", 

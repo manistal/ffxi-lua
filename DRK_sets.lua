@@ -117,15 +117,15 @@ sets.tp.Sakpata = {
     right_ear="Brutal Earring",
     -- ACC/STP/DT
     left_ring="Moonbeam Ring",
-    -- ACC/STP
-    right_ring="Chirich Ring",
+    -- QA
+    right_ring="Niqmaddu Ring",
     -- ACC/STP/2ATK
     back="Null Shawl",
 }
 
 sets.tp.HybridACC = set_combine(sets.tp.Sakpata, {
     -- ACC/2ATK
-    legs="Ig. Flanchard +3",
+    legs="Ig. Flanchard +4",
     -- ACC
     neck="Null Loop",
     -- TODO: Null Belt
@@ -133,25 +133,28 @@ sets.tp.HybridACC = set_combine(sets.tp.Sakpata, {
     waist="Ioskeha Belt",
     -- ACC/2ATK
     right_ear="Schere Earring",
+    -- ACC
+    right_ring="Chichrich Ring",
 })
 
 sets.tp.GlassCannon = set_combine(sets.tp.Sakpata, {
     -- STP/3ATK
     head="Flam. Zucchetto +2",
     -- 2ATK
-    legs="Ig. Flanchard +3",
+    legs="Ig. Flanchard +4",
     -- STP/3ATK
-    feet="Flam. Gambieras +2",
+    -- feet="Flam. Gambieras +2",
     -- STP
     neck={ name="Abyssal Beads +1", augments={'Path: A',}},
     -- 3ATK/2ATK
     waist="Sailfi Belt +1",
     -- -MP / +ACC/2ATK
-    right_ear={ name="Schere Earring", augments={'Path: A',}},
+ --   right_ear="Dedition Earring",
+    right_ear="Schere Earring",
     -- STP
     left_ring="Chirich Ring",
     -- STP
-    right_ring="Chirich Ring",
+    right_ring="Niqmaddu Ring",
 })
 
 
@@ -180,6 +183,8 @@ sets.ws.Default = {
     waist="Sailfi Belt +1",
     -- PDL/Stats
     left_ring="Ephramad's Ring",
+    -- Stats/Quad ATK
+    right_ring="Niqmaddu Ring",
     -- TP+
     left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     -- WSD 2 // TODO need a better roll
@@ -235,7 +240,7 @@ sets.ws.MultiHit = set_combine(sets.ws.Default, {
     -- 2ATK: 6
     hands="Sakpata's Gauntlets",
     -- 2ATK: 10
-    legs="Ig. Flanchard +3",
+    legs="Ig. Flanchard +4",
     -- 2ATK: 6
     feet="Flam. Gambieras +2",
     -- 2ATK/3ATK

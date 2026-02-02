@@ -91,7 +91,7 @@ function midcast(spell)
 end
 
 function aftercast(spell)
-    status_change(player.status)
+    equip_base_set(player.status)
 end
 
 

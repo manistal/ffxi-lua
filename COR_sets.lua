@@ -10,8 +10,8 @@ sets = {}
 sets.weapons = {}
 sets.weapons.List = {
     "Savage Spam",
-    "Rostam",
-    "MAB",
+    -- "Rostam",
+    -- "MAB",
     "DaggerMAB",
     "RACC",
 }
@@ -54,12 +54,6 @@ sets.weapons["RACC"] = {
 }
 
 
-sets.weapons["Dynamis"] = {
-    main="Naegling",
-    sub={ name="Rostam", augments={'Path: C',}},
-    range="Anarchy +2",
-    ammo="Chrono Bullet",
-}
 
 
 -- Idle/DT Base Set
@@ -89,7 +83,7 @@ sets.idle.Default = {
     -- DT -3
     waist="Plat. Mog. Belt",
     -- HP
-    left_ear="Odnowa Earring +1",
+    left_ear="Alabaster Earring",
     -- HP
     right_ear="Eabani Earring",
     -- DT: -10
@@ -142,7 +136,8 @@ sets.tp.Hybrid = {
     -- Triple ATK
     waist="Sailfi Belt +1",
     -- ACC / 5 DT
-    neck="Null Loop",
+    -- neck="Null Loop",
+    neck="Iskur Gorget",
     -- DW
     left_ear="Suppanomimi",
     -- TP
