@@ -14,6 +14,8 @@ sets.weapons.List = {
     -- "MAB",
     "DaggerMAB",
     "RACC",
+    "DaggerSOLO",
+    "SwordSOLO",
 }
 
 
@@ -35,6 +37,18 @@ sets.weapons["MAB"] = {
     main="Tauret",
     sub="Naegling",
     range="Fomalhaut",
+    ammo="Chrono Bullet",
+}
+
+sets.weapons["DaggerSOLO"] = {
+    main="Gleti's Knife",
+    range="Fomalhaut",
+    ammo="Chrono Bullet",
+}
+
+sets.weapons["SwordSOLO"] = {
+    main="Naegling",
+    range="Anarchy +2",
     ammo="Chrono Bullet",
 }
 
@@ -64,6 +78,7 @@ sets.idle = {}
 sets.idle.List = {
     "Default",
     "Regen",
+    "Regain",
 }
 
 
@@ -105,6 +120,24 @@ sets.idle.Regen = set_combine(sets.idle.Default, {
     right_ring="Chirich Ring",
 })
 
+sets.idle.Regain = set_combine(sets.idle.Default, {
+    -- 7 DT
+    head="Malignance Chapeau",
+    -- 9 DT
+    body="Malignance Tabard",
+    -- 5 DT 
+    hands="Regal Gloves",
+    -- 12 DT
+    legs="Chas. Culottes +3",
+    -- 7 DT
+    feet="Malignance Boots",
+    -- ACC / 5 DT
+    neck="Rep. Plat. Medal",
+    -- ACC / STP
+    right_ring="Chirich Ring",
+    -- MEVA
+    back="Null Shawl",
+})
 
 --
 -- TP Sets
@@ -168,7 +201,9 @@ sets.precast.Default = {
 }
 
 sets.precast.FastCast = {
+    head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
     hands={ name="Leyline Gloves", augments={'Accuracy+5','"Mag.Atk.Bns."+7','"Fast Cast"+1',}},
+    feet={ name="Carmine Greaves +1", augments={'MP+80','INT+12','MND+12',}},
     right_ring="Kishar Ring",
     right_ear="Loquac. Earring",
 }
@@ -262,6 +297,23 @@ sets.midcast.TripleShot = set_combine(sets.midcast.Ranged, {
     hands="Lanun Gants +3", 
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
 })
+
+sets.midcast.DarkMagic = {
+    head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
+    body="Chasseur's Frac +2",
+    hands={ name="Leyline Gloves", augments={'Accuracy+5','"Mag.Atk.Bns."+7','"Fast Cast"+1',}},
+    legs="Chas. Culottes +3",
+    feet={ name="Carmine Greaves +1", augments={'MP+80','INT+12','MND+12',}},
+    neck="Null Loop",
+    waist="Eschan Stone",
+    left_ear="Loquac. Earring",
+    right_ear="Eabani Earring",
+    left_ring="Stikini Ring +1",
+    right_ring="Metamorph Ring",
+    back="Null Shawl",
+}
+
+sets.midcast["Absorb-TP"] = sets.midcast.DarkMagic
 
 --
 -- WS Sets 
@@ -405,3 +457,5 @@ sets.ja["Quick Draw"] = {
     right_ear="Friomisi Earring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
 }
+
+sets.ja["Ice Shot"] = set_combine(sets.ja["Quick Draw"], sets.midcast.Ranged)

@@ -81,6 +81,9 @@ function precast(spell)
 		'Fire Shot', 'Ice Shot', 'Wind Shot', 'Earth Shot', 'Thunder Shot', 'Water Shot', 'Light Shot', 'Dark Shot'}
 	if Quick_draw:contains(spell.english) then
         equip(sets.ja["Quick Draw"])
+        if sets.ja[spell.english] then
+            equip(sets.ja[spell.english])
+        end
     end
 
     -- Spells
