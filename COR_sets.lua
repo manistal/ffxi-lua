@@ -14,8 +14,8 @@ sets.weapons.List = {
     -- "MAB",
     "DaggerMAB",
     "RACC",
-    "DaggerSOLO",
-    "SwordSOLO",
+    --"DaggerSOLO",
+    --"SwordSOLO",
 }
 
 

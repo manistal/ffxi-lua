@@ -41,7 +41,7 @@ function equip_base_set(status)
 
     -- Idle Sets (Regen/DT)
     if status == 'Idle' then 
-        equip(sets.idle.Default)
+        equip(sets.idle.Current)
     end
 end
 

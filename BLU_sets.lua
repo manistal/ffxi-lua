@@ -137,6 +137,8 @@ sets.precast.Default = {
 }
 
 sets.precast.FastCast = {
+    head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
+    feet={ name="Carmine Greaves +1", augments={'MP+80','INT+12','MND+12',}},
     -- FC 6
     hands={ name="Leyline Gloves", augments={'Accuracy+5','"Mag.Atk.Bns."+7','"Fast Cast"+1',}},
     -- 6 FC
