@@ -108,7 +108,7 @@ sets.tp.Sakpata = {
     legs="Sakpata's Cuisses",
     feet="Sakpata's Leggings",
     -- ACC/STP
-    neck={ name="Abyssal Beads +1", augments={'Path: A',}},
+    neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     -- 2ATK/3ATK
     waist="Sailfi Belt +1",
     -- ACC/STP
@@ -145,7 +145,7 @@ sets.tp.GlassCannon = set_combine(sets.tp.Sakpata, {
     -- STP/3ATK
     -- feet="Flam. Gambieras +2",
     -- STP
-    neck={ name="Abyssal Beads +1", augments={'Path: A',}},
+    neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     -- 3ATK/2ATK
     waist="Sailfi Belt +1",
     -- -MP / +ACC/2ATK
@@ -178,7 +178,7 @@ sets.ws.Default = {
     -- WSD 12
     feet="Heath. Sollerets +3",
     -- DBLATK/PDL
-    neck={ name="Abyssal Beads +1", augments={'Path: A',}},
+    neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     -- 2ATK/3ATK
     waist="Sailfi Belt +1",
     -- PDL/Stats
