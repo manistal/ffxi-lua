@@ -10,44 +10,17 @@ sets = {}
 sets.weapons = {}
 sets.weapons.List = {
     "Savage Spam",
-    -- "Rostam",
-    -- "MAB",
     "DaggerMAB",
     "RACC",
-    --"DaggerSOLO",
-    --"SwordSOLO",
+    "LeadenShield",
+    "SavageShield",
+    "RACCShield",
 }
 
 
 sets.weapons["Savage Spam"] = {
     main="Naegling",
     sub="Gleti's Knife",
-    range="Anarchy +2",
-    ammo="Chrono Bullet",
-}
-
-sets.weapons["Rostam"] = {
-    main={ name="Rostam", augments={'Path: C',}},
-    sub="Gleti's Knife",
-    range="Fomalhaut",
-    ammo="Chrono Bullet",
-}
-
-sets.weapons["MAB"] = {
-    main="Tauret",
-    sub="Naegling",
-    range="Fomalhaut",
-    ammo="Chrono Bullet",
-}
-
-sets.weapons["DaggerSOLO"] = {
-    main="Gleti's Knife",
-    range="Fomalhaut",
-    ammo="Chrono Bullet",
-}
-
-sets.weapons["SwordSOLO"] = {
-    main="Naegling",
     range="Anarchy +2",
     ammo="Chrono Bullet",
 }
@@ -59,13 +32,35 @@ sets.weapons["DaggerMAB"] = {
     ammo="Chrono Bullet",
 }
 
-
 sets.weapons["RACC"] = {
     main={ name="Rostam", augments={'Path: C',}},
     sub="Lanun Knife",
     range="Fomalhaut",
     ammo="Chrono Bullet",
 }
+
+sets.weapons["LeadenShield"] = {
+    main="Gleti's Knife",
+    sub="Nusku Shield",
+    range="Fomalhaut",
+    ammo="Chrono Bullet",
+}
+
+sets.weapons["SavageShield"] = {
+    main="Naegling",
+    sub="Nusku Shield",
+    range="Anarchy +2",
+    ammo="Chrono Bullet",
+}
+
+sets.weapons["RACCShield"] = {
+    main={ name="Rostam", augments={'Path: C',}},
+    sub="Nusku Shield",
+    range="Fomalhaut",
+    ammo="Chrono Bullet",
+}
+
+
 
 
 
