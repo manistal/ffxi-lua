@@ -1,8 +1,33 @@
 --
--- DRK Lua by MigsDank
+-- RDM Lua by MigsDank
 -- 
 
 sets = {}
+
+--[[
+AF
+    head="Atrophy Chapeau +3",
+    body="Atrophy Tabard +3",
+    hands="Atrophy Gloves +3",
+    legs="Atrophy Tights +3",
+    feet="Atro. Boots +3",
+
+Relic
+    head="Viti. Chapeau +2",
+    body="Viti. Tabard +2",
+    hands="Viti. Gloves +2",
+    legs="Viti. Tights +2",
+    feet="Vitiation Boots +2",
+
+Empy
+    head="Leth. Chappel +2",
+    body="Lethargy Sayon +2",
+    hands="Leth. Ganth. +2",
+    legs="Leth. Fuseau +2",
+    feet="Leth. Houseaux +2",
+
+
+]]
 
 --
 -- Weapon Sets
@@ -55,31 +80,31 @@ sets.weapons["Dispel"] = {
 sets.idle = {}
 sets.idle.List = {
     "Default",
-    "Regen",
+    "Refresh",
 }
 
 
 sets.idle.Default = {
     -- DT: -3 
     ammo="Staunch Tathlum +1",
-    -- DT: -7
-    head={ name="Nyame Helm", augments={'Path: B',}},
-    -- DT: -9
-    body={ name="Nyame Mail", augments={'Path: B',}},
-    --DT: -7
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    -- DT: -8
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    -- DT: -7
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    -- MDEF
-    neck="Warder's Charm +1",
-    -- HP / DT 
-    waist="Plat. Mog. Belt",
+    -- Refresh 
+    head="Viti. Chapeau +2",
+    -- Refresh / DT 13
+    body="Lethargy Sayon +2",
+    -- DT 8 
+    hands="Bunzi's Gloves",
+    -- DT 8
+    legs="Nyame Flanchard",
+    -- DT 7
+    feet="Nyame Sollerets",
+    -- DT 6
+    neck="Loricate Torque +1",
+    -- MEVA
+    waist="Carrier's Sash",
     -- HP
-    left_ear="Alabaster Earring",
+    left_ear="Eabani Earring",
     -- HP
-    right_ear="Eabani Earring",
+    right_ear="Alabaster Earring",
     -- Refresh
     left_ring="Stikini Ring +1",
     -- SPEED
@@ -89,7 +114,10 @@ sets.idle.Default = {
 }
 
 sets.idle.Refresh = set_combine(sets.idle.Default, {
+    -- Refresh +1
     ammo="Homiliary",
+    -- Refresh +1
+    waist="Fucho-no-Obi",
 })
 
 
@@ -109,6 +137,8 @@ sets.tp.List = {
 -- TA > STP = DA > 
 -- DT 50 > MEVA > ACC >= TP
 sets.tp.Hybrid = {
+    -- TP
+    ammo="Coiste Bodhar",
     -- 7 DT
     head="Malignance Chapeau",
     -- 9 DT
@@ -123,10 +153,10 @@ sets.tp.Hybrid = {
     waist="Sailfi Belt +1",
     -- ACC / 5 DT
     neck="Null Loop",
-    -- DW
-    left_ear="Suppanomimi",
+    -- DW / HP
+    left_ear="Eabani Earring",
     -- TP
-    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
+    right_ear="Sherida Earring",
     -- 10 DT
     left_ring="Murky Ring",
     -- ACC / STP
@@ -140,28 +170,20 @@ sets.tp.Hybrid = {
 -- Precast Sets
 --
 sets.precast = {} 
-sets.precast.Default = {
-}
 
--- RDM Gets 38% from JP Gifts, 30% from 99
--- Need ~42-50% from gear
--- Current: 44
-sets.precast.FastCast = {
-    -- FC 13
-    head={ name="Merlinic Hood", augments={'"Fast Cast"+5','"Mag.Atk.Bns."+1',}},
-    -- FC 10 
-    body={ name="Merlinic Jubbah", augments={'"Mag.Atk.Bns."+30','"Fast Cast"+4','MND+9',}},
-    -- FC 6
-    hands={ name="Leyline Gloves", augments={'Accuracy+5','"Mag.Atk.Bns."+7','"Fast Cast"+1',}},
-    -- FC 6
-    legs="Aya. Cosciales +2",
-    -- FC 4
-    right_ring="Kishar Ring",
+-- RDM Gets 38% 
+-- Need 42 from gear
+-- Current: 42
+sets.precast.FastCast = set_combine(sets.idle.Default, {
+    -- FC 16
+    head="Atrophy Chapeau +3",
+    -- FC 14 
+    body="Viti. Tabard +2",
     -- FC 4
     left_ear="Malignance Earring",
-    -- FC 2
-    right_ear="Loquac. Earring",
-}
+    -- FC 8
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
+})
 
 
 -- 
@@ -169,34 +191,37 @@ sets.precast.FastCast = {
 -- 
 sets.midcast = {}
 
+-- Defensive + SIRD
+sets.midcast.Default = set_combine(sets.idle.Default, {
+    -- SIRD 11
+    ammo="Staunch Tathlum +1",
+    -- SIRD 5
+    neck="Loricate Torque +1",
+    -- SIRD 3 / DT 
+    left_ring="Murky Ring",
+    -- SIRD 5
+    right_ring="Evanescence Ring",
+    -- SIRD 20 
+    legs="Bunzi's Pants",
+    -- HP
+    waist="Plat. Mog. Belt",
+})
+
+-- Healing
+--------------
+
 -- Cure/Healing/COnserveMP
 -- Total: Cure I: 56, Cure II: 4
-sets.midcast.Cure = {
-    -- SIRD / DT
-    ammo="Staunch Tathlum +1",
+sets.midcast.Cure = set_combine(sets.midcast.Default, {
     -- Cure I: 11, Cure II: 2
     head={ name="Kaykaus Mitra +1", augments={'MP+80','Spell interruption rate down +12%','"Cure" spellcasting time -7%',}},
     -- Cure I: 15, MEVA
     body="Bunzi's Robe",
-    -- 12 Conserve MP
-    legs={ name="Vanya Slops", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
-    -- TODO Artifact Legs 
+    -- Cure I: 12
+    legs="Atrophy Tights +3",
     -- Cure I: 17, Conserve MP: 7, Cure II: 2
     feet={ name="Kaykaus Boots +1", augments={'Mag. Acc.+20','"Cure" potency +6%','"Fast Cast"+4',}},
-    -- SIRD / DT
-    neck="Loricate Torque +1",
-    -- 5 Cure I
-    left_ear="Mendi. Earring",
-    -- Cure I: 1, Cure II: 1
-    left_ring="Naji's Loop",
-    -- SIRD / DT 
-    right_ring="Murky Ring",
-    -- HP / 5 DT
-    left_ear="Alabaster Earring",
-    -- Cure I: 5, Conserve MP: 2
-    right_ear="Mendi. Earring",
-    -- TODO Ambu FC Cape
-}
+})
 
 sets.midcast.CureWeather = set_combine(sets.midcast.Cure, {
     main="Chatoyant Staff",
@@ -204,18 +229,11 @@ sets.midcast.CureWeather = set_combine(sets.midcast.Cure, {
     waist="Hachirin-no-Obi",
 })
 
--- Status Removal
-----------------------
-sets.midcast.StatusRemoval = {
-}
-
-sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
-    -- Healing Magiuc: 15
-    main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
+sets.midcast.Cursna = set_combine(sets.midcast.Default, {
     -- Cursna / Conserve MP
     head={ name="Vanya Hood", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
-    -- Cursna: 15
-    hands={ name="Fanatic Gloves", augments={'MP+35','"Conserve MP"+3','"Fast Cast"+3',}},
+    -- Healing Magic 24
+    body="Viti. Tabard +2",
     -- Cursna 5
     feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
     -- Cursna: 10
@@ -228,28 +246,110 @@ sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
 
 -- Enhancing
 ---------------------------
--- TODO Enhancing Skill Earring, Telchine
-sets.midcast.Enhancing = {
-    sub="Ammurapi Shield",
-    -- Duration 5 TODO
-    head={ name="Telchine Cap", augments={'Mag. Evasion+19','"Conserve MP"+4','Enh. Mag. eff. dur. +5',}},
-    -- Duration 10
-    body={ name="Telchine Chas.", augments={'Mag. Evasion+20','Spell interruption rate down -9%','Enh. Mag. eff. dur. +10',}},
-    -- Duration 8
-    hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +8',}},
-    -- Duration 7
-    legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +7',}},
-    -- Duration 8
-    feet={ name="Telchine Pigaches", augments={'Song spellcasting time -7%','Enh. Mag. eff. dur. +8',}},
-    -- Duration 10 
-    waist="Embla Sash",
-    -- Conserve MP, Skill+10
+
+-- Skill++
+sets.midcast.EnhancingSkill = set_combine(sets.midcast.Default, {
+    -- Enhancing Duration 
+    sub="Amurapi Shield",
+    -- Enhancing 21
+    body="Viti. Tabard +2",
+    -- Enhancing 22
+    hands="Viti. Gloves +2",
+    -- Enhancing 21
+    legs="Atrophy Tights +3",
+    -- Enhancing 30
+    feet="Leth. Houseaux +2",
+    -- Enhancing 5
+    waist="Olympus Sash",
+    -- Enhancing 10 
     neck="Incanter's Torque",
+    -- Enhancing 8
+    left_ring="Stikini Ring +1",
+    -- TODO MIMIMIR
     -- Enhancing Duration
     right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
+    -- Enhancing 6
+    back="Estoqueur's Cape",
+})
+
+-- Duration > all
+sets.midcast.EnhancingSelf = set_combine(sets.midcast.Default, {
+    -- Duration 10
+    sub="Ammurapi Shield",
+    -- Duration 5 
+    head={ name="Telchine Cap", augments={'Mag. Evasion+19','"Conserve MP"+4','Enh. Mag. eff. dur. +5',}},
+    -- Duration 10
+    body="Viti. Tabard +2",
+    -- Duration 20
+    hands="Atrophy Gloves +3",
+    -- Duration 7
+    legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +7',}},
+    -- Enhancing 30 / Duration 35
+    feet="Leth. Houseaux +2",
+    -- Duration 10 
+    waist="Embla Sash",
+    -- TODO JSE NECK
+    -- Conserve MP, Skill+10
+    neck="Incanter's Torque",
     -- Skill 8 
     left_ring="Stikini Ring +1",
-}
+    -- Duration 8
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
+    -- Enhancing 6 / Duration 10
+    back="Estoqueur's Cape",
+})
+
+-- Empy > Duration > Skill 
+sets.midcast.EnhancingOthers = set_combine(sets.midcast.Default, {
+    -- Duration 10
+    sub="Ammurapi Shield",
+    -- Composure
+    head="Leth. Chappel +2",
+    -- Composure
+    body="Lethargy Sayon +2",
+    -- Duration 20
+    hands="Atrophy Gloves +3",
+    -- Composure
+    legs="Leth. Fuseau +2",
+    -- Compsure / Duration 35
+    feet="Leth. Houseaux +2",
+    -- Duration 10 
+    waist="Embla Sash",
+    -- TODO JSE NECK
+    -- Conserve MP, Skill+10
+    neck="Incanter's Torque",
+    -- Skill 8 
+    left_ring="Stikini Ring +1",
+    -- Duration 8
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
+    -- Enhancing 6 / Duration 10
+    back="Estoqueur's Cape",
+})
+
+sets.midcast.Refresh = set_combine(sets.midcast.Default, {
+    -- Duration 10
+    sub="Ammurapi Shield",
+    -- TODO Almaric Head
+    -- Refresh Potency +2
+    body="Atrophy Tabard +3",
+    -- Duration 20
+    hands="Atrophy Gloves +3",
+    -- Refresh Potency +3
+    legs="Leth. Fuseau +2",
+    -- Compsure / Duration 35
+    feet="Leth. Houseaux +2",
+    -- Duration 10 
+    waist="Embla Sash",
+    -- TODO JSE NECK
+    -- Conserve MP, Skill+10
+    neck="Incanter's Torque",
+    -- Skill 8 
+    left_ring="Stikini Ring +1",
+    -- Duration 8
+    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
+    -- Enhancing 6 / Duration 10
+    back="Estoqueur's Cape",
+})
 
 -- TODO???
 sets.midcast.BarSpell = set_combine(sets.midcast.Enhancing, {
@@ -262,19 +362,17 @@ sets.midcast.Regen = set_combine(sets.midcast.Enhancing, {
     feet={ name="Bunzi's Sabots", augments={'Path: A',}},
 })
 
-sets.midcast.Aquaveil = set_combine(sets.midcast.Enhancing, {
+sets.midcast.Aquaveil = set_combine(sets.midcast.EnhancingSelf, {
     main="Vadose rod",
     -- Omen LUCK hands="Regal Cuffs",
     legs="Shedir Seraweels",
     -- AH Money waist="Emphatikos Rope",
 })
 
-sets.midcast.Stoneskin = set_combine(sets.midcast.Enhancing, {
+sets.midcast.Stoneskin = set_combine(sets.midcast.EnhancingSelf, {
     legs="Shedir Seraweels",
 })
 
-sets.midcast.Auspice = set_combine(sets.midcast.Enhancing, {
-})
 
 -- Enfeebling
 --------------------------

@@ -20,7 +20,7 @@ function get_sets()
 
     -- Set defaults
     bind_toggles("~f1", "weapons")
-    bind_toggles("~f2", "tp")
+    bind_toggles("~f2", "idle")
 end
 
 --
@@ -38,7 +38,7 @@ function equip_base_set(status)
 
     -- Idle Sets (Regen/DT)
     if status == 'Idle' then 
-        equip(sets.idle.Default)
+        equip(sets.idle.Current)
     end
 
     -- Weapon Sets
@@ -68,6 +68,25 @@ function is_enfeebling_spell(spell)
            spell.english:startswith("Addle") 
 end
 
+function handle_enhancing_spell(spell)
+    -- Swap for Empy Bonus when Casting on Others
+    if spell.targets["Self"] ~= nil then 
+        equip(sets.midcast.EnhancingSelf)
+    else
+        equip(sets.midcast.EnhancingOthers)
+    end
+
+    -- Refresh 
+    if spell.english:startswith("Refresh") then 
+        equip(sets.midcast.Refresh)
+    end
+
+    -- Skill Spells
+    if spell.english:startswith("En") or spell.english:startswith("Temper") then 
+        equip(sets.midcast.EnhancingSkill)
+    end
+end
+
 -- 
 -- Player Action Callbacks
 -- 
@@ -92,7 +111,6 @@ function precast(spell)
 end
 
 function midcast(spell) 
-    -- Friendly spells Cure / Status Removal / Enhancing 
     --- Cure
     if spell.english:startswith("Cure") or spell.english:startswith("Cura") then
         equip(sets.midcast.Cure)
@@ -103,22 +121,13 @@ function midcast(spell)
     -- Status Removal (Removal+ and Healing SKill)
     elseif (spell.english == "Cursna") then 
         equip(sets.midcast.Cursna) 
-    elseif spell.english:endswith("na") or (spell.english == "Erase") then
-        equip(sets.midcast.StatusRemoval)
-    -- Enhancing Spells
-    elseif spell.english:startswith("Bar") then 
-        equip(sets.midcast.BarSpell)
-    elseif spell.english:startswith("Regen") then
-        equip(sets.midcast.Regen)
+    -- Enhancing Magic
     elseif is_enhancing_spell(spell) then
-        equip(sets.midcast.Enhancing)
-    end 
-
+        handle_enhancing_spell(spell)
     -- Enfeebling Spells
-    if is_enfeebling_spell(spell) then
+    elseif is_enfeebling_spell(spell) then
         equip(sets.midcast.Enfeebling) 
     end
-
 end
 
 function aftercast(spell)
