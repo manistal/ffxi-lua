@@ -70,7 +70,7 @@ end
 
 function handle_enhancing_spell(spell)
     -- Swap for Empy Bonus when Casting on Others
-    if spell.targets["Self"] ~= nil then 
+    if spell.target.type == "SELF" then 
         equip(sets.midcast.EnhancingSelf)
     else
         equip(sets.midcast.EnhancingOthers)
@@ -85,6 +85,10 @@ function handle_enhancing_spell(spell)
     if spell.english:startswith("En") or spell.english:startswith("Temper") then 
         equip(sets.midcast.EnhancingSkill)
     end
+end
+
+function handle_enfeebling_spell(spell)
+
 end
 
 -- 
@@ -126,7 +130,7 @@ function midcast(spell)
         handle_enhancing_spell(spell)
     -- Enfeebling Spells
     elseif is_enfeebling_spell(spell) then
-        equip(sets.midcast.Enfeebling) 
+        handle_enfeebling_spell(spell)
     end
 end
 
