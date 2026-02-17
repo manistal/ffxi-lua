@@ -295,8 +295,8 @@ sets.midcast.EnhancingSelf = set_combine(sets.midcast.Default, {
     left_ring="Stikini Ring +1",
     -- Duration 8
     right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
-    -- Enhancing 6 / Duration 10
-    back="Estoqueur's Cape",
+    -- Duration 20
+    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
 })
 
 -- Empy > Duration > Skill 
@@ -322,8 +322,8 @@ sets.midcast.EnhancingOthers = set_combine(sets.midcast.Default, {
     left_ring="Stikini Ring +1",
     -- Duration 8
     right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
-    -- Enhancing 6 / Duration 10
-    back="Estoqueur's Cape",
+    -- Duration 20
+    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
 })
 
 sets.midcast.Refresh = set_combine(sets.midcast.Default, {
@@ -347,8 +347,8 @@ sets.midcast.Refresh = set_combine(sets.midcast.Default, {
     left_ring="Stikini Ring +1",
     -- Duration 8
     right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
-    -- Enhancing 6 / Duration 10
-    back="Estoqueur's Cape",
+    -- Duration 20
+    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
 })
 
 -- TODO???
@@ -376,23 +376,123 @@ sets.midcast.Stoneskin = set_combine(sets.midcast.EnhancingSelf, {
 
 -- Enfeebling
 --------------------------
-sets.midcast.Enfeebling = {
-    main="Bunzi's Rod",
-    sub="Diamond Aspis", 
-    right_ring="Kishar Ring", -- Enfeeble Duration
-    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
-}
 
--- TODO NUKING
-
-sets.midcast.Nuke = {
-    -- MACC -- TODO: JSE Neck
+-- MACC > ALL
+sets.midcast.EnfeeblingMACC = set_combine(sets.midcast.Default, {
+    -- MACC
+    ranged="Ullr",
+    -- Merit ACC
+    head="Viti. Chapeau +2",
+    -- AF ACC
+    body="Atrophy Tabard +3",
+    -- +Sabateur
+    hands="Leth. Ganth. +2",
+    -- AF ACC
+    legs="Atrophy Tights +3",
+    -- AF ACC
+    feet="Atro. Boots +3",
+    -- 50 ACC
     neck="Null Loop",
-    -- MAB / MACC - TODO Hachirin no obi
-    waist="Eschan Stone",
-    -- MAB
+    -- 10 ACC
     left_ear="Malignance Earring",
+    -- Duration 10 
+    right_ear="Snotra Earring",
+    -- 19 ACC
+    left_ring="Stikini Ring +1",
+    -- 10 ACC / Duration 10 
+    right_ring="Kishar Ring",
+    -- 50 ACC
+    back="Null Shawl",
+})
+
+-- Skill >= Effect > dMND
+sets.midcast.EnfeeblingPotency = set_combine(sets.midcast.Default, {
+    -- Skill 24
+    head="Viti. Chapeau +2",
+    -- Effect 16
+    body="Lethargy Sayon +2",
+    -- Skill 24
+    hands="Leth. Ganth. +2",
+    -- MACC
+    legs="Leth. Fuseau +2",
+    -- Skill 16 / Effect 5
+    feet="Vitiation Boots +2",
+    -- TODO: JSE Neck
+    -- TODO: Obstinate Sash
+    -- 10 ACC
+    left_ear="Malignance Earring",
+    -- Duration 10 
+    right_ear="Snotra Earring",
+    -- 19 ACC
+    left_ring="Stikini Ring +1",
+    -- Duration 10 
+    right_ring="Kishar Ring",
+    -- Effect / ACC
+    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
+})
+
+sets.midcast.EnfeeblingDuration = set_combine(sets.midcast.Default, {
+    -- Composure
+    head="Leth. Chappel +2",
+    -- Composure / Effect 16
+    body="Lethargy Sayon +2",
+    -- Composure / Skill 24
+    hands="Leth. Ganth. +2",
+    -- Composure / MACC
+    legs="Leth. Fuseau +2",
+    -- Composure / Duration
+    feet="Leth. Houseaux +2",
+    -- TODO: JSE Neck
+    -- TODO: Obstinate Sash
+    -- 10 ACC
+    left_ear="Malignance Earring",
+    -- Duration 10 
+    right_ear="Snotra Earring",
+    -- 19 ACC
+    left_ring="Stikini Ring +1",
+    -- Duration 10 
+    right_ring="Kishar Ring",
+    -- Effect / ACC
+    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
+})
+
+-- Nuking
+--------------------
+sets.nuke = {}
+sets.nuke.List = {
+    "MagicBurst"
+    "FreeNuke",
 }
+
+sets.nuke.FreeNuke = set_combine(sets.midcast.Default, {
+    -- MAB
+    main="Bunzi's Rod", 
+    -- MACC / INT
+    sub="Diamond Aspis",
+    -- INT / MACC / MAB
+    head="Leth. Chappel +2",
+    -- INT / MACC / MAB
+    body="Lethargy Sayon +2",
+    -- INT / MACC / MAB
+    hands="Leth. Ganth. +2",
+    -- INT / MACC / MAB
+    legs="Leth. Fuseau +2",
+    -- INT / MACC / MAB
+    feet="Vitiation Boots +2",
+    -- MAB / MACC
+    waist="Eschan Stone",
+    -- MAB / INT
+    neck="Sibyl Scarf",
+    -- INT / MACC
+    left_ear="Malignance Earring",
+    -- TODO AMBU CAPE
+})
+
+sets.nuke.MagicBurst = set_combine(sets.nuke.FreeNuke, {
+    -- TODO Ea Hat / Chest 
+    hands="Bunzi's Gloves",
+})
+
 
 --
 -- WS Sets 
@@ -401,6 +501,8 @@ sets.ws = {}
 
 -- TP Bonus > WSD > Attack = Accuracy
 sets.ws.Default = {
+    -- WSD
+    ammo="Oshasha's Treatise",
     -- WSD: +6
     head={ name="Nyame Helm", augments={'Path: B',}},
     -- WSD: +5
@@ -409,8 +511,8 @@ sets.ws.Default = {
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     -- WSD: +3
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    -- WSD: +12
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    -- WSD: +8~12
+    feet="Leth. Houseaux +2",
     -- STR/ATK
     waist="Sailfi Belt +1",
     -- 30 ATK
@@ -430,3 +532,7 @@ sets.ws.Default = {
 -- Job Ability Sets
 -- 
 sets.ja = {}
+
+sets.ja["Chainspell"] = {
+    body="Viti. Tabard +2",
+}
