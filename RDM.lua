@@ -21,6 +21,7 @@ function get_sets()
     -- Set defaults
     bind_toggles("~f1", "weapons")
     bind_toggles("~f2", "idle")
+    bind_toggles("~f4", "nuke")
 end
 
 --
@@ -62,10 +63,8 @@ end
 function is_enfeebling_spell(spell)
     -- Check if the spell is an enfeebling spell
     return spell.skill == 'Enfeebling Magic' or 
-           spell.english:startswith("Dia") or 
-           spell.english:startswith("Slow") or 
-           spell.english:startswith("Paralyze") or 
-           spell.english:startswith("Addle") 
+           spell.english:startswith("Stun") or -- Stun is Dark Magic but Use MACC Enfeeble Gear
+           spell.english:startswith("Repose")
 end
 
 function handle_enhancing_spell(spell)
@@ -88,7 +87,22 @@ function handle_enhancing_spell(spell)
 end
 
 function handle_enfeebling_spell(spell)
+    maccEnfeebles = S{"Dispel", "Dispelga", "Frazzle I", "Frazzle II", "Stun", "Repose", "Sleepga II"}
 
+    potencyEnfeebles = S{"Frazzle III", "Distract III", "Paralyze II", "Slow II", "Addle II", "Blind II"}
+
+    durationEnfeebles = S{"Silence", "Sleep", "Sleep II", "Break", "Gravity II", "Gravity", "Bind", "Dia III", "Inundation"}
+
+    if maccEnfeebles:contains(spell.english) then 
+        equip(sets.midcast.EnfeeblingMACC)
+    elseif potencyEnfeebles:contains(spell.english) then
+        equip(sets.midcast.EnfeeblingPotency)
+    elseif durationEnfeebles:contains(spell.english) then
+        equip(sets.midcast.EnfeeblingDuration)
+    else 
+        windower.add_to_chat(207, "Warning: No specific set for Enfeebling Spell: " .. spell.english)
+        equip(sets.midcast.EnfeeblingMACC)
+    end
 end
 
 -- 
@@ -131,6 +145,9 @@ function midcast(spell)
     -- Enfeebling Spells
     elseif is_enfeebling_spell(spell) then
         handle_enfeebling_spell(spell)
+    -- Nuking Magic
+    elseif spell.skill == "Elemental Magic" then 
+        equip(sets.nuke.Current)
     end
 end
 
