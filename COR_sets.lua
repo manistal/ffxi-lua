@@ -440,6 +440,15 @@ sets.ja["Tactician's Roll"] = {body="Chasseur's Frac +2",}
 sets.ja["Allies' Roll"] = {hands="Chasseur's Gants +3",}
 sets.ja["Caster's Roll"] = {legs="Chas. Culottes +3",}
 sets.ja["Courser's Roll"] = {feet="Chass. Bottes +1",}
+sets.ja["Bolter's Roll"] = set_combine(sets.idle.Default, {
+    main={ name="Rostam", augments={'Path: C',}},
+    --neck="Regal Necklace",
+    --range={ name="Compensator", augments={'DMG:+15','AGI+15','Rng.Acc.+15',}},
+    --head="Lanun Tricorne +3",
+    --hands="Chasseur's Gants +3",
+    right_ring="Luzaf's Ring",
+    --back={ name="Camulus's Mantle", augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}},
+})
 
 sets.ja["Quick Draw"] = {
     head={ name="Nyame Helm", augments={'Path: B',}},
