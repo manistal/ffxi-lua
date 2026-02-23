@@ -95,6 +95,9 @@ function handle_enfeebling_spell(spell)
 
     if maccEnfeebles:contains(spell.english) then 
         equip(sets.midcast.EnfeeblingMACC)
+        if spell.english:startswith("Dispel") then 
+            equip(sets.midcast.Dispel)
+        end
     elseif potencyEnfeebles:contains(spell.english) then
         equip(sets.midcast.EnfeeblingPotency)
     elseif durationEnfeebles:contains(spell.english) then

@@ -288,7 +288,8 @@ sets.midcast.EnhancingSelf = set_combine(sets.midcast.Default, {
     feet="Leth. Houseaux +2",
     -- Duration 10 
     waist="Embla Sash",
-    -- TODO JSE NECK
+    -- Duration 
+    neck={ name="Dls. Torque +2", augments={'Path: A',}},
     -- Conserve MP, Skill+10
     neck="Incanter's Torque",
     -- Skill 8 
@@ -315,7 +316,8 @@ sets.midcast.EnhancingOthers = set_combine(sets.midcast.Default, {
     feet="Leth. Houseaux +2",
     -- Duration 10 
     waist="Embla Sash",
-    -- TODO JSE NECK
+    -- Duration 
+    neck={ name="Dls. Torque +2", augments={'Path: A',}},
     -- Conserve MP, Skill+10
     neck="Incanter's Torque",
     -- Skill 8 
@@ -340,7 +342,8 @@ sets.midcast.Refresh = set_combine(sets.midcast.Default, {
     feet="Leth. Houseaux +2",
     -- Duration 10 
     waist="Embla Sash",
-    -- TODO JSE NECK
+    -- Duration 
+    neck={ name="Dls. Torque +2", augments={'Path: A',}},
     -- Conserve MP, Skill+10
     neck="Incanter's Torque",
     -- Skill 8 
@@ -352,10 +355,10 @@ sets.midcast.Refresh = set_combine(sets.midcast.Default, {
 })
 
 -- TODO???
-sets.midcast.BarSpell = set_combine(sets.midcast.Enhancing, {
+sets.midcast.BarSpell = set_combine(sets.midcast.EnhancingOthers, {
 })
 
-sets.midcast.Regen = set_combine(sets.midcast.Enhancing, {
+sets.midcast.Regen = set_combine(sets.midcast.EnhancingOthers, {
     -- 14 Potency
     head="Inyanga Tiara +2",
     -- 10 Potency
@@ -417,7 +420,8 @@ sets.midcast.EnfeeblingPotency = set_combine(sets.midcast.Default, {
     legs="Leth. Fuseau +2",
     -- Skill 16 / Effect 5
     feet="Vitiation Boots +2",
-    -- TODO: JSE Neck
+    -- Duration / Effect 
+    neck={ name="Dls. Torque +2", augments={'Path: A',}},
     -- TODO: Obstinate Sash
     -- 10 ACC
     left_ear="Malignance Earring",
@@ -442,7 +446,8 @@ sets.midcast.EnfeeblingDuration = set_combine(sets.midcast.Default, {
     legs="Leth. Fuseau +2",
     -- Composure / Duration
     feet="Leth. Houseaux +2",
-    -- TODO: JSE Neck
+    -- Duration / Effect 
+    neck={ name="Dls. Torque +2", augments={'Path: A',}},
     -- TODO: Obstinate Sash
     -- 10 ACC
     left_ear="Malignance Earring",
@@ -456,11 +461,16 @@ sets.midcast.EnfeeblingDuration = set_combine(sets.midcast.Default, {
     back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
 })
 
+sets.midcast.Dispel = set_combine(sets.midcast.EnfeeblingMACC, {
+    -- Dispel +1
+    neck={ name="Dls. Torque +2", augments={'Path: A',}},
+})
+
 -- Nuking
 --------------------
 sets.nuke = {}
 sets.nuke.List = {
-    "MagicBurst"
+    "MagicBurst",
     "FreeNuke",
 }
 
