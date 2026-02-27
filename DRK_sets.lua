@@ -166,7 +166,7 @@ sets.ws = {}
 -- WSD >>> ALL by default
 sets.ws.Default = {
     -- WSD
-    ammo="Oshasha's Treatise",
+    ammo="Knobkierrie",
     -- WSD 6+
     head={ name="Nyame Helm", augments={'Path: B',}},
     -- WSD 12

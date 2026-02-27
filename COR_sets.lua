@@ -12,9 +12,10 @@ sets.weapons.List = {
     "Savage Spam",
     "DaggerMAB",
     "RACC",
-    "LeadenShield",
-    "SavageShield",
-    "RACCShield",
+    -- Subjob switch TODO
+    --"LeadenShield",
+    --"SavageShield",
+    --"RACCShield",
 }
 
 
@@ -343,17 +344,14 @@ sets.ws.Default = {
 
 -- Ranged Physical 
 sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
-    -- TODO FOTIA
     -- RATK TODO: Enough RACC4
     head="Lanun Tricorne +3",
-    -- RACC/RATK
-    -- head="Ikenga's Hat",
     -- TP Bonus
     body="Ikenga's Vest",
     -- RACC
     waist="Yemaya Belt",
-    -- RACC
-    neck="Null Loop",
+    -- FTP
+    neck="Fotia Gorget",
     -- RACC
     right_ring="Meghanada Ring",
     -- RATK / AGI
@@ -440,6 +438,7 @@ sets.ja["Tactician's Roll"] = {body="Chasseur's Frac +2",}
 sets.ja["Allies' Roll"] = {hands="Chasseur's Gants +3",}
 sets.ja["Caster's Roll"] = {legs="Chas. Culottes +3",}
 sets.ja["Courser's Roll"] = {feet="Chass. Bottes +1",}
+-- Remove roll duration pieces, keep Bolters 8 min for easy rerolls
 sets.ja["Bolter's Roll"] = set_combine(sets.idle.Default, {
     main={ name="Rostam", augments={'Path: C',}},
     --neck="Regal Necklace",

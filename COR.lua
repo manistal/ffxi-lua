@@ -4,7 +4,7 @@
 
 -- Gearswap Spec: https://docs.windower.net/addons/gearswap/reference/
 
-COR_STYLE_SET = 60
+COR_STYLE_SET = 5
 COR_MACRO_BOOK = 3
 
 -- 
@@ -67,6 +67,9 @@ function precast(spell)
         if sets.ja[spell.english] then
             equip(sets.ja[spell.english])
 		end
+        --if spell.english == "Bolter's Roll" then
+        --    equip(sets.weapons.Current)
+        --end
 	end
 
     -- Job Abilities are either specific or none
