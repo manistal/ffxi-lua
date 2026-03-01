@@ -344,18 +344,18 @@ sets.ws.Default = {
 
 -- Ranged Physical 
 sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
-    -- RATK TODO: Enough RACC4
+    -- RATK
     head="Lanun Tricorne +3",
     -- TP Bonus
     body="Ikenga's Vest",
-    -- RACC
-    waist="Yemaya Belt",
+    -- FTP
+    waist="Fotia Belt",
     -- FTP
     neck="Fotia Gorget",
     -- RACC
-    right_ring="Meghanada Ring",
+    left_ring="Ephramad's Ring",
     -- RATK / AGI
-    left_ring="Dingir Ring",
+    right_ring="Dingir Ring",
     -- RACC / WSD
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}},
 })
@@ -371,7 +371,7 @@ sets.ws["Wildfire"] = set_combine(sets.ws.Default, {
     waist="Eschan Stone",
     left_ear="Friomisi Earring",
     right_ear="Hermetic Earring",
-    left_ring="Dingir Ring",
+    right_ring="Dingir Ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
 })
 
@@ -383,22 +383,22 @@ sets.ws["Leaden Salute"]  = set_combine(sets.ws.Default, {
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}},
     waist="Eschan Stone",
-    right_ring="Archon Ring",
-    left_ring="Dingir Ring",
+    left_ring="Archon Ring",
+    right_ring="Dingir Ring",
     left_ear="Friomisi Earring",
     right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
 })
 
 sets.ws["Hot Shot"] = set_combine(sets.ws.Default, { 
-    -- TODO FOTIA
-    -- RACC 
-    neck="Null Loop",
+    -- FTP
+    waist="Fotia Belt",
+    -- FTP
+    neck="Fotia Gorget",
     -- MAB
     left_ear="Friomisi Earring",
-    -- RACC
-    -- back="Null Shawl",
-    left_ring="Dingir Ring",
+    -- RATK / AGI
+    right_ring="Dingir Ring",
     -- MAB / WSD 
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
 })
