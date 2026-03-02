@@ -295,17 +295,29 @@ sets.midcast.TripleShot = set_combine(sets.midcast.Ranged, {
 })
 
 sets.midcast.DarkMagic = {
+    -- FC 14
     head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
+    -- MACC
     body="Chasseur's Frac +2",
+    -- FC
     hands={ name="Leyline Gloves", augments={'Accuracy+5','"Mag.Atk.Bns."+7','"Fast Cast"+1',}},
+    -- MACC
     legs="Chas. Culottes +3",
+    -- FC 8
     feet={ name="Carmine Greaves +1", augments={'MP+80','INT+12','MND+12',}},
+    -- MACC
     neck="Null Loop",
-    waist="Eschan Stone",
+    -- MACC
+    waist="Null Belt",
+    -- FC
     left_ear="Loquac. Earring",
+    -- MACC
     right_ear="Eabani Earring",
+    -- MACC
     left_ring="Stikini Ring +1",
+    -- MACC / INT
     right_ring="Metamorph Ring",
+    -- MACC
     back="Null Shawl",
 }
 
