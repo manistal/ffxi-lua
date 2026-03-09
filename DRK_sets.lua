@@ -128,23 +128,20 @@ sets.tp.MaxACC = set_combine(sets.tp.Sakpata, {
     legs="Ig. Flanchard +4",
     -- ACC
     neck="Null Loop",
-    -- TODO: Null Belt
-    -- ACC/2ATLK
-    waist="Ioskeha Belt",
-    -- ACC/2ATK
+    -- ACC
+    waist="Null Belt",
+    -- ACC
     right_ear="Schere Earring",
     -- ACC
-    right_ring="Chichrich Ring",
+    left_ring="Ephramad's Ring",
 })
 
 sets.tp.Hybrid = set_combine(sets.tp.Sakpata, {
     -- STP/3ATK
     head="Flam. Zucchetto +2",
-    -- 2ATK
-    legs="Ig. Flanchard +4",
     -- STP/3ATK
-    -- TODO: SWORN
-    -- feet="Flam. Gambieras +2",
+    -- TODO: SWORN / AF Legs?
+    feet="Flam. Gambieras +2",
     -- STP
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     -- 3ATK/2ATK
