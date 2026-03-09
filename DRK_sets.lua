@@ -193,13 +193,14 @@ sets.ws.Default = {
     -- WSD 2 // TODO need a better roll
     right_ear={ name="Heath. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','Weapon skill damage +2%',}},
     -- WSD 10
-    back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}},
+    back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}},
 }
 
 sets.ws.Torcleaver = set_combine(sets.ws.Default, {
     -- VIT Stats 
-    back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','STR+5','Weapon skill damage +10%','Phys. dmg. taken-10%',}},
+    back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}},
 })
+sets.ws.Upheaval = sets.ws.Torcleaver
 
 sets.ws.Scythe = set_combine(sets.ws.Default, {
     head="Heath. Bur. +3",
