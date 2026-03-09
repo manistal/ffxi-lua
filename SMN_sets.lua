@@ -279,8 +279,8 @@ sets.bp.Precast = {
 sets.bp.Rage = {
     -- BPDmg: 3, MGATK 5
     sub="Elan Strap",
-    -- BPDmg: 7, MgATK 30
-    head={ name="Apogee Crown", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
+    -- BPDmg: 10, MgATK / MACC / ACC
+    head="C. Palug Crown",
     -- BPDmg: 16
     body="Con. Doublet +4",
     -- BPDmg: 4
@@ -314,6 +314,7 @@ TODO:
 -- Physical DBLATK BPs
 -- Ramuh: Volt Strike, Siren: Hysteric Assault & Garuda: Predator Claws
 sets.bp.Physical = set_combine(sets.bp.Rage, {
+    -- DBLATK
     main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
     -- TODO Helios Helm
     -- TODO Artifact Gloves
