@@ -34,7 +34,7 @@ sets.weapons.List = {
 
 sets.weapons["Mpaca"] = {
     main="Mpaca's Staff",
-    sub="Kaja Grip",
+    sub="Khonsu",
 }
 
 sets.weapons["BunziRod"] = {
@@ -131,7 +131,7 @@ sets.precast.FastCast = {
     -- 5 FC
     main="Mpaca's Staff",
     -- DT
-    sub="Kaja Grip",
+    sub="Khonsu",
     -- 2 FC
     ammo="Incantor Stone",
     -- 13 FC
@@ -198,7 +198,7 @@ sets.midcast.CureWeather = set_combine(sets.midcast.Cure, {
     -- 10 Cure, +Weather
     main="Chatoyant Staff",
     -- DT
-    sub="Kaja Grip",
+    sub="Khonsu",
     -- Weather
     waist="Hachirin-no-Obi",
 })

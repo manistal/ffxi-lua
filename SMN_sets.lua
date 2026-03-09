@@ -16,13 +16,13 @@ sets.weapons.List = {
 -- Should I add boots in here for Perp?
 sets.weapons["Mpaca"] = {
     main="Mpaca's Staff",
-    sub="Kaja Grip",
+    sub="Khonsu",
     ammo={ name="Epitaph", augments={'Path: A',}},
 }
 
 sets.weapons["Gridarvor"] = {
     main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
-    sub="Kaja Grip",
+    sub="Khonsu",
     ammo={ name="Epitaph", augments={'Path: A',}},
 }
 
