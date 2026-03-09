@@ -94,8 +94,8 @@ sets.tp = {}
 
 sets.tp.List = {
     "Sakpata",
-    "HybridACC",
-    "GlassCannon" 
+    "Hybrid",
+    "MaxACC",
 }
 
 sets.tp.Sakpata = {
@@ -123,7 +123,7 @@ sets.tp.Sakpata = {
     back="Null Shawl",
 }
 
-sets.tp.HybridACC = set_combine(sets.tp.Sakpata, {
+sets.tp.MaxACC = set_combine(sets.tp.Sakpata, {
     -- ACC/2ATK
     legs="Ig. Flanchard +4",
     -- ACC
@@ -137,13 +137,14 @@ sets.tp.HybridACC = set_combine(sets.tp.Sakpata, {
     right_ring="Chichrich Ring",
 })
 
-sets.tp.GlassCannon = set_combine(sets.tp.Sakpata, {
+sets.tp.Hybrid = set_combine(sets.tp.Sakpata, {
     -- STP/3ATK
     head="Flam. Zucchetto +2",
     -- 2ATK
     legs="Ig. Flanchard +4",
     -- STP/3ATK
-    feet="Flam. Gambieras +2",
+    -- TODO: SWORN
+    -- feet="Flam. Gambieras +2",
     -- STP
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     -- 3ATK/2ATK
@@ -152,9 +153,11 @@ sets.tp.GlassCannon = set_combine(sets.tp.Sakpata, {
     right_ear="Dedition Earring",
     --right_ear="Schere Earring",
     -- STP
-    left_ring="Chirich Ring",
+    left_ring="Moonbeam Ring",
     -- STP
     right_ring="Niqmaddu Ring",
+    -- DA/DEX/PDT
+    back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
 })
 
 
