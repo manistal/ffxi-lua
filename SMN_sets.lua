@@ -151,23 +151,6 @@ sets.ws.Default = {
     left_ear="Ishvara Earring",
 }
 
--- 
--- Job Abilities
--- 
-sets.ja = {}
-
-sets.ja["Astral Flow"] = {
-    head="Smn. Horn +2",
-}
-
-sets.ja["Mana Cede"] = {
-    hands="Beck. Bracers +2",
-}
-
-sets.ja["Elemental Siphon"] = {
-    feet="Beck. Pigaches +2",
-}
-
 
 -- 
 -- Spell Precast Sets
@@ -396,3 +379,26 @@ sets.bp.Ward = {
     -- Skill 1
     back={ name="Conveyance Cape", augments={'Summoning magic skill +1','Pet: Enmity+11','Blood Pact Dmg.+1','Blood Pact ab. del. II -3',}},
 }
+
+-- 
+-- Job Abilities
+-- 
+sets.ja = {}
+
+sets.ja["Astral Flow"] = {
+    head="Smn. Horn +2",
+}
+
+sets.ja["Mana Cede"] = {
+    hands="Beck. Bracers +2",
+}
+
+-- Skill + Siphone Effect (BP Ward Set is max Skill)
+sets.ja["Elemental Siphon"] = set_combine(sets.bp.Ward, {
+    -- Weather
+    main="Chatoyant Staff",
+    -- Siphon Effect
+    feet="Beck. Pigaches +2",
+    -- Siphon Effect
+    back={ name="Conveyance Cape", augments={'Summoning magic skill +1','Pet: Enmity+11','Blood Pact Dmg.+1','Blood Pact ab. del. II -3',}},
+})

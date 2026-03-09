@@ -40,6 +40,7 @@ sets.weapons.List = {
     "BlackHalo",
     "MAB",
     "Dispel",
+    "MACCShield",
 }
 
 sets.weapons["Idle"] = {
@@ -72,6 +73,10 @@ sets.weapons["Dispel"] = {
     sub="Diamond Aspis",
 }
 
+sets.weapons["MACCShield"] = {
+    main="Bunzi's Rod",
+    sub="Diamond Aspis",
+}
 
 -- Idle/DT Base Set
 -- DT == 50
@@ -86,7 +91,9 @@ sets.idle.List = {
 
 sets.idle.Default = {
     -- DT: -3 
-    ammo="Staunch Tathlum +1",
+    -- ammo="Staunch Tathlum +1",
+    -- Refresh +1
+    ammo="Homiliary",
     -- Refresh 
     head="Viti. Chapeau +2",
     -- Refresh / DT 13
