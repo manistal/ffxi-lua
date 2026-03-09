@@ -34,7 +34,8 @@ sets.weapons["ShiningOne"] = {
 
 sets.weapons["Naegling"] = {
     main="Naegling",
-    sub="Diamond Aspis",
+    --sub="Diamond Aspis",
+    sub="Blurred Shield +1",
     --sub="Blurred Shield +1",
 }
 
@@ -103,7 +104,7 @@ sets.tp.Default = {
     neck="Republican Platinum Medal",
     waist="Sailfi Belt +1",
     left_ear={ name="Schere Earring", augments={'Path: A',}},
-    right_ear={ name="Boii Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','Crit.hit rate+3',}},
+    right_ear={ name="Boii Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Crit.hit rate+5',}},
     left_ring="Moonbeam Ring",
     right_ring="Chirich Ring",
     -- TODO Finish Augmenting

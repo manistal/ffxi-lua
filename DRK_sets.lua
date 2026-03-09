@@ -143,14 +143,14 @@ sets.tp.GlassCannon = set_combine(sets.tp.Sakpata, {
     -- 2ATK
     legs="Ig. Flanchard +4",
     -- STP/3ATK
-    -- feet="Flam. Gambieras +2",
+    feet="Flam. Gambieras +2",
     -- STP
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     -- 3ATK/2ATK
     waist="Sailfi Belt +1",
     -- -MP / +ACC/2ATK
- --   right_ear="Dedition Earring",
-    right_ear="Schere Earring",
+    right_ear="Dedition Earring",
+    --right_ear="Schere Earring",
     -- STP
     left_ring="Chirich Ring",
     -- STP
