@@ -12,9 +12,10 @@ sets.weapons.List = {
     "Savage Spam",
     "DaggerMAB",
     "RACC",
-    "LeadenShield",
-    "SavageShield",
-    "RACCShield",
+    -- Subjob switch TODO
+    --"LeadenShield",
+    --"SavageShield",
+    --"RACCShield",
 }
 
 
@@ -294,17 +295,29 @@ sets.midcast.TripleShot = set_combine(sets.midcast.Ranged, {
 })
 
 sets.midcast.DarkMagic = {
+    -- FC 14
     head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
+    -- MACC
     body="Chasseur's Frac +2",
+    -- FC
     hands={ name="Leyline Gloves", augments={'Accuracy+5','"Mag.Atk.Bns."+7','"Fast Cast"+1',}},
+    -- MACC
     legs="Chas. Culottes +3",
+    -- FC 8
     feet={ name="Carmine Greaves +1", augments={'MP+80','INT+12','MND+12',}},
+    -- MACC
     neck="Null Loop",
-    waist="Eschan Stone",
+    -- MACC
+    waist="Null Belt",
+    -- FC
     left_ear="Loquac. Earring",
+    -- MACC
     right_ear="Eabani Earring",
+    -- MACC
     left_ring="Stikini Ring +1",
+    -- MACC / INT
     right_ring="Metamorph Ring",
+    -- MACC
     back="Null Shawl",
 }
 
@@ -343,21 +356,18 @@ sets.ws.Default = {
 
 -- Ranged Physical 
 sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
-    -- TODO FOTIA
-    -- RATK TODO: Enough RACC4
+    -- RATK
     head="Lanun Tricorne +3",
-    -- RACC/RATK
-    -- head="Ikenga's Hat",
     -- TP Bonus
     body="Ikenga's Vest",
+    -- FTP
+    waist="Fotia Belt",
+    -- FTP
+    neck="Fotia Gorget",
     -- RACC
-    waist="Yemaya Belt",
-    -- RACC
-    neck="Null Loop",
-    -- RACC
-    right_ring="Meghanada Ring",
+    left_ring="Ephramad's Ring",
     -- RATK / AGI
-    left_ring="Dingir Ring",
+    right_ring="Dingir Ring",
     -- RACC / WSD
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}},
 })
@@ -373,7 +383,7 @@ sets.ws["Wildfire"] = set_combine(sets.ws.Default, {
     waist="Eschan Stone",
     left_ear="Friomisi Earring",
     right_ear="Hermetic Earring",
-    left_ring="Dingir Ring",
+    right_ring="Dingir Ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
 })
 
@@ -385,22 +395,22 @@ sets.ws["Leaden Salute"]  = set_combine(sets.ws.Default, {
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}},
     waist="Eschan Stone",
-    right_ring="Archon Ring",
-    left_ring="Dingir Ring",
+    left_ring="Archon Ring",
+    right_ring="Dingir Ring",
     left_ear="Friomisi Earring",
     right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
 })
 
 sets.ws["Hot Shot"] = set_combine(sets.ws.Default, { 
-    -- TODO FOTIA
-    -- RACC 
-    neck="Null Loop",
+    -- FTP
+    waist="Fotia Belt",
+    -- FTP
+    neck="Fotia Gorget",
     -- MAB
     left_ear="Friomisi Earring",
-    -- RACC
-    -- back="Null Shawl",
-    left_ring="Dingir Ring",
+    -- RATK / AGI
+    right_ring="Dingir Ring",
     -- MAB / WSD 
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
 })
@@ -440,6 +450,7 @@ sets.ja["Tactician's Roll"] = {body="Chasseur's Frac +2",}
 sets.ja["Allies' Roll"] = {hands="Chasseur's Gants +3",}
 sets.ja["Caster's Roll"] = {legs="Chas. Culottes +3",}
 sets.ja["Courser's Roll"] = {feet="Chass. Bottes +1",}
+-- Remove roll duration pieces, keep Bolters 8 min for easy rerolls
 sets.ja["Bolter's Roll"] = set_combine(sets.idle.Default, {
     main={ name="Rostam", augments={'Path: C',}},
     --neck="Regal Necklace",
