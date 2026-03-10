@@ -98,7 +98,7 @@ sets.perp.Skill = set_combine(sets.idle.Default, {
     right_ring="Evoker's Ring",
 })
 
-sets.perp.Refresh = set_combine(sets.perp.Default, {
+sets.perp.Refresh = set_combine(sets.idle.Default, {
     -- TODO: Need Carby Unity Gloves for +Refresh
     -- Perp -3, Refresh +1
     legs="Assid. Pants +1",
