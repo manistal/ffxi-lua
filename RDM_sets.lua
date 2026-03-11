@@ -13,7 +13,7 @@ AF
     feet="Atro. Boots +3",
 
 Relic
-    head="Viti. Chapeau +2",
+    head="Viti. Chapeau +3",
     body="Viti. Tabard +2",
     hands="Viti. Gloves +2",
     legs="Viti. Tights +2",
@@ -95,7 +95,7 @@ sets.idle.Default = {
     -- Refresh +1
     ammo="Homiliary",
     -- Refresh 
-    head="Viti. Chapeau +2",
+    head="Viti. Chapeau +3",
     -- Refresh / DT 13
     body="Lethargy Sayon +2",
     -- DT 8 
@@ -392,7 +392,7 @@ sets.midcast.EnfeeblingMACC = set_combine(sets.midcast.Default, {
     -- MACC
     ranged="Ullr",
     -- Merit ACC
-    head="Viti. Chapeau +2",
+    head="Viti. Chapeau +3",
     -- AF ACC
     body="Atrophy Tabard +3",
     -- +Sabateur
@@ -418,7 +418,7 @@ sets.midcast.EnfeeblingMACC = set_combine(sets.midcast.Default, {
 -- Skill >= Effect > dMND
 sets.midcast.EnfeeblingPotency = set_combine(sets.midcast.Default, {
     -- Skill 24
-    head="Viti. Chapeau +2",
+    head="Viti. Chapeau +3",
     -- Effect 16
     body="Lethargy Sayon +2",
     -- Skill 24
