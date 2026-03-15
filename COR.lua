@@ -4,7 +4,7 @@
 
 -- Gearswap Spec: https://docs.windower.net/addons/gearswap/reference/
 
-COR_STYLE_SET = 5
+COR_STYLE_SET = 60
 COR_MACRO_BOOK = 3
 
 -- 
