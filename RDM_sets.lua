@@ -190,10 +190,6 @@ sets.precast.FastCast = set_combine(sets.idle.Default, {
     left_ear="Malignance Earring",
     -- FC 8
     right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
-    -- FC 10
-    feet={ name="Carmine Greaves +1", augments={'MP+80','INT+12','MND+12',}},
-    -- Some
-    hands={ name="Leyline Gloves", augments={'Accuracy+5','"Mag.Atk.Bns."+7','"Fast Cast"+1',}},
     -- Some
     right_ring="Kishar Ring",
 })

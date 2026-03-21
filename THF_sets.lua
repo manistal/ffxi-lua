@@ -109,9 +109,9 @@ sets.tp.Hybrid = {
     -- ACC / 5 DT
     neck="Null Loop",
     -- DW
-    left_ear="Suppanomimi",
+    left_ear="Sherida Earring",
     -- TP
-    right_ear="Sherida Earring",
+    right_ear={ name="Skulk. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','"Store TP"+5',}},
     -- 10 DT
     left_ring="Murky Ring",
     -- ACC / STP
