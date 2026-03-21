@@ -14,7 +14,7 @@ AF
 
 Relic
     head="Viti. Chapeau +3",
-    body="Viti. Tabard +2",
+    body="Viti. Tabard +3",
     hands="Viti. Gloves +2",
     legs="Viti. Tights +2",
     feet="Vitiation Boots +2",
@@ -185,11 +185,17 @@ sets.precast.FastCast = set_combine(sets.idle.Default, {
     -- FC 16
     head="Atrophy Chapeau +3",
     -- FC 14 
-    body="Viti. Tabard +2",
+    body="Viti. Tabard +3",
     -- FC 4
     left_ear="Malignance Earring",
     -- FC 8
     right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
+    -- FC 10
+    feet={ name="Carmine Greaves +1", augments={'MP+80','INT+12','MND+12',}},
+    -- Some
+    hands={ name="Leyline Gloves", augments={'Accuracy+5','"Mag.Atk.Bns."+7','"Fast Cast"+1',}},
+    -- Some
+    right_ring="Kishar Ring",
 })
 
 
@@ -240,7 +246,7 @@ sets.midcast.Cursna = set_combine(sets.midcast.Default, {
     -- Cursna / Conserve MP
     head={ name="Vanya Hood", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
     -- Healing Magic 24
-    body="Viti. Tabard +2",
+    body="Viti. Tabard +3",
     -- Cursna 5
     feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
     -- Cursna: 10
@@ -259,7 +265,7 @@ sets.midcast.EnhancingSkill = set_combine(sets.midcast.Default, {
     -- Enhancing Duration 
     sub="Amurapi Shield",
     -- Enhancing 21
-    body="Viti. Tabard +2",
+    body="Viti. Tabard +3",
     -- Enhancing 22
     hands="Viti. Gloves +2",
     -- Enhancing 21
@@ -286,7 +292,7 @@ sets.midcast.EnhancingSelf = set_combine(sets.midcast.Default, {
     -- Duration 5 
     head={ name="Telchine Cap", augments={'Mag. Evasion+19','"Conserve MP"+4','Enh. Mag. eff. dur. +5',}},
     -- Duration 10
-    body="Viti. Tabard +2",
+    body="Viti. Tabard +3",
     -- Duration 20
     hands="Atrophy Gloves +3",
     -- Duration 7
@@ -551,5 +557,5 @@ sets.ws.Default = {
 sets.ja = {}
 
 sets.ja["Chainspell"] = {
-    body="Viti. Tabard +2",
+    body="Viti. Tabard +3",
 }
