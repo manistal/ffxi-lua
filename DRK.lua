@@ -4,7 +4,7 @@
 
 -- Gearswap Spec: https://docs.windower.net/addons/gearswap/reference/
 
-DRK_STYLE_SET = 40
+DRK_STYLE_SET = 39
 DRK_MACRO_BOOK = 2
 
 -- 

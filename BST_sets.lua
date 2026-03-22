@@ -146,11 +146,11 @@ sets.ja = {}
 
 sets.ja["Killer Instinct"] = {
     sub="Diamond Aspis",
-    -- TODO Relic Head
+    head="Ankusa helm +1",
 }
 
 sets.ja["Call Beast"] = {
-    -- TODO Relic Gloves
+    hands="Ankusa Gloves +1",
     -- TODO Delay Gear
 }
 
@@ -213,6 +213,8 @@ sets.pet.Midcast = {
     right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','Pet: "Dbl. Atk."+6',}},
     -- ACC / MACC
     left_ring="Murky Ring",
+    -- ACC
+    right_ring="Varar ring",
     -- DBLATK
     neck="Shulmanu Collar",
     -- TODO AMBUC CAPE

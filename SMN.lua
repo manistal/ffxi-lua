@@ -35,12 +35,13 @@ function equip_base_set(status,pet)
 
     -- Idle Perp
     if pet ~= nil and pet.isvalid then
-        equip(sets.perp.Current)
+        if status == 'Engaged' then 
+            equip(sets.perp.TP)
+        else 
+            equip(sets.perp.Current)
+        end
     end
 
-    if status == 'Engaged' then 
-        equip(sets.tp.Default)
-    end
 end
 
 

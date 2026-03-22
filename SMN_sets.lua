@@ -110,30 +110,36 @@ sets.perp.Refresh = set_combine(sets.idle.Default, {
     right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
 })
 
---
--- TP Sets
---
-sets.tp = {}
-
-sets.tp.List = {
-    "Default", 
-}
-
-sets.tp.Default = {
+sets.perp.TP = {
+    -- STP
     head={ name="Bunzi's Hat", augments={'Path: A',}},
+    -- Perp -8
     body="Beck. Doublet +3",
+    -- STP
     hands="Bunzi's Gloves",
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    -- Nyame eventually gets 2atk
+    --legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    -- Skill/DT
+    legs="Beck. Spats +3",
+    -- Perp -8
     feet="Beck. Pigaches +2",
+    -- ACC
     neck="Null Loop",
-    -- TODO NULL BELT
+    --waist="Null Belt,"
+    -- 3atk
     waist="Windbuffet Belt",
+    -- STP
     left_ear="Telos Earring",
+    -- Refresh 
     right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
+    -- STP
     left_ring="Chirich Ring",
     right_ring="Chirich Ring",
+    -- STP ACC
     back="Null Shawl",
 }
+
+
 
 --
 -- WS Sets 
@@ -261,7 +267,7 @@ sets.bp.Precast = {
 -- BPDMG => Pet ACC
 sets.bp.Rage = {
     -- BPDmg: 3, MGATK 5
-    sub="Elan Strap",
+    -- sub="Elan Strap",
     -- BPDmg: 10, MgATK / MACC / ACC
     head="C. Palug Crown",
     -- BPDmg: 16
@@ -298,7 +304,7 @@ TODO:
 -- Ramuh: Volt Strike, Siren: Hysteric Assault & Garuda: Predator Claws
 sets.bp.Physical = set_combine(sets.bp.Rage, {
     -- DBLATK
-    main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
+    --main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
     -- TODO Helios Helm
     -- TODO Artifact Gloves
     -- DBLATK
@@ -313,7 +319,7 @@ sets.bp.Physical = set_combine(sets.bp.Rage, {
 -- Thunderstorm, Meteor Strike, Heavenly Strike, Geocrush, Grand Fall, Wind Blade & Thunderspark.
 sets.bp.MAB = set_combine(sets.bp.Rage, {
     -- BPDmg: 3, MGKATK 130
-    main={ name="Grioavolr", augments={'Blood Pact Dmg.+3','Pet: Mag. Acc.+15','Pet: "Mag.Atk.Bns."+15','DMG:+5',}},
+    --main={ name="Grioavolr", augments={'Blood Pact Dmg.+3','Pet: Mag. Acc.+15','Pet: "Mag.Atk.Bns."+15','DMG:+5',}},
     -- BPDmg: 8, MAB
     feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
     -- MACC 20
