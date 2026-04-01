@@ -62,14 +62,12 @@ function precast(spell)
 
     -- Corsair Rolls
 	if spell.type == "CorsairRoll" or spell.english == "Double-Up" then
-		equip(sets.ja.PhantomRoll)
 		-- Roll-specific gear
         if sets.ja[spell.english] then
             equip(sets.ja[spell.english])
+        else 
+            equip(sets.ja.PhantomRoll)
 		end
-        --if spell.english == "Bolter's Roll" then
-        --    equip(sets.weapons.Current)
-        --end
 	end
 
     -- Job Abilities are either specific or none

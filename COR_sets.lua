@@ -346,12 +346,14 @@ sets.ws.Default = {
     neck="Republican Platinum Medal",
     -- PDL/Stats
     left_ring="Ephramad's Ring",
+    -- STR 15
+    right_ring="Sroda Ring",
     -- TP+250
     right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     -- WSD: +2
     left_ear="Ishvara Earring",
     -- WSD: +10
-    back={ name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Mag. Evasion+6',}},
+    back={ name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Mag. Evasion+15',}},
 }
 
 -- Ranged Physical 
@@ -445,11 +447,11 @@ sets.ja["Random Deal"] = {body={ name="Lanun Frac +4", augments={'Enhances "Load
 sets.ja["Wild Card"] = {feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}}}
 
 -- Roll bonuses
-sets.ja["Blitzer's Roll"] = {head="Chasseur's Tricorne +2"}
-sets.ja["Tactician's Roll"] = {body="Chasseur's Frac +2",}
-sets.ja["Allies' Roll"] = {hands="Chasseur's Gants +3",}
-sets.ja["Caster's Roll"] = {legs="Chas. Culottes +3",}
-sets.ja["Courser's Roll"] = {feet="Chass. Bottes +1",}
+sets.ja["Blitzer's Roll"] = set_combine(sets.ja.PhantomRoll, {head="Chasseur's Tricorne +2"})
+sets.ja["Tactician's Roll"] = set_combine(sets.ja.PhantomRoll, {body="Chasseur's Frac +2",})
+sets.ja["Allies' Roll"] = set_combine(sets.ja.PhantomRoll, {hands="Chasseur's Gants +3",})
+sets.ja["Caster's Roll"] = set_combine(sets.ja.PhantomRoll, {legs="Chas. Culottes +3",})
+sets.ja["Courser's Roll"] = set_combine(sets.ja.PhantomRoll, {feet="Chass. Bottes +1",})
 -- Remove roll duration pieces, keep Bolters 8 min for easy rerolls
 sets.ja["Bolter's Roll"] = set_combine(sets.idle.Default, {
     main={ name="Rostam", augments={'Path: C',}},

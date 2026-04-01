@@ -538,6 +538,8 @@ sets.ws.Default = {
     neck="Republican Platinum Medal",
     -- PDL/Stats
     left_ring="Ephramad's Ring",
+    -- STR 15
+    right_ring="Sroda Ring",
     -- TP+250
     right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     -- WSD: +2
