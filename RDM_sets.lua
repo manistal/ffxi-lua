@@ -159,7 +159,8 @@ sets.tp.Hybrid = {
     -- Triple ATK
     waist="Sailfi Belt +1",
     -- ACC / 5 DT
-    neck="Null Loop",
+    --neck="Null Loop",
+    neck="Anu Torque",
     -- DW / HP
     left_ear="Eabani Earring",
     -- TP
@@ -189,7 +190,7 @@ sets.precast.FastCast = set_combine(sets.idle.Default, {
     -- FC 4
     left_ear="Malignance Earring",
     -- FC 8
-    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
+    right_ear={ name="Leth. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','"Dbl.Atk."+7','STR+13 DEX+13',}},
     -- Some
     right_ring="Kishar Ring",
 })
@@ -276,7 +277,7 @@ sets.midcast.EnhancingSkill = set_combine(sets.midcast.Default, {
     left_ring="Stikini Ring +1",
     -- TODO MIMIMIR
     -- Enhancing Duration
-    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
+    right_ear={ name="Leth. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','"Dbl.Atk."+7','STR+13 DEX+13',}},
     -- Enhancing 6
     back="Estoqueur's Cape",
 })
@@ -304,7 +305,7 @@ sets.midcast.EnhancingSelf = set_combine(sets.midcast.Default, {
     -- Skill 8 
     left_ring="Stikini Ring +1",
     -- Duration 8
-    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
+    right_ear={ name="Leth. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','"Dbl.Atk."+7','STR+13 DEX+13',}},
     -- Duration 20
     back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
 })
@@ -332,7 +333,7 @@ sets.midcast.EnhancingOthers = set_combine(sets.midcast.Default, {
     -- Skill 8 
     left_ring="Stikini Ring +1",
     -- Duration 8
-    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
+    right_ear={ name="Leth. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','"Dbl.Atk."+7','STR+13 DEX+13',}},
     -- Duration 20
     back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
 })
@@ -358,7 +359,7 @@ sets.midcast.Refresh = set_combine(sets.midcast.Default, {
     -- Skill 8 
     left_ring="Stikini Ring +1",
     -- Duration 8
-    right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
+    right_ear={ name="Leth. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','"Dbl.Atk."+7','STR+13 DEX+13',}},
     -- Duration 20
     back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
 })
@@ -556,4 +557,8 @@ sets.ja = {}
 
 sets.ja["Chainspell"] = {
     body="Viti. Tabard +3",
+}
+
+sets.ja["Saboteur"] = {
+    sub="Diamond Aspis",
 }

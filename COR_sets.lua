@@ -9,13 +9,13 @@ sets = {}
 -- 
 sets.weapons = {}
 sets.weapons.List = {
-    "Savage Spam",
-    "DaggerMAB",
-    "RACC",
+    --"Savage Spam",
+    --"DaggerMAB",
+    --"RACC",
     -- Subjob switch TODO
-    --"LeadenShield",
-    --"SavageShield",
-    --"RACCShield",
+    "LeadenShield",
+    "SavageShield",
+    "RACCShield",
 }
 
 
@@ -300,7 +300,8 @@ sets.midcast.DarkMagic = {
     -- MACC
     body="Chasseur's Frac +2",
     -- FC
-    hands={ name="Leyline Gloves", augments={'Accuracy+5','"Mag.Atk.Bns."+7','"Fast Cast"+1',}},
+    --hands={ name="Leyline Gloves", augments={'Accuracy+5','"Mag.Atk.Bns."+7','"Fast Cast"+1',}},
+    hands="Chasseur's Gants +3",
     -- MACC
     legs="Chas. Culottes +3",
     -- FC 8
