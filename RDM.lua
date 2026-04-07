@@ -115,7 +115,9 @@ end
 function precast(spell)
     -- For Magic use Fast Cast
     if spell.action_type == "Magic" then 
-        equip(sets.precast.FastCast)
+        if not buffactive['Chainspell'] then
+            equip(sets.precast.FastCast)
+        end
     end
     -- For JAs
     if spell.type == "JobAbility" then
