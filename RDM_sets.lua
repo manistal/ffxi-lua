@@ -10,14 +10,14 @@ AF
     body="Atrophy Tabard +3",
     hands="Atrophy Gloves +3",
     legs="Atrophy Tights +3",
-    feet="Atro. Boots +3",
+    feet="Atro. Boots +4",
 
 Relic
     head="Viti. Chapeau +3",
     body="Viti. Tabard +3",
     hands="Viti. Gloves +2",
     legs="Viti. Tights +2",
-    feet="Vitiation Boots +2",
+    feet="Vitiation Boots +3",
 
 Empy
     head="Leth. Chappel +2",
@@ -220,6 +220,12 @@ sets.midcast.Default = set_combine(sets.idle.Default, {
 -- Healing
 --------------
 
+--[[
+TODO:
+- Ambu cape with SIRD / Cure Potency 
+- Bunzi Robe/Pants/Gloves for SIRD/DT
+]]
+
 -- Cure/Healing/COnserveMP
 -- Total: Cure I: 56, Cure II: 4
 sets.midcast.Cure = set_combine(sets.midcast.Default, {
@@ -394,6 +400,7 @@ sets.midcast.Stoneskin = set_combine(sets.midcast.EnhancingSelf, {
 sets.midcast.EnfeeblingMACC = set_combine(sets.midcast.Default, {
     -- MACC
     ranged="Ullr",
+    ammo="",
     -- Merit ACC
     head="Viti. Chapeau +3",
     -- AF ACC
@@ -403,9 +410,11 @@ sets.midcast.EnfeeblingMACC = set_combine(sets.midcast.Default, {
     -- AF ACC
     legs="Atrophy Tights +3",
     -- AF ACC
-    feet="Atro. Boots +3",
+    feet="Atro. Boots +4",
     -- 50 ACC
     neck="Null Loop",
+    -- MACC
+    waist="Null Belt",
     -- 10 ACC
     left_ear="Malignance Earring",
     -- Duration 10 
@@ -420,6 +429,8 @@ sets.midcast.EnfeeblingMACC = set_combine(sets.midcast.Default, {
 
 -- Skill >= Effect > dMND
 sets.midcast.EnfeeblingPotency = set_combine(sets.midcast.Default, {
+    -- Potency
+    ammo="Regal Gem",
     -- Skill 24
     head="Viti. Chapeau +3",
     -- Effect 16
@@ -429,10 +440,12 @@ sets.midcast.EnfeeblingPotency = set_combine(sets.midcast.Default, {
     -- MACC
     legs="Leth. Fuseau +2",
     -- Skill 16 / Effect 5
-    feet="Vitiation Boots +2",
+    feet="Vitiation Boots +3",
     -- Duration / Effect 
     neck={ name="Dls. Torque +2", augments={'Path: A',}},
     -- TODO: Obstinate Sash
+    -- MACC
+    waist="Null Belt",
     -- 10 ACC
     left_ear="Malignance Earring",
     -- Duration 10 
@@ -459,6 +472,8 @@ sets.midcast.EnfeeblingDuration = set_combine(sets.midcast.Default, {
     -- Duration / Effect 
     neck={ name="Dls. Torque +2", augments={'Path: A',}},
     -- TODO: Obstinate Sash
+    -- MACC
+    waist="Null Belt",
     -- 10 ACC
     left_ear="Malignance Earring",
     -- Duration 10 
@@ -498,7 +513,7 @@ sets.nuke.FreeNuke = set_combine(sets.midcast.Default, {
     -- INT / MACC / MAB
     legs="Leth. Fuseau +2",
     -- INT / MACC / MAB
-    feet="Vitiation Boots +2",
+    feet="Vitiation Boots +3",
     -- MAB / MACC
     waist="Eschan Stone",
     -- MAB / INT
@@ -506,11 +521,21 @@ sets.nuke.FreeNuke = set_combine(sets.midcast.Default, {
     -- INT / MACC
     left_ear="Malignance Earring",
     -- TODO AMBU CAPE
+    -- TODO FREKE RING
+    -- TODO ACUITY BELT
 })
 
+-- MB1 Cap 40: Current: 39 
+-- MB2 No Cap: Current: 21
 sets.nuke.MagicBurst = set_combine(sets.nuke.FreeNuke, {
-    -- TODO Ea Hat / Chest 
+    -- MB2 / MB1: 6
+    head="Ea Hat",
+    -- MB2 / MB1: 8
+    body="Ea Houppelande",
+    -- MB1: 8
     hands="Bunzi's Gloves",
+    -- MB2 / MB1: 7
+    legs="Ea Slops",
 })
 
 
@@ -524,6 +549,7 @@ sets.ws.Default = {
     -- WSD
     ammo="Oshasha's Treatise",
     -- WSD: +6
+    -- TODO VITI HELM
     head={ name="Nyame Helm", augments={'Path: B',}},
     -- WSD: +5
     body={ name="Nyame Mail", augments={'Path: B',}},
