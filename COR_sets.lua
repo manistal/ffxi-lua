@@ -9,13 +9,13 @@ sets = {}
 -- 
 sets.weapons = {}
 sets.weapons.List = {
-    --"Savage Spam",
-    --"DaggerMAB",
-    --"RACC",
+    "Savage Spam",
+    "DaggerMAB",
+    "RACC",
     -- Subjob switch TODO
-    "LeadenShield",
-    "SavageShield",
-    "RACCShield",
+    --"LeadenShield",
+    --"SavageShield",
+    --"RACCShield",
 }
 
 
@@ -383,7 +383,7 @@ sets.ws["Wildfire"] = set_combine(sets.ws.Default, {
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}},
     neck={ name="Comm. Charm +1", augments={'Path: A',}},
-    waist="Eschan Stone",
+    waist="Orpheus's Sash",
     left_ear="Friomisi Earring",
     right_ear="Hermetic Earring",
     right_ring="Dingir Ring",
@@ -397,7 +397,7 @@ sets.ws["Leaden Salute"]  = set_combine(sets.ws.Default, {
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}},
-    waist="Eschan Stone",
+    waist="Orpheus's Sash",
     left_ring="Archon Ring",
     right_ring="Dingir Ring",
     left_ear="Friomisi Earring",

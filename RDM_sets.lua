@@ -9,7 +9,7 @@ AF
     head="Atrophy Chapeau +3",
     body="Atrophy Tabard +3",
     hands="Atrophy Gloves +3",
-    legs="Atrophy Tights +3",
+    legs="Atrophy Tights +4",
     feet="Atro. Boots +4",
 
 Relic
@@ -34,18 +34,19 @@ Empy
 -- 
 sets.weapons = {}
 sets.weapons.List = {
-    "Idle",
     "DefSwords",
     "Savage",
     "BlackHalo",
     "MAB",
-    "Dispel",
-    "MACCShield",
+    -- "Dispel",
+    -- "MACCShield",
+    "Refresh",
+    "0TPDaggers"
 }
 
-sets.weapons["Idle"] = {
+sets.weapons["Refresh"] = {
     main={ name="Colada", augments={'MND+4','Pet: "Store TP"+5','"Refresh"+2','DMG:+7',}},
-    sub="Diamond Aspis",
+    sub="Archduke's Shield",
 }
 
 sets.weapons["DefSwords"] = {
@@ -76,6 +77,11 @@ sets.weapons["Dispel"] = {
 sets.weapons["MACCShield"] = {
     main="Bunzi's Rod",
     sub="Diamond Aspis",
+}
+
+sets.weapons["0TPDaggers"] = {
+    main="Twinned Blade",
+    sub="Thunder Hammer",
 }
 
 -- Idle/DT Base Set
@@ -173,8 +179,29 @@ sets.tp.Hybrid = {
     back="Null Shawl",
 } 
 
+sets.tp.Enspell = set_combine(sets.tp.Hybrid, {
+    -- MACC
+    body="Lethargy Sayon +2",
+    -- Enspell Damage
+    hands="Aya. Manopolas +2",
+    -- Enspell ACC
+    legs="Atro. Tights +4",
+    -- MACC
+    neck="Null Loop",
+    -- % Damage
+    waist="Orpheus's Sash",
+    -- DW
+    left_ear="Eabani Earring",
+    -- MACC
+    right_ear={ name="Leth. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','"Dbl.Atk."+7','STR+13 DEX+13',}},
+    -- ACC
+    left_ring="Chirich Ring",
+    -- ACC
+    right_ring="Chirich Ring",
+    -- MACC
+    back="Null Shawl",
+})
 
--- 
 -- Precast Sets
 --
 sets.precast = {} 
@@ -209,8 +236,8 @@ sets.midcast.Default = set_combine(sets.idle.Default, {
     neck="Loricate Torque +1",
     -- SIRD 3 / DT 
     left_ring="Murky Ring",
-    -- SIRD 5
-    right_ring="Evanescence Ring",
+    -- SIRD 10
+    right_ring="Freke Ring",
     -- SIRD 20 
     legs="Bunzi's Pants",
     -- HP
@@ -234,7 +261,7 @@ sets.midcast.Cure = set_combine(sets.midcast.Default, {
     -- Cure I: 15, MEVA
     body="Bunzi's Robe",
     -- Cure I: 12
-    legs="Atrophy Tights +3",
+    legs="Atro. Tights +4",
     -- Cure I: 17, Conserve MP: 7, Cure II: 2
     feet={ name="Kaykaus Boots +1", augments={'Mag. Acc.+20','"Cure" potency +6%','"Fast Cast"+4',}},
 })
@@ -272,7 +299,7 @@ sets.midcast.EnhancingSkill = set_combine(sets.midcast.Default, {
     -- Enhancing 22
     hands="Viti. Gloves +2",
     -- Enhancing 21
-    legs="Atrophy Tights +3",
+    legs="Atro. Tights +4",
     -- Enhancing 30
     feet="Leth. Houseaux +2",
     -- Enhancing 5
@@ -408,7 +435,7 @@ sets.midcast.EnfeeblingMACC = set_combine(sets.midcast.Default, {
     -- +Sabateur
     hands="Leth. Ganth. +2",
     -- AF ACC
-    legs="Atrophy Tights +3",
+    legs="Atro. Tights +4",
     -- AF ACC
     feet="Atro. Boots +4",
     -- 50 ACC
@@ -515,14 +542,16 @@ sets.nuke.FreeNuke = set_combine(sets.midcast.Default, {
     -- INT / MACC / MAB
     feet="Vitiation Boots +3",
     -- MAB / MACC
-    waist="Eschan Stone",
+    waist="Sacro Cord",
     -- MAB / INT
     neck="Sibyl Scarf",
     -- INT / MACC
     left_ear="Malignance Earring",
+    -- MAB / INT
+    right_ring="Freke Ring",
     -- TODO AMBU CAPE
-    -- TODO FREKE RING
     -- TODO ACUITY BELT
+    -- TODO TALTHUM
 })
 
 -- MB1 Cap 40: Current: 39 
