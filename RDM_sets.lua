@@ -141,6 +141,7 @@ sets.tp = {}
 
 sets.tp.List = {
     "Hybrid",
+    "Enspell",
 }
 
 
