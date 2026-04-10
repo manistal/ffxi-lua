@@ -80,7 +80,7 @@ sets.weapons["MACCShield"] = {
 }
 
 sets.weapons["0TPDaggers"] = {
-    main="Twinned Blade",
+    main="Esoteric Athame",
     sub="Thunder Hammer",
 }
 
