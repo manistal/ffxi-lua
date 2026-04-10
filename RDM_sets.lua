@@ -13,7 +13,7 @@ AF
     feet="Atro. Boots +4",
 
 Relic
-    head="Viti. Chapeau +3",
+    head="Viti. Chapeau +4",
     body="Viti. Tabard +3",
     hands="Viti. Gloves +2",
     legs="Viti. Tights +2",
@@ -101,7 +101,7 @@ sets.idle.Default = {
     -- Refresh +1
     ammo="Homiliary",
     -- Refresh 
-    head="Viti. Chapeau +3",
+    head="Viti. Chapeau +4",
     -- Refresh / DT 13
     body="Lethargy Sayon +2",
     -- DT 8 
@@ -430,7 +430,7 @@ sets.midcast.EnfeeblingMACC = set_combine(sets.midcast.Default, {
     ranged="Ullr",
     ammo="",
     -- Merit ACC
-    head="Viti. Chapeau +3",
+    head="Viti. Chapeau +4",
     -- AF ACC
     body="Atrophy Tabard +3",
     -- +Sabateur
@@ -460,7 +460,7 @@ sets.midcast.EnfeeblingPotency = set_combine(sets.midcast.Default, {
     -- Potency
     ammo="Regal Gem",
     -- Skill 24
-    head="Viti. Chapeau +3",
+    head="Viti. Chapeau +4",
     -- Effect 16
     body="Lethargy Sayon +2",
     -- Skill 24
@@ -578,9 +578,8 @@ sets.ws = {}
 sets.ws.Default = {
     -- WSD
     ammo="Oshasha's Treatise",
-    -- WSD: +6
-    -- TODO VITI HELM
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    -- WSD: +9
+    head="Viti. Chapeau +4",
     -- WSD: +5
     body={ name="Nyame Mail", augments={'Path: B',}},
     -- WSD: +8
