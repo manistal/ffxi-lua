@@ -72,6 +72,9 @@ function handle_enhancing_spell(spell)
     -- Swap for Empy Bonus when Casting on Others
     if spell.target.type == "SELF" then 
         equip(sets.midcast.EnhancingSelf)
+        if spell.english:startswith("Phalanx") then 
+            equip(sets.midcast.SelfPhalanx)
+        end
     else
         equip(sets.midcast.EnhancingOthers)
     end

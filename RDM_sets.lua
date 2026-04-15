@@ -344,6 +344,13 @@ sets.midcast.EnhancingSelf = set_combine(sets.midcast.Default, {
     back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
 })
 
+sets.midcast.SelfPhalanx = set_combine(sets.midcast.EnhancingSelf, {
+    -- Phalanx +5
+    sub="Sakpata's Sword",
+    -- Phalanx +5
+    hands={ name="Chironic Gloves", augments={'"Triple Atk."+4','"Dbl.Atk."+4','Phalanx +5','Accuracy+12 Attack+12','Mag. Acc.+13 "Mag.Atk.Bns."+13',}},
+})
+
 -- Empy > Duration > Skill 
 sets.midcast.EnhancingOthers = set_combine(sets.midcast.Default, {
     -- Duration 10
@@ -631,7 +638,7 @@ sets.ws.DEX = set_combine(sets.ws.Default, {
     back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}},
 })
 
-set.ws.MAB = set_combine(sets.ws.Default, {
+sets.ws.MAB = set_combine(sets.ws.Default, {
     -- MAB
     head="Leth. Chappel +2",
     -- MAB
