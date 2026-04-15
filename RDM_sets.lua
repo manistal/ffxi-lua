@@ -81,7 +81,7 @@ sets.weapons["MACCShield"] = {
 
 sets.weapons["0TPDaggers"] = {
     main="Esoteric Athame",
-    sub="Thunder Hammer",
+    sub="Qutrub Knife",
 }
 
 -- Idle/DT Base Set
