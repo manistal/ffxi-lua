@@ -550,7 +550,8 @@ sets.nuke.FreeNuke = set_combine(sets.midcast.Default, {
     left_ear="Malignance Earring",
     -- MAB / INT
     right_ring="Freke Ring",
-    -- TODO AMBU CAPE
+    -- INT / MAB
+    back={ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
     -- TODO ACUITY BELT
     -- TODO TALTHUM
 })
@@ -604,6 +605,63 @@ sets.ws.Default = {
     back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
 }
 
+sets.ws.DEX = set_combine(sets.ws.Default, {
+    -- DEX
+    head="Malignance Chapeau",
+    -- DEX ??
+    body="Nyame Mail",
+    -- DEX ??
+    hands="Nyame Gauntlets",
+    -- DEX ??
+    legs="Viti. Tights +2",
+    -- DEX
+    feet="Malignance Boots",
+    -- Fotia
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    -- WSD
+    left_ear="Ishvara Earring",
+    -- DEX
+    right_ear="Sherida Earring",
+    -- DEX
+    left_ring="Ephramad's Ring",
+    -- DEX
+    right_ring="Ilabrat Ring",
+    -- DEX 
+    back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}},
+})
+
+set.ws.MAB = set_combine(sets.ws.Default, {
+    -- MAB
+    head="Leth. Chappel +2",
+    -- MAB
+    hands="Jhakri Cuffs +2",
+    -- MAB
+    legs="Leth. Fuseau +2",
+    -- MAB
+    feet="Leth. Houseaux +2",
+    -- MAB
+    neck="Sibyl Scarf",
+    -- MAB
+    waist="Orpheus's Sash",
+    -- MAB
+    left_ear="Malignance Earring",
+    -- MAB
+    left_ring="Freke Ring",
+})
+
+sets.ws["Chant du Cygne"] = sets.ws.DEX
+sets.ws["Evisceration"] = sets.ws.DEX
+
+sets.ws["Aeolian Edge"] = sets.ws.MAB
+sets.ws["Seraph Blade"] = sets.ws.MAB
+sets.ws["Red Lotus Blade"] = sets.ws.MAB
+sets.ws["Sanguine Blde"] = set_combine(sets.ws.MAB, {
+    -- DARK
+    head="Pixie Hairpin +1",
+    -- DARK
+    right_ring="Archon Ring",
+})
 
 -- 
 -- Job Ability Sets
