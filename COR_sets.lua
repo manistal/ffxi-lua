@@ -328,6 +328,8 @@ sets.midcast.Ranged = set_combine(sets.midcast.RangedDefault, {
     left_ring="Ilabrat Ring",
     -- STP
     right_ring="Chirich Ring +1",
+    -- STP
+    left_ear="Dedition Earring",
     -- STP / DBLATK
     right_ear="Telos Earring",
     -- 50 ACC / 7 STP
@@ -499,7 +501,7 @@ sets.ja.PhantomRoll = set_combine(sets.idle.Default, {
 -- General JA Bonuses
 sets.ja["Random Deal"] = {body={ name="Lanun Frac +4", augments={'Enhances "Loaded Deck" effect',}},}
 -- sets.ja["Fold"] = {hands="Lanun Gants +3"}
--- sets.ja["Snake Eye"] = {legs="Lanun Trews +1"}
+sets.ja["Snake Eye"] = {legs="Lanun Trews +1"}
 sets.ja["Wild Card"] = {feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}}}
 
 -- Roll bonuses
@@ -511,24 +513,30 @@ sets.ja["Courser's Roll"] = set_combine(sets.ja.PhantomRoll, {feet="Chass. Botte
 -- Remove roll duration pieces, keep Bolters 8 min for easy rerolls
 sets.ja["Bolter's Roll"] = set_combine(sets.idle.Default, {
     main={ name="Rostam", augments={'Path: C',}},
-    --neck="Regal Necklace",
-    --range={ name="Compensator", augments={'DMG:+15','AGI+15','Rng.Acc.+15',}},
-    --head="Lanun Tricorne +3",
-    --hands="Chasseur's Gants +3",
     right_ring="Luzaf's Ring",
-    --back={ name="Camulus's Mantle", augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}},
 })
 
-sets.ja["Quick Draw"] = {
-    head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Lanun Frac +4", augments={'Enhances "Loaded Deck" effect',}},
-    hands="Carmine Fin. Ga. +1",
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet="Chass. Bottes +1",
-    neck={ name="Comm. Charm +1", augments={'Path: A',}},
-    waist="Eschan Stone",
-    right_ear="Friomisi Earring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
+-- TODO: Consider AF+4 Pieces
+sets.ja.QDACC = {
+    head="Chass. Tricorne +2",
+    body="Chasseur's Frac +2",
+    hands="Chasseur's Gants +3",
+    legs="Chas. Culottes +3",
+    feet="Malignance Boots",
+    neck="Null Loop",
+    waist="Null Belt",
+    left_ear="Loquac. Earring",
+    right_ear={ name="Chas. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Crit.hit rate+4',}},
+    left_ring="Stikini Ring +1",
+    right_ring="Kishar Ring",
+    back="Null Shawl",
 }
 
-sets.ja["Ice Shot"] = set_combine(sets.ja["Quick Draw"], sets.midcast.Ranged)
+sets.ja.QDTP = set_combine(sets.ja.QDACC, sets.midcast.Ranged, {
+    -- STP
+    left_ring="Chirich Ring +1",
+})
+
+sets.ja["Quick Draw"] = sets.ja.QDTP
+sets.ja["Light Shot"] = sets.ja.QDACC
+sets.ja["Dark Shot"] = sets.ja.QDACC
