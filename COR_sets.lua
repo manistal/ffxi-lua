@@ -463,13 +463,14 @@ sets.ws["Hot Shot"] = set_combine(sets.ws.Default, {
     -- MAB
     neck={ name="Comm. Charm +1", augments={'Path: A',}},
     -- RACC / MACC
-    waist="Null Belt",
+    -- waist="Null Belt",
+    waist="Orpheus's Sash",
     -- MAB
     left_ear="Friomisi Earring",
     -- RATK / AGI
     right_ring="Dingir Ring",
     -- MAB / WSD 
-    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
+    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}},
 })
 
 -- Melee Sword
