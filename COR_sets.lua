@@ -343,7 +343,9 @@ sets.midcast.DarkMagic = {
     -- MACC
     legs="Chas. Culottes +3",
     -- FC 8
-    feet={ name="Carmine Greaves +1", augments={'MP+80','INT+12','MND+12',}},
+    -- feet={ name="Carmine Greaves +1", augments={'MP+80','INT+12','MND+12',}},
+    -- MACC
+    feet="Malignance Boots",
     -- MACC
     neck="Null Loop",
     -- MACC
@@ -351,13 +353,15 @@ sets.midcast.DarkMagic = {
     -- FC
     left_ear="Loquac. Earring",
     -- MACC
-    right_ear="Eabani Earring",
+    right_ear={ name="Chas. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Crit.hit rate+4',}},
     -- MACC
     left_ring="Stikini Ring +1",
-    -- MACC / INT
-    right_ring="Metamorph Ring",
+    -- MACC / FC
+    right_ring="Kishar Ring",
     -- MACC
-    back="Null Shawl",
+    --back="Null Shawl",
+    -- MACC / FC
+    back={ name="Camulus's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10','Mag. Evasion+15',}},
 }
 
 sets.midcast["Absorb-TP"] = sets.midcast.DarkMagic
