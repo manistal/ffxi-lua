@@ -133,8 +133,8 @@ sets.perp.TP = {
     -- Refresh 
     right_ear={ name="Beck. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Pet: Accuracy+12 Pet: Rng. Acc.+12','Pet: Mag. Acc.+12','Damage taken-4%',}},
     -- STP
-    left_ring="Chirich Ring",
-    right_ring="Chirich Ring",
+    left_ring="Chirich Ring +1",
+    right_ring="Chirich Ring +1",
     -- STP ACC
     back="Null Shawl",
 }

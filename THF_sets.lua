@@ -71,8 +71,8 @@ sets.idle.Default = {
 }
 
 sets.idle.Regen = set_combine({
-    left_ring="Chirich Ring",
-    right_ring="Chirich Ring",
+    left_ring="Chirich Ring +1",
+    right_ring="Chirich Ring +1",
     right_ear="Infused Earring",
 })
 
@@ -115,7 +115,7 @@ sets.tp.Hybrid = {
     -- 10 DT
     left_ring="Murky Ring",
     -- ACC / STP
-    right_ring="Chirich Ring",
+    right_ring="Chirich Ring +1",
     -- MEVA
     back="Null Shawl",
 } 

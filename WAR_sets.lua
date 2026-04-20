@@ -106,7 +106,7 @@ sets.tp.Default = {
     left_ear={ name="Schere Earring", augments={'Path: A',}},
     right_ear={ name="Boii Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Crit.hit rate+5',}},
     left_ring="Moonbeam Ring",
-    right_ring="Chirich Ring",
+    right_ring="Chirich Ring +1",
     -- TODO Finish Augmenting
     back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 }

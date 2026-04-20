@@ -175,7 +175,7 @@ sets.tp.Hybrid = {
     -- 10 DT
     left_ring="Murky Ring",
     -- ACC / STP
-    right_ring="Chirich Ring",
+    right_ring="Chirich Ring +1",
     -- MEVA
     back="Null Shawl",
 } 
@@ -196,9 +196,9 @@ sets.tp.Enspell = set_combine(sets.tp.Hybrid, {
     -- MACC
     right_ear={ name="Leth. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','"Dbl.Atk."+7','STR+13 DEX+13',}},
     -- ACC
-    left_ring="Chirich Ring",
+    left_ring="Chirich Ring +1",
     -- ACC
-    right_ring="Chirich Ring",
+    right_ring="Chirich Ring +1",
     -- MACC
     back="Null Shawl",
 })

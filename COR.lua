@@ -18,6 +18,16 @@ function get_sets()
 	set_macro(COR_MACRO_BOOK, 1)
 	set_style(COR_STYLE_SET)
 
+    -- Check subjob
+    dw_subjobs = S{'DNC', 'NIN'}
+    if dw_subjobs:contains(player.sub_job) then 
+        sets.weapons.List = sets.weapons.ListDW
+        sets.tp.List = sets.tp.ListDW
+    else 
+        sets.weapons.List = sets.weapons.ListDRK
+        sets.tp.List = sets.tp.ListDRK
+    end
+
     -- Set defaults
     bind_toggles("~f1", "weapons")
     bind_toggles("~f2", "tp")

@@ -56,7 +56,7 @@ sets.idle.Default = {
     left_ear="Ethereal Earring",
     right_ear="Odnowa Earring +1",
     left_ring="Moonbeam Ring",
-    right_ring="Chirich Ring",
+    right_ring="Chirich Ring +1",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}},
 }
 

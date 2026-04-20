@@ -8,14 +8,19 @@ sets = {}
 -- Weapon Sets
 -- 
 sets.weapons = {}
-sets.weapons.List = {
+sets.weapons.List = {}
+
+sets.weapons.ListDW = {
     "Savage Spam",
     "DaggerMAB",
     "RACC",
-    -- Subjob switch TODO
-    --"LeadenShield",
-    --"SavageShield",
-    --"RACCShield",
+    --"HotShot",
+}
+
+sets.weapons.ListDRK = {
+    "LeadenShield",
+    "SavageShield",
+    "RACCShield",
 }
 
 
@@ -36,6 +41,13 @@ sets.weapons["DaggerMAB"] = {
 sets.weapons["RACC"] = {
     main={ name="Rostam", augments={'Path: C',}},
     sub="Lanun Knife",
+    range="Fomalhaut",
+    ammo="Chrono Bullet",
+}
+
+sets.weapons["HotShot"] = {
+    main="Naegling",
+    sub="Tauret",
     range="Fomalhaut",
     ammo="Chrono Bullet",
 }
@@ -112,8 +124,8 @@ sets.idle.Regen = set_combine(sets.idle.Default, {
     hands="Meg. Gloves +2", -- Regen
     legs="Meg. Chausses +2", -- Regen
     feet="Meg. Jam. +2", -- Regen
-    left_ring="Chirich Ring",
-    right_ring="Chirich Ring",
+    left_ring="Chirich Ring +1",
+    right_ring="Chirich Ring +1",
 })
 
 sets.idle.Regain = set_combine(sets.idle.Default, {
@@ -130,7 +142,7 @@ sets.idle.Regain = set_combine(sets.idle.Default, {
     -- ACC / 5 DT
     neck="Rep. Plat. Medal",
     -- ACC / STP
-    right_ring="Chirich Ring",
+    right_ring="Chirich Ring +1",
     -- MEVA
     back="Null Shawl",
 })
@@ -140,7 +152,14 @@ sets.idle.Regain = set_combine(sets.idle.Default, {
 --
 sets.tp = {}
 
-sets.tp.List = {
+sets.tp.List = {}
+
+sets.tp.ListDW = {
+    "HybridDW",
+    "DTMevaDW",
+}
+
+sets.tp.ListDRK = {
     "Hybrid",
     "DTMeva",
 }
@@ -167,27 +186,35 @@ sets.tp.Hybrid = {
     -- ACC / 5 DT
     -- neck="Null Loop",
     neck="Iskur Gorget",
-    -- DW
-    left_ear="Suppanomimi",
+    -- DATK
+    left_ear="Brutal Earring",
     -- TP
     right_ear="Telos Earring",
     -- 10 DT
-    left_ring="Murky Ring",
+    -- left_ring="Murky Ring",
+    left_ring="Chirich Ring +1",
     -- ACC / STP
-    right_ring="Chirich Ring",
+    right_ring="Chirich Ring +1",
     -- MEVA
     back="Null Shawl",
 } 
 
 
 sets.tp.DTMeva = set_combine(sets.idle.Default, {
-    left_ear="Suppanomimi",
+    left_ear="Brutal Earring",
     right_ear="Telos Earring",
-    right_ring="Chirich Ring",
-    left_ring="Chirich Ring",
+    right_ring="Chirich Ring +1",
+    left_ring="Chirich Ring +1",
     waist="Sailfi Belt +1",
 })
 
+sets.tp.HybridDW = set_combine(sets.tp.Hybrid, {
+    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}},
+})
+
+sets.tp.DTMevaDW = set_combine(sets.tp.DTMeva, {
+    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}},
+})
 
 -- 
 -- Precast Sets
@@ -208,6 +235,17 @@ sets.precast.Utsusemi = set_combine(sets.precast.FastCast, {
     neck="Magoraga Beads",
 })
 
+
+--[[
+Empy+3 Helm: 18 RS
+AF+3 Body: 20 RS
+Relic+3 Hands: 13 SS
+AF+3 Legs: 15 SS
+Meg Feet: 10 SS
+Back: 10 SS
+Belt: 3 SS
+JSE Neck: 3 SS
+]]
 -- 40 snapshot with Flurry II
 -- 60 snapshot without 
 -- Current: Snapshot 59, Rapidshot 18
@@ -281,7 +319,7 @@ sets.midcast.Ranged = set_combine(sets.midcast.RangedDefault, {
     -- RACC
     left_ring="Ilabrat Ring",
     -- STP
-    right_ring="Chirich Ring",
+    right_ring="Chirich Ring +1",
     -- STP / DBLATK
     right_ear="Telos Earring",
     -- 50 ACC / 7 STP
@@ -407,9 +445,13 @@ sets.ws["Leaden Salute"]  = set_combine(sets.ws.Default, {
 
 sets.ws["Hot Shot"] = set_combine(sets.ws.Default, { 
     -- FTP
-    waist="Fotia Belt",
+    -- waist="Fotia Belt",
     -- FTP
-    neck="Fotia Gorget",
+    -- neck="Fotia Gorget",
+    -- MAB
+    neck={ name="Comm. Charm +1", augments={'Path: A',}},
+    -- RACC / MACC
+    waist="Null Belt",
     -- MAB
     left_ear="Friomisi Earring",
     -- RATK / AGI

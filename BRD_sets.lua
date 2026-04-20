@@ -340,7 +340,7 @@ sets.tp.Default = {
     right_ear="Telos Earring",
     right_ring="Moonbeam Ring",
     -- TODO Second moonbeam ring
-    left_ring="Chirich Ring",
+    left_ring="Chirich Ring +1",
     back="Null Shawl",
 }
 

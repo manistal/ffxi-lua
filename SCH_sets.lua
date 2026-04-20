@@ -368,8 +368,8 @@ sets.tp.Default = {
     waist="Windbuffet Belt",
     left_ear="Eabani Earring",
     right_ear="Telos Earring",
-    left_ring="Chirich Ring",
-    right_ring="Chirich Ring",
+    left_ring="Chirich Ring +1",
+    right_ring="Chirich Ring +1",
     back="Null Shawl",
 }
 
