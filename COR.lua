@@ -34,6 +34,10 @@ function get_sets()
     bind_toggles("~f3", "idle")
 end
 
+function sub_job_change(new, old)  
+    get_sets()
+end
+
 --
 -- Dynamic Set Funcs 
 -- 

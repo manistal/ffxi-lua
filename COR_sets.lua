@@ -125,7 +125,9 @@ sets.idle.Regen = set_combine(sets.idle.Default, {
     legs="Meg. Chausses +2", -- Regen
     feet="Meg. Jam. +2", -- Regen
     left_ring="Chirich Ring +1",
-    right_ring="Chirich Ring +1",
+    waist="Null Belt",
+    -- Schnedick is more important
+    -- right_ring="Chirich Ring +1",
 })
 
 sets.idle.Regain = set_combine(sets.idle.Default, {
@@ -143,6 +145,10 @@ sets.idle.Regain = set_combine(sets.idle.Default, {
     neck="Rep. Plat. Medal",
     -- ACC / STP
     right_ring="Chirich Ring +1",
+    -- STP
+    right_ear="Dedition Earring",
+    -- Regen / MEVA
+    waist="Null Belt",
     -- MEVA
     back="Null Shawl",
 })
@@ -192,6 +198,7 @@ sets.tp.Hybrid = {
     right_ear="Telos Earring",
     -- 10 DT
     -- left_ring="Murky Ring",
+    -- TODO Epona's 
     left_ring="Chirich Ring +1",
     -- ACC / STP
     right_ring="Chirich Ring +1",
@@ -205,7 +212,8 @@ sets.tp.DTMeva = set_combine(sets.idle.Default, {
     right_ear="Telos Earring",
     right_ring="Chirich Ring +1",
     left_ring="Chirich Ring +1",
-    waist="Sailfi Belt +1",
+    neck="Null Loop",
+    waist="Null Belt",
 })
 
 sets.tp.HybridDW = set_combine(sets.tp.Hybrid, {
