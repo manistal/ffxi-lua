@@ -343,6 +343,8 @@ sets.midcast.TripleShot = set_combine(sets.midcast.Ranged, {
 })
 
 sets.midcast.DarkMagic = {
+    -- MACC 30
+    ammo="Animikii Bullet",
     -- FC 14
     head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
     -- MACC
@@ -459,14 +461,15 @@ sets.ws["Leaden Salute"]  = set_combine(sets.ws.Default, {
 
 sets.ws["Hot Shot"] = set_combine(sets.ws.Default, { 
     -- FTP
-    -- waist="Fotia Belt",
+    waist="Fotia Belt",
     -- FTP
     -- neck="Fotia Gorget",
     -- MAB
     neck={ name="Comm. Charm +1", augments={'Path: A',}},
     -- RACC / MACC
     -- waist="Null Belt",
-    waist="Orpheus's Sash",
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    --waist="Orpheus's Sash",
     -- MAB
     left_ear="Friomisi Earring",
     -- RATK / AGI
