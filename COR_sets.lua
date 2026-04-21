@@ -258,6 +258,8 @@ JSE Neck: 3 SS
 -- 60 snapshot without 
 -- Current: Snapshot 59, Rapidshot 18
 sets.precast.Ranged = {
+    -- Rapid Shot 
+    -- head="Chasseur's Tricorne +2",
     -- Snapshot: +6
     head="Ikenga's Hat",
     -- Snapshot: +8, RapidShot: +11
@@ -266,6 +268,8 @@ sets.precast.Ranged = {
     hands="Lanun Gants +3", 
     -- Snapshot: +9
     body="Ikenga's Vest",
+    -- Rapid Shot 20
+    --body="Laksa. Frac +4",
     -- Snapshot +9 
     legs="Chas. Culottes +3",
     -- Snapshot: +10
@@ -277,6 +281,27 @@ sets.precast.Ranged = {
     -- Snapsht: +10
     back={ name="Camulus's Mantle", augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}},
     -- TODO Crepuscular Ring (3)
+}
+
+-- Snapshot: 40
+sets.precast.RangedFlurry2 = {
+    -- Rapid Shot 
+    head="Chasseur's Tricorne +2",
+    -- Rapid Shot 20
+    body="Laksa. Frac +4",
+    -- Snapshot: +8, RapidShot: +11
+    hands="Carmine Fin. Ga. +1",
+    -- Snapshot +9 
+    legs="Chas. Culottes +3",
+    -- TODO Adhemar Kecks +1 (Snap 10, Rapid 10)
+    -- Snapshot: +10
+    feet="Meg. Jam. +2", 
+    -- Snapshot: +3 
+    neck={ name="Comm. Charm +1", augments={'Path: A',}},
+    -- Rapid Shot +5
+    waist="Yemaya Belt",
+    -- Snapsht: +10
+    back={ name="Camulus's Mantle", augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}},
 }
 
 
@@ -348,14 +373,11 @@ sets.midcast.DarkMagic = {
     -- FC 14
     head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
     -- MACC
-    body="Chasseur's Frac +2",
-    -- FC
-    --hands={ name="Leyline Gloves", augments={'Accuracy+5','"Mag.Atk.Bns."+7','"Fast Cast"+1',}},
+    body="Laksa. Frac +4",
+    -- MACC
     hands="Chasseur's Gants +3",
     -- MACC
     legs="Chas. Culottes +3",
-    -- FC 8
-    -- feet={ name="Carmine Greaves +1", augments={'MP+80','INT+12','MND+12',}},
     -- MACC
     feet="Malignance Boots",
     -- MACC
@@ -370,8 +392,6 @@ sets.midcast.DarkMagic = {
     left_ring="Stikini Ring +1",
     -- MACC / FC
     right_ring="Kishar Ring",
-    -- MACC
-    --back="Null Shawl",
     -- MACC / FC
     back={ name="Camulus's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10','Mag. Evasion+15',}},
 }
@@ -415,8 +435,8 @@ sets.ws.Default = {
 sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
     -- RATK
     head="Lanun Tricorne +3",
-    -- TP Bonus
-    body="Ikenga's Vest",
+    -- RATK / RACC / WSD
+    body="Laksa. Frac +4",
     -- FTP
     waist="Fotia Belt",
     -- FTP
