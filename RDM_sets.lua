@@ -199,8 +199,8 @@ sets.tp.Enspell = set_combine(sets.tp.Hybrid, {
     left_ring="Chirich Ring +1",
     -- ACC
     right_ring="Chirich Ring +1",
-    -- MACC
-    back="Null Shawl",
+    -- MACC / Enspell Damage
+    back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +5','Enha.mag. skill +5','Mag. Acc.+7','Enh. Mag. eff. dur. +20',}},
 })
 
 -- Precast Sets
@@ -312,8 +312,8 @@ sets.midcast.EnhancingSkill = set_combine(sets.midcast.Default, {
     -- TODO MIMIMIR
     -- Enhancing Duration
     right_ear={ name="Leth. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','"Dbl.Atk."+7','STR+13 DEX+13',}},
-    -- Enhancing 6
-    back="Estoqueur's Cape",
+    -- Enhancing 5 / Duration 20
+    back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +5','Enha.mag. skill +5','Mag. Acc.+7','Enh. Mag. eff. dur. +20',}},
 })
 
 -- Duration > all
@@ -340,8 +340,8 @@ sets.midcast.EnhancingSelf = set_combine(sets.midcast.Default, {
     left_ring="Stikini Ring +1",
     -- Duration 8
     right_ear={ name="Leth. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','"Dbl.Atk."+7','STR+13 DEX+13',}},
-    -- Duration 20
-    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
+    -- Enhancing 5 / Duration 20
+    back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +5','Enha.mag. skill +5','Mag. Acc.+7','Enh. Mag. eff. dur. +20',}},
 })
 
 sets.midcast.SelfPhalanx = set_combine(sets.midcast.EnhancingSelf, {
@@ -375,8 +375,8 @@ sets.midcast.EnhancingOthers = set_combine(sets.midcast.Default, {
     left_ring="Stikini Ring +1",
     -- Duration 8
     right_ear={ name="Leth. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','"Dbl.Atk."+7','STR+13 DEX+13',}},
-    -- Duration 20
-    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
+    -- Enhancing 5 / Duration 20
+    back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +5','Enha.mag. skill +5','Mag. Acc.+7','Enh. Mag. eff. dur. +20',}},
 })
 
 sets.midcast.Refresh = set_combine(sets.midcast.Default, {
@@ -401,8 +401,8 @@ sets.midcast.Refresh = set_combine(sets.midcast.Default, {
     left_ring="Stikini Ring +1",
     -- Duration 8
     right_ear={ name="Leth. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','"Dbl.Atk."+7','STR+13 DEX+13',}},
-    -- Duration 20
-    back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
+    -- Enhancing 5 / Duration 20
+    back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +5','Enha.mag. skill +5','Mag. Acc.+7','Enh. Mag. eff. dur. +20',}},
 })
 
 -- TODO???
