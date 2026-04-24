@@ -9,18 +9,17 @@ sets = {}
 -- 
 sets.weapons = {}
 sets.weapons.List = {
-    "Apoc", 
-    "Montante",
-    "Lycurgos",
     "Foenaria",
+    "Lycurgos",
+    -- "GS",
+    -- "Apoc", 
     -- Need manual clicks for these
     --"Naegling",
     --"Loxotic Mace",
     --"Piercing",
 }
 
-sets.weapons["Montante"] = {
-    --main={ name="Montante +1", augments={'Path: A',}},
+sets.weapons["GS"] = {
     main="Agwu's Claymore",
     sub="Utu Grip",
 }
@@ -79,8 +78,8 @@ sets.idle.Default = {
     left_ear="Alabaster Earring",
     -- HP
     right_ear="Tuisto Earring",
-    -- HP, DT: -4
-    left_ring="Moonbeam Ring",
+    -- HP, DT: -5
+    left_ring="Moonlight Ring",
     -- Speed
     right_ring="Shneddick Ring",
     -- MEVA
@@ -93,8 +92,8 @@ sets.idle.Default = {
 sets.tp = {}
 
 sets.tp.List = {
-    "Sakpata",
     "Hybrid",
+    "Sakpata",
     "MaxACC",
 }
 
@@ -116,7 +115,7 @@ sets.tp.Sakpata = {
     -- ACC/2ATK
     right_ear="Brutal Earring",
     -- ACC/STP/DT
-    left_ring="Moonbeam Ring",
+    left_ring="Moonlight Ring",
     -- QA
     right_ring="Niqmaddu Ring",
     -- ACC/STP/2ATK
@@ -147,10 +146,10 @@ sets.tp.Hybrid = set_combine(sets.tp.Sakpata, {
     -- 3ATK/2ATK
     waist="Sailfi Belt +1",
     -- -MP / +ACC/2ATK
-    right_ear="Dedition Earring",
-    --right_ear="Schere Earring",
+    --right_ear="Dedition Earring",
+    right_ear="Schere Earring",
     -- STP
-    left_ring="Moonbeam Ring",
+    left_ring="Moonlight Ring",
     -- STP
     right_ring="Niqmaddu Ring",
     -- DA/DEX/PDT
@@ -457,7 +456,7 @@ sets.midcast["Dread Spikes"] = set_combine(sets.midcast.Default, {
     -- HP
     right_ear="Tuisto Earring",
     -- HP
-    left_ring="Moonbeam Ring",
+    left_ring="Moonlight Ring",
 })
 
 

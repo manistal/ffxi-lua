@@ -144,7 +144,8 @@ sets.idle.Regain = set_combine(sets.idle.Default, {
     -- ACC / 5 DT
     neck="Rep. Plat. Medal",
     -- ACC / STP
-    right_ring="Chirich Ring +1",
+    -- right_ring="Chirich Ring +1",
+    right_ring="Roller's Ring",
     -- STP
     right_ear="Dedition Earring",
     -- Regen / MEVA
