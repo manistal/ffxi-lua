@@ -473,7 +473,9 @@ sets.midcast.EnfeeblingPotency = set_combine(sets.midcast.Default, {
     -- Skill 24
     hands="Leth. Ganth. +2",
     -- MACC
-    legs="Leth. Fuseau +2",
+    -- legs="Leth. Fuseau +2",
+    -- Immunobreak / MACC
+    legs={ name="Chironic Hose", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','"Cure" spellcasting time -2%','CHR+4','Mag. Acc.+15',}},
     -- Skill 16 / Effect 5
     feet="Vitiation Boots +3",
     -- Duration / Effect 
@@ -501,7 +503,9 @@ sets.midcast.EnfeeblingDuration = set_combine(sets.midcast.Default, {
     -- Composure / Skill 24
     hands="Leth. Ganth. +2",
     -- Composure / MACC
-    legs="Leth. Fuseau +2",
+    -- legs="Leth. Fuseau +2",
+    -- Immunobreak / MACC
+    legs={ name="Chironic Hose", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','"Cure" spellcasting time -2%','CHR+4','Mag. Acc.+15',}},
     -- Composure / Duration
     feet="Leth. Houseaux +2",
     -- Duration / Effect 
