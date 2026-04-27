@@ -17,7 +17,7 @@ Relic
     body="Viti. Tabard +3",
     hands="Viti. Gloves +2",
     legs="Viti. Tights +2",
-    feet="Vitiation Boots +3",
+    feet="Vitiation Boots +4",
 
 Empy
     head="Leth. Chappel +2",
@@ -477,7 +477,7 @@ sets.midcast.EnfeeblingPotency = set_combine(sets.midcast.Default, {
     -- Immunobreak / MACC
     legs={ name="Chironic Hose", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','"Cure" spellcasting time -2%','CHR+4','Mag. Acc.+15',}},
     -- Skill 16 / Effect 5
-    feet="Vitiation Boots +3",
+    feet="Vitiation Boots +4",
     -- Duration / Effect 
     neck={ name="Dls. Torque +2", augments={'Path: A',}},
     -- TODO: Obstinate Sash
@@ -552,7 +552,7 @@ sets.nuke.FreeNuke = set_combine(sets.midcast.Default, {
     -- INT / MACC / MAB
     legs="Leth. Fuseau +2",
     -- INT / MACC / MAB
-    feet="Vitiation Boots +3",
+    feet="Vitiation Boots +4",
     -- MAB / MACC
     waist="Sacro Cord",
     -- MAB / INT
