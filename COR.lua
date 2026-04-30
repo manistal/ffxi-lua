@@ -5,7 +5,9 @@
 -- Gearswap Spec: https://docs.windower.net/addons/gearswap/reference/
 
 COR_STYLE_SET = 60
+COR_DRK_STYLE_SET = 59
 COR_MACRO_BOOK = 3
+COR_DRK_MACRO_BOOK = 12
 
 -- 
 -- Main Entry Point 
@@ -15,17 +17,19 @@ function get_sets()
 	-- Requires sets{WeaponSkill: {}, TP: {}, Idle: {}, Precast: {}, Midcast:{}}
 	include('COR_sets.lua')
     include('common.lua')
-	set_macro(COR_MACRO_BOOK, 1)
-	set_style(COR_STYLE_SET)
 
     -- Check subjob
     dw_subjobs = S{'DNC', 'NIN'}
     if dw_subjobs:contains(player.sub_job) then 
         sets.weapons.List = sets.weapons.ListDW
         sets.tp.List = sets.tp.ListDW
+        set_macro(COR_MACRO_BOOK, 1)
+        set_style(COR_STYLE_SET)
     else 
         sets.weapons.List = sets.weapons.ListDRK
         sets.tp.List = sets.tp.ListDRK
+        set_macro(COR_DRK_MACRO_BOOK, 1)
+        set_style(COR_DRK_STYLE_SET)
     end
 
     -- Set defaults
