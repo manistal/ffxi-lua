@@ -21,10 +21,10 @@ Relic
 
 Empy
     head="Leth. Chappel +2",
-    body="Lethargy Sayon +2",
-    hands="Leth. Ganth. +2",
+    body="Lethargy Sayon +3",
+    hands="Leth. Ganth. +3",
     legs="Leth. Fuseau +2",
-    feet="Leth. Houseaux +2",
+    feet="Leth. Houseaux +3",
 
 
 ]]
@@ -33,14 +33,20 @@ Empy
 -- Weapon Sets
 -- 
 sets.weapons = {}
-sets.weapons.List = {
+sets.weapons.List = {}
+
+sets.weapons.ListDRK = {
+    "SavageShield",
+    "BlackHaloShield",
+    "Dispel",
+    "MACCShield",
+}
+
+sets.weapons.ListDW = {
     "DefSwords",
     "Savage",
     "BlackHalo",
     "MAB",
-    -- "Dispel",
-    -- "MACCShield",
-    "Refresh",
     "0TPDaggers"
 }
 
@@ -69,6 +75,16 @@ sets.weapons["MAB"] = {
     sub="Bunzi's Rod"
 }
 
+sets.weapons["SavageShield"] = {
+    main="Naegling",
+    sub="Diamond Aspis",
+}
+
+sets.weapons["BlackHaloShield"] = {
+    main="Maxentius",
+    sub="Diamond Aspis",
+}
+
 sets.weapons["Dispel"] = {
     main="Daybreak",
     sub="Diamond Aspis",
@@ -82,6 +98,8 @@ sets.weapons["MACCShield"] = {
 sets.weapons["0TPDaggers"] = {
     main="Esoteric Athame",
     sub="Qutrub Knife",
+    ranged="Ullr",
+    ammo="",
 }
 
 -- Idle/DT Base Set
@@ -103,7 +121,7 @@ sets.idle.Default = {
     -- Refresh 
     head="Viti. Chapeau +4",
     -- Refresh / DT 13
-    body="Lethargy Sayon +2",
+    body="Lethargy Sayon +3",
     -- DT 8 
     hands="Bunzi's Gloves",
     -- DT 8
@@ -139,9 +157,15 @@ sets.idle.Refresh = set_combine(sets.idle.Default, {
 --
 sets.tp = {}
 
-sets.tp.List = {
-    "Hybrid",
+sets.tp.List = {}
+
+sets.tp.ListDW = {
+    "HybridDW",
     "Enspell",
+}
+
+sets.tp.ListDRK = {
+    "Hybrid",
 }
 
 
@@ -150,7 +174,7 @@ sets.tp.List = {
 -- Haste = 25
 -- TA > STP = DA > 
 -- DT 50 > MEVA > ACC >= TP
-sets.tp.Hybrid = {
+sets.tp.HybridDW = {
     -- TP
     ammo="Coiste Bodhar",
     -- 7 DT
@@ -180,9 +204,13 @@ sets.tp.Hybrid = {
     back="Null Shawl",
 } 
 
+sets.tp.Hybrid = set_combine(sets.tp.HybridDW, {
+    left_ear="Telos Earring",
+})
+
 sets.tp.Enspell = set_combine(sets.tp.Hybrid, {
     -- MACC
-    body="Lethargy Sayon +2",
+    body="Lethargy Sayon +3",
     -- Enspell Damage
     hands="Aya. Manopolas +2",
     -- Enspell ACC
@@ -302,7 +330,7 @@ sets.midcast.EnhancingSkill = set_combine(sets.midcast.Default, {
     -- Enhancing 21
     legs="Atro. Tights +4",
     -- Enhancing 30
-    feet="Leth. Houseaux +2",
+    feet="Leth. Houseaux +3",
     -- Enhancing 5
     waist="Olympus Sash",
     -- Enhancing 10 
@@ -329,7 +357,7 @@ sets.midcast.EnhancingSelf = set_combine(sets.midcast.Default, {
     -- Duration 7
     legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +7',}},
     -- Enhancing 30 / Duration 35
-    feet="Leth. Houseaux +2",
+    feet="Leth. Houseaux +3",
     -- Duration 10 
     waist="Embla Sash",
     -- Duration 
@@ -358,13 +386,13 @@ sets.midcast.EnhancingOthers = set_combine(sets.midcast.Default, {
     -- Composure
     head="Leth. Chappel +2",
     -- Composure
-    body="Lethargy Sayon +2",
+    body="Lethargy Sayon +3",
     -- Duration 20
     hands="Atrophy Gloves +3",
     -- Composure
     legs="Leth. Fuseau +2",
     -- Compsure / Duration 35
-    feet="Leth. Houseaux +2",
+    feet="Leth. Houseaux +3",
     -- Duration 10 
     waist="Embla Sash",
     -- Duration 
@@ -390,7 +418,7 @@ sets.midcast.Refresh = set_combine(sets.midcast.Default, {
     -- Refresh Potency +3
     legs="Leth. Fuseau +2",
     -- Compsure / Duration 35
-    feet="Leth. Houseaux +2",
+    feet="Leth. Houseaux +3",
     -- Duration 10 
     waist="Embla Sash",
     -- Duration 
@@ -469,7 +497,7 @@ sets.midcast.EnfeeblingPotency = set_combine(sets.midcast.Default, {
     -- Skill 24
     head="Viti. Chapeau +4",
     -- Effect 16
-    body="Lethargy Sayon +2",
+    body="Lethargy Sayon +3",
     -- Skill 24
     hands="Leth. Ganth. +2",
     -- MACC
@@ -499,7 +527,7 @@ sets.midcast.EnfeeblingDuration = set_combine(sets.midcast.Default, {
     -- Composure
     head="Leth. Chappel +2",
     -- Composure / Effect 16
-    body="Lethargy Sayon +2",
+    body="Lethargy Sayon +3",
     -- Composure / Skill 24
     hands="Leth. Ganth. +2",
     -- Composure / MACC
@@ -507,7 +535,7 @@ sets.midcast.EnfeeblingDuration = set_combine(sets.midcast.Default, {
     -- Immunobreak / MACC
     legs={ name="Chironic Hose", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','"Cure" spellcasting time -2%','CHR+4','Mag. Acc.+15',}},
     -- Composure / Duration
-    feet="Leth. Houseaux +2",
+    feet="Leth. Houseaux +3",
     -- Duration / Effect 
     neck={ name="Dls. Torque +2", augments={'Path: A',}},
     -- TODO: Obstinate Sash
@@ -546,7 +574,7 @@ sets.nuke.FreeNuke = set_combine(sets.midcast.Default, {
     -- INT / MACC / MAB
     head="Leth. Chappel +2",
     -- INT / MACC / MAB
-    body="Lethargy Sayon +2",
+    body="Lethargy Sayon +3",
     -- INT / MACC / MAB
     hands="Leth. Ganth. +2",
     -- INT / MACC / MAB
@@ -599,7 +627,7 @@ sets.ws.Default = {
     -- WSD: +3
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     -- WSD: +8~12
-    feet="Leth. Houseaux +2",
+    feet="Leth. Houseaux +3",
     -- STR/ATK
     waist="Sailfi Belt +1",
     -- 30 ATK
