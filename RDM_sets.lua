@@ -20,7 +20,7 @@ Relic
     feet="Vitiation Boots +4",
 
 Empy
-    head="Leth. Chappel +2",
+    head="Leth. Chappel +3",
     body="Lethargy Sayon +3",
     hands="Leth. Ganth. +3",
     legs="Leth. Fuseau +2",
@@ -384,7 +384,7 @@ sets.midcast.EnhancingOthers = set_combine(sets.midcast.Default, {
     -- Duration 10
     sub="Ammurapi Shield",
     -- Composure
-    head="Leth. Chappel +2",
+    head="Leth. Chappel +3",
     -- Composure
     body="Lethargy Sayon +3",
     -- Duration 20
@@ -469,7 +469,7 @@ sets.midcast.EnfeeblingMACC = set_combine(sets.midcast.Default, {
     -- AF ACC
     body="Atrophy Tabard +3",
     -- +Sabateur
-    hands="Leth. Ganth. +2",
+    hands="Leth. Ganth. +3",
     -- AF ACC
     legs="Atro. Tights +4",
     -- AF ACC
@@ -499,7 +499,7 @@ sets.midcast.EnfeeblingPotency = set_combine(sets.midcast.Default, {
     -- Effect 16
     body="Lethargy Sayon +3",
     -- Skill 24
-    hands="Leth. Ganth. +2",
+    hands="Leth. Ganth. +3",
     -- MACC
     -- legs="Leth. Fuseau +2",
     -- Immunobreak / MACC
@@ -525,11 +525,11 @@ sets.midcast.EnfeeblingPotency = set_combine(sets.midcast.Default, {
 
 sets.midcast.EnfeeblingDuration = set_combine(sets.midcast.Default, {
     -- Composure
-    head="Leth. Chappel +2",
+    head="Leth. Chappel +3",
     -- Composure / Effect 16
     body="Lethargy Sayon +3",
     -- Composure / Skill 24
-    hands="Leth. Ganth. +2",
+    hands="Leth. Ganth. +3",
     -- Composure / MACC
     -- legs="Leth. Fuseau +2",
     -- Immunobreak / MACC
@@ -572,11 +572,11 @@ sets.nuke.FreeNuke = set_combine(sets.midcast.Default, {
     -- MACC / INT
     sub="Diamond Aspis",
     -- INT / MACC / MAB
-    head="Leth. Chappel +2",
+    head="Leth. Chappel +3",
     -- INT / MACC / MAB
     body="Lethargy Sayon +3",
     -- INT / MACC / MAB
-    hands="Leth. Ganth. +2",
+    hands="Leth. Ganth. +3",
     -- INT / MACC / MAB
     legs="Leth. Fuseau +2",
     -- INT / MACC / MAB
@@ -672,7 +672,7 @@ sets.ws.DEX = set_combine(sets.ws.Default, {
 
 sets.ws.MAB = set_combine(sets.ws.Default, {
     -- MAB
-    head="Leth. Chappel +2",
+    head="Leth. Chappel +3",
     -- MAB
     hands="Jhakri Cuffs +2",
     -- MAB
