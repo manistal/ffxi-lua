@@ -647,10 +647,14 @@ sets.ws.Default = {
 sets.ws.DEX = set_combine(sets.ws.Default, {
     -- DEX
     head="Malignance Chapeau",
+    -- DEX
+    body="Malignance Tabard",
+    -- DEX
+    hands="Malignance Gloves",
     -- DEX ??
-    body="Nyame Mail",
+    -- body="Nyame Mail",
     -- DEX ??
-    hands="Nyame Gauntlets",
+    -- hands="Nyame Gauntlets",
     -- DEX ??
     legs="Viti. Tights +2",
     -- DEX

@@ -490,7 +490,7 @@ sets.ws["Hot Shot"] = set_combine(sets.ws.Default, {
     -- RACC / MACC
     -- waist="Null Belt",
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    --waist="Orpheus's Sash",
+    -- waist="Orpheus's Sash",
     -- MAB
     left_ear="Friomisi Earring",
     -- RATK / AGI

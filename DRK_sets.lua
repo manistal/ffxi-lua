@@ -146,8 +146,8 @@ sets.tp.Hybrid = set_combine(sets.tp.Sakpata, {
     -- 3ATK/2ATK
     waist="Sailfi Belt +1",
     -- -MP / +ACC/2ATK
-    --right_ear="Dedition Earring",
-    right_ear="Schere Earring",
+    right_ear="Dedition Earring",
+    -- right_ear="Schere Earring",
     -- STP
     left_ring="Moonlight Ring",
     -- STP
