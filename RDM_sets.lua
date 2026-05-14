@@ -7,7 +7,7 @@ sets = {}
 --[[
 AF
     head="Atrophy Chapeau +3",
-    body="Atrophy Tabard +3",
+    body="Atrophy Tabard +4",
     hands="Atrophy Gloves +3",
     legs="Atrophy Tights +4",
     feet="Atro. Boots +4",
@@ -412,7 +412,7 @@ sets.midcast.Refresh = set_combine(sets.midcast.Default, {
     sub="Ammurapi Shield",
     -- TODO Almaric Head
     -- Refresh Potency +2
-    body="Atrophy Tabard +3",
+    body="Atrophy Tabard +4",
     -- Duration 20
     hands="Atrophy Gloves +3",
     -- Refresh Potency +3
@@ -467,7 +467,7 @@ sets.midcast.EnfeeblingMACC = set_combine(sets.midcast.Default, {
     -- Merit ACC
     head="Viti. Chapeau +4",
     -- AF ACC
-    body="Atrophy Tabard +3",
+    body="Atrophy Tabard +4",
     -- +Sabateur
     hands="Leth. Ganth. +3",
     -- AF ACC
