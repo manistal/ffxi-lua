@@ -23,7 +23,7 @@ Empy
     head="Leth. Chappel +3",
     body="Lethargy Sayon +3",
     hands="Leth. Ganth. +3",
-    legs="Leth. Fuseau +2",
+    legs="Leth. Fuseau +3",
     feet="Leth. Houseaux +3",
 
 
@@ -390,7 +390,7 @@ sets.midcast.EnhancingOthers = set_combine(sets.midcast.Default, {
     -- Duration 20
     hands="Atrophy Gloves +3",
     -- Composure
-    legs="Leth. Fuseau +2",
+    legs="Leth. Fuseau +3",
     -- Compsure / Duration 35
     feet="Leth. Houseaux +3",
     -- Duration 10 
@@ -416,7 +416,7 @@ sets.midcast.Refresh = set_combine(sets.midcast.Default, {
     -- Duration 20
     hands="Atrophy Gloves +3",
     -- Refresh Potency +3
-    legs="Leth. Fuseau +2",
+    legs="Leth. Fuseau +3",
     -- Compsure / Duration 35
     feet="Leth. Houseaux +3",
     -- Duration 10 
@@ -501,7 +501,7 @@ sets.midcast.EnfeeblingPotency = set_combine(sets.midcast.Default, {
     -- Skill 24
     hands="Leth. Ganth. +3",
     -- MACC
-    -- legs="Leth. Fuseau +2",
+    -- legs="Leth. Fuseau +3",
     -- Immunobreak / MACC
     legs={ name="Chironic Hose", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','"Cure" spellcasting time -2%','CHR+4','Mag. Acc.+15',}},
     -- Skill 16 / Effect 5
@@ -531,7 +531,7 @@ sets.midcast.EnfeeblingDuration = set_combine(sets.midcast.Default, {
     -- Composure / Skill 24
     hands="Leth. Ganth. +3",
     -- Composure / MACC
-    -- legs="Leth. Fuseau +2",
+    -- legs="Leth. Fuseau +3",
     -- Immunobreak / MACC
     legs={ name="Chironic Hose", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','"Cure" spellcasting time -2%','CHR+4','Mag. Acc.+15',}},
     -- Composure / Duration
@@ -578,11 +578,11 @@ sets.nuke.FreeNuke = set_combine(sets.midcast.Default, {
     -- INT / MACC / MAB
     hands="Leth. Ganth. +3",
     -- INT / MACC / MAB
-    legs="Leth. Fuseau +2",
+    legs="Leth. Fuseau +3",
     -- INT / MACC / MAB
     feet="Vitiation Boots +4",
     -- MAB / MACC
-    waist="Sacro Cord",
+    waist="Acuity Belt +1",
     -- MAB / INT
     neck="Sibyl Scarf",
     -- INT / MACC
@@ -591,7 +591,6 @@ sets.nuke.FreeNuke = set_combine(sets.midcast.Default, {
     right_ring="Freke Ring",
     -- INT / MAB
     back={ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
-    -- TODO ACUITY BELT
     -- TODO TALTHUM
 })
 
@@ -680,7 +679,7 @@ sets.ws.MAB = set_combine(sets.ws.Default, {
     -- MAB
     hands="Jhakri Cuffs +2",
     -- MAB
-    legs="Leth. Fuseau +2",
+    legs="Leth. Fuseau +3",
     -- MAB
     feet="Leth. Houseaux +2",
     -- MAB
