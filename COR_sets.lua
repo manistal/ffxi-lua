@@ -394,7 +394,7 @@ sets.midcast.DarkMagic = {
     -- MACC / FC
     right_ring="Kishar Ring",
     -- MACC / FC
-    back={ name="Camulus's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10','Mag. Evasion+15',}},
+    back={ name="Camulus's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Fast Cast"+10','Mag. Evasion+15',}},
 }
 
 sets.midcast["Absorb-TP"] = sets.midcast.DarkMagic
@@ -462,7 +462,7 @@ sets.ws["Wildfire"] = set_combine(sets.ws.Default, {
     left_ear="Friomisi Earring",
     right_ear="Hermetic Earring",
     right_ring="Dingir Ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
 })
 
 sets.ws["Leaden Salute"]  = set_combine(sets.ws.Default, {
@@ -477,7 +477,7 @@ sets.ws["Leaden Salute"]  = set_combine(sets.ws.Default, {
     right_ring="Dingir Ring",
     left_ear="Friomisi Earring",
     right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
 })
 
 sets.ws["Hot Shot"] = set_combine(sets.ws.Default, { 
@@ -496,7 +496,8 @@ sets.ws["Hot Shot"] = set_combine(sets.ws.Default, {
     -- RATK / AGI
     right_ring="Dingir Ring",
     -- MAB / WSD 
-    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}},
+    -- back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}},
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}},
 })
 
 -- Melee Sword
