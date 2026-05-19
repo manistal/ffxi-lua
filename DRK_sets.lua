@@ -275,6 +275,25 @@ sets.ja["Weapon Bash"] = {
     hands="Ig. Gauntlets +2",
 }
 
+sets.ja.Jumps = {
+    ammo="Coiste Bodhar",
+    head="Flam. Zucchetto +2",
+    body="Hjarrandi Breast.",
+    hands="Sakpata's Gauntlets",
+    legs="Ig. Flanchard +4",
+    feet={ name="Carmine Greaves +1", augments={'MP+80','INT+12','MND+12',}},
+    neck={ name="Abyssal Beads +2", augments={'Path: A',}},
+    waist="Sailfi Belt +1",
+    left_ear="Telos Earring",
+    right_ear="Dedition Earring",
+    left_ring="Chirich Ring +1",
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",
+}
+sets.ja["Jump"] = sets.ja.Jumps
+sets.ja["High Jump"] = sets.ja.Jumps
+sets.ja["Super Jump"] = sets.ja.Jumps
+
 
 -- 
 -- Spell Precast Sets

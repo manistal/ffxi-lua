@@ -46,6 +46,7 @@ sets.weapons.ListDW = {
     "DefSwords",
     "Savage",
     "BlackHalo",
+    "Aeolian",
     "MAB",
     "0TPDaggers"
 }
@@ -62,6 +63,11 @@ sets.weapons["DefSwords"] = {
 
 sets.weapons["Savage"] = {
     main="Naegling",
+    sub="Machaera +2",
+}
+
+sets.weapons["Aeolian"] ={
+    main="Tauret",
     sub="Machaera +2",
 }
 
