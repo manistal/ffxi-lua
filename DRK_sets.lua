@@ -372,21 +372,23 @@ sets.midcast.MAB = set_combine(sets.midcast.Default, {
 
 sets.midcast.MACC = set_combine(sets.midcast.Default, {
     -- 51 MACC
-    head="Heath. Burgeon. +3",
+    head="Heath. Bur. +3",
     -- 60 MACC
     body="Ig. Cuirass +4",
     -- 52 MACC
     hands="Heath. Gauntlets +2",
-    -- 53 MACC (TODO +4 Artifact)
-    legs="Heath. Flanchard +2",
+    -- 74 MACC
+    legs="Ig. Flanchard +4",
     -- 60 MACC
     feet="Heath. Sollerets +3",
     -- 50 MACC
     neck="Null Loop",
-    -- 7 MACC
-    waist="Eschan Stone",
+    -- 30 MACC
+    waist="Null Belt",
     -- 10 MACC
     left_ear="Malignance Earring",
+    -- 14 MACC
+    right_ear={ name="Heath. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Weapon skill damage +3%',}},
     -- 5 MACC
     right_ring="Kishar Ring",
     -- TODO Metamorph Ring
