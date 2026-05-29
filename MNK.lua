@@ -61,6 +61,10 @@ function precast(spell)
 		if sets.ws[spell.english] then 
 			equip(sets.ws[spell.english])
         end
+
+        if buffactive['Impetus'] then 
+            equip(sets.ja.Impetus)
+        end
     end
 
     -- Job Abilities are either specific, diamond aspis when not engaged

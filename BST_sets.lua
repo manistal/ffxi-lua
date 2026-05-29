@@ -92,16 +92,16 @@ sets.tp.Hybrid = {
     feet="Malignance Boots",
     -- Triple ATK
     waist="Sailfi Belt +1",
-    -- ACC / 5 DT
-    neck="Null Loop",
+    -- STP
+    neck="Anu Torque",
     -- DBATK/TP
     left_ear="Sherida Earring",
-    -- DBLATK / ACC
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','Pet: "Dbl. Atk."+6',}},
-    -- 10 DT
-    left_ring="Murky Ring",
-    -- ACC / STP
-    right_ring="Moonbeam Ring",
+    -- DBATK/TP
+    right_ear="Telos Earring",
+    -- ACC / STP / DT 
+    left_ring="Moonbeam Ring",
+    -- ACC / STP / DT 
+    right_ring="Moonlight Ring",
     -- MEVA
     back="Null Shawl",
 } 
@@ -128,15 +128,18 @@ sets.ws.Default = {
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     -- WSD 5 
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    -- ATK
+    neck="Republican Platinum Medal",
     -- 2ATK/3ATK
     waist="Sailfi Belt +1",
     -- PDL/Stats
     left_ring="Ephramad's Ring",
+    -- STR 15
+    right_ring="Sroda Ring",
     -- TP+
     left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     -- WSD 2
     right_ear="Thrud Earring",
-    -- TODO AMBU CAPE
 }
 
 -- 

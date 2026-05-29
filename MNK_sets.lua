@@ -4,6 +4,14 @@
 
 sets = {}
 
+--[[
+    head="Bhikku Crown +2",
+    body="Bhikku Cyclas +2",
+    hands="Bhikku Gloves +2",
+    legs="Bhikku Hose +2",
+]]
+
+
 --
 -- Weapon Sets
 -- 
@@ -75,15 +83,15 @@ sets.tp.List = {
 sets.tp.Hybrid = {
     -- STP
     ammo="Coiste Bodhar",
-    -- TODO Empy Helm
-    head="Malignance Chapeau",
-    -- TODO Augment / Impetus
-    body="Mpaca's Doublet",
+    -- DT / Subtle Blow
+    head="Bhikku Crown +2",
+    -- MA / Impetus
+    body="Bhikku Cyclas +2",
     -- TODO - Mpaca?
     hands="Malignance Gloves",
-    -- TODO Empy Legs
-    legs="Mpaca's Hose",
-    -- TA
+    -- STP / Kick Attacks
+    legs="Bhikku Hose +2",
+    -- TA / TODO: AF
     feet="Mpaca's Boots",
     -- TODO MNK BELT - Triple ATK
     waist="Windbuffet Belt",
@@ -97,8 +105,8 @@ sets.tp.Hybrid = {
     left_ring="Chirich Ring +1",
     -- QA
     right_ring="Niqmaddu Ring",
-    -- TODO AMBU CLOAK
-    back="Null Shawl",
+    -- Kick Attacks / DA
+    back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
 } 
 
 --
@@ -141,6 +149,12 @@ sets.ws.Default = {
 -- Job Abilities
 -- 
 sets.ja = {}
+
+-- Buffs
+sets.ja.Impetus = {
+    body="Bhikku Cyclas +2",
+}
+
 
 
 -- TODO JSE
