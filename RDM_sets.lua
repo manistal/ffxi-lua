@@ -628,7 +628,8 @@ sets.ws.Default = {
     -- WSD: +5
     body={ name="Nyame Mail", augments={'Path: B',}},
     -- WSD: +8
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    -- hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    -- TODO: hands="Atrophy Gloves +4",
     -- WSD: +3
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     -- WSD: +8~12

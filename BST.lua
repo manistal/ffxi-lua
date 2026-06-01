@@ -29,7 +29,7 @@ end
 function equip_base_set(status) 
     -- TP/Engaged Sets (Glass cannon TP vs Tanky TP)
     if status == 'Engaged' then 
-        if (player.hpp <= 35) then 
+        if (player.hpp <= 15) then 
             equip(sets.tp.FullDT)
         else
             equip(sets.tp.Current)
@@ -125,13 +125,13 @@ end
 function aftercast(spell)
     -- Don't want to swap away too quickly if I'm about to put BP damage gear on
     -- Need to wait 1 in order to allow pet information to update on Release.
-    if pet_midaction() then
-        return
-    elseif isPetMove(spell) then
-        return
-    else
-        status_change(player.status)
-    end
+    status_change(player.status)
+    --if pet_midaction() then
+    --    return
+    --elseif isPetMove(spell) then
+    --    return
+    --else
+    --end
 end
 
 function isPhysicalPetReady(spell)

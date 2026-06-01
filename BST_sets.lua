@@ -11,6 +11,7 @@ sets.weapons = {}
 sets.weapons.List = {
     "AgwuShield",
     "AgwuDW",
+    "Doli",
     -- "Naegling",
     -- "Piercing",
 }
@@ -23,6 +24,11 @@ sets.weapons["AgwuShield"] = {
 
 sets.weapons["AgwuDW"] = {
     main="Agwu's Axe",
+    sub="Ikenga's Axe",
+}
+
+sets.weapons["Doli"] = {
+    main="Dolichenus",
     sub="Ikenga's Axe",
 }
 
@@ -141,6 +147,35 @@ sets.ws.Default = {
     -- WSD 2
     right_ear="Thrud Earring",
 }
+
+sets.ws.MultiHit = {
+    -- ATK/DBLATK
+    ammo="Coiste Bodhar",
+    -- WSD 6+
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    -- WSD 6+
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    -- WSD 6+
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    -- TA
+    legs="Meg. Chausses +2",
+    -- WSD 5 
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    -- ATK
+    neck="Fotia Gorget",
+    -- 2ATK/3ATK
+    waist="Sailfi Belt +1",
+    -- PDL/Stats
+    left_ring="Ephramad's Ring",
+    -- STR 15
+    right_ring="Sroda Ring",
+    -- DA
+    left_ear="Sroda Earring",
+    -- DA 
+    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','Pet: "Dbl. Atk."+6',}},
+}
+
+sets.ws["Decimation"] = sets.ws.MultiHit
 
 -- 
 -- Job Abilities
