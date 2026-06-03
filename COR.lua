@@ -79,7 +79,7 @@ function precast(spell)
     end
 
     -- Corsair Rolls
-	if spell.type == "CorsairRoll" or spell.english == "Double-Up" then
+	if spell.type == "CorsairRoll" then
 		-- Roll-specific gear
         if sets.ja[spell.english] then
             equip(sets.ja[spell.english])
