@@ -192,7 +192,9 @@ sets.ja["Call Beast"] = {
     -- TODO Delay Gear
 }
 
-sets.ja["Bestial Loyalty"] = sets.ja["Call Beast"]
+sets.ja["Bestial Loyalty"] = set_combine(sets.ja["Call Beast"], {
+    ammo="Jug of lyrical broth",
+})
 
 -- 
 -- Spell Precast Sets

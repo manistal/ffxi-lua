@@ -380,7 +380,7 @@ sets.midcast.DarkMagic = {
     -- MACC
     legs="Chas. Culottes +3",
     -- MACC
-    feet="Malignance Boots",
+    feet="Chass. Bottes +3",
     -- MACC
     neck="Null Loop",
     -- MACC
@@ -534,7 +534,7 @@ sets.ja["Blitzer's Roll"] = set_combine(sets.ja.PhantomRoll, {head="Chasseur's T
 sets.ja["Tactician's Roll"] = set_combine(sets.ja.PhantomRoll, {body="Chasseur's Frac +2",})
 sets.ja["Allies' Roll"] = set_combine(sets.ja.PhantomRoll, {hands="Chasseur's Gants +3",})
 sets.ja["Caster's Roll"] = set_combine(sets.ja.PhantomRoll, {legs="Chas. Culottes +3",})
-sets.ja["Courser's Roll"] = set_combine(sets.ja.PhantomRoll, {feet="Chass. Bottes +1",})
+sets.ja["Courser's Roll"] = set_combine(sets.ja.PhantomRoll, {feet="Chass. Bottes +3",})
 -- Remove roll duration pieces, keep Bolters 8 min for easy rerolls
 sets.ja["Bolter's Roll"] = set_combine(sets.idle.Default, {
     main={ name="Rostam", augments={'Path: C',}},
