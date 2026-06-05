@@ -8,7 +8,7 @@ sets = {}
 AF
     head="Atrophy Chapeau +3",
     body="Atrophy Tabard +4",
-    hands="Atrophy Gloves +3",
+    hands="Atrophy Gloves +4",
     legs="Atrophy Tights +4",
     feet="Atro. Boots +4",
 
@@ -359,7 +359,7 @@ sets.midcast.EnhancingSelf = set_combine(sets.midcast.Default, {
     -- Duration 10
     body="Viti. Tabard +3",
     -- Duration 20
-    hands="Atrophy Gloves +3",
+    hands="Atrophy Gloves +4",
     -- Duration 7
     legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +7',}},
     -- Enhancing 30 / Duration 35
@@ -394,7 +394,7 @@ sets.midcast.EnhancingOthers = set_combine(sets.midcast.Default, {
     -- Composure
     body="Lethargy Sayon +3",
     -- Duration 20
-    hands="Atrophy Gloves +3",
+    hands="Atrophy Gloves +4",
     -- Composure
     legs="Leth. Fuseau +3",
     -- Compsure / Duration 35
@@ -420,7 +420,7 @@ sets.midcast.Refresh = set_combine(sets.midcast.Default, {
     -- Refresh Potency +2
     body="Atrophy Tabard +4",
     -- Duration 20
-    hands="Atrophy Gloves +3",
+    hands="Atrophy Gloves +4",
     -- Refresh Potency +3
     legs="Leth. Fuseau +3",
     -- Compsure / Duration 35
@@ -627,9 +627,8 @@ sets.ws.Default = {
     head="Viti. Chapeau +4",
     -- WSD: +5
     body={ name="Nyame Mail", augments={'Path: B',}},
-    -- WSD: +8
-    -- hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    -- TODO: hands="Atrophy Gloves +4",
+    -- WSD: +9
+    hands="Atrophy Gloves +4",
     -- WSD: +3
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     -- WSD: +8~12

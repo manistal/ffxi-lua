@@ -40,7 +40,7 @@ function equip_base_set()
 
     -- TP/Engaged Sets (Glass cannon TP vs Tanky TP)
     if player.status == 'Engaged' then 
-        equip(sets.tp.Default)
+        -- equip(sets.tp.Default)
         if player.hpp <= 50 then 
             equip(sets.idle.Default)
         end

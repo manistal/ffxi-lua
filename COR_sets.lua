@@ -260,7 +260,7 @@ JSE Neck: 3 SS
 -- Current: Snapshot 59, Rapidshot 18
 sets.precast.Ranged = {
     -- Rapid Shot 
-    -- head="Chasseur's Tricorne +2",
+    -- head="Chasseur's Tricorne +3",
     -- Snapshot: +6
     head="Ikenga's Hat",
     -- Snapshot: +8, RapidShot: +11
@@ -287,7 +287,7 @@ sets.precast.Ranged = {
 -- Snapshot: 40
 sets.precast.RangedFlurry2 = {
     -- Rapid Shot 
-    head="Chasseur's Tricorne +2",
+    head="Chasseur's Tricorne +3",
     -- Rapid Shot 20
     body="Laksa. Frac +4",
     -- Snapshot: +8, RapidShot: +11
@@ -318,7 +318,7 @@ sets.midcast = {}
     legs="Ikenga's Trousers",
     feet="Ikenga's Clogs",
 
-    body="Chasseur's Frac +2",
+    body="Chasseur's Frac +3",
 ]]
 
 
@@ -363,7 +363,7 @@ sets.midcast.Ranged = set_combine(sets.midcast.RangedDefault, {
 })
 
 sets.midcast.TripleShot = set_combine(sets.midcast.Ranged, {
-    body="Chasseur's Frac +2",
+    body="Chasseur's Frac +3",
     hands="Lanun Gants +3", 
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}},
 })
@@ -530,8 +530,8 @@ sets.ja["Snake Eye"] = {legs="Lanun Trews +1"}
 sets.ja["Wild Card"] = {feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}}}
 
 -- Roll bonuses
-sets.ja["Blitzer's Roll"] = set_combine(sets.ja.PhantomRoll, {head="Chasseur's Tricorne +2"})
-sets.ja["Tactician's Roll"] = set_combine(sets.ja.PhantomRoll, {body="Chasseur's Frac +2",})
+sets.ja["Blitzer's Roll"] = set_combine(sets.ja.PhantomRoll, {head="Chasseur's Tricorne +3"})
+sets.ja["Tactician's Roll"] = set_combine(sets.ja.PhantomRoll, {body="Chasseur's Frac +3",})
 sets.ja["Allies' Roll"] = set_combine(sets.ja.PhantomRoll, {hands="Chasseur's Gants +3",})
 sets.ja["Caster's Roll"] = set_combine(sets.ja.PhantomRoll, {legs="Chas. Culottes +3",})
 sets.ja["Courser's Roll"] = set_combine(sets.ja.PhantomRoll, {feet="Chass. Bottes +3",})
@@ -543,11 +543,11 @@ sets.ja["Bolter's Roll"] = set_combine(sets.idle.Default, {
 
 -- TODO: Consider AF+4 Pieces
 sets.ja.QDACC = {
-    head="Chass. Tricorne +2",
-    body="Chasseur's Frac +2",
+    head="Chass. Tricorne +3",
+    body="Laksa. Frac +4",
     hands="Chasseur's Gants +3",
     legs="Chas. Culottes +3",
-    feet="Malignance Boots",
+    feet="Chass. Bottes +3",
     neck="Null Loop",
     waist="Null Belt",
     left_ear="Loquac. Earring",

@@ -9,18 +9,11 @@ sets = {}
 -- 
 sets.weapons = {}
 sets.weapons.List = {
-    "Lycurgos",
-    "ShiningOne",
     "Naegling",
     "Loxotic Mace",
-    "Montante",
+    "ShiningOne",
+    "Lycurgos",
 }
-
-sets.weapons["Montante"] = {
-    main={ name="Montante +1", augments={'Path: A',}},
-    sub="Utu Grip",
-}
-
 
 sets.weapons["Lycurgos"] = {
     main="Lycurgos",
@@ -34,15 +27,12 @@ sets.weapons["ShiningOne"] = {
 
 sets.weapons["Naegling"] = {
     main="Naegling",
-    --sub="Diamond Aspis",
     sub="Blurred Shield +1",
-    --sub="Blurred Shield +1",
 }
 
 sets.weapons["Loxotic Mace"] = {
     main="Loxotic Mace +1",
-    sub="Diamond Aspis",
-    --sub="Blurred Shield +1",
+    sub="Blurred Shield +1",
 }
 
 
@@ -66,16 +56,16 @@ sets.idle.Default = {
     neck="Warder's Charm +1",
     -- DT -3, HP+10%
     waist="Plat. Mog. Belt",
-    -- HP
-    left_ear="Odnowa Earring +1",
+    -- HP, DT: -5
+    left_ear="Alabaster Earring",
     -- HP
     right_ear="Tuisto Earring",
     -- HP, DT: -4
-    left_ring="Moonbeam Ring",
+    left_ring="Moonlight Ring",
     -- Speed
     right_ring="Shneddick Ring",
-    -- TODO Finish Augmenting
-    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+    -- MEVA
+    back="Null Shawl",
 }
 
 --
@@ -90,25 +80,33 @@ sets.tp.List = {
 }
 
 sets.tp.Default = {
+    -- 3 DA
     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     -- TODO: Empy Helm 
+    -- 5 DA
     head="Sakpata's Helm",
-    -- TODO Empy Body
+    -- 8 DA
     body="Sakpata's Plate",
+    -- 6 DA / STP
     hands="Sakpata's Gauntlets",
-    -- TODO Artifact Legs
+    -- 7 DA
     legs="Sakpata's Cuisses",
-    -- TODO Artifact Feet
-    feet="Flam. Gambieras +2",
+    -- 4 DA
+    feet="Sakpata's Leggings",
     -- TODO JSE Neck
     neck="Republican Platinum Medal",
+    -- 5 DA
     waist="Sailfi Belt +1",
+    -- 6 DA
     left_ear={ name="Schere Earring", augments={'Path: A',}},
-    right_ear={ name="Boii Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Crit.hit rate+5',}},
-    left_ring="Moonbeam Ring",
-    right_ring="Chirich Ring +1",
-    -- TODO Finish Augmenting
-    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
+    -- 9 DA
+    right_ear={ name="Boii Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Crit.hit rate+6','STR+7 VIT+7',}},
+    -- STP
+    left_ring="Moonlight Ring",
+    -- QA
+    right_ring="Niqmaddu Ring",
+    -- 10 DA (TODO AUGMENT)
+    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 }
 
 sets.tp.Hybrid = set_combine(sets.tp.Default, {
