@@ -498,6 +498,10 @@ sets.midcast["Dread Spikes"] = set_combine(sets.midcast.Default, {
     right_ear="Tuisto Earring",
     -- HP
     left_ring="Moonlight Ring",
+    -- HP 
+    right_ring="Moonbeam Ring",
+    -- HP
+    neck="Unmoving Collar +1",
 })
 
 
