@@ -222,7 +222,7 @@ sets.ws.MACC = set_combine(sets.ws.Default, {
     -- MAAC 40, WSD
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     -- MAAC 6
-    right_ear="Heathen's Earring",
+    right_ear={ name="Heath. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Weapon skill damage +3%',}},
     -- MAAC 7
     waist="Eschan Stone",
 })
@@ -259,7 +259,7 @@ sets.ja["Dark Seal"] = {
 }
 sets.ja["Nether Void"] = {
     head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
-    legs="Heath. Flanchard +2",
+    legs="Heath. Flanchard +3",
 }
 sets.ja["Blood Weapon"] = {
     body={ name="Fall. Cuirass +3", augments={'Enhances "Blood Weapon" effect',}},
@@ -301,13 +301,25 @@ sets.ja["Super Jump"] = sets.ja.Jumps
 sets.precast = {} 
 
 -- Fast Cast
+-- Current => 48, need 80
+-- TODO (21): Voltsure Torque (4)
+--            Sapience Orb (2) 
+--            Ambu Cloak (10)
+--            Eschite Cuisses (5)
 sets.precast.FastCast = {
-    head={ name="Fall. Burgeonet +3", augments={'Enhances "Dark Seal" effect',}},
+    -- 14 FC
+    head="Carmine Mask +1",
+    -- 10 FC
     body={ name="Fall. Cuirass +3", augments={'Enhances "Blood Weapon" effect',}},
+    -- 6 FC
     hands={ name="Leyline Gloves", augments={'Accuracy+5','"Mag.Atk.Bns."+7','"Fast Cast"+1',}},
-    legs={ name="Eschite Cuisses", augments={'"Mag.Atk.Bns."+25','"Conserve MP"+6','"Fast Cast"+5',}},
+    -- 8 FC
+    feet={ name="Carmine Greaves +1", augments={'MP+80','INT+12','MND+12',}},
+    -- 4 FC
     right_ring="Kishar Ring",
+    -- 4 FC
     left_ear="Malignance Earring",
+    -- 2 FC
     right_ear="Loquac. Earring",
 }
 
@@ -338,7 +350,7 @@ sets.midcast.DarkSkill = set_combine(sets.midcast.Default, {
     -- 18 Skill
     hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
     -- 25 Skill 
-    legs="Heath. Flanchard +2",
+    legs="Heath. Flanchard +3",
     -- Duration
     feet="Ratri Sollerets",
     -- 10 Skill
@@ -347,6 +359,8 @@ sets.midcast.DarkSkill = set_combine(sets.midcast.Default, {
     left_ear="Mani Earring",
     -- 10 Skill
     left_ring="Evanescence Ring",
+    -- 8 Skill
+    right_ring="Stikini Ring +1",
     -- 6 Skill
     back={ name="Niht Mantle", augments={'Attack+6','Dark magic skill +6','"Drain" and "Aspir" potency +25',}},
 })
@@ -366,8 +380,12 @@ sets.midcast.MAB = set_combine(sets.midcast.Default, {
     neck="Sibyl Scarf",
     -- 8 MAB
     left_ear="Malignance Earring",
+    -- 10 MAB
+    right_ear="Friomisi Earring",
     -- 7 MAB
-    waist="Eschan Stone",
+    -- waist="Eschan Stone",
+    -- % Damage
+    waist="Orpheus's Sash",
 })
 
 sets.midcast.MACC = set_combine(sets.midcast.Default, {
@@ -376,7 +394,7 @@ sets.midcast.MACC = set_combine(sets.midcast.Default, {
     -- 60 MACC
     body="Ig. Cuirass +4",
     -- 52 MACC
-    hands="Heath. Gauntlets +2",
+    hands="Heath. Gauntlets +3",
     -- 74 MACC
     legs="Ig. Flanchard +4",
     -- 60 MACC
@@ -405,7 +423,7 @@ sets.midcast["Endark II"] = sets.midcast.DarkSkill
 -- 
 -- Debuffs
 -- 
-sets.midcast["Stun"] = set_combine(sets.midcast.DarkSkill, sets.midcast.MACC, {
+sets.midcast["Stun"] = set_combine(sets.midcast.MACC, {
     -- 20 Duration
     feet="Ratri Sollerets",
 })
@@ -414,7 +432,7 @@ sets.midcast["Absorb"] = set_combine(sets.midcast.MACC, sets.midcast.DarkSkill, 
     -- 20 Duration
     head="Ig. Burgeonet +3",
     -- AbsorbTP +25
-    hands="Heath. Gauntlets +2",
+    hands="Heath. Gauntlets +3",
     -- 20 Duration
     feet="Ratri Sollerets",
     -- 10 Duration
@@ -438,7 +456,7 @@ sets.midcast.Drain = set_combine(sets.midcast.MAB, sets.midcast.DarkSkill, {
     -- 16 Drain
     hands={ name="Fall. Fin. Gaunt. +3", augments={'Enhances "Diabolic Eye" effect',}},
     -- Nether Void
-    legs="Heath. Flanchard +2",
+    legs="Heath. Flanchard +3",
     -- 20 Duration
     feet="Ratri Sollerets",
     -- 10 Drain
@@ -447,6 +465,8 @@ sets.midcast.Drain = set_combine(sets.midcast.MAB, sets.midcast.DarkSkill, {
     right_ring="Archon Ring",
     -- 25 Drain
     back={ name="Niht Mantle", augments={'Attack+6','Dark magic skill +6','"Drain" and "Aspir" potency +25',}},
+    -- % Damage
+    waist="Orpheus's Sash",
     -- TODO 5 Drain Austerity Belt +1 (AH)
     -- TODO 3 Drain Hirudinera (Lamprey)
     -- TODO Erra Pendant (Omen)
@@ -463,7 +483,7 @@ sets.midcast["Dread Spikes"] = set_combine(sets.midcast.Default, {
     -- HP
     head="Ratri Sallet",
     -- Spikes +45
-    body="Heath. Cuirass +2",
+    body="Heath. Cuirass +3",
     -- HP
     hands="Ratri Gadlings",
     -- HP
