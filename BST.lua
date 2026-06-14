@@ -160,7 +160,7 @@ function pet_midcast(spell)
     if not isPetMove(spell) then
         return
     end
-    equip(sets.pet.Midcast)
+    equip(sets.pet.MidcastMACC)
     -- TODO More Pet Ready Midcast Sets
 end
 

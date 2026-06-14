@@ -236,7 +236,9 @@ sets.pet.Precast = {
     legs="Gleti's Breeches",
 }
 
-sets.pet.Midcast = {
+sets.pet.MidcastMACC = {
+    -- MACC
+    ammo="Hesperiidae",
     -- ACC / MACC
     head={ name="Nyame Helm", augments={'Path: B',}},
     -- ACC / MACC
@@ -257,8 +259,8 @@ sets.pet.Midcast = {
     right_ring="Varar ring",
     -- DBLATK
     neck="Shulmanu Collar",
-    -- TODO AMBUC CAPE
+    -- MACC
+    back={ name="Artio's Mantle", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Pet: Mag. Acc.+10',}},
     -- TODO EMPY GLOVES
     -- TODO Belt (Klouskap?)
-    -- TODO Hespiidae
 }
