@@ -12,7 +12,7 @@ sets.weapons.List = {}
 
 sets.weapons.ListDW = {
     "Savage Spam",
-    "DaggerMAB",
+    "Aeolian",
     "RACC",
     --"HotShot",
 }
@@ -31,10 +31,10 @@ sets.weapons["Savage Spam"] = {
     ammo="Chrono Bullet",
 }
 
-sets.weapons["DaggerMAB"] = {
+sets.weapons["Aeolian"] = {
     main="Tauret",
     sub="Gleti's Knife",
-    range="Fomalhaut",
+    range="Anarchy +2",
     ammo="Chrono Bullet",
 }
 

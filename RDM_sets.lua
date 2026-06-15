@@ -514,9 +514,8 @@ sets.midcast.EnfeeblingPotency = set_combine(sets.midcast.Default, {
     feet="Vitiation Boots +4",
     -- Duration / Effect 
     neck={ name="Dls. Torque +2", augments={'Path: A',}},
-    -- TODO: Obstinate Sash
-    -- MACC
-    waist="Null Belt",
+    -- MACC / Duration
+    waist="Obstin. Sash",
     -- 10 ACC
     left_ear="Malignance Earring",
     -- Duration 10 
@@ -544,9 +543,8 @@ sets.midcast.EnfeeblingDuration = set_combine(sets.midcast.Default, {
     feet="Leth. Houseaux +3",
     -- Duration / Effect 
     neck={ name="Dls. Torque +2", augments={'Path: A',}},
-    -- TODO: Obstinate Sash
-    -- MACC
-    waist="Null Belt",
+    -- MACC / Duration
+    waist="Obstin. Sash",
     -- 10 ACC
     left_ear="Malignance Earring",
     -- Duration 10 
