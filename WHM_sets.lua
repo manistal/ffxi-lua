@@ -203,6 +203,23 @@ sets.precast.FastCast = {
 -- 
 sets.midcast = {}
 
+sets.midcast.SIRD = {
+    -- 11 SIRD
+    ammo="Staunch Tathlum +1",
+    -- 10 SIRD
+    sub="Culminus".
+    -- 12 SIRD
+    head={ name="Kaykaus Mitra +1", augments={'MP+80','Spell interruption rate down +12%','"Cure" spellcasting time -7%',}},
+    -- 21 SIRD
+    hands="Chironic Gloves", 
+    -- 29 SIRD
+    feet="Theophany Duckbills +4",
+    -- 10 SIRD
+    left_ring="Freke Ring",
+    -- 3 SIRD
+    right_ring="Murky Ring",
+}
+
 -- Cure/Healing/COnserveMP
 -- Total: Cure I: 56, Cure II: 4
 sets.midcast.Cure = {
