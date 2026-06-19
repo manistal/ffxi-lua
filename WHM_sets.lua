@@ -206,8 +206,6 @@ sets.midcast = {}
 sets.midcast.SIRD = {
     -- 11 SIRD
     ammo="Staunch Tathlum +1",
-    -- 10 SIRD
-    sub="Culminus".
     -- 12 SIRD
     head={ name="Kaykaus Mitra +1", augments={'MP+80','Spell interruption rate down +12%','"Cure" spellcasting time -7%',}},
     -- 21 SIRD
@@ -218,6 +216,39 @@ sets.midcast.SIRD = {
     left_ring="Freke Ring",
     -- 3 SIRD
     right_ring="Murky Ring",
+}
+
+sets.midcast.CureTANK = {
+    -- Cure I: 30
+    main="Daybreak",
+    -- MEVA / VIT
+    sub="Diamond Aspis",
+    -- SIRD: 11
+    ammo="Staunch Tathlum +1",
+    -- Cure I: 22
+    head="Ebers Cap +3",
+    -- Solace
+    body="Ebers Bliaut +3",
+    -- SIRD: 30
+    hands={ name="Chironic Gloves", augments={'Mag. Acc.+5','Spell interruption rate down -10%','"Mag.Atk.Bns."+14',}},
+    -- Cure MP
+    legs="Ebers Pant. +3",
+    -- SIRD: 29
+    feet="Theo. Duckbills +4",
+    -- DEF / VIT
+    neck="Elite Royal Collar",
+    -- SIRD: 12
+    waist="Emphatikos Rope",
+    -- HP / DT 
+    left_ear="Alabaster Earring",
+    -- DT / Healing
+    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Damage taken-5%',}},
+    -- SIRD: 11
+    left_ring="Freke Ring",
+    -- SIRD: 3, DT
+    right_ring="Murky Ring",
+    -- MND / PDT / MEVA 
+    back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
 }
 
 -- Cure/Healing/COnserveMP

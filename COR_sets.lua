@@ -398,6 +398,7 @@ sets.midcast.DarkMagic = {
 }
 
 sets.midcast["Absorb-TP"] = sets.midcast.DarkMagic
+sets.midcast["Absorb-STR"] = sets.midcast.DarkMagic
 
 --
 -- WS Sets 
@@ -435,7 +436,7 @@ sets.ws.Default = {
 -- Ranged Physical 
 sets.ws["Last Stand"]  = set_combine(sets.ws.Default, {
     -- RATK
-    head="Lanun Tricorne +3",
+    head="Lanun Tricorne +4",
     -- RATK / RACC / WSD
     body="Laksa. Frac +4",
     -- FTP
@@ -517,7 +518,7 @@ sets.ja.PhantomRoll = set_combine(sets.idle.Default, {
     main={ name="Rostam", augments={'Path: C',}},
     neck="Regal Necklace",
     range={ name="Compensator", augments={'DMG:+15','AGI+15','Rng.Acc.+15',}},
-    head="Lanun Tricorne +3",
+    head="Lanun Tricorne +4",
     hands="Chasseur's Gants +3",
     right_ring="Luzaf's Ring",
     back={ name="Camulus's Mantle", augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}},
