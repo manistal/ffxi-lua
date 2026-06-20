@@ -4,6 +4,15 @@
 
 sets = {}
 
+
+--[[
+    head="Nuk. Cabasset +2",
+    body="Nukumi Gausape +2",
+    hands="Nukumi Manoplas +2",
+    legs="Nukumi Quijotes +2",
+    feet="Nukumi Ocreae +2",
+]]--
+
 --
 -- Weapon Sets
 -- 
@@ -54,8 +63,8 @@ sets.idle.Default = {
     body={ name="Nyame Mail", augments={'Path: B',}},
     -- DT / MEVA
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    -- DT / MEVA
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    -- DT / MEVA / Pet DT
+    legs="Nukumi Quijotes +2",
     -- DT / MEVA
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     -- MDEF
@@ -159,8 +168,8 @@ sets.ws.MultiHit = {
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     -- TA
     legs="Meg. Chausses +2",
-    -- WSD 5 
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    -- DA / PDL
+    feet="Nukumi Ocreae +2",
     -- ATK
     neck="Fotia Gorget",
     -- 2ATK/3ATK
@@ -192,9 +201,6 @@ sets.ja["Call Beast"] = {
     -- TODO Delay Gear
 }
 
--- sets.ja["Bestial Loyalty"] = set_combine(sets.ja["Call Beast"], {
---     ammo="Jug of lyrical broth",
--- })
 
 -- 
 -- Spell Precast Sets
@@ -240,13 +246,13 @@ sets.pet.MidcastMACC = {
     -- MACC
     ammo="Hesperiidae",
     -- ACC / MACC
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    head="Nuk. Cabasset +2",
     -- ACC / MACC
-    body={ name="Nyame Mail", augments={'Path: B',}},
+    body="Nukumi Gausape +2",
     -- ACC / MACC
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    hands="Nukumi Manoplas +2",
     -- ACC / MACC
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    legs="Nukumi Quijotes +2",
     -- ACC / MACC / Level
     feet="Gleti's Boots",
     -- ACC / MACC
@@ -261,6 +267,5 @@ sets.pet.MidcastMACC = {
     neck="Shulmanu Collar",
     -- MACC
     back={ name="Artio's Mantle", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Pet: Mag. Acc.+10',}},
-    -- TODO EMPY GLOVES
     -- TODO Belt (Klouskap?)
 }
