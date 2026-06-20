@@ -571,6 +571,8 @@ sets.nuke.List = {
 }
 
 sets.nuke.FreeNuke = set_combine(sets.midcast.Default, {
+    -- INT / MAD
+    ammo="Ghastly Tathlum +1",
     -- MAB
     main="Bunzi's Rod", 
     -- MACC / INT

@@ -366,6 +366,8 @@ sets.midcast.DarkSkill = set_combine(sets.midcast.Default, {
 })
 
 sets.midcast.MAB = set_combine(sets.midcast.Default, {
+    -- INT / MAD
+    ammo="Ghastly Tathlum +1",
     -- 30 MAB
     head={ name="Nyame Helm", augments={'Path: B',}},
     -- 60 MAB

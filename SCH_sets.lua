@@ -310,7 +310,8 @@ sets.midcast.Enfeebling = {
 -- Nuking
 --------------------------
 sets.midcast.Nuke = {
-    -- TODO GHASTLY TALTHUM AMMO SLOT
+    -- INT / MAD
+    ammo="Ghastly Tathlum +1",
     -- Magic ATK Bonus
     main="Bunzi's Rod",
     -- Magic ATK Bonus
