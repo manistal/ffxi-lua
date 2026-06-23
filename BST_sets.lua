@@ -201,6 +201,11 @@ sets.ja["Call Beast"] = {
     -- TODO Delay Gear
 }
 
+sets.ja["Reward"] = {
+    ammo="Pet Food Theta biscuit",
+    -- TODO Relic Body, Legs, Feet
+}
+
 
 -- 
 -- Spell Precast Sets

@@ -119,15 +119,17 @@ sets.idle.Default = {
 }
 
 sets.idle.Regen = set_combine(sets.idle.Default, {
-    head="Meghanada Visor +2",
-    body="Meg. Cuirie +2", -- Regen 
-    hands="Meg. Gloves +2", -- Regen
-    legs="Meg. Chausses +2", -- Regen
-    feet="Meg. Jam. +2", -- Regen
+    -- head="Meghanada Visor +2",
+    -- body="Meg. Cuirie +2", -- Regen 
+    -- hands="Meg. Gloves +2", -- Regen
+    -- legs="Meg. Chausses +2", -- Regen
+    -- feet="Meg. Jam. +2", -- Regen
+    -- Regen 1
+    right_ear="Infused Earring",
+    -- Regen 2
     left_ring="Chirich Ring +1",
+    -- Regen 3
     waist="Null Belt",
-    -- Schnedick is more important
-    -- right_ring="Chirich Ring +1",
 })
 
 sets.idle.Regain = set_combine(sets.idle.Default, {
@@ -523,6 +525,10 @@ sets.ja.PhantomRoll = set_combine(sets.idle.Default, {
     right_ring="Luzaf's Ring",
     back={ name="Camulus's Mantle", augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}},
 })
+
+sets.ja["Double-Up"] = {
+    right_ring="Luzaf's Ring",
+}
 
 -- General JA Bonuses
 sets.ja["Random Deal"] = {body={ name="Lanun Frac +4", augments={'Enhances "Loaded Deck" effect',}},}

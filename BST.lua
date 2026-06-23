@@ -69,13 +69,6 @@ function precast(spell)
         equip(sets.precast.FastCast)
     end
 
-    -- Job Abilities are either specific or none
-    if spell.type == "JobAbility" then
-		if sets.ja[spell.english] then 
-			equip(sets.ja[spell.english])
-        end
-    end
-
     -- Weaponskills
     if spell.type == "WeaponSkill" then
 		if sets.ws[spell.english] then 
@@ -94,6 +87,13 @@ function precast(spell)
     -- Equip Specific Sets Last
     if sets.precast[spell.english] then
         equip(sets.precast[spell.english])
+    end
+
+    -- Job Abilities are either specific or none
+    if spell.type == "JobAbility" then
+		if sets.ja[spell.english] then 
+			equip(sets.ja[spell.english])
+        end
     end
 end
 
